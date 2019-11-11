@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 0)
+    (drawings 4)
     (tracks 111)
     (zones 0)
     (modules 3)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.35)
+    (last_trace_width 0.25)
     (user_trace_width 0.35)
     (trace_clearance 0.2)
     (zone_clearance 0.508)
@@ -87,9 +87,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory "Gerber/V1/"))
   )
 
   (net 0 "")
@@ -378,6 +378,11 @@
       (rotate (xyz 0 0 0))
     )
   )
+
+  (gr_line (start 135 116) (end 135 78) (layer Edge.Cuts) (width 0.2) (tstamp 5DC9AFA1))
+  (gr_line (start 135 116) (end 155 116) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 155 78) (end 155 116) (layer Edge.Cuts) (width 0.2))
+  (gr_line (start 135 78) (end 155 78) (layer Edge.Cuts) (width 0.2))
 
   (segment (start 138.61044 80.48) (end 137.67308 80.48) (width 0.35) (layer F.Cu) (net 1))
   (segment (start 143.76908 85.63864) (end 138.61044 80.48) (width 0.35) (layer F.Cu) (net 1))
