@@ -13,6 +13,10 @@
 #ifndef INCLUSION_GUARD_TEMP_THREAD_H
 #define INCLUSION_GUARD_TEMP_THREAD_H
 
+//Thread pointers
+extern thread_t* canListen;
+extern thread_t* tempSend;
+
 
 void tempThread (void *arg);
 

@@ -23,11 +23,11 @@
 
 //Global variables
 FlexCAN_T4FD<CAN3, RX_SIZE_256, TX_SIZE_16> can1;
-
+thread_t* canListen;
 
 //DEBUG defines, use ALLCAPS
 #define USE_SERIAL_DEBUG 1
-#define USE_CAN_DEBUG 1
+#define USE_CAN_DEBUG 0
 
 
 //Mutex declarations: use camelCase
@@ -43,6 +43,8 @@ static THD_WORKING_AREA(waTempThread, TEMP_THREAD_SIZE);
 //Can Thread Function
 static THD_FUNCTION(canThread, arg) {
   (void)arg;
+
+  canListen = chThdGetSelfX();
   
   // Can setup
   pinMode(22, INPUT);
@@ -54,9 +56,18 @@ static THD_FUNCTION(canThread, arg) {
 
   while (true) {
 
+
+
     #if USE_SERIAL_DEBUG
       Serial.println("test");
     #endif
+
+    eventmask_t canEvent = chEvtWaitAnyTimeout(ALL_EVENTS, TIME_INFINITE);
+    if (canEvent & EVENT_MASK(0)) {
+      Serial.printf("tempThread event");
+    }
+
+
 
     #if USE_CAN_DEBUG
       CANFD_message_t msg;
