@@ -137,7 +137,7 @@ Wire Wire Line
 Text GLabel 6850 4800 1    50   Input ~ 0
 Vinn_5V
 Wire Wire Line
-	6850 4800 6850 5050
+	6850 4800 6850 4900
 Text GLabel 5550 4950 2    50   Input ~ 0
 Vinn_5V
 $Comp
@@ -403,8 +403,8 @@ $Comp
 L Switch:SW_SPST SW?
 U 1 1 5DCEE60D
 P 1700 5050
-F 0 "SW?" H 1700 5300 50  0000 C CNN
-F 1 "SW_SPST" H 1700 5200 50  0000 C CNN
+F 0 "SW?" V 1750 5300 50  0000 C CNN
+F 1 "SW_SPST" V 1650 5300 50  0000 C CNN
 F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin" H 1700 5050 50  0001 C CNN
 F 3 "~" H 1700 5050 50  0001 C CNN
 	1    1700 5050
@@ -679,13 +679,13 @@ Wire Wire Line
 $Comp
 L teensy4_header_breakout-cache:power_PWR_FLAG #FLG?
 U 1 1 5DD36165
-P 5500 4800
-F 0 "#FLG?" H 5500 4875 50  0001 C CNN
-F 1 "power_PWR_FLAG" H 5750 4950 50  0000 C CNN
-F 2 "" H 5500 4800 50  0001 C CNN
-F 3 "" H 5500 4800 50  0001 C CNN
-	1    5500 4800
-	1    0    0    -1  
+P 6850 4900
+F 0 "#FLG?" H 6850 4975 50  0001 C CNN
+F 1 "power_PWR_FLAG" V 6850 5350 50  0000 C CNN
+F 2 "" H 6850 4900 50  0001 C CNN
+F 3 "" H 6850 4900 50  0001 C CNN
+	1    6850 4900
+	0    1    1    0   
 $EndComp
 $Comp
 L power:GNDPWR #PWR?
@@ -738,13 +738,6 @@ Wire Wire Line
 Wire Wire Line
 	7700 5950 8050 5950
 Wire Wire Line
-	5000 4950 5500 4950
-Wire Wire Line
-	5500 4800 5500 4950
-Connection ~ 5500 4950
-Wire Wire Line
-	5500 4950 5550 4950
-Wire Wire Line
 	6050 5200 6350 5200
 Wire Wire Line
 	6350 5200 6350 5250
@@ -767,6 +760,9 @@ NoConn ~ 5000 3250
 NoConn ~ 5000 3350
 NoConn ~ 5000 3450
 NoConn ~ 5000 3550
-NoConn ~ 4350 2250
-NoConn ~ 2000 2050
+Connection ~ 6850 4900
+Wire Wire Line
+	6850 4900 6850 5050
+Wire Wire Line
+	5000 4950 5550 4950
 $EndSCHEMATC
