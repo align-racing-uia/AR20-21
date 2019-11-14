@@ -88,45 +88,6 @@ Text Label 9650 4200 0    50   ~ 0
 27
 Text Label 9650 4300 0    50   ~ 0
 25
-$Comp
-L power:PWR_FLAG #FLG0101
-U 1 1 5D795E12
-P 9750 5450
-F 0 "#FLG0101" H 9750 5525 50  0001 C CNN
-F 1 "PWR_FLAG" V 9750 5577 50  0000 L CNN
-F 2 "" H 9750 5450 50  0001 C CNN
-F 3 "~" H 9750 5450 50  0001 C CNN
-	1    9750 5450
-	0    -1   -1   0   
-$EndComp
-Text Label 9750 5450 0    50   ~ 0
-GND-1
-$Comp
-L power:PWR_FLAG #FLG0102
-U 1 1 5D796552
-P 9750 5550
-F 0 "#FLG0102" H 9750 5625 50  0001 C CNN
-F 1 "PWR_FLAG" V 9750 5677 50  0000 L CNN
-F 2 "" H 9750 5550 50  0001 C CNN
-F 3 "~" H 9750 5550 50  0001 C CNN
-	1    9750 5550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG0103
-U 1 1 5D7967CD
-P 9750 5650
-F 0 "#FLG0103" H 9750 5725 50  0001 C CNN
-F 1 "PWR_FLAG" V 9750 5777 50  0000 L CNN
-F 2 "" H 9750 5650 50  0001 C CNN
-F 3 "~" H 9750 5650 50  0001 C CNN
-	1    9750 5650
-	0    -1   -1   0   
-$EndComp
-Text Label 9750 5550 0    50   ~ 0
-3V3-1
-Text Label 9750 5650 0    50   ~ 0
-VBAT
 Text Label 9650 4000 0    50   ~ 0
 GND
 Text Label 9650 4100 0    50   ~ 0
@@ -144,9 +105,7 @@ F 3 "~" V 1650 4360 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1650 4050 1650 4100
-Wire Wire Line
-	1650 4450 1650 4400
-Text GLabel 1650 4450 3    50   Input ~ 0
+Text GLabel 1600 4400 0    50   Input ~ 0
 GND_BATT
 Text GLabel 2450 4250 0    50   Input ~ 0
 GND_BATT
@@ -155,24 +114,18 @@ Wire Wire Line
 $Comp
 L Interface_CAN_LIN:MCP2551-I-SN U?
 U 1 1 5DCC7256
-P 6850 5500
-F 0 "U?" H 6850 6081 50  0000 C CNN
-F 1 "MCP2551-I-SN" H 6850 5990 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6850 5000 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf" H 6850 5500 50  0001 C CNN
-	1    6850 5500
+P 6850 5450
+F 0 "U?" H 6250 6000 50  0000 C CNN
+F 1 "MCP2551-I-SN" H 6500 5900 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6850 4950 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf" H 6850 5450 50  0001 C CNN
+	1    6850 5450
 	1    0    0    -1  
 $EndComp
 Text GLabel 6050 5200 0    50   Input ~ 0
 22_CTX1
-Wire Wire Line
-	6050 5200 6350 5200
-Wire Wire Line
-	6350 5200 6350 5300
 Text GLabel 6050 5400 0    50   Input ~ 0
 23_CRX1
-Wire Wire Line
-	6050 5400 6350 5400
 Text GLabel 5200 5400 2    50   Input ~ 0
 22_CTX1
 Text GLabel 5200 5200 2    50   Input ~ 0
@@ -181,96 +134,76 @@ Wire Wire Line
 	5200 5400 5000 5400
 Wire Wire Line
 	5000 5400 5000 5350
-Text GLabel 6850 4850 1    50   Input ~ 0
+Text GLabel 6850 4800 1    50   Input ~ 0
 Vinn_5V
 Wire Wire Line
-	6850 4850 6850 5100
-Text GLabel 5200 4950 2    50   Input ~ 0
+	6850 4800 6850 5050
+Text GLabel 5550 4950 2    50   Input ~ 0
 Vinn_5V
-Wire Wire Line
-	5200 4950 5000 4950
 $Comp
 L power:GND #PWR?
 U 1 1 5DCD39AC
-P 6850 6150
-F 0 "#PWR?" H 6850 5900 50  0001 C CNN
-F 1 "GND" H 6855 5977 50  0000 C CNN
-F 2 "" H 6850 6150 50  0001 C CNN
-F 3 "" H 6850 6150 50  0001 C CNN
-	1    6850 6150
+P 6850 6100
+F 0 "#PWR?" H 6850 5850 50  0001 C CNN
+F 1 "GND" H 6855 5927 50  0000 C CNN
+F 2 "" H 6850 6100 50  0001 C CNN
+F 3 "" H 6850 6100 50  0001 C CNN
+	1    6850 6100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6850 5900 6850 6000
-Text GLabel 7000 6100 2    50   Input ~ 0
+	6850 5850 6850 5950
+Text GLabel 7000 6050 2    50   Input ~ 0
 Ground
 Wire Wire Line
-	7000 6100 6850 6100
-Connection ~ 6850 6100
+	7000 6050 6850 6050
+Connection ~ 6850 6050
 Wire Wire Line
-	6850 6100 6850 6150
+	6850 6050 6850 6100
 Wire Wire Line
-	6350 5700 6350 6000
+	6350 5650 6350 5950
 Wire Wire Line
-	6350 6000 6400 6000
+	6350 5950 6400 5950
 $Comp
 L Device:R R?
 U 1 1 5DCD48B9
-P 6550 6000
-F 0 "R?" V 6650 6000 50  0000 C CNN
-F 1 "60" V 6434 6000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6480 6000 50  0001 C CNN
-F 3 "~" H 6550 6000 50  0001 C CNN
-	1    6550 6000
+P 6550 5950
+F 0 "R?" V 6650 5950 50  0000 C CNN
+F 1 "60" V 6434 5950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6480 5950 50  0001 C CNN
+F 3 "~" H 6550 5950 50  0001 C CNN
+	1    6550 5950
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6700 6000 6850 6000
-Connection ~ 6850 6000
+	6700 5950 6850 5950
+Connection ~ 6850 5950
 Wire Wire Line
-	6850 6000 6850 6100
+	6850 5950 6850 6050
 $Comp
 L Jumper:SolderJumper_2_Open JP?
 U 1 1 5DCD8738
-P 7750 5400
-F 0 "JP?" H 7750 5605 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 7750 5514 50  0000 C CNN
-F 2 "" H 7750 5400 50  0001 C CNN
-F 3 "~" H 7750 5400 50  0001 C CNN
-	1    7750 5400
-	1    0    0    -1  
+P 8050 5800
+F 0 "JP?" V 7950 5900 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 8050 5900 50  0000 L CNN
+F 2 "" H 8050 5800 50  0001 C CNN
+F 3 "~" H 8050 5800 50  0001 C CNN
+	1    8050 5800
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7350 5400 7600 5400
 $Comp
 L Device:R R?
 U 1 1 5DCD94C5
 P 8050 5500
-F 0 "R?" H 8120 5546 50  0000 L CNN
-F 1 "120" H 8120 5455 50  0000 L CNN
+F 0 "R?" H 8150 5550 50  0000 L CNN
+F 1 "120" H 8150 5450 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7980 5500 50  0001 C CNN
 F 3 "~" H 8050 5500 50  0001 C CNN
 	1    8050 5500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7900 5400 7900 5350
-Wire Wire Line
-	7900 5350 8050 5350
-Wire Wire Line
-	8050 5650 7900 5650
-Wire Wire Line
-	7900 5650 7900 5600
-Wire Wire Line
-	7900 5600 7350 5600
-Wire Wire Line
-	8050 5350 8350 5350
-Connection ~ 8050 5350
-Wire Wire Line
-	8050 5650 8350 5650
-Connection ~ 8050 5650
-Wire Wire Line
-	2600 2650 2800 2650
+	2600 2650 2750 2650
 $Comp
 L Connector:TestPoint TP?
 U 1 1 5DCE0C6A
@@ -469,15 +402,15 @@ Wire Wire Line
 $Comp
 L Switch:SW_SPST SW?
 U 1 1 5DCEE60D
-P 1750 5050
-F 0 "SW?" H 1750 5300 50  0000 C CNN
-F 1 "SW_SPST" H 1750 5200 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin" H 1750 5050 50  0001 C CNN
-F 3 "~" H 1750 5050 50  0001 C CNN
-	1    1750 5050
+P 1700 5050
+F 0 "SW?" H 1700 5300 50  0000 C CNN
+F 1 "SW_SPST" H 1700 5200 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin" H 1700 5050 50  0001 C CNN
+F 3 "~" H 1700 5050 50  0001 C CNN
+	1    1700 5050
 	0    -1   -1   0   
 $EndComp
-Text GLabel 1850 5800 3    50   Input ~ 0
+Text GLabel 1700 5250 3    50   Input ~ 0
 Ground
 $Comp
 L teensy4_header_breakout-rescue:Teensy4.0-Teensy U1
@@ -511,23 +444,6 @@ Wire Wire Line
 Connection ~ 2600 2650
 Text GLabel 2600 2550 1    50   Input ~ 0
 Ground
-Wire Wire Line
-	1750 5250 1750 5750
-$Comp
-L power:GNDPWR #PWR?
-U 1 1 5DCFD27F
-P 1650 5750
-F 0 "#PWR?" H 1650 5550 50  0001 C CNN
-F 1 "GNDPWR" H 1654 5596 50  0000 C CNN
-F 2 "" H 1650 5700 50  0001 C CNN
-F 3 "" H 1650 5700 50  0001 C CNN
-	1    1650 5750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1650 5750 1750 5750
-Wire Wire Line
-	1850 5750 1850 5800
 NoConn ~ 2800 4350
 $Comp
 L Connector:TestPoint TP?
@@ -768,12 +684,7 @@ Wire Wire Line
 	1650 4050 2800 4050
 NoConn ~ 2800 4150
 Wire Wire Line
-	1750 4850 1750 4450
-Connection ~ 1750 5750
-Wire Wire Line
-	1750 5750 1850 5750
-Wire Wire Line
-	1750 4450 2800 4450
+	1700 4850 1700 4450
 $Comp
 L Connector:TestPoint TP?
 U 1 1 5DD3092A
@@ -895,4 +806,85 @@ Wire Wire Line
 	5000 5250 5000 5200
 Wire Wire Line
 	5000 5200 5200 5200
+$Comp
+L teensy4_header_breakout-cache:power_PWR_FLAG #FLG?
+U 1 1 5DD36165
+P 5500 4800
+F 0 "#FLG?" H 5500 4875 50  0001 C CNN
+F 1 "power_PWR_FLAG" H 5750 4950 50  0000 C CNN
+F 2 "" H 5500 4800 50  0001 C CNN
+F 3 "" H 5500 4800 50  0001 C CNN
+	1    5500 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5DD3A6CB
+P 2750 2650
+F 0 "#PWR?" H 2750 2450 50  0001 C CNN
+F 1 "GNDPWR" H 2700 2500 50  0000 C CNN
+F 2 "" H 2750 2600 50  0001 C CNN
+F 3 "" H 2750 2600 50  0001 C CNN
+	1    2750 2650
+	-1   0    0    1   
+$EndComp
+Connection ~ 2750 2650
+Wire Wire Line
+	2750 2650 2800 2650
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5DD3C695
+P 8350 5350
+F 0 "H?" V 8304 5500 50  0000 L CNN
+F 1 "CANH_out" V 8395 5500 50  0000 L CNN
+F 2 "" H 8350 5350 50  0001 C CNN
+F 3 "~" H 8350 5350 50  0001 C CNN
+	1    8350 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5DD3DCFC
+P 8350 5950
+F 0 "H?" V 8304 6100 50  0000 L CNN
+F 1 "CANL_out" V 8395 6100 50  0000 L CNN
+F 2 "" H 8350 5950 50  0001 C CNN
+F 3 "~" H 8350 5950 50  0001 C CNN
+	1    8350 5950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8050 5350 8250 5350
+Connection ~ 8050 5350
+Wire Wire Line
+	7350 5350 8050 5350
+Wire Wire Line
+	8050 5950 8250 5950
+Connection ~ 8050 5950
+Wire Wire Line
+	7700 5550 7700 5950
+Wire Wire Line
+	7350 5550 7700 5550
+Wire Wire Line
+	7700 5950 8050 5950
+Wire Wire Line
+	5000 4950 5500 4950
+Wire Wire Line
+	5500 4800 5500 4950
+Connection ~ 5500 4950
+Wire Wire Line
+	5500 4950 5550 4950
+Wire Wire Line
+	6050 5200 6350 5200
+Wire Wire Line
+	6350 5200 6350 5250
+Wire Wire Line
+	6050 5400 6350 5400
+Wire Wire Line
+	6350 5400 6350 5350
+NoConn ~ 6350 5550
+Wire Wire Line
+	1700 4450 2800 4450
+Wire Wire Line
+	1650 4400 1600 4400
 $EndSCHEMATC

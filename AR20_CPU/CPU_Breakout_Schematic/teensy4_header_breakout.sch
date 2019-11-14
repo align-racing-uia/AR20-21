@@ -547,138 +547,8 @@ F 3 "~" H 5400 3650 50  0001 C CNN
 	1    5200 3650
 	0    1    1    0   
 $EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5DD05C93
-P 5200 3550
-F 0 "TP?" V 5200 4250 50  0000 C CNN
-F 1 "TestPoint" V 5200 3950 50  0000 C CNN
-F 2 "" H 5400 3550 50  0001 C CNN
-F 3 "~" H 5400 3550 50  0001 C CNN
-	1    5200 3550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5200 3550 5000 3550
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5DD05C9A
-P 5200 3450
-F 0 "TP?" V 5200 4150 50  0000 C CNN
-F 1 "TestPoint" V 5200 3850 50  0000 C CNN
-F 2 "" H 5400 3450 50  0001 C CNN
-F 3 "~" H 5400 3450 50  0001 C CNN
-	1    5200 3450
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5200 3650 5000 3650
-Wire Wire Line
-	5200 3450 5000 3450
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5DD05CA2
-P 5200 3350
-F 0 "TP?" V 5200 4050 50  0000 C CNN
-F 1 "TestPoint" V 5200 3750 50  0000 C CNN
-F 2 "" H 5400 3350 50  0001 C CNN
-F 3 "~" H 5400 3350 50  0001 C CNN
-	1    5200 3350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5200 3350 5000 3350
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5DD05CA9
-P 5200 3250
-F 0 "TP?" V 5200 3950 50  0000 C CNN
-F 1 "TestPoint" V 5200 3650 50  0000 C CNN
-F 2 "" H 5400 3250 50  0001 C CNN
-F 3 "~" H 5400 3250 50  0001 C CNN
-	1    5200 3250
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5DD05CAF
-P 5200 3150
-F 0 "TP?" V 5200 3850 50  0000 C CNN
-F 1 "TestPoint" V 5200 3550 50  0000 C CNN
-F 2 "" H 5400 3150 50  0001 C CNN
-F 3 "~" H 5400 3150 50  0001 C CNN
-	1    5200 3150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5200 3150 5000 3150
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5DD05CB6
-P 5200 3050
-F 0 "TP?" V 5200 3750 50  0000 C CNN
-F 1 "TestPoint" V 5200 3450 50  0000 C CNN
-F 2 "" H 5400 3050 50  0001 C CNN
-F 3 "~" H 5400 3050 50  0001 C CNN
-	1    5200 3050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5200 3250 5000 3250
-Wire Wire Line
-	5200 3050 5000 3050
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5DD0A142
-P 5200 2950
-F 0 "TP?" V 5200 3650 50  0000 C CNN
-F 1 "TestPoint" V 5200 3350 50  0000 C CNN
-F 2 "" H 5400 2950 50  0001 C CNN
-F 3 "~" H 5400 2950 50  0001 C CNN
-	1    5200 2950
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5200 2950 5000 2950
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5DD0A149
-P 5200 2850
-F 0 "TP?" V 5200 3550 50  0000 C CNN
-F 1 "TestPoint" V 5200 3250 50  0000 C CNN
-F 2 "" H 5400 2850 50  0001 C CNN
-F 3 "~" H 5400 2850 50  0001 C CNN
-	1    5200 2850
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5DD0A14F
-P 5200 2750
-F 0 "TP?" V 5200 3450 50  0000 C CNN
-F 1 "TestPoint" V 5200 3150 50  0000 C CNN
-F 2 "" H 5400 2750 50  0001 C CNN
-F 3 "~" H 5400 2750 50  0001 C CNN
-	1    5200 2750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5200 2750 5000 2750
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5DD0A156
-P 5200 2650
-F 0 "TP?" V 5200 3350 50  0000 C CNN
-F 1 "TestPoint" V 5200 3050 50  0000 C CNN
-F 2 "" H 5400 2650 50  0001 C CNN
-F 3 "~" H 5400 2650 50  0001 C CNN
-	1    5200 2650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5200 2850 5000 2850
-Wire Wire Line
-	5200 2650 5000 2650
 NoConn ~ 5000 5150
 Wire Wire Line
 	1650 4050 2800 4050
@@ -887,4 +757,16 @@ Wire Wire Line
 	1700 4450 2800 4450
 Wire Wire Line
 	1650 4400 1600 4400
+NoConn ~ 5000 2650
+NoConn ~ 5000 2750
+NoConn ~ 5000 2850
+NoConn ~ 5000 2950
+NoConn ~ 5000 3050
+NoConn ~ 5000 3150
+NoConn ~ 5000 3250
+NoConn ~ 5000 3350
+NoConn ~ 5000 3450
+NoConn ~ 5000 3550
+NoConn ~ 4350 2250
+NoConn ~ 2000 2050
 $EndSCHEMATC
