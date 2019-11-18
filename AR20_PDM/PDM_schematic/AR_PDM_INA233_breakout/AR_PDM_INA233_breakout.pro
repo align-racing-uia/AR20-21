@@ -1,4 +1,4 @@
-update=18.11.2019 20:19:54
+update=18.11.2019 20:59:46
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=AR20_PDM_ProFetTest.net
+LastNetListRead=AR_PDM_INA233_breakout.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
