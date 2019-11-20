@@ -15,43 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ACM_Y2020V0.1-rescue:TC2030-MCP-NL-TC2030-MCP-NL J1
-U 1 1 5D389624
-P 1075 1400
-F 0 "J1" H 2075 1665 50  0000 C CNN
-F 1 "TC2030-MCP-NL" H 2075 1574 50  0000 C CNN
-F 2 "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" H 2925 1500 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/TC2030-MCP-NL_PCB_Footprint_RevD.pdf" H 2925 1400 50  0001 L CNN
-F 4 "TC2030-MCP-NL PCB Footprint (no legs)" H 2925 1300 50  0001 L CNN "Description"
-F 5 "Microchip" H 2925 1100 50  0001 L CNN "Manufacturer_Name"
-F 6 "TC2030-MCP-NL" H 2925 1000 50  0001 L CNN "Manufacturer_Part_Number"
-F 7 "579-TC2030-MCP-NL" H 2925 900 50  0001 L CNN "Mouser Part Number"
-F 8 "https://www.mouser.com/Search/Refine.aspx?Keyword=579-TC2030-MCP-NL" H 2925 800 50  0001 L CNN "Mouser Price/Stock"
-F 9 "8252561" H 2925 700 50  0001 L CNN "RS Part Number"
-F 10 "http://uk.rs-online.com/web/p/products/8252561" H 2925 600 50  0001 L CNN "RS Price/Stock"
-	1    1075 1400
-	1    0    0    -1  
-$EndComp
-Text HLabel 3075 1500 2    50   Input ~ 0
-MOSI
-Text HLabel 1075 1600 0    50   Input ~ 0
-Reset
-Text HLabel 1075 1500 0    50   Input ~ 0
-SCK
-Text HLabel 1075 1400 0    50   Input ~ 0
-MISO
-$Comp
-L power:GND #PWR08
-U 1 1 5D3A6728
-P 3175 1675
-F 0 "#PWR08" H 3175 1425 50  0001 C CNN
-F 1 "GND" H 3180 1502 50  0000 C CNN
-F 2 "" H 3175 1675 50  0001 C CNN
-F 3 "" H 3175 1675 50  0001 C CNN
-	1    3175 1675
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR05
 U 1 1 5D3A8A7B
 P 2175 7275
@@ -60,17 +23,6 @@ F 1 "GND" H 2180 7102 50  0000 C CNN
 F 2 "" H 2175 7275 50  0001 C CNN
 F 3 "" H 2175 7275 50  0001 C CNN
 	1    2175 7275
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR07
-U 1 1 5D3A42C5
-P 3175 1325
-F 0 "#PWR07" H 3175 1175 50  0001 C CNN
-F 1 "+5V" H 3190 1498 50  0000 C CNN
-F 2 "" H 3175 1325 50  0001 C CNN
-F 3 "" H 3175 1325 50  0001 C CNN
-	1    3175 1325
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -170,7 +122,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005282B.pdf" H 9475 5500 
 	1    9475 4900
 	1    0    0    -1  
 $EndComp
-Text HLabel 2850 6975 2    50   Input ~ 0
+Text HLabel 2775 6975 2    50   Input ~ 0
 CAN_CS
 Text HLabel 8875 4500 0    50   Input ~ 0
 CAN_CS
@@ -345,7 +297,7 @@ F 3 "" H 9675 6000 50  0001 C CNN
 	1    9675 6000
 	1    0    0    -1  
 $EndComp
-Text HLabel 2850 6475 2    50   Input ~ 0
+Text HLabel 2775 6475 2    50   Input ~ 0
 CAN_INT
 Text HLabel 8875 5600 0    50   Input ~ 0
 CAN_INT
@@ -403,10 +355,8 @@ Text Notes 4925 3350 0    79   ~ 16
 Power and protection circuits
 Text Notes 1925 3850 0    79   ~ 16
 Main MCU
-Text Notes 5350 825  0    79   ~ 16
+Text Notes 6050 825  0    79   ~ 16
 Connector
-Text Notes 1800 725  0    79   ~ 16
-ICSP
 Wire Notes Line
 	4500 3925 4500 7525
 Wire Notes Line
@@ -480,34 +430,26 @@ Wire Wire Line
 	5375 4150 5275 4150
 Wire Wire Line
 	5275 4150 5275 4225
-Wire Wire Line
-	3075 1400 3175 1400
-Wire Wire Line
-	3175 1400 3175 1325
-Wire Wire Line
-	3075 1600 3175 1600
-Wire Wire Line
-	3175 1600 3175 1675
 $Comp
 L power:+12V #PWR015
 U 1 1 5D3DBA57
-P 5475 2850
-F 0 "#PWR015" H 5475 2700 50  0001 C CNN
-F 1 "+12V" H 5490 3023 50  0000 C CNN
-F 2 "" H 5475 2850 50  0001 C CNN
-F 3 "" H 5475 2850 50  0001 C CNN
-	1    5475 2850
+P 6175 2850
+F 0 "#PWR015" H 6175 2700 50  0001 C CNN
+F 1 "+12V" H 6190 3023 50  0000 C CNN
+F 2 "" H 6175 2850 50  0001 C CNN
+F 3 "" H 6175 2850 50  0001 C CNN
+	1    6175 2850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR011
 U 1 1 5D3DED37
-P 5075 2825
-F 0 "#PWR011" H 5075 2675 50  0001 C CNN
-F 1 "+5V" H 5090 2998 50  0000 C CNN
-F 2 "" H 5075 2825 50  0001 C CNN
-F 3 "" H 5075 2825 50  0001 C CNN
-	1    5075 2825
+P 5775 2825
+F 0 "#PWR011" H 5775 2675 50  0001 C CNN
+F 1 "+5V" H 5790 2998 50  0000 C CNN
+F 2 "" H 5775 2825 50  0001 C CNN
+F 3 "" H 5775 2825 50  0001 C CNN
+	1    5775 2825
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -530,138 +472,42 @@ Polyfuse for\novercurrent protection
 $Comp
 L Connector_Generic:Conn_02x15_Odd_Even P1
 U 1 1 5D40B272
-P 5600 1875
-F 0 "P1" H 5650 2792 50  0000 C CNN
-F 1 "Conn_02x15_Odd_Even" H 5650 2701 50  0000 C CNN
-F 2 "SMLP36RGB2W3R:ILWX10SBVFBE" H 5600 1875 50  0001 C CNN
-F 3 "https://docs-emea.rs-online.com/webdocs/0fc1/0900766b80fc155d.pdf" H 5600 1875 50  0001 C CNN
-F 4 "https://no.rs-online.com/web/p/pcb-sockets/0437152/" H 5600 1875 50  0001 C CNN "RS"
-	1    5600 1875
+P 6300 1875
+F 0 "P1" H 6350 2792 50  0000 C CNN
+F 1 "Conn_02x15_Odd_Even" H 6350 2701 50  0000 C CNN
+F 2 "SMLP36RGB2W3R:ILWX10SBVFBE" H 6300 1875 50  0001 C CNN
+F 3 "https://docs-emea.rs-online.com/webdocs/0fc1/0900766b80fc155d.pdf" H 6300 1875 50  0001 C CNN
+F 4 "https://no.rs-online.com/web/p/pcb-sockets/0437152/" H 6300 1875 50  0001 C CNN "RS"
+	1    6300 1875
 	1    0    0    -1  
 $EndComp
-$Comp
-L ACM_Y2020V0.1-rescue:SMLP36RGB2W3R-SMLP36RGB2W3R LED1
-U 1 1 5D41B8EC
-P 8575 1450
-F 0 "LED1" H 9325 1715 50  0000 C CNN
-F 1 "SMLP36RGB2W3R" H 9325 1624 50  0000 C CNN
-F 2 "SMLP36RGB2W3R:SMLP36RGB2W3R" H 9925 1550 50  0001 L CNN
-F 3 "http://www.rohm.com/web/global/datasheet/SMLP36RGB2W(R)" H 9925 1450 50  0001 L CNN
-F 4 "LED,RGB,35/110/35mcd,top-looking,1510 ROHM SMLP36RGB2W3R, SML-P36 Series 3 RGB LED, 475 (Blue) nm, 535 (Green) nm, 629 (Red) nm 6-Pin Milky White" H 9925 1350 50  0001 L CNN "Description"
-F 5 "ROHM Semiconductor" H 9925 1150 50  0001 L CNN "Manufacturer_Name"
-F 6 "SMLP36RGB2W3R" H 9925 1050 50  0001 L CNN "Manufacturer_Part_Number"
-F 7 "755-SMLP36RGB2W3R" H 9925 950 50  0001 L CNN "Mouser Part Number"
-F 8 "https://www.mouser.com/Search/Refine.aspx?Keyword=755-SMLP36RGB2W3R" H 9925 850 50  0001 L CNN "Mouser Price/Stock"
-F 9 "1246884" H 9925 750 50  0001 L CNN "RS Part Number"
-F 10 "https://uk.rs-online.com/web/p/products/1246884" H 9925 650 50  0001 L CNN "RS Price/Stock"
-	1    8575 1450
-	1    0    0    -1  
-$EndComp
-Text Notes 9050 1075 0    79   ~ 16
-LED Circuit
-$Comp
-L Device:R R3
-U 1 1 5D423C3A
-P 7825 1450
-F 0 "R3" V 7618 1450 50  0000 C CNN
-F 1 "200 Ohm" V 7709 1450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 7755 1450 50  0001 C CNN
-F 3 "~" H 7825 1450 50  0001 C CNN
-	1    7825 1450
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R4
-U 1 1 5D4245DB
-P 8125 1550
-F 0 "R4" V 7918 1550 50  0000 C CNN
-F 1 "290 Ohm" V 8009 1550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 8055 1550 50  0001 C CNN
-F 3 "~" H 8125 1550 50  0001 C CNN
-	1    8125 1550
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R5
-U 1 1 5D42477A
-P 8425 1650
-F 0 "R5" V 8218 1650 50  0000 C CNN
-F 1 "190 Ohm" V 8309 1650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 8355 1650 50  0001 C CNN
-F 3 "~" H 8425 1650 50  0001 C CNN
-	1    8425 1650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8275 1550 8575 1550
-Wire Wire Line
-	7975 1450 8575 1450
-Wire Wire Line
-	7975 1550 7675 1550
-Wire Wire Line
-	8275 1650 7675 1650
-Text HLabel 7675 1450 0    50   Input ~ 0
-GREEN_LED
-Text HLabel 7675 1550 0    50   Input ~ 0
-RED_LED
-Text HLabel 7675 1650 0    50   Input ~ 0
-BLUE_LED
-$Comp
-L power:+5V #PWR031
-U 1 1 5D43A565
-P 10175 1375
-F 0 "#PWR031" H 10175 1225 50  0001 C CNN
-F 1 "+5V" H 10190 1548 50  0000 C CNN
-F 2 "" H 10175 1375 50  0001 C CNN
-F 3 "" H 10175 1375 50  0001 C CNN
-	1    10175 1375
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10075 1650 10175 1650
-Wire Wire Line
-	10175 1650 10175 1550
-Wire Wire Line
-	10075 1550 10175 1550
-Connection ~ 10175 1550
-Wire Wire Line
-	10175 1550 10175 1450
-Wire Wire Line
-	10075 1450 10175 1450
-Connection ~ 10175 1450
-Wire Wire Line
-	10175 1450 10175 1375
-Text HLabel 2850 6775 2    50   Input ~ 0
+Text HLabel 2775 6775 2    50   Input ~ 0
 GREEN_LED
 $Comp
 L power:GND #PWR019
 U 1 1 5D47FCD3
-P 6425 1875
-F 0 "#PWR019" H 6425 1625 50  0001 C CNN
-F 1 "GND" H 6430 1702 50  0000 C CNN
-F 2 "" H 6425 1875 50  0001 C CNN
-F 3 "" H 6425 1875 50  0001 C CNN
-	1    6425 1875
+P 7125 1875
+F 0 "#PWR019" H 7125 1625 50  0001 C CNN
+F 1 "GND" H 7130 1702 50  0000 C CNN
+F 2 "" H 7125 1875 50  0001 C CNN
+F 3 "" H 7125 1875 50  0001 C CNN
+	1    7125 1875
 	1    0    0    -1  
 $EndComp
-Text HLabel 5900 1675 2    50   Input ~ 0
+Text HLabel 6600 1675 2    50   Input ~ 0
 U-Pin12
-Text HLabel 5900 1775 2    50   Input ~ 0
+Text HLabel 6600 1775 2    50   Input ~ 0
 U-Pin14
-Text HLabel 5900 1175 2    50   Input ~ 0
+Text HLabel 6600 1175 2    50   Input ~ 0
 U-Pin2
-Text HLabel 5900 1275 2    50   Input ~ 0
+Text HLabel 6600 1275 2    50   Input ~ 0
 U-Pin4
-Text HLabel 5900 2075 2    50   Input ~ 0
+Text HLabel 6600 2075 2    50   Input ~ 0
 U-Pin20
-Text HLabel 5900 2175 2    50   Input ~ 0
+Text HLabel 6600 2175 2    50   Input ~ 0
 U-Pin22
-Text HLabel 5900 2275 2    50   Input ~ 0
+Text HLabel 6600 2275 2    50   Input ~ 0
 U-Pin24
-Text HLabel 6175 2375 2    50   Input ~ 0
-U-Pin26
-Text HLabel 6175 2475 2    50   Input ~ 0
-U-Pin28
 Text Notes 3425 6225 0    50   ~ 0
 Legg ut RESET for Debugwire
 $Comp
@@ -734,31 +580,31 @@ Connection ~ 5800 4150
 Wire Wire Line
 	5800 4150 5800 4450
 Wire Wire Line
-	5900 1875 6025 1875
+	6600 1875 6725 1875
 Wire Wire Line
-	5900 1975 6025 1975
+	6600 1975 6725 1975
 Wire Wire Line
-	6025 1975 6025 1875
-Connection ~ 6025 1875
-Text HLabel 5900 2575 2    50   Input ~ 0
+	6725 1975 6725 1875
+Connection ~ 6725 1875
+Text HLabel 6600 2575 2    50   Input ~ 0
 U-Pin30
-Text HLabel 5400 1375 0    50   Input ~ 0
+Text HLabel 6100 1375 0    50   Input ~ 0
 U-Pin5
-Text HLabel 5400 1475 0    50   Input ~ 0
+Text HLabel 6100 1475 0    50   Input ~ 0
 U-Pin7
-Text HLabel 5400 1575 0    50   Input ~ 0
+Text HLabel 6100 1575 0    50   Input ~ 0
 U-Pin9
-Text HLabel 5400 1675 0    50   Input ~ 0
+Text HLabel 6100 1675 0    50   Input ~ 0
 U-Pin11
-Text HLabel 5400 1175 0    50   Input ~ 0
+Text HLabel 6100 1175 0    50   Input ~ 0
 U-Pin1
-Text HLabel 5400 1275 0    50   Input ~ 0
+Text HLabel 6100 1275 0    50   Input ~ 0
 U-Pin3
-Text HLabel 5900 1375 2    50   Input ~ 0
+Text HLabel 6600 1375 2    50   Input ~ 0
 U-Pin6
 Wire Wire Line
-	6025 1875 6425 1875
-Text HLabel 1400 6300 0    50   Input ~ 0
+	6725 1875 7125 1875
+Text HLabel 1575 6275 0    50   Input ~ 0
 U-Pin24
 Text HLabel 1400 6400 0    50   Input ~ 0
 U-Pin30
@@ -766,73 +612,73 @@ Text HLabel 1400 6500 0    50   Input ~ 0
 U-Pin11
 Text HLabel 1400 6600 0    50   Input ~ 0
 U-Pin9
-Text HLabel 2850 6675 2    50   Input ~ 0
+Text HLabel 2775 6675 2    50   Input ~ 0
 U-Pin22
-Text HLabel 2850 6575 2    50   Input ~ 0
+Text HLabel 2775 6575 2    50   Input ~ 0
 U-Pin20
-Text HLabel 2850 6375 2    50   Input ~ 0
+Text HLabel 2775 6375 2    50   Input ~ 0
 U-Pin14
-Text HLabel 2850 6275 2    50   Input ~ 0
+Text HLabel 2775 6275 2    50   Input ~ 0
 U-Pin12
 Wire Wire Line
 	3275 6075 3275 6000
-Text HLabel 2825 5975 2    50   Input ~ 0
+Text HLabel 2775 5975 2    50   Input ~ 0
 U-Pin8
-Text HLabel 2825 5875 2    50   Input ~ 0
+Text HLabel 2775 5875 2    50   Input ~ 0
 U-Pin6
-Text HLabel 2825 5775 2    50   Input ~ 0
+Text HLabel 2775 5775 2    50   Input ~ 0
 U-Pin4
-Text HLabel 2825 5675 2    50   Input ~ 0
+Text HLabel 2775 5675 2    50   Input ~ 0
 U-Pin2
-Text HLabel 2825 5475 2    50   Input ~ 0
+Text HLabel 2775 5475 2    50   Input ~ 0
 U-Pin7
 Text HLabel 10775 3900 2    50   Input ~ 0
 U-Pin3
 Text HLabel 10775 4200 2    50   Input ~ 0
 U-Pin1
 Wire Wire Line
-	5400 2575 5300 2575
+	6100 2575 6000 2575
 Wire Wire Line
-	5300 2575 5300 2900
+	6000 2575 6000 2900
 Wire Wire Line
-	5300 2900 5475 2900
+	6000 2900 6175 2900
 Wire Wire Line
-	5475 2900 5475 2850
+	6175 2900 6175 2850
 Wire Wire Line
-	5400 2475 5250 2475
+	6100 2475 5950 2475
 Wire Wire Line
-	5250 2475 5250 2900
+	5950 2475 5950 2900
 Wire Wire Line
-	5250 2900 5075 2900
+	5950 2900 5775 2900
 Wire Wire Line
-	5075 2900 5075 2825
+	5775 2900 5775 2825
 Wire Wire Line
 	2775 5175 3500 5175
 Wire Wire Line
 	3500 5350 3500 5275
 Wire Wire Line
 	3500 5275 2775 5275
-Text HLabel 2850 6875 2    50   Input ~ 0
+Text HLabel 2775 6875 2    50   Input ~ 0
 U-Pin23
-Text HLabel 5900 1575 2    50   Input ~ 0
+Text HLabel 6600 1575 2    50   Input ~ 0
 Reset
-Text HLabel 5900 1475 2    50   Input ~ 0
+Text HLabel 6600 1475 2    50   Input ~ 0
 U-Pin8
 Wire Wire Line
 	3275 6075 3450 6075
-Text HLabel 5400 1775 0    50   Input ~ 0
+Text HLabel 6100 1775 0    50   Input ~ 0
 SCK
-Text HLabel 5400 1875 0    50   Input ~ 0
+Text HLabel 6100 1875 0    50   Input ~ 0
 MISO
-Text HLabel 5400 1975 0    50   Input ~ 0
+Text HLabel 6100 1975 0    50   Input ~ 0
 MOSI
-Text HLabel 5400 2075 0    50   Input ~ 0
+Text HLabel 6100 2075 0    50   Input ~ 0
 BLUE_LED
-Text HLabel 5400 2175 0    50   Input ~ 0
+Text HLabel 6100 2175 0    50   Input ~ 0
 RED_LED
-Text HLabel 5400 2375 0    50   Input ~ 0
+Text HLabel 6100 2375 0    50   Input ~ 0
 GREEN_LED
-Text HLabel 5400 2275 0    50   Input ~ 0
+Text HLabel 6100 2275 0    50   Input ~ 0
 U-Pin23
 $Comp
 L Device:C_Small C3
@@ -872,13 +718,7 @@ $EndComp
 Text Notes 2625 4100 0    50   ~ 0
 AVCC Lavpass filter
 Wire Wire Line
-	2850 4125 2700 4125
-Connection ~ 2700 4125
-Wire Wire Line
-	2700 4125 2600 4125
-Wire Wire Line
-	2400 4125 2175 4125
-Connection ~ 2175 4125
+	2400 4125 2275 4125
 Text Notes 1150 4600 2    50   ~ 0
 Place as close as \npossible to pin 20
 $Comp
@@ -934,27 +774,8 @@ Text HLabel 2775 4975 2    50   Input ~ 0
 MISO
 Text HLabel 2775 5075 2    50   Input ~ 0
 SCK
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 5D45C896
-P 700 2675
-F 0 "H1" H 800 2721 50  0000 L CNN
-F 1 "M2 Mouting hole" H 800 2630 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 700 2675 50  0001 C CNN
-F 3 "~" H 700 2675 50  0001 C CNN
-	1    700  2675
-	1    0    0    -1  
-$EndComp
-Text Notes 800  2500 0    79   ~ 16
-Mechanical
 Wire Notes Line
-	575  2525 575  3350
-Wire Notes Line
-	575  3350 1750 3350
-Wire Notes Line
-	1750 3350 1750 2525
-Wire Notes Line
-	1750 2525 575  2525
+	1000 2450 1000 3275
 $Comp
 L ACM_Y2020V0.1-rescue:NCV890430MW50TXG-NCV890430MW50TXG U3
 U 1 1 5D46D022
@@ -1176,37 +997,189 @@ F 3 "" H 4750 6350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6825 6075 7600 6075
+Wire Wire Line
+	3075 1325 3075 1400
+Wire Wire Line
+	2975 1325 3075 1325
+Wire Wire Line
+	3075 1125 3075 1050
+Wire Wire Line
+	2975 1125 3075 1125
+Text Notes 1850 700  0    79   ~ 16
+ICSP
 $Comp
-L MCU_Microchip_ATmega:ATmega328P-AU U1
-U 1 1 5D9A1492
+L power:+5V #PWR07
+U 1 1 5D3A42C5
+P 3075 1050
+F 0 "#PWR07" H 3075 900 50  0001 C CNN
+F 1 "+5V" H 3090 1223 50  0000 C CNN
+F 2 "" H 3075 1050 50  0001 C CNN
+F 3 "" H 3075 1050 50  0001 C CNN
+	1    3075 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5D3A6728
+P 3075 1400
+F 0 "#PWR08" H 3075 1150 50  0001 C CNN
+F 1 "GND" H 3080 1227 50  0000 C CNN
+F 2 "" H 3075 1400 50  0001 C CNN
+F 3 "" H 3075 1400 50  0001 C CNN
+	1    3075 1400
+	1    0    0    -1  
+$EndComp
+Text HLabel 975  1125 0    50   Input ~ 0
+MISO
+Text HLabel 975  1225 0    50   Input ~ 0
+SCK
+Text HLabel 975  1325 0    50   Input ~ 0
+Reset
+Text HLabel 2975 1225 2    50   Input ~ 0
+MOSI
+$Comp
+L ACM_Y2020V0.1-rescue:TC2030-MCP-NL-TC2030-MCP-NL J1
+U 1 1 5D389624
+P 975 1125
+F 0 "J1" H 1975 1390 50  0000 C CNN
+F 1 "TC2030-MCP-NL" H 1975 1299 50  0000 C CNN
+F 2 "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" H 2825 1225 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/TC2030-MCP-NL_PCB_Footprint_RevD.pdf" H 2825 1125 50  0001 L CNN
+F 4 "TC2030-MCP-NL PCB Footprint (no legs)" H 2825 1025 50  0001 L CNN "Description"
+F 5 "Microchip" H 2825 825 50  0001 L CNN "Manufacturer_Name"
+F 6 "TC2030-MCP-NL" H 2825 725 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "579-TC2030-MCP-NL" H 2825 625 50  0001 L CNN "Mouser Part Number"
+F 8 "https://www.mouser.com/Search/Refine.aspx?Keyword=579-TC2030-MCP-NL" H 2825 525 50  0001 L CNN "Mouser Price/Stock"
+F 9 "8252561" H 2825 425 50  0001 L CNN "RS Part Number"
+F 10 "http://uk.rs-online.com/web/p/products/8252561" H 2825 325 50  0001 L CNN "RS Price/Stock"
+	1    975  1125
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2175 2450 1000 2450
+Wire Notes Line
+	2175 3275 2175 2450
+Wire Notes Line
+	1000 3275 2175 3275
+Text Notes 1225 2425 0    79   ~ 16
+Mechanical
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5D45C896
+P 1125 2600
+F 0 "H1" H 1225 2646 50  0000 L CNN
+F 1 "M2 Mouting hole" H 1225 2555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 1125 2600 50  0001 C CNN
+F 3 "~" H 1125 2600 50  0001 C CNN
+	1    1125 2600
+	1    0    0    -1  
+$EndComp
+Text HLabel 6600 2475 2    50   Input ~ 0
+U-Pin28
+Text HLabel 6600 2375 2    50   Input ~ 0
+U-Pin26
+$Comp
+L LED:ASMB-MTB0-0A3A2 D3
+U 1 1 5DD7E33E
+P 9825 1525
+F 0 "D3" H 9825 2042 50  0000 C CNN
+F 1 "ASMB-MTB0-0A3A2" H 9825 1951 50  0000 C CNN
+F 2 "LED_SMD:LED_Avago_PLCC4_3.2x2.8mm_CW" H 9825 2025 50  0001 C CNN
+F 3 "https://docs.broadcom.com/docs/AV02-4186EN" H 9825 1075 50  0001 C CNN
+	1    9825 1525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5DD8F0AE
+P 9375 1325
+F 0 "R3" V 9168 1325 50  0000 C CNN
+F 1 "290 ohm" V 9259 1325 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9305 1325 50  0001 C CNN
+F 3 "~" H 9375 1325 50  0001 C CNN
+	1    9375 1325
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5DD96084
+P 9375 1525
+F 0 "R4" V 9168 1525 50  0000 C CNN
+F 1 "200ohm" V 9259 1525 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9305 1525 50  0001 C CNN
+F 3 "~" H 9375 1525 50  0001 C CNN
+	1    9375 1525
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5DD9CFD2
+P 9375 1725
+F 0 "R5" V 9168 1725 50  0000 C CNN
+F 1 "190 Ohm" V 9259 1725 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9305 1725 50  0001 C CNN
+F 3 "~" H 9375 1725 50  0001 C CNN
+	1    9375 1725
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9625 1325 9525 1325
+Wire Wire Line
+	9625 1525 9525 1525
+Wire Wire Line
+	9625 1725 9525 1725
+$Comp
+L power:+5V #PWR?
+U 1 1 5DDBB889
+P 10100 1475
+F 0 "#PWR?" H 10100 1325 50  0001 C CNN
+F 1 "+5V" H 10115 1648 50  0000 C CNN
+F 2 "" H 10100 1475 50  0001 C CNN
+F 3 "" H 10100 1475 50  0001 C CNN
+	1    10100 1475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 1475 10100 1525
+Wire Wire Line
+	10100 1525 10025 1525
+Text HLabel 9125 1725 0    50   Input ~ 0
+BLUE_LED
+Text HLabel 9125 1325 0    50   Input ~ 0
+RED_LED
+Text HLabel 9125 1525 0    50   Input ~ 0
+GREEN_LED
+Wire Wire Line
+	9125 1325 9225 1325
+Wire Wire Line
+	9225 1525 9125 1525
+Wire Wire Line
+	9225 1725 9125 1725
+Text Notes 9625 875  0    50   ~ 0
+RGB krets\n
+Wire Wire Line
+	2600 4125 2850 4125
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-AU U?
+U 1 1 5DD5CA89
 P 2175 5775
-F 0 "U1" H 2575 4300 50  0000 C CNN
-F 1 "ATmega328P-AU" H 2575 4200 50  0000 C CNN
+F 0 "U?" H 2175 4186 50  0000 C CNN
+F 1 "ATmega328P-AU" H 2175 4095 50  0000 C CNN
 F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 2175 5775 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 2175 5775 50  0001 C CNN
 	1    2175 5775
 	1    0    0    -1  
 $EndComp
-Text HLabel 2825 5575 2    50   Input ~ 0
-U-Pin5
 Wire Wire Line
-	2175 4100 2175 4125
+	2175 4275 2175 4125
+Connection ~ 2175 4125
 Wire Wire Line
-	2175 4125 2175 4275
+	2275 4275 2275 4125
+Connection ~ 2275 4125
 Wire Wire Line
-	2275 4275 2700 4275
+	2275 4125 2175 4125
 Wire Wire Line
-	2700 4125 2700 4275
+	1300 4625 1300 4575
 Wire Wire Line
-	2775 6075 3275 6075
-Connection ~ 3275 6075
-Wire Wire Line
-	1575 4575 1300 4575
-Wire Wire Line
-	1300 4575 1300 4625
-Wire Wire Line
-	1300 4575 1300 4125
-Wire Wire Line
-	1300 4125 2175 4125
-Connection ~ 1300 4575
+	1300 4575 1575 4575
 $EndSCHEMATC

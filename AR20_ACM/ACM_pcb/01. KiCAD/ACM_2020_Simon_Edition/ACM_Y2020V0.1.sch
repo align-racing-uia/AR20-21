@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:ACM_Y2020V0.1-cache
-EELAYER 30 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -508,7 +508,7 @@ Text HLabel 6600 2175 2    50   Input ~ 0
 U-Pin22
 Text HLabel 6600 2275 2    50   Input ~ 0
 U-Pin24
-Text Notes 3425 6225 0    50   ~ 0
+Text Notes 3275 6225 0    50   ~ 0
 Legg ut RESET for Debugwire
 $Comp
 L power:GND #PWR025
@@ -718,13 +718,7 @@ $EndComp
 Text Notes 2625 4100 0    50   ~ 0
 AVCC Lavpass filter
 Wire Wire Line
-	2850 4125 2700 4125
-Connection ~ 2700 4125
-Wire Wire Line
-	2700 4125 2600 4125
-Wire Wire Line
-	2400 4125 2175 4125
-Connection ~ 2175 4125
+	2400 4125 2275 4125
 Text Notes 1150 4600 2    50   ~ 0
 Place as close as \npossible to pin 20
 $Comp
@@ -1163,4 +1157,29 @@ Wire Wire Line
 	9225 1725 9125 1725
 Text Notes 9625 875  0    50   ~ 0
 RGB krets\n
+Wire Wire Line
+	2600 4125 2850 4125
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-AU U?
+U 1 1 5DD5CA89
+P 2175 5775
+F 0 "U?" H 2175 4186 50  0000 C CNN
+F 1 "ATmega328P-AU" H 2175 4095 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 2175 5775 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 2175 5775 50  0001 C CNN
+	1    2175 5775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2175 4275 2175 4125
+Connection ~ 2175 4125
+Wire Wire Line
+	2275 4275 2275 4125
+Connection ~ 2275 4125
+Wire Wire Line
+	2275 4125 2175 4125
+Wire Wire Line
+	1300 4625 1300 4575
+Wire Wire Line
+	1300 4575 1575 4575
 $EndSCHEMATC
