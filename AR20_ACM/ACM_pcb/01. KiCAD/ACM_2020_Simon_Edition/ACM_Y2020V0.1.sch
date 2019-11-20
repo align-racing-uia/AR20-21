@@ -998,63 +998,41 @@ $EndComp
 Wire Wire Line
 	6825 6075 7600 6075
 Wire Wire Line
-	3075 1325 3075 1400
+	875  1325 875  1400
 Wire Wire Line
-	2975 1325 3075 1325
-Wire Wire Line
-	3075 1125 3075 1050
-Wire Wire Line
-	2975 1125 3075 1125
+	975  1325 875  1325
 Text Notes 1850 700  0    79   ~ 16
 ICSP
 $Comp
 L power:+5V #PWR07
 U 1 1 5D3A42C5
-P 3075 1050
-F 0 "#PWR07" H 3075 900 50  0001 C CNN
-F 1 "+5V" H 3090 1223 50  0000 C CNN
-F 2 "" H 3075 1050 50  0001 C CNN
-F 3 "" H 3075 1050 50  0001 C CNN
-	1    3075 1050
-	1    0    0    -1  
+P 875 1400
+F 0 "#PWR07" H 875 1250 50  0001 C CNN
+F 1 "+5V" H 890 1573 50  0000 C CNN
+F 2 "" H 875 1400 50  0001 C CNN
+F 3 "" H 875 1400 50  0001 C CNN
+	1    875  1400
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR08
 U 1 1 5D3A6728
-P 3075 1400
-F 0 "#PWR08" H 3075 1150 50  0001 C CNN
-F 1 "GND" H 3080 1227 50  0000 C CNN
-F 2 "" H 3075 1400 50  0001 C CNN
-F 3 "" H 3075 1400 50  0001 C CNN
-	1    3075 1400
+P 700 1175
+F 0 "#PWR08" H 700 925 50  0001 C CNN
+F 1 "GND" H 705 1002 50  0000 C CNN
+F 2 "" H 700 1175 50  0001 C CNN
+F 3 "" H 700 1175 50  0001 C CNN
+	1    700  1175
 	1    0    0    -1  
 $EndComp
-Text HLabel 975  1125 0    50   Input ~ 0
+Text HLabel 2975 1325 2    50   Input ~ 0
 MISO
-Text HLabel 975  1225 0    50   Input ~ 0
-SCK
-Text HLabel 975  1325 0    50   Input ~ 0
-Reset
 Text HLabel 2975 1225 2    50   Input ~ 0
+SCK
+Text HLabel 2975 1125 2    50   Input ~ 0
+Reset
+Text HLabel 975  1225 0    50   Input ~ 0
 MOSI
-$Comp
-L ACM_Y2020V0.1-rescue:TC2030-MCP-NL-TC2030-MCP-NL J1
-U 1 1 5D389624
-P 975 1125
-F 0 "J1" H 1975 1390 50  0000 C CNN
-F 1 "TC2030-MCP-NL" H 1975 1299 50  0000 C CNN
-F 2 "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" H 2825 1225 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/TC2030-MCP-NL_PCB_Footprint_RevD.pdf" H 2825 1125 50  0001 L CNN
-F 4 "TC2030-MCP-NL PCB Footprint (no legs)" H 2825 1025 50  0001 L CNN "Description"
-F 5 "Microchip" H 2825 825 50  0001 L CNN "Manufacturer_Name"
-F 6 "TC2030-MCP-NL" H 2825 725 50  0001 L CNN "Manufacturer_Part_Number"
-F 7 "579-TC2030-MCP-NL" H 2825 625 50  0001 L CNN "Mouser Part Number"
-F 8 "https://www.mouser.com/Search/Refine.aspx?Keyword=579-TC2030-MCP-NL" H 2825 525 50  0001 L CNN "Mouser Price/Stock"
-F 9 "8252561" H 2825 425 50  0001 L CNN "RS Part Number"
-F 10 "http://uk.rs-online.com/web/p/products/8252561" H 2825 325 50  0001 L CNN "RS Price/Stock"
-	1    975  1125
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	2175 2450 1000 2450
 Wire Notes Line
@@ -1182,4 +1160,26 @@ Wire Wire Line
 	1300 4625 1300 4575
 Wire Wire Line
 	1300 4575 1575 4575
+Wire Wire Line
+	700  1125 700  1175
+Wire Wire Line
+	975  1125 700  1125
+$Comp
+L ACM_Y2020V0.1-rescue:TC2030-MCP-NL-TC2030-MCP-NL J1
+U 1 1 5D389624
+P 975 1125
+F 0 "J1" H 1975 1390 50  0000 C CNN
+F 1 "TC2030-MCP-NL" H 1975 1299 50  0000 C CNN
+F 2 "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" H 2825 1225 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/TC2030-MCP-NL_PCB_Footprint_RevD.pdf" H 2825 1125 50  0001 L CNN
+F 4 "TC2030-MCP-NL PCB Footprint (no legs)" H 2825 1025 50  0001 L CNN "Description"
+F 5 "Microchip" H 2825 825 50  0001 L CNN "Manufacturer_Name"
+F 6 "TC2030-MCP-NL" H 2825 725 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "579-TC2030-MCP-NL" H 2825 625 50  0001 L CNN "Mouser Part Number"
+F 8 "https://www.mouser.com/Search/Refine.aspx?Keyword=579-TC2030-MCP-NL" H 2825 525 50  0001 L CNN "Mouser Price/Stock"
+F 9 "8252561" H 2825 425 50  0001 L CNN "RS Part Number"
+F 10 "http://uk.rs-online.com/web/p/products/8252561" H 2825 325 50  0001 L CNN "RS Price/Stock"
+	1    975  1125
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
