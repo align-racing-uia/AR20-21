@@ -1,8 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP TC2030-MCP-NL
-D TC2030-MCP-NL PCB Footprint (no legs)
-F http://ww1.microchip.com/downloads/en/DeviceDoc/TC2030-MCP-NL_PCB_Footprint_RevD.pdf
-$ENDCMP
-#
-#End Doc Library
