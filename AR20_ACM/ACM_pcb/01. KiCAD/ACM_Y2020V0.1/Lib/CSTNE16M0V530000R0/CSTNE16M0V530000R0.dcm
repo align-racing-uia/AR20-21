@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP CSTNE16M0V530000R0
-D Resonators 16.0000MHz 15pF SMD CHP Resntr
-K
-F https://www.murata.com/en-eu/products/productdata/8801162231838/SPEC-CSTNE16M0V530000R0.pdf?1519875007000
-$ENDCMP
-#
-#End Doc Library
