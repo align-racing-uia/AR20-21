@@ -17,80 +17,80 @@ $EndDescr
 $Comp
 L Connector_Generic:Conn_01x14 J2
 U 1 1 5D785C4E
-P 10600 1500
-F 0 "J2" H 10518 575 50  0000 C CNN
-F 1 "Conn_01x14" H 10518 666 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x14_P2.54mm_Vertical" H 10600 1500 50  0001 C CNN
-F 3 "~" H 10600 1500 50  0001 C CNN
-	1    10600 1500
+P 9300 3300
+F 0 "J2" H 9218 2375 50  0000 C CNN
+F 1 "Conn_01x14" H 9218 2466 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x14_P2.54mm_Vertical" H 9300 3300 50  0001 C CNN
+F 3 "~" H 9300 3300 50  0001 C CNN
+	1    9300 3300
 	-1   0    0    1   
 $EndComp
-Text Label 10800 800  0    50   ~ 0
+Text Label 9500 2600 0    50   ~ 0
 VUSB
-Text Label 10800 900  0    50   ~ 0
+Text Label 9500 2700 0    50   ~ 0
 D-
-Text Label 10800 1000 0    50   ~ 0
+Text Label 9500 2800 0    50   ~ 0
 D+
-Text Label 9800 1500 2    50   ~ 0
+Text Label 8500 3300 2    50   ~ 0
 DAT2
-Text Label 9800 1400 2    50   ~ 0
+Text Label 8500 3200 2    50   ~ 0
 DAT3
-Text Label 9800 1300 2    50   ~ 0
+Text Label 8500 3100 2    50   ~ 0
 CMD
-Text Label 9800 1100 2    50   ~ 0
+Text Label 8500 2900 2    50   ~ 0
 CLK
-Text Label 9800 1200 2    50   ~ 0
+Text Label 8500 3000 2    50   ~ 0
 3V3-SD
-Text Label 9800 1000 2    50   ~ 0
+Text Label 8500 2800 2    50   ~ 0
 GND-SD
-Text Label 9800 900  2    50   ~ 0
+Text Label 8500 2700 2    50   ~ 0
 DAT0
-Text Label 9800 800  2    50   ~ 0
+Text Label 8500 2600 2    50   ~ 0
 DAT1
-Text Label 9800 1600 2    50   ~ 0
+Text Label 8500 3400 2    50   ~ 0
 29
 $Comp
 L Connector_Generic:Conn_01x14 J1
 U 1 1 5D782E4C
-P 10000 1400
-F 0 "J1" H 9950 2250 50  0000 L CNN
-F 1 "Conn_01x14" H 9600 2150 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x14_P2.54mm_Vertical" H 10000 1400 50  0001 C CNN
-F 3 "~" H 10000 1400 50  0001 C CNN
-	1    10000 1400
+P 8700 3200
+F 0 "J1" H 8650 4050 50  0000 L CNN
+F 1 "Conn_01x14" H 8300 3950 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x14_P2.54mm_Vertical" H 8700 3200 50  0001 C CNN
+F 3 "~" H 8700 3200 50  0001 C CNN
+	1    8700 3200
 	1    0    0    -1  
 $EndComp
-Text Label 9800 1700 2    50   ~ 0
+Text Label 8500 3500 2    50   ~ 0
 31
-Text Label 9800 1800 2    50   ~ 0
+Text Label 8500 3600 2    50   ~ 0
 33
-Text Label 9800 2000 2    50   ~ 0
+Text Label 8500 3800 2    50   ~ 0
 30
-Text Label 9800 1900 2    50   ~ 0
+Text Label 8500 3700 2    50   ~ 0
 32
-Text Label 9800 2100 2    50   ~ 0
+Text Label 8500 3900 2    50   ~ 0
 VBAT
-Text Label 10800 1800 0    50   ~ 0
+Text Label 9500 3600 0    50   ~ 0
 3V3-1
-Text Label 10800 1900 0    50   ~ 0
+Text Label 9500 3700 0    50   ~ 0
 GND-1
-Text Label 10800 2000 0    50   ~ 0
+Text Label 9500 3800 0    50   ~ 0
 PROGRAM
-Text Label 10800 2100 0    50   ~ 0
+Text Label 9500 3900 0    50   ~ 0
 ON_OFF
-Text Label 10800 1700 0    50   ~ 0
+Text Label 9500 3500 0    50   ~ 0
 24
-Text Label 10800 1500 0    50   ~ 0
+Text Label 9500 3300 0    50   ~ 0
 26
-Text Label 10800 1600 0    50   ~ 0
+Text Label 9500 3400 0    50   ~ 0
 28
-Text Label 10800 1300 0    50   ~ 0
+Text Label 9500 3100 0    50   ~ 0
 27
-Text Label 10800 1400 0    50   ~ 0
+Text Label 9500 3200 0    50   ~ 0
 25
-Text Label 10800 1100 0    50   ~ 0
+Text Label 9500 2900 0    50   ~ 0
 GND
-Text Label 10800 1200 0    50   ~ 0
+Text Label 9500 3000 0    50   ~ 0
 GND
 $Comp
 L Device:Battery_Cell BT?
