@@ -22,14 +22,22 @@ void loop() {
   {
     Wire.beginTransmission(0x40); // transmit to device #40 (0b1000000)
     Wire.write(0x12);
+    Wire.write(0x00);
     Wire.endTransmission();
     //Wire.requestFrom(0x40,1);
     Wire.beginTransmission(0x40); // transmit to device #40 (0b1000000)
     Wire.write(0x03);
+    Wire.write(0x00);
     Serial.println("Send initial data");
     Wire.endTransmission();
     //Wire.requestFrom(0x40,2);
     r = LOW;
+
+   Wire.beginTransmission(0x40); // transmit to device #40 (0b1000000)
+    Wire.write(0xD5);
+   Wire.write(0x02);
+  Wire.endTransmission();
+    
   }
 
 
