@@ -6,8 +6,14 @@ K connector
 F ~
 $ENDCMP
 #
-$CMP Conn_01x14_Male
-D Generic connector, single row, 01x14, script generated (kicad-library-utils/schlib/autogen/connector/)
+$CMP Conn_2Rows-34Pins
+D Generic connector, double row, 37 pins, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP Conn_2Rows-36Pins
+D Generic connector, double row, 37 pins, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
 F ~
 $ENDCMP

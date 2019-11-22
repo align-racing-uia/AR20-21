@@ -46,13 +46,7 @@ Text GLabel 2850 6650 0    50   Input ~ 0
 22_CTX1
 Text GLabel 2850 6850 0    50   Input ~ 0
 23_CRX1
-Text GLabel 4950 3850 2    50   Input ~ 0
-22_CTX1
-Text GLabel 4950 3750 2    50   Input ~ 0
-23_CRX1
 Text GLabel 3650 6250 1    50   Input ~ 0
-Vinn_5V
-Text GLabel 4950 3450 2    50   Input ~ 0
 Vinn_5V
 $Comp
 L power:GND #PWR0101
@@ -131,7 +125,7 @@ Text GLabel 950  7050 3    50   Input ~ 0
 Ground
 Text GLabel 4450 2700 3    50   Input ~ 0
 Ground
-Text GLabel 2250 3400 1    50   Input ~ 0
+Text GLabel 2600 3450 0    50   Input ~ 0
 Ground
 $Comp
 L BreakoutBoardTeensy:power_PWR_FLAG-teensy4_header_breakout-cache #FLG0101
@@ -218,21 +212,7 @@ VBAT
 Text GLabel 2600 4850 0    50   Input ~ 0
 VBAT
 Text GLabel 2600 4750 0    50   Input ~ 0
-MISO_SD
-Text GLabel 2600 4650 0    50   Input ~ 0
-MOSI_SD
-Text GLabel 2600 4550 0    50   Input ~ 0
-CS_SD
-Text GLabel 4950 4750 2    50   Input ~ 0
-13(LED)
-Text GLabel 4350 2700 3    50   Input ~ 0
-SCK_SD
-Text GLabel 4650 2700 3    50   Input ~ 0
-MISO_SD
-Text GLabel 4550 2700 3    50   Input ~ 0
-MOSI_SD
-Text GLabel 4050 2700 3    50   Input ~ 0
-CS_SD
+12_MISO
 $Bitmap
 Pos 1650 1500
 Scale 1.000000
@@ -9370,41 +9350,17 @@ FF 1D 3B AE BD 53 D2 22 79 FC E8 F1 89 E3 C7 CD CC CC DE 7B FF FD 37 DF 2B 00 40
 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-Wire Wire Line
-	4850 3450 4950 3450
-Wire Wire Line
-	4850 3550 4950 3550
-Wire Wire Line
-	4850 3750 4950 3750
-Wire Wire Line
-	4850 3850 4950 3850
 Connection ~ 3650 6350
 Wire Wire Line
 	3650 6350 3650 6500
 NoConn ~ 3950 2700
 NoConn ~ 4150 2700
-NoConn ~ 4950 3550
 Text GLabel 4850 600  2    50   Input ~ 0
 Ground
 Wire Wire Line
 	4850 700  4850 600 
-Text GLabel 4950 3650 2    50   Input ~ 0
-3.3V
-Text GLabel 4250 2700 3    50   Input ~ 0
-3.3V
 Wire Wire Line
 	4250 2400 4250 2700
-$Comp
-L BreakoutBoardTeensy:Teensy_pins U1
-U 1 1 5DD8E484
-P 3250 4150
-F 0 "U1" H 3825 5075 50  0000 C CNN
-F 1 "Teensy_pins" H 3825 4984 50  0000 C CNN
-F 2 "Teensy_Footprint_Library:Teensy_40_footprint" H 4550 4150 50  0001 C CNN
-F 3 "" H 4550 4150 50  0001 C CNN
-	1    3250 4150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2800 4850 2600 4850
 Wire Wire Line
@@ -9421,17 +9377,6 @@ F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5150 6800 50  0001 C CNN
 F 3 "~" H 5150 6800 50  0001 C CNN
 	1    5150 6800
 	0    1    1    0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_2Rows-43Pins J?
-U 1 1 5DDC3E02
-P 7700 4500
-F 0 "J?" H 7750 5717 50  0000 C CNN
-F 1 "Conn_2Rows-43Pins" H 7750 5626 50  0000 C CNN
-F 2 "" H 7700 4500 50  0001 C CNN
-F 3 "~" H 7700 4500 50  0001 C CNN
-	1    7700 4500
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2600 4750 2800 4750
@@ -9471,68 +9416,290 @@ Wire Wire Line
 	2800 3550 2600 3550
 Wire Wire Line
 	2800 3450 2600 3450
+Text GLabel 2600 3550 0    50   Input ~ 0
+0_RX1
+Text GLabel 2600 3650 0    50   Input ~ 0
+1_TX1
+Text GLabel 2600 3750 0    50   Input ~ 0
+2_OUT2
+Text GLabel 2600 3850 0    50   Input ~ 0
+3_LRCLK2
+Text GLabel 2600 3950 0    50   Input ~ 0
+4_BCLK2
+Text GLabel 2600 4050 0    50   Input ~ 0
+5_IN2
+Text GLabel 2600 4150 0    50   Input ~ 0
+6_OUT1D
+Text GLabel 2600 4250 0    50   Input ~ 0
+7_RX2_OUT1A
+Text GLabel 2600 4350 0    50   Input ~ 0
+8_IN1
+Text GLabel 2600 4450 0    50   Input ~ 0
+9_OUT1C
+Text GLabel 2600 5150 0    50   Input ~ 0
+25_A11
+Text GLabel 2600 5250 0    50   Input ~ 0
+27_A13
+Text GLabel 2600 5350 0    50   Input ~ 0
+29_TX7
+Text GLabel 2600 5450 0    50   Input ~ 0
+31_CTX3
+Text GLabel 2600 5550 0    50   Input ~ 0
+33_MCLK2
+Text GLabel 2600 4550 0    50   Input ~ 0
+10_CS
+Text GLabel 2600 4650 0    50   Input ~ 0
+11_MOSI
+Text GLabel 8850 4750 0    50   Input ~ 0
+GND_BATT
+Text GLabel 8850 3650 0    50   Input ~ 0
+Ground
 Wire Wire Line
-	4850 3950 4950 3950
+	9050 4750 8850 4750
 Wire Wire Line
-	4850 4050 4950 4050
+	9050 4850 8850 4850
 Wire Wire Line
-	4850 4150 4950 4150
+	9050 4950 8850 4950
 Wire Wire Line
-	4850 4250 4950 4250
+	9050 5050 8850 5050
 Wire Wire Line
-	4850 4350 4950 4350
+	9050 5150 8850 5150
 Wire Wire Line
-	4850 4450 4950 4450
+	9550 3650 9750 3650
 Wire Wire Line
-	4850 4550 4950 4550
+	9050 4650 8850 4650
 Wire Wire Line
-	4850 4650 4950 4650
+	9050 4550 8850 4550
 Wire Wire Line
-	4850 4850 4950 4850
+	9050 4450 8850 4450
 Wire Wire Line
-	4850 4950 4950 4950
+	9050 4350 8850 4350
 Wire Wire Line
-	4850 5050 4950 5050
+	9050 4250 8850 4250
 Wire Wire Line
-	4850 5150 4950 5150
+	9050 4150 8850 4150
 Wire Wire Line
-	4850 5250 4950 5250
+	9050 4050 8850 4050
 Wire Wire Line
-	4850 5350 4950 5350
+	9050 3950 8850 3950
+Wire Wire Line
+	9050 3850 8850 3850
+Wire Wire Line
+	9050 3750 8850 3750
+Wire Wire Line
+	9050 3650 8850 3650
+Text GLabel 8850 3750 0    50   Input ~ 0
+0_RX1
+Text GLabel 8850 3850 0    50   Input ~ 0
+1_TX1
+Text GLabel 8850 3950 0    50   Input ~ 0
+2_OUT2
+Text GLabel 8850 4050 0    50   Input ~ 0
+3_LRCLK2
+Text GLabel 8850 4150 0    50   Input ~ 0
+4_BCLK2
+Text GLabel 8850 4250 0    50   Input ~ 0
+5_IN2
+Text GLabel 8850 4350 0    50   Input ~ 0
+6_OUT1D
+Text GLabel 8850 4450 0    50   Input ~ 0
+7_RX2_OUT1A
+Text GLabel 8850 4550 0    50   Input ~ 0
+8_IN1
+Text GLabel 8850 4650 0    50   Input ~ 0
+9_OUT1C
+Text GLabel 8850 4850 0    50   Input ~ 0
+25_A11
+Text GLabel 8850 4950 0    50   Input ~ 0
+27_A13
+Text GLabel 8850 5050 0    50   Input ~ 0
+29_TX7
+Text GLabel 8850 5150 0    50   Input ~ 0
+31_CTX3
+Text GLabel 9750 3650 2    50   Input ~ 0
+33_MCLK2
+Wire Wire Line
+	4950 4750 4850 4750
+Text GLabel 4950 5450 2    50   Input ~ 0
+32_OUT1B
+Text GLabel 4950 5350 2    50   Input ~ 0
+30_CRX3
+Text GLabel 4950 5250 2    50   Input ~ 0
+28_RX7
+Text GLabel 4950 5150 2    50   Input ~ 0
+26_A12
+Text GLabel 4950 5050 2    50   Input ~ 0
+24_A10
+Text GLabel 4950 4950 2    50   Input ~ 0
+PROGRAMM
+Text GLabel 4950 4850 2    50   Input ~ 0
+3V3
+Text GLabel 4950 4650 2    50   Input ~ 0
+14_A0
+Text GLabel 4950 4550 2    50   Input ~ 0
+15_A1
+Text GLabel 4950 4450 2    50   Input ~ 0
+16_A2
+Text GLabel 4950 4350 2    50   Input ~ 0
+17_A3
+Text GLabel 4950 4250 2    50   Input ~ 0
+18_A4
+Text GLabel 4950 4150 2    50   Input ~ 0
+19_A5
+Text GLabel 4950 4050 2    50   Input ~ 0
+20_A6
+Text GLabel 4950 3950 2    50   Input ~ 0
+21_A7
+Wire Wire Line
+	4950 3650 4850 3650
 Wire Wire Line
 	4850 5450 4950 5450
 Wire Wire Line
-	4950 3650 4850 3650
-Text GLabel 4950 3950 2    50   Input ~ 0
-21_A7
-Text GLabel 4950 4050 2    50   Input ~ 0
-20_A6
-Text GLabel 4950 4150 2    50   Input ~ 0
-19_A5
-Text GLabel 4950 4250 2    50   Input ~ 0
-18_A4
-Text GLabel 4950 4350 2    50   Input ~ 0
-17_A3
-Text GLabel 4950 4450 2    50   Input ~ 0
-16_A2
-Text GLabel 4950 4550 2    50   Input ~ 0
-15_A1
-Text GLabel 4950 4650 2    50   Input ~ 0
-14_A0
-Text GLabel 4950 4850 2    50   Input ~ 0
-3V3
-Text GLabel 4950 4950 2    50   Input ~ 0
-PROGRAMM
-Text GLabel 4950 5050 2    50   Input ~ 0
-24_A10
-Text GLabel 4950 5150 2    50   Input ~ 0
-26_A12
-Text GLabel 4950 5250 2    50   Input ~ 0
-28_RX7
-Text GLabel 4950 5350 2    50   Input ~ 0
-30_CRX3
-Text GLabel 4950 5450 2    50   Input ~ 0
-32_OUT1B
+	4850 5350 4950 5350
 Wire Wire Line
-	4950 4750 4850 4750
+	4850 5250 4950 5250
+Wire Wire Line
+	4850 5150 4950 5150
+Wire Wire Line
+	4850 5050 4950 5050
+Wire Wire Line
+	4850 4950 4950 4950
+Wire Wire Line
+	4850 4850 4950 4850
+Wire Wire Line
+	4850 4650 4950 4650
+Wire Wire Line
+	4850 4550 4950 4550
+Wire Wire Line
+	4850 4450 4950 4450
+Wire Wire Line
+	4850 4350 4950 4350
+Wire Wire Line
+	4850 4250 4950 4250
+Wire Wire Line
+	4850 4150 4950 4150
+Wire Wire Line
+	4850 4050 4950 4050
+Wire Wire Line
+	4850 3950 4950 3950
+Text GLabel 4950 3650 2    50   Input ~ 0
+3.3V
+Wire Wire Line
+	4850 3850 4950 3850
+Wire Wire Line
+	4850 3750 4950 3750
+Wire Wire Line
+	4850 3550 4950 3550
+Wire Wire Line
+	4850 3450 4950 3450
+Text GLabel 4950 4750 2    50   Input ~ 0
+13(LED)
+Text GLabel 4950 3450 2    50   Input ~ 0
+Vinn_5V
+Text GLabel 4950 3750 2    50   Input ~ 0
+23_CRX1
+Text GLabel 4950 3850 2    50   Input ~ 0
+22_CTX1
+Text GLabel 9650 5350 2    50   Input ~ 0
+32_OUT1B
+Text GLabel 9650 5250 2    50   Input ~ 0
+30_CRX3
+Text GLabel 9650 5150 2    50   Input ~ 0
+28_RX7
+Text GLabel 9650 5050 2    50   Input ~ 0
+26_A12
+Text GLabel 9650 4950 2    50   Input ~ 0
+24_A10
+Text GLabel 9650 4850 2    50   Input ~ 0
+PROGRAMM
+Text GLabel 9650 4750 2    50   Input ~ 0
+14_A0
+Text GLabel 9650 4650 2    50   Input ~ 0
+15_A1
+Text GLabel 9650 4550 2    50   Input ~ 0
+16_A2
+Text GLabel 9650 4450 2    50   Input ~ 0
+17_A3
+Text GLabel 9650 4350 2    50   Input ~ 0
+18_A4
+Text GLabel 9650 4250 2    50   Input ~ 0
+19_A5
+Text GLabel 9650 4150 2    50   Input ~ 0
+20_A6
+Text GLabel 9650 4050 2    50   Input ~ 0
+21_A7
+Wire Wire Line
+	9550 5350 9650 5350
+Wire Wire Line
+	9550 5250 9650 5250
+Wire Wire Line
+	9550 5150 9650 5150
+Wire Wire Line
+	9550 5050 9650 5050
+Wire Wire Line
+	9550 4950 9650 4950
+Wire Wire Line
+	9550 4850 9650 4850
+Wire Wire Line
+	9550 4750 9650 4750
+Wire Wire Line
+	9550 4650 9650 4650
+Wire Wire Line
+	9550 4550 9650 4550
+Wire Wire Line
+	9550 4450 9650 4450
+Wire Wire Line
+	9550 4350 9650 4350
+Wire Wire Line
+	9550 4250 9650 4250
+Wire Wire Line
+	9550 4150 9650 4150
+Wire Wire Line
+	9550 4050 9650 4050
+Wire Wire Line
+	9550 3950 9650 3950
+Wire Wire Line
+	9550 3850 9650 3850
+Wire Wire Line
+	9550 3750 9650 3750
+Text GLabel 9650 3750 2    50   Input ~ 0
+Vinn_5V
+Text GLabel 4650 2700 3    50   Input ~ 0
+12_MISO
+Text GLabel 4550 2700 3    50   Input ~ 0
+11_MOSI
+Text GLabel 4050 2700 3    50   Input ~ 0
+10_CS
+Text GLabel 4350 2700 3    50   Input ~ 0
+13(LED)
+Text GLabel 9650 3850 2    50   Input ~ 0
+GND_1
+Text GLabel 4950 3550 2    50   Input ~ 0
+GND_1
+Text GLabel 4250 2700 3    50   Input ~ 0
+3V3
+Text GLabel 9650 3950 2    50   Input ~ 0
+3.3V
+$Comp
+L BreakoutBoardTeensy:Conn_2Rows-34Pins J1
+U 1 1 5DE58733
+P 9250 4550
+F 0 "J1" H 9300 5667 50  0000 C CNN
+F 1 "Conn_2Rows-34Pins" H 9300 5576 50  0000 C CNN
+F 2 "Teensy_Footprint_Library:PINS_IO_TEENSY" H 9250 4550 50  0001 C CNN
+F 3 "~" H 9250 4550 50  0001 C CNN
+	1    9250 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L BreakoutBoardTeensy:Teensy_pins U1
+U 1 1 5DE5DBF9
+P 3250 4150
+F 0 "U1" H 3825 5075 50  0000 C CNN
+F 1 "Teensy_pins" H 3825 4984 50  0000 C CNN
+F 2 "Teensy_Footprint_Library:Teensy_40_footprint" H 4550 4150 50  0001 C CNN
+F 3 "" H 4550 4150 50  0001 C CNN
+	1    3250 4150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

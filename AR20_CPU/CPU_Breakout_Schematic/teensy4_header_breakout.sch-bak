@@ -46,13 +46,7 @@ Text GLabel 2850 6650 0    50   Input ~ 0
 22_CTX1
 Text GLabel 2850 6850 0    50   Input ~ 0
 23_CRX1
-Text GLabel 4950 3850 2    50   Input ~ 0
-22_CTX1
-Text GLabel 4950 3750 2    50   Input ~ 0
-23_CRX1
 Text GLabel 3650 6250 1    50   Input ~ 0
-Vinn_5V
-Text GLabel 4950 3450 2    50   Input ~ 0
 Vinn_5V
 $Comp
 L power:GND #PWR0101
@@ -131,18 +125,7 @@ Text GLabel 950  7050 3    50   Input ~ 0
 Ground
 Text GLabel 4450 2700 3    50   Input ~ 0
 Ground
-$Comp
-L Connector:TestPoint TP1
-U 1 1 5DCF81EB
-P 1900 3450
-F 0 "TP1" V 1900 4550 50  0000 C CNN
-F 1 "TestPoint" V 1900 4200 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2100 3450 50  0001 C CNN
-F 3 "~" H 2100 3450 50  0001 C CNN
-	1    1900 3450
-	0    -1   -1   0   
-$EndComp
-Text GLabel 2250 3400 1    50   Input ~ 0
+Text GLabel 2600 3450 0    50   Input ~ 0
 Ground
 $Comp
 L BreakoutBoardTeensy:power_PWR_FLAG-teensy4_header_breakout-cache #FLG0101
@@ -218,41 +201,6 @@ Wire Wire Line
 	4050 2400 4050 2700
 Wire Wire Line
 	3950 2400 3950 2700
-Wire Wire Line
-	1900 3450 2800 3450
-$Comp
-L Connector:TestPoint TP12
-U 1 1 5DD652C0
-P 1900 4250
-F 0 "TP12" V 1900 5350 50  0000 C CNN
-F 1 "TestPoint" V 1900 5050 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2100 4250 50  0001 C CNN
-F 3 "~" H 2100 4250 50  0001 C CNN
-	1    1900 4250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:TestPoint TP13
-U 1 1 5DD652C6
-P 1900 4350
-F 0 "TP13" V 1900 5450 50  0000 C CNN
-F 1 "TestPoint" V 1900 5150 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2100 4350 50  0001 C CNN
-F 3 "~" H 2100 4350 50  0001 C CNN
-	1    1900 4350
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:TestPoint TP14
-U 1 1 5DD6775C
-P 1900 4450
-F 0 "TP14" V 1900 5550 50  0000 C CNN
-F 1 "TestPoint" V 1900 5250 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2100 4450 50  0001 C CNN
-F 3 "~" H 2100 4450 50  0001 C CNN
-	1    1900 4450
-	0    -1   -1   0   
-$EndComp
 Text GLabel 2600 5050 0    50   Input ~ 0
 ON_OFF
 Text GLabel 950  6400 1    50   Input ~ 0
@@ -263,22 +211,8 @@ Text GLabel 1300 7100 1    50   Input ~ 0
 VBAT
 Text GLabel 2600 4850 0    50   Input ~ 0
 VBAT
-Text GLabel 2650 4750 0    50   Input ~ 0
-MISO_SD
-Text GLabel 2650 4650 0    50   Input ~ 0
-MOSI_SD
-Text GLabel 2650 4550 0    50   Input ~ 0
-CS_SD
-Text GLabel 5050 4750 2    50   Input ~ 0
-SCK_SD
-Text GLabel 4350 2700 3    50   Input ~ 0
-SCK_SD
-Text GLabel 4650 2700 3    50   Input ~ 0
-MISO_SD
-Text GLabel 4550 2700 3    50   Input ~ 0
-MOSI_SD
-Text GLabel 4050 2700 3    50   Input ~ 0
-CS_SD
+Text GLabel 2600 4750 0    50   Input ~ 0
+12_MISO
 $Bitmap
 Pos 1650 1500
 Scale 1.000000
@@ -9416,430 +9350,25 @@ FF 1D 3B AE BD 53 D2 22 79 FC E8 F1 89 E3 C7 CD CC CC DE 7B FF FD 37 DF 2B 00 40
 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-Wire Wire Line
-	1900 4250 2800 4250
-Wire Wire Line
-	1900 4350 2800 4350
-Wire Wire Line
-	1900 4450 2800 4450
-$Comp
-L Connector:TestPoint TP6
-U 1 1 5DD957C1
-P 1900 3950
-F 0 "TP6" V 1900 5050 50  0000 C CNN
-F 1 "TestPoint" V 1900 4750 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2100 3950 50  0001 C CNN
-F 3 "~" H 2100 3950 50  0001 C CNN
-	1    1900 3950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:TestPoint TP7
-U 1 1 5DD957C7
-P 1900 4050
-F 0 "TP7" V 1900 5150 50  0000 C CNN
-F 1 "TestPoint" V 1900 4850 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2100 4050 50  0001 C CNN
-F 3 "~" H 2100 4050 50  0001 C CNN
-	1    1900 4050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:TestPoint TP8
-U 1 1 5DD957CD
-P 1900 4150
-F 0 "TP8" V 1900 5250 50  0000 C CNN
-F 1 "TestPoint" V 1900 4950 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2100 4150 50  0001 C CNN
-F 3 "~" H 2100 4150 50  0001 C CNN
-	1    1900 4150
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1900 3950 2800 3950
-Wire Wire Line
-	1900 4050 2800 4050
-Wire Wire Line
-	1900 4150 2800 4150
-$Comp
-L Connector:TestPoint TP3
-U 1 1 5DD974B9
-P 1900 3650
-F 0 "TP3" V 1900 4750 50  0000 C CNN
-F 1 "TestPoint" V 1900 4450 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2100 3650 50  0001 C CNN
-F 3 "~" H 2100 3650 50  0001 C CNN
-	1    1900 3650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:TestPoint TP4
-U 1 1 5DD974BF
-P 1900 3750
-F 0 "TP4" V 1900 4850 50  0000 C CNN
-F 1 "TestPoint" V 1900 4550 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2100 3750 50  0001 C CNN
-F 3 "~" H 2100 3750 50  0001 C CNN
-	1    1900 3750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:TestPoint TP5
-U 1 1 5DD974C5
-P 1900 3850
-F 0 "TP5" V 1900 4950 50  0000 C CNN
-F 1 "TestPoint" V 1900 4650 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2100 3850 50  0001 C CNN
-F 3 "~" H 2100 3850 50  0001 C CNN
-	1    1900 3850
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1900 3650 2800 3650
-Wire Wire Line
-	1900 3750 2800 3750
-Wire Wire Line
-	1900 3850 2800 3850
-$Comp
-L Connector:TestPoint TP22
-U 1 1 5DD99BE4
-P 5750 4650
-F 0 "TP22" V 5750 5750 50  0000 C CNN
-F 1 "TestPoint" V 5750 5450 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5950 4650 50  0001 C CNN
-F 3 "~" H 5950 4650 50  0001 C CNN
-	1    5750 4650
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP21
-U 1 1 5DD99BEA
-P 5750 4550
-F 0 "TP21" V 5750 5650 50  0000 C CNN
-F 1 "TestPoint" V 5750 5350 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5950 4550 50  0001 C CNN
-F 3 "~" H 5950 4550 50  0001 C CNN
-	1    5750 4550
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP20
-U 1 1 5DD99BF0
-P 5750 4450
-F 0 "TP20" V 5750 5550 50  0000 C CNN
-F 1 "TestPoint" V 5750 5250 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5950 4450 50  0001 C CNN
-F 3 "~" H 5950 4450 50  0001 C CNN
-	1    5750 4450
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5750 4650 4850 4650
-Wire Wire Line
-	5750 4550 4850 4550
-Wire Wire Line
-	5750 4450 4850 4450
-$Comp
-L Connector:TestPoint TP19
-U 1 1 5DD9BA6E
-P 5750 4350
-F 0 "TP19" V 5750 5450 50  0000 C CNN
-F 1 "TestPoint" V 5750 5150 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5950 4350 50  0001 C CNN
-F 3 "~" H 5950 4350 50  0001 C CNN
-	1    5750 4350
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP18
-U 1 1 5DD9BA74
-P 5750 4250
-F 0 "TP18" V 5750 5350 50  0000 C CNN
-F 1 "TestPoint" V 5750 5050 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5950 4250 50  0001 C CNN
-F 3 "~" H 5950 4250 50  0001 C CNN
-	1    5750 4250
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP17
-U 1 1 5DD9BA7A
-P 5750 4150
-F 0 "TP17" V 5750 5250 50  0000 C CNN
-F 1 "TestPoint" V 5750 4950 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5950 4150 50  0001 C CNN
-F 3 "~" H 5950 4150 50  0001 C CNN
-	1    5750 4150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5750 4350 4850 4350
-Wire Wire Line
-	5750 4250 4850 4250
-Wire Wire Line
-	5750 4150 4850 4150
-$Comp
-L Connector:TestPoint TP16
-U 1 1 5DD9E28F
-P 5750 4050
-F 0 "TP16" V 5750 5150 50  0000 C CNN
-F 1 "TestPoint" V 5750 4850 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5950 4050 50  0001 C CNN
-F 3 "~" H 5950 4050 50  0001 C CNN
-	1    5750 4050
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP15
-U 1 1 5DD9E295
-P 5750 3950
-F 0 "TP15" V 5750 5050 50  0000 C CNN
-F 1 "TestPoint" V 5750 4750 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5950 3950 50  0001 C CNN
-F 3 "~" H 5950 3950 50  0001 C CNN
-	1    5750 3950
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP11
-U 1 1 5DD9E29B
-P 5750 3650
-F 0 "TP11" V 5750 4750 50  0000 C CNN
-F 1 "TestPoint" V 5750 4450 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5950 3650 50  0001 C CNN
-F 3 "~" H 5950 3650 50  0001 C CNN
-	1    5750 3650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5750 4050 4850 4050
-Wire Wire Line
-	5750 3950 4850 3950
-$Comp
-L Connector:TestPoint TP2
-U 1 1 5DDA4139
-P 1900 3550
-F 0 "TP2" V 1900 4650 50  0000 C CNN
-F 1 "TestPoint" V 1900 4350 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2100 3550 50  0001 C CNN
-F 3 "~" H 2100 3550 50  0001 C CNN
-	1    1900 3550
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1900 3550 2800 3550
-Wire Wire Line
-	5050 4750 4850 4750
-Wire Wire Line
-	2650 4550 2800 4550
-Wire Wire Line
-	2650 4650 2800 4650
-Wire Wire Line
-	2650 4750 2800 4750
-Wire Wire Line
-	4850 3450 4950 3450
-Wire Wire Line
-	4850 3550 4950 3550
-Wire Wire Line
-	4850 3750 4950 3750
-Wire Wire Line
-	4850 3850 4950 3850
 Connection ~ 3650 6350
 Wire Wire Line
 	3650 6350 3650 6500
 NoConn ~ 3950 2700
 NoConn ~ 4150 2700
-NoConn ~ 4950 3550
 Text GLabel 4850 600  2    50   Input ~ 0
 Ground
 Wire Wire Line
 	4850 700  4850 600 
-Text GLabel 5550 3600 1    50   Input ~ 0
-3.3V
 Text GLabel 4250 2700 3    50   Input ~ 0
 3.3V
 Wire Wire Line
-	4850 3650 5550 3650
-Wire Wire Line
-	5550 3600 5550 3650
-Connection ~ 5550 3650
-Wire Wire Line
-	5550 3650 5750 3650
-Wire Wire Line
 	4250 2400 4250 2700
-$Comp
-L BreakoutBoardTeensy:Teensy_pins U1
-U 1 1 5DD8E484
-P 3250 4150
-F 0 "U1" H 3825 5075 50  0000 C CNN
-F 1 "Teensy_pins" H 3825 4984 50  0000 C CNN
-F 2 "Teensy_Footprint_Library:Teensy_40_footprint" H 4550 4150 50  0001 C CNN
-F 3 "" H 4550 4150 50  0001 C CNN
-	1    3250 4150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2800 4850 2600 4850
 Wire Wire Line
 	2800 4950 2600 4950
 Wire Wire Line
 	2800 5050 2600 5050
-$Comp
-L Connector:TestPoint TP32
-U 1 1 5DDB2A1F
-P 5750 5450
-F 0 "TP32" V 5750 6550 50  0000 C CNN
-F 1 "TestPoint" V 5750 6250 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5950 5450 50  0001 C CNN
-F 3 "~" H 5950 5450 50  0001 C CNN
-	1    5750 5450
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP31
-U 1 1 5DDB2A25
-P 5750 5350
-F 0 "TP31" V 5750 6450 50  0000 C CNN
-F 1 "TestPoint" V 5750 6150 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5950 5350 50  0001 C CNN
-F 3 "~" H 5950 5350 50  0001 C CNN
-	1    5750 5350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5750 5450 4850 5450
-Wire Wire Line
-	5750 5350 4850 5350
-$Comp
-L Connector:TestPoint TP30
-U 1 1 5DDB2A2E
-P 5750 5250
-F 0 "TP30" V 5750 6350 50  0000 C CNN
-F 1 "TestPoint" V 5750 6050 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5950 5250 50  0001 C CNN
-F 3 "~" H 5950 5250 50  0001 C CNN
-	1    5750 5250
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP29
-U 1 1 5DDB2A34
-P 5750 5150
-F 0 "TP29" V 5750 6250 50  0000 C CNN
-F 1 "TestPoint" V 5750 5950 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5950 5150 50  0001 C CNN
-F 3 "~" H 5950 5150 50  0001 C CNN
-	1    5750 5150
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP28
-U 1 1 5DDB2A3A
-P 5750 5050
-F 0 "TP28" V 5750 6150 50  0000 C CNN
-F 1 "TestPoint" V 5750 5850 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5950 5050 50  0001 C CNN
-F 3 "~" H 5950 5050 50  0001 C CNN
-	1    5750 5050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5750 5250 4850 5250
-Wire Wire Line
-	5750 5150 4850 5150
-Wire Wire Line
-	5750 5050 4850 5050
-$Comp
-L Connector:TestPoint TP27
-U 1 1 5DDB2A43
-P 5750 4950
-F 0 "TP27" V 5750 6050 50  0000 C CNN
-F 1 "TestPoint" V 5750 5750 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5950 4950 50  0001 C CNN
-F 3 "~" H 5950 4950 50  0001 C CNN
-	1    5750 4950
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP26
-U 1 1 5DDB2A49
-P 5750 4850
-F 0 "TP26" V 5750 5950 50  0000 C CNN
-F 1 "TestPoint" V 5750 5650 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5950 4850 50  0001 C CNN
-F 3 "~" H 5950 4850 50  0001 C CNN
-	1    5750 4850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5750 4950 4850 4950
-Wire Wire Line
-	5750 4850 4850 4850
-$Comp
-L Connector:TestPoint TP9
-U 1 1 5DDB8129
-P 1900 5150
-F 0 "TP9" V 1900 6250 50  0000 C CNN
-F 1 "TestPoint" V 1900 5950 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2100 5150 50  0001 C CNN
-F 3 "~" H 2100 5150 50  0001 C CNN
-	1    1900 5150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:TestPoint TP10
-U 1 1 5DDB812F
-P 1900 5250
-F 0 "TP10" V 1900 6350 50  0000 C CNN
-F 1 "TestPoint" V 1900 6050 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2100 5250 50  0001 C CNN
-F 3 "~" H 2100 5250 50  0001 C CNN
-	1    1900 5250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:TestPoint TP23
-U 1 1 5DDB8135
-P 1900 5350
-F 0 "TP23" V 1900 6450 50  0000 C CNN
-F 1 "TestPoint" V 1900 6150 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2100 5350 50  0001 C CNN
-F 3 "~" H 2100 5350 50  0001 C CNN
-	1    1900 5350
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1900 5150 2800 5150
-Wire Wire Line
-	1900 5250 2800 5250
-Wire Wire Line
-	1900 5350 2800 5350
-$Comp
-L Connector:TestPoint TP24
-U 1 1 5DDB813E
-P 1900 5450
-F 0 "TP24" V 1900 6550 50  0000 C CNN
-F 1 "TestPoint" V 1900 6250 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2100 5450 50  0001 C CNN
-F 3 "~" H 2100 5450 50  0001 C CNN
-	1    1900 5450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:TestPoint TP25
-U 1 1 5DDB8144
-P 1900 5550
-F 0 "TP25" V 1900 6650 50  0000 C CNN
-F 1 "TestPoint" V 1900 6350 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2100 5550 50  0001 C CNN
-F 3 "~" H 2100 5550 50  0001 C CNN
-	1    1900 5550
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1900 5450 2800 5450
-Wire Wire Line
-	1900 5550 2800 5550
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 5DD3C695
@@ -9851,4 +9380,355 @@ F 3 "~" H 5150 6800 50  0001 C CNN
 	1    5150 6800
 	0    1    1    0   
 $EndComp
+$Comp
+L Connector_Generic:Conn_2Rows-43Pins J1
+U 1 1 5DDC3E02
+P 7700 4500
+F 0 "J1" H 7750 5717 50  0000 C CNN
+F 1 "Conn_2Rows-43Pins" H 7750 5626 50  0000 C CNN
+F 2 "Teensy_Footprint_Library:PINS_IO_TEENSY" H 7700 4500 50  0001 C CNN
+F 3 "~" H 7700 4500 50  0001 C CNN
+	1    7700 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 4750 2800 4750
+Wire Wire Line
+	2600 4650 2800 4650
+Wire Wire Line
+	2600 4550 2800 4550
+Wire Wire Line
+	2800 5150 2600 5150
+Wire Wire Line
+	2800 5250 2600 5250
+Wire Wire Line
+	2800 5350 2600 5350
+Wire Wire Line
+	2800 5450 2600 5450
+Wire Wire Line
+	2800 5550 2600 5550
+Wire Wire Line
+	2800 4450 2600 4450
+Wire Wire Line
+	2800 4350 2600 4350
+Wire Wire Line
+	2800 4250 2600 4250
+Wire Wire Line
+	2800 4150 2600 4150
+Wire Wire Line
+	2800 4050 2600 4050
+Wire Wire Line
+	2800 3950 2600 3950
+Wire Wire Line
+	2800 3850 2600 3850
+Wire Wire Line
+	2800 3750 2600 3750
+Wire Wire Line
+	2800 3650 2600 3650
+Wire Wire Line
+	2800 3550 2600 3550
+Wire Wire Line
+	2800 3450 2600 3450
+Text GLabel 2600 3550 0    50   Input ~ 0
+0_RX1
+Text GLabel 2600 3650 0    50   Input ~ 0
+1_TX1
+Text GLabel 2600 3750 0    50   Input ~ 0
+2_OUT2
+Text GLabel 2600 3850 0    50   Input ~ 0
+3_LRCLK2
+Text GLabel 2600 3950 0    50   Input ~ 0
+4_BCLK2
+Text GLabel 2600 4050 0    50   Input ~ 0
+5_IN2
+Text GLabel 2600 4150 0    50   Input ~ 0
+6_OUT1D
+Text GLabel 2600 4250 0    50   Input ~ 0
+7_RX2_OUT1A
+Text GLabel 2600 4350 0    50   Input ~ 0
+8_IN1
+Text GLabel 2600 4450 0    50   Input ~ 0
+9_OUT1C
+Text GLabel 2600 5150 0    50   Input ~ 0
+25_A11
+Text GLabel 2600 5250 0    50   Input ~ 0
+27_A13
+Text GLabel 2600 5350 0    50   Input ~ 0
+29_TX7
+Text GLabel 2600 5450 0    50   Input ~ 0
+31_CTX3
+Text GLabel 2600 5550 0    50   Input ~ 0
+33_MCLK2
+Text GLabel 2600 4550 0    50   Input ~ 0
+10_CS
+Text GLabel 2600 4650 0    50   Input ~ 0
+11_MOSI
+Text GLabel 7300 5000 0    50   Input ~ 0
+GND_BATT
+Text GLabel 7300 3500 0    50   Input ~ 0
+Ground
+Text GLabel 7300 5100 0    50   Input ~ 0
+ON_OFF
+Text GLabel 7300 4900 0    50   Input ~ 0
+VBAT
+Wire Wire Line
+	7500 4900 7300 4900
+Wire Wire Line
+	7500 5000 7300 5000
+Wire Wire Line
+	7500 5100 7300 5100
+Wire Wire Line
+	7300 4800 7500 4800
+Wire Wire Line
+	7300 4700 7500 4700
+Wire Wire Line
+	7300 4600 7500 4600
+Wire Wire Line
+	7500 5200 7300 5200
+Wire Wire Line
+	7500 5300 7300 5300
+Wire Wire Line
+	7500 5400 7300 5400
+Wire Wire Line
+	7500 5500 7300 5500
+Wire Wire Line
+	7500 5600 7300 5600
+Wire Wire Line
+	7500 4500 7300 4500
+Wire Wire Line
+	7500 4400 7300 4400
+Wire Wire Line
+	7500 4300 7300 4300
+Wire Wire Line
+	7500 4200 7300 4200
+Wire Wire Line
+	7500 4100 7300 4100
+Wire Wire Line
+	7500 4000 7300 4000
+Wire Wire Line
+	7500 3900 7300 3900
+Wire Wire Line
+	7500 3800 7300 3800
+Wire Wire Line
+	7500 3700 7300 3700
+Wire Wire Line
+	7500 3600 7300 3600
+Wire Wire Line
+	7500 3500 7300 3500
+Text GLabel 7300 3600 0    50   Input ~ 0
+0_RX1
+Text GLabel 7300 3700 0    50   Input ~ 0
+1_TX1
+Text GLabel 7300 3800 0    50   Input ~ 0
+2_OUT2
+Text GLabel 7300 3900 0    50   Input ~ 0
+3_LRCLK2
+Text GLabel 7300 4000 0    50   Input ~ 0
+4_BCLK2
+Text GLabel 7300 4100 0    50   Input ~ 0
+5_IN2
+Text GLabel 7300 4200 0    50   Input ~ 0
+6_OUT1D
+Text GLabel 7300 4300 0    50   Input ~ 0
+7_RX2_OUT1A
+Text GLabel 7300 4400 0    50   Input ~ 0
+8_IN1
+Text GLabel 7300 4500 0    50   Input ~ 0
+9_OUT1C
+Text GLabel 7300 5200 0    50   Input ~ 0
+25_A11
+Text GLabel 7300 5300 0    50   Input ~ 0
+27_A13
+Text GLabel 7300 5400 0    50   Input ~ 0
+29_TX7
+Text GLabel 7300 5500 0    50   Input ~ 0
+31_CTX3
+Text GLabel 7300 5600 0    50   Input ~ 0
+33_MCLK2
+Wire Wire Line
+	4950 4750 4850 4750
+Text GLabel 4950 5450 2    50   Input ~ 0
+32_OUT1B
+Text GLabel 4950 5350 2    50   Input ~ 0
+30_CRX3
+Text GLabel 4950 5250 2    50   Input ~ 0
+28_RX7
+Text GLabel 4950 5150 2    50   Input ~ 0
+26_A12
+Text GLabel 4950 5050 2    50   Input ~ 0
+24_A10
+Text GLabel 4950 4950 2    50   Input ~ 0
+PROGRAMM
+Text GLabel 4950 4850 2    50   Input ~ 0
+3V3
+Text GLabel 4950 4650 2    50   Input ~ 0
+14_A0
+Text GLabel 4950 4550 2    50   Input ~ 0
+15_A1
+Text GLabel 4950 4450 2    50   Input ~ 0
+16_A2
+Text GLabel 4950 4350 2    50   Input ~ 0
+17_A3
+Text GLabel 4950 4250 2    50   Input ~ 0
+18_A4
+Text GLabel 4950 4150 2    50   Input ~ 0
+19_A5
+Text GLabel 4950 4050 2    50   Input ~ 0
+20_A6
+Text GLabel 4950 3950 2    50   Input ~ 0
+21_A7
+Wire Wire Line
+	4950 3650 4850 3650
+Wire Wire Line
+	4850 5450 4950 5450
+Wire Wire Line
+	4850 5350 4950 5350
+Wire Wire Line
+	4850 5250 4950 5250
+Wire Wire Line
+	4850 5150 4950 5150
+Wire Wire Line
+	4850 5050 4950 5050
+Wire Wire Line
+	4850 4950 4950 4950
+Wire Wire Line
+	4850 4850 4950 4850
+Wire Wire Line
+	4850 4650 4950 4650
+Wire Wire Line
+	4850 4550 4950 4550
+Wire Wire Line
+	4850 4450 4950 4450
+Wire Wire Line
+	4850 4350 4950 4350
+Wire Wire Line
+	4850 4250 4950 4250
+Wire Wire Line
+	4850 4150 4950 4150
+Wire Wire Line
+	4850 4050 4950 4050
+Wire Wire Line
+	4850 3950 4950 3950
+$Comp
+L BreakoutBoardTeensy:Teensy_pins U1
+U 1 1 5DD8E484
+P 3250 4150
+F 0 "U1" H 3825 5075 50  0000 C CNN
+F 1 "Teensy_pins" H 3825 4984 50  0000 C CNN
+F 2 "Teensy_Footprint_Library:Teensy_40_footprint" H 4550 4150 50  0001 C CNN
+F 3 "" H 4550 4150 50  0001 C CNN
+	1    3250 4150
+	1    0    0    -1  
+$EndComp
+Text GLabel 4950 3650 2    50   Input ~ 0
+3.3V
+Wire Wire Line
+	4850 3850 4950 3850
+Wire Wire Line
+	4850 3750 4950 3750
+Wire Wire Line
+	4850 3550 4950 3550
+Wire Wire Line
+	4850 3450 4950 3450
+Text GLabel 4950 4750 2    50   Input ~ 0
+13(LED)
+Text GLabel 4950 3450 2    50   Input ~ 0
+Vinn_5V
+Text GLabel 4950 3750 2    50   Input ~ 0
+23_CRX1
+Text GLabel 4950 3850 2    50   Input ~ 0
+22_CTX1
+Wire Wire Line
+	8100 4800 8000 4800
+Text GLabel 8100 5500 2    50   Input ~ 0
+32_OUT1B
+Text GLabel 8100 5400 2    50   Input ~ 0
+30_CRX3
+Text GLabel 8100 5300 2    50   Input ~ 0
+28_RX7
+Text GLabel 8100 5200 2    50   Input ~ 0
+26_A12
+Text GLabel 8100 5100 2    50   Input ~ 0
+24_A10
+Text GLabel 8100 5000 2    50   Input ~ 0
+PROGRAMM
+Text GLabel 8100 4900 2    50   Input ~ 0
+3V3
+Text GLabel 8100 4700 2    50   Input ~ 0
+14_A0
+Text GLabel 8100 4600 2    50   Input ~ 0
+15_A1
+Text GLabel 8100 4500 2    50   Input ~ 0
+16_A2
+Text GLabel 8100 4400 2    50   Input ~ 0
+17_A3
+Text GLabel 8100 4300 2    50   Input ~ 0
+18_A4
+Text GLabel 8100 4200 2    50   Input ~ 0
+19_A5
+Text GLabel 8100 4100 2    50   Input ~ 0
+20_A6
+Text GLabel 8100 4000 2    50   Input ~ 0
+21_A7
+Wire Wire Line
+	8100 3700 8000 3700
+Wire Wire Line
+	8000 5500 8100 5500
+Wire Wire Line
+	8000 5400 8100 5400
+Wire Wire Line
+	8000 5300 8100 5300
+Wire Wire Line
+	8000 5200 8100 5200
+Wire Wire Line
+	8000 5100 8100 5100
+Wire Wire Line
+	8000 5000 8100 5000
+Wire Wire Line
+	8000 4900 8100 4900
+Wire Wire Line
+	8000 4700 8100 4700
+Wire Wire Line
+	8000 4600 8100 4600
+Wire Wire Line
+	8000 4500 8100 4500
+Wire Wire Line
+	8000 4400 8100 4400
+Wire Wire Line
+	8000 4300 8100 4300
+Wire Wire Line
+	8000 4200 8100 4200
+Wire Wire Line
+	8000 4100 8100 4100
+Wire Wire Line
+	8000 4000 8100 4000
+Wire Wire Line
+	8000 3900 8100 3900
+Wire Wire Line
+	8000 3800 8100 3800
+Wire Wire Line
+	8000 3600 8100 3600
+Wire Wire Line
+	8000 3500 8100 3500
+Text GLabel 8100 3500 2    50   Input ~ 0
+Vinn_5V
+Text GLabel 4650 2700 3    50   Input ~ 0
+12_MISO
+Text GLabel 4550 2700 3    50   Input ~ 0
+11_MOSI
+Text GLabel 4050 2700 3    50   Input ~ 0
+10_CS
+Text GLabel 4350 2700 3    50   Input ~ 0
+13(LED)
+NoConn ~ 8100 3700
+NoConn ~ 8100 3800
+NoConn ~ 8100 3900
+NoConn ~ 7300 4600
+NoConn ~ 7300 4700
+NoConn ~ 7300 4800
+NoConn ~ 8100 4800
+Text GLabel 8100 3600 2    50   Input ~ 0
+GND_1
+Text GLabel 4950 3550 2    50   Input ~ 0
+GND_1
 $EndSCHEMATC
