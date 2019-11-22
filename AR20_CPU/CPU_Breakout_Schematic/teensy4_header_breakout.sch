@@ -100,7 +100,7 @@ U 1 1 5DCD8738
 P 6000 7200
 F 0 "JP1" V 5900 7300 50  0000 L CNN
 F 1 "SolderJumper_2_Open" V 6000 7300 50  0000 L CNN
-F 2 "" H 6000 7200 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6000 7200 50  0001 C CNN
 F 3 "~" H 6000 7200 50  0001 C CNN
 	1    6000 7200
 	0    1    1    0   
@@ -336,8 +336,6 @@ MISO_SD
 Text GLabel 8100 3600 0    50   Input ~ 0
 MOSI_SD
 Text GLabel 8100 3100 0    50   Input ~ 0
-CS_SD
-Text GLabel 5650 1250 0    50   Input ~ 0
 CS_SD
 $Bitmap
 Pos 1650 1500
@@ -9477,23 +9475,12 @@ FF 1D 3B AE BD 53 D2 22 79 FC E8 F1 89 E3 C7 CD CC CC DE 7B FF FD 37 DF 2B 00 40
 EndData
 $EndBitmap
 $Comp
-L BreakoutBoardTeensy:Teensy_pinout_02x28_Male J2
-U 1 1 5DEF51B6
-P 3550 4000
-F 0 "J2" H 3492 4781 50  0000 C CNN
-F 1 "Teensy_pinout_02x28_Male" H 3492 4690 50  0000 C CNN
-F 2 "" H 3550 4000 50  0001 C CNN
-F 3 "~" H 3550 4000 50  0001 C CNN
-	1    3550 4000
-	1    0    0    -1  
-$EndComp
-$Comp
 L BreakoutBoardTeensy:Conn_01x05 J1
 U 1 1 5DF02C06
 P 3400 4800
 F 0 "J1" V 3364 4512 50  0000 R CNN
 F 1 "Conn_01x05" V 3273 4512 50  0000 R CNN
-F 2 "" H 3400 4800 50  0001 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x05_P1.00mm_Vertical" H 3400 4800 50  0001 C CNN
 F 3 "~" H 3400 4800 50  0001 C CNN
 	1    3400 4800
 	0    -1   -1   0   
@@ -9520,9 +9507,50 @@ Connection ~ 3600 5000
 Wire Wire Line
 	3650 5400 3650 5000
 Wire Wire Line
-	4150 4700 3750 4700
+	4150 4700 3800 4700
 Wire Wire Line
-	3750 3800 4150 3800
+	3750 3800 3800 3800
 Wire Wire Line
-	4150 3700 3750 3700
+	4150 3700 3800 3700
+Wire Wire Line
+	4150 3400 3800 3400
+Wire Wire Line
+	4150 3500 3800 3500
+$Comp
+L conn_01x14_left_teensy:Conn_01x14 J4
+U 1 1 5DDC81B7
+P 3700 4000
+F 0 "J4" H 3682 4817 50  0000 C CNN
+F 1 "Conn_01x14" H 3682 4726 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x14_P1.00mm_Vertical" H 3600 3900 50  0001 C CNN
+F 3 "~" H 3600 3900 50  0001 C CNN
+	1    3700 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn_01x14:Conn_01x14 J2
+U 1 1 5DDC932D
+P 3200 4000
+F 0 "J2" H 3280 3992 50  0000 L CNN
+F 1 "Conn_01x14" H 3280 3901 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x14_P1.00mm_Vertical" H 3200 4000 50  0001 C CNN
+F 3 "~" H 3200 4000 50  0001 C CNN
+	1    3200 4000
+	1    0    0    -1  
+$EndComp
+Connection ~ 3800 4700
+Wire Wire Line
+	3800 4700 3750 4700
+Connection ~ 3800 3800
+Wire Wire Line
+	3800 3800 4150 3800
+Connection ~ 3800 3700
+Wire Wire Line
+	3800 3700 3750 3700
+Connection ~ 3800 3500
+Wire Wire Line
+	3800 3500 3750 3500
+Connection ~ 3800 3400
+Wire Wire Line
+	3800 3400 3750 3400
 $EndSCHEMATC

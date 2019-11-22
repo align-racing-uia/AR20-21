@@ -1,4 +1,6 @@
 (sym_lib_table
   (lib (name teensy4_header_breakout-rescue)(type Legacy)(uri ${KIPRJMOD}/teensy4_header_breakout-rescue.lib)(options "")(descr "")(disabled))
   (lib (name BreakoutBoardTeensy)(type Legacy)(uri ${KIPRJMOD}/BreakoutBoardTeensy.lib)(options "")(descr ""))
+  (lib (name conn_01x14)(type Legacy)(uri ${KIPRJMOD}/conn_01x14.lib)(options "")(descr ""))
+  (lib (name conn_01x14_left_teensy)(type Legacy)(uri ${KIPRJMOD}/conn_01x14_left_teensy.lib)(options "")(descr ""))
 )
