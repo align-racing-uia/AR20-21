@@ -1,4 +1,4 @@
-update=22. nov. 2019 19:28:36
+update=24. nov. 2019 02:58:12
 version=1
 last_client=kicad
 [general]
@@ -26,7 +26,7 @@ ERC_TestSimilarLabels=1
 version=1
 PageLayoutDescrFile=
 LastNetListRead=teensy4_header_breakout.net
-CopperLayerCount=2
+CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
@@ -67,19 +67,19 @@ OthersTextUpright=1
 SolderMaskClearance=0
 SolderMaskMinWidth=0
 SolderPasteClearance=0
-SolderPasteRatio=0
+SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
-Name=F.Cu
+Name=Front
 Type=0
 Enabled=1
 [pcbnew/Layer.In1.Cu]
-Name=In1.Cu
+Name=GROUNDPlane
 Type=0
-Enabled=0
+Enabled=1
 [pcbnew/Layer.In2.Cu]
-Name=In2.Cu
+Name=PowerPlane
 Type=0
-Enabled=0
+Enabled=1
 [pcbnew/Layer.In3.Cu]
 Name=In3.Cu
 Type=0
@@ -193,7 +193,7 @@ Name=In30.Cu
 Type=0
 Enabled=0
 [pcbnew/Layer.B.Cu]
-Name=B.Cu
+Name=Back
 Type=0
 Enabled=1
 [pcbnew/Layer.B.Adhes]
