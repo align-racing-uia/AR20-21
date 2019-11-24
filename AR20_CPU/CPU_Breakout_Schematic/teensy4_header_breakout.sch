@@ -20,7 +20,7 @@ U 1 1 5DCC30E4
 P 1550 7100
 F 0 "BT1" H 1300 7200 50  0000 L CNN
 F 1 "2.7V " H 1250 7100 50  0000 L CNN
-F 2 "Battery:BatteryHolder_Keystone_103_1x20mm" V 1550 7160 50  0001 C CNN
+F 2 "Battery:BatteryHolder_Keystone_3034_1x20mm" V 1550 7160 50  0001 C CNN
 F 3 "~" V 1550 7160 50  0001 C CNN
 	1    1550 7100
 	0    -1   -1   0   
@@ -144,7 +144,7 @@ U 1 1 5DD3DCFC
 P 5150 7400
 F 0 "H2" V 5104 7550 50  0000 L CNN
 F 1 "CANL_out" V 5195 7550 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5150 7400 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5150 7400 50  0001 C CNN
 F 3 "~" H 5150 7400 50  0001 C CNN
 	1    5150 7400
 	0    1    1    0   
@@ -9373,7 +9373,7 @@ U 1 1 5DD3C695
 P 5150 6800
 F 0 "H1" V 5104 6950 50  0000 L CNN
 F 1 "CANH_out" V 5195 6950 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5150 6800 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5150 6800 50  0001 C CNN
 F 3 "~" H 5150 6800 50  0001 C CNN
 	1    5150 6800
 	0    1    1    0   
@@ -9450,8 +9450,6 @@ Text GLabel 2600 4550 0    50   Input ~ 0
 10_CS
 Text GLabel 2600 4650 0    50   Input ~ 0
 11_MOSI
-Text GLabel 8850 4750 0    50   Input ~ 0
-GND_BATT
 Text GLabel 8850 3650 0    50   Input ~ 0
 Ground
 Wire Wire Line
@@ -9462,8 +9460,6 @@ Wire Wire Line
 	9050 4950 8850 4950
 Wire Wire Line
 	9050 5050 8850 5050
-Wire Wire Line
-	9050 5150 8850 5150
 Wire Wire Line
 	9550 3650 9750 3650
 Wire Wire Line
@@ -9508,13 +9504,13 @@ Text GLabel 8850 4550 0    50   Input ~ 0
 8_IN1
 Text GLabel 8850 4650 0    50   Input ~ 0
 9_OUT1C
-Text GLabel 8850 4850 0    50   Input ~ 0
+Text GLabel 8850 4750 0    50   Input ~ 0
 25_A11
-Text GLabel 8850 4950 0    50   Input ~ 0
+Text GLabel 8850 4850 0    50   Input ~ 0
 27_A13
-Text GLabel 8850 5050 0    50   Input ~ 0
+Text GLabel 8850 4950 0    50   Input ~ 0
 29_TX7
-Text GLabel 8850 5150 0    50   Input ~ 0
+Text GLabel 8850 5050 0    50   Input ~ 0
 31_CTX3
 Text GLabel 9750 3650 2    50   Input ~ 0
 33_MCLK2
