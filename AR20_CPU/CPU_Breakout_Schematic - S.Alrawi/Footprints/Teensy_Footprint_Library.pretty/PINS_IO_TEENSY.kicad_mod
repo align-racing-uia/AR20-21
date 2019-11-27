@@ -1,5 +1,5 @@
-(module PINS_IO_TEENSY (layer F.Cu) (tedit 5DDA95E2)
-  (fp_text reference REF** (at 0 0.5) (layer F.SilkS)
+(module PINS_IO_TEENSY (layer F.Cu) (tedit 5DDC3BDB)
+  (fp_text reference CONN. (at 2.54 3.81) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_text value PINS_IO_TEENSY (at 0 -0.5) (layer F.Fab)

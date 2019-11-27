@@ -3,4 +3,5 @@
   (lib (name BreakoutBoardTeensy)(type Legacy)(uri ${KIPRJMOD}/BreakoutBoardTeensy.lib)(options "")(descr ""))
   (lib (name conn_01x14)(type Legacy)(uri ${KIPRJMOD}/conn_01x14.lib)(options "")(descr ""))
   (lib (name conn_01x14_left_teensy)(type Legacy)(uri ${KIPRJMOD}/conn_01x14_left_teensy.lib)(options "")(descr ""))
+  (lib (name NCV890430MW50TXG)(type Legacy)(uri "C:/Users/Rawi/Documents/Align Racing/Github/AR20/AR20_ACM/ACM_pcb/01. KiCAD/ACM_Y2020V0.1/Lib/NCV890430/NCV890430MW50TXG.lib")(options "")(descr ""))
 )
