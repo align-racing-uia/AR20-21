@@ -6,4 +6,5 @@
   (lib (name LM324DRG3)(type Legacy)(uri ${KIPRJMOD}/library/LM324DRG3.lib)(options "")(descr ""))
   (lib (name teensy4_header_breakout-cache)(type Legacy)(uri ${KIPRJMOD}/library/teensy4_header_breakout-cache.lib)(options "")(descr ""))
   (lib (name VoltageDivider-rescue)(type Legacy)(uri ${KIPRJMOD}/library/VoltageDivider-rescue.lib)(options "")(descr ""))
+  (lib (name NCV890430MW50TXG)(type Legacy)(uri ${KIPRJMOD}/NCV890430/NCV890430MW50TXG.lib)(options "")(descr ""))
 )

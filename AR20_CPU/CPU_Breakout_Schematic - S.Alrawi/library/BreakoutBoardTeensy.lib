@@ -236,6 +236,23 @@ X 3IN- 9 1100 -100 200 L 50 50 0 0 U
 ENDDRAW
 ENDDEF
 #
+# MX34_Housing
+#
+DEF MX34_Housing MX34_Housing 0 40 Y Y 1 F N
+F0 "MX34_Housing" 0 0 50 H V C CNN
+F1 "MX34_Housing" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+X B_Left 1 0 300 150 L 50 50 1 1 P
+X B_Right 2 200 300 150 R 50 50 1 1 P
+X M_Left 3 0 200 150 L 50 50 1 1 P
+X M_Right 4 200 200 150 R 50 50 1 1 P
+X F_Left 5 0 100 150 L 50 50 1 1 P
+X F_Right 6 200 100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Teensy4.0-Teensy-teensy4_header_breakout-rescue
 #
 DEF Teensy4.0-Teensy-teensy4_header_breakout-rescue U 0 40 Y Y 1 F N
