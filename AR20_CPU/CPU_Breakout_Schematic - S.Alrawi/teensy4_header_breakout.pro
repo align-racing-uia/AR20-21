@@ -1,4 +1,4 @@
-update=29. nov. 2019 04:36:25
+update=4. des. 2019 00:50:49
 version=1
 last_client=kicad
 [general]
@@ -26,7 +26,7 @@ ERC_TestSimilarLabels=1
 version=1
 PageLayoutDescrFile=
 LastNetListRead=teensy4_header_breakout.net
-CopperLayerCount=2
+CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
@@ -41,13 +41,18 @@ MinHoleToHole=0.25
 TrackWidth1=0.25
 TrackWidth2=0.25
 TrackWidth3=0.5
-TrackWidth4=1.65
+TrackWidth4=1
+TrackWidth5=1.65
 ViaDiameter1=0.8
 ViaDrill1=0.4
 ViaDiameter2=0.4
 ViaDrill2=0.3
 ViaDiameter3=0.8
 ViaDrill3=0.4
+ViaDiameter4=1
+ViaDrill4=0.5
+ViaDiameter5=2
+ViaDrill5=1
 dPairWidth1=0.3
 dPairGap1=0.25
 dPairViaGap1=0.25
@@ -76,17 +81,17 @@ SolderMaskMinWidth=0.25
 SolderPasteClearance=0
 SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
-Name=Front
+Name=Front_GND
 Type=0
 Enabled=1
 [pcbnew/Layer.In1.Cu]
-Name=In1.Cu
+Name=Front_2_5V
 Type=0
-Enabled=0
+Enabled=1
 [pcbnew/Layer.In2.Cu]
-Name=In2.Cu
+Name=Back_2_3V3
 Type=0
-Enabled=0
+Enabled=1
 [pcbnew/Layer.In3.Cu]
 Name=In3.Cu
 Type=0
@@ -200,7 +205,7 @@ Name=In30.Cu
 Type=0
 Enabled=0
 [pcbnew/Layer.B.Cu]
-Name=Back
+Name=Back_GND
 Type=0
 Enabled=1
 [pcbnew/Layer.B.Adhes]
