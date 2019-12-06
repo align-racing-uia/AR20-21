@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -26,6 +26,7 @@ U 1 1 5DFCE3D9
 P 8300 3500
 AR Path="/5DFCE3D9" Ref="U?"  Part="1" 
 AR Path="/5DFCB53C/5DFCE3D9" Ref="U2"  Part="1" 
+AR Path="/5DE8C4DF/5DFCE3D9" Ref="U2"  Part="1" 
 F 0 "U2" H 8300 3649 50  0000 C CNN
 F 1 "MCP1700_SOT23" H 8300 3740 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 8300 3725 50  0001 C CNN
@@ -37,19 +38,6 @@ Text GLabel 9100 3500 2    50   Input ~ 0
 3V3_SD
 Wire Wire Line
 	6150 3400 6150 3500
-$Comp
-L Device:R R?
-U 1 1 5DFCE3E4
-P 6150 3650
-AR Path="/5DFCE3E4" Ref="R?"  Part="1" 
-AR Path="/5DFCB53C/5DFCE3E4" Ref="R18"  Part="1" 
-F 0 "R18" H 6220 3696 50  0000 L CNN
-F 1 "10k" H 6220 3605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6080 3650 50  0001 C CNN
-F 3 "~" H 6150 3650 50  0001 C CNN
-	1    6150 3650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5950 1800 5950 1700
 Text GLabel 5350 3700 3    50   Input ~ 0
@@ -78,6 +66,7 @@ U 1 1 5DFCE3F6
 P 5350 2600
 AR Path="/5DFCE3F6" Ref="SDcard?"  Part="1" 
 AR Path="/5DFCB53C/5DFCE3F6" Ref="SDcard1"  Part="1" 
+AR Path="/5DE8C4DF/5DFCE3F6" Ref="SDcard1"  Part="1" 
 F 0 "SDcard1" H 5300 3317 50  0000 C CNN
 F 1 "Micro_SD_Card" H 5300 3226 50  0000 C CNN
 F 2 "Connector_Card:microSD_HC_Hirose_DM3D-SF" H 6500 2900 50  0001 C CNN
@@ -172,10 +161,10 @@ Connection ~ 3750 3750
 Wire Wire Line
 	3750 3750 3800 3750
 $Comp
-L Device:C C18
+L Device:C C13
 U 1 1 5DE59DD0
 P 8900 3650
-F 0 "C18" H 8785 3604 50  0000 R CNN
+F 0 "C13" H 8785 3604 50  0000 R CNN
 F 1 "100u" H 8785 3695 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8938 3500 50  0001 C CNN
 F 3 "~" H 8900 3650 50  0001 C CNN
@@ -183,10 +172,10 @@ F 3 "~" H 8900 3650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C17
+L Device:C C12
 U 1 1 5DE5A450
 P 7750 3650
-F 0 "C17" H 7635 3604 50  0000 R CNN
+F 0 "C12" H 7635 3604 50  0000 R CNN
 F 1 "100u" H 7635 3695 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7788 3500 50  0001 C CNN
 F 3 "~" H 7750 3650 50  0001 C CNN
@@ -208,4 +197,18 @@ Wire Wire Line
 Connection ~ 8300 3800
 Wire Wire Line
 	8300 3800 8900 3800
+$Comp
+L Device:R R?
+U 1 1 5DFCE3E4
+P 6150 3650
+AR Path="/5DFCE3E4" Ref="R?"  Part="1" 
+AR Path="/5DFCB53C/5DFCE3E4" Ref="R18"  Part="1" 
+AR Path="/5DE8C4DF/5DFCE3E4" Ref="R19"  Part="1" 
+F 0 "R19" H 6220 3696 50  0000 L CNN
+F 1 "10k" H 6220 3605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6080 3650 50  0001 C CNN
+F 3 "~" H 6150 3650 50  0001 C CNN
+	1    6150 3650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

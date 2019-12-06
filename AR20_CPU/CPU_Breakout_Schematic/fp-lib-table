@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name Teensy_Footprint_Library)(type KiCad)(uri ${KIPRJMOD}/Footprints/Teensy_Footprint_Library.pretty)(options "")(descr ""))
-)
