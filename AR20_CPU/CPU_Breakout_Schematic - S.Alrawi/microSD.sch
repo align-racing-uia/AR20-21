@@ -42,8 +42,6 @@ Wire Wire Line
 	5550 3700 5550 3500
 Wire Wire Line
 	5450 3700 5450 3500
-Wire Wire Line
-	5350 3700 5350 3500
 Text GLabel 5650 3900 3    50   Input ~ 0
 12_MISO
 Text GLabel 5550 3700 3    50   Input ~ 0
@@ -95,7 +93,7 @@ Text GLabel 5450 3700 3    50   Input ~ 0
 13(LED)
 Text GLabel 5250 3700 3    50   Input ~ 0
 11_MOSI
-Text GLabel 5350 3700 3    50   Input ~ 0
+Text GLabel 5300 5200 3    50   Input ~ 0
 3V3_OUT
 Wire Wire Line
 	5650 3500 5650 3900
@@ -115,4 +113,43 @@ F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 5350 2600 50  
 $EndComp
 Wire Wire Line
 	5150 3500 5150 3700
+$Comp
+L Jumper:SolderJumper_2_Open JP12
+U 1 1 5DEFC778
+P 5300 4900
+F 0 "JP12" V 5254 4968 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 5345 4968 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5300 4900 50  0001 C CNN
+F 3 "~" H 5300 4900 50  0001 C CNN
+	1    5300 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP11
+U 1 1 5DF02FDA
+P 4950 4900
+F 0 "JP11" V 4900 4200 50  0000 L CNN
+F 1 "SolderJumper_2_Open" V 5000 3900 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4950 4900 50  0001 C CNN
+F 3 "~" H 4950 4900 50  0001 C CNN
+	1    4950 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 5200 5300 5050
+Wire Wire Line
+	5300 4750 5300 4600
+Wire Wire Line
+	4950 4750 4950 4600
+Wire Wire Line
+	5350 4600 5300 4600
+Wire Wire Line
+	5350 3500 5350 4600
+Wire Wire Line
+	5300 4600 4950 4600
+Connection ~ 5300 4600
+Text GLabel 4950 5250 3    50   Input ~ 0
+3.3V
+Wire Wire Line
+	4950 5050 4950 5250
 $EndSCHEMATC

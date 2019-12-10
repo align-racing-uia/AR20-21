@@ -49,8 +49,8 @@ U 1 1 5DFC9DF7
 P 7850 3500
 AR Path="/5DFC9DF7" Ref="Teensy4.?"  Part="1" 
 AR Path="/5DFC2DB2/5DFC9DF7" Ref="Teensy4.0"  Part="1" 
-AR Path="/5DE8C5CE/5DFC9DF7" Ref="Teensy4.1"  Part="1" 
-F 0 "Teensy4.1" H 8425 4425 50  0000 C CNN
+AR Path="/5DE8C5CE/5DFC9DF7" Ref="Teensy4.0"  Part="1" 
+F 0 "Teensy4.0" H 8425 4425 50  0000 C CNN
 F 1 "Teensy_pins" H 8425 4334 50  0000 C CNN
 F 2 "Teensy_Footprint_Library:Teensy_40_footprint" H 9150 3500 50  0001 C CNN
 F 3 "" H 9150 3500 50  0001 C CNN
