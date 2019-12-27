@@ -20,9 +20,9 @@ Text GLabel 9550 2900 2    50   Input ~ 0
 Ground
 Text GLabel 9550 3500 2    50   Input ~ 0
 Out3
-Text GLabel 9550 3400 2    50   Input ~ 0
+Text GLabel 9550 3200 2    50   Input ~ 0
 Out1
-Text GLabel 9550 3300 2    50   Input ~ 0
+Text GLabel 9550 3100 2    50   Input ~ 0
 Out2
 Text GLabel 9550 3600 2    50   Input ~ 0
 Out4
@@ -30,7 +30,7 @@ NoConn ~ 9550 4300
 Text GLabel 7200 4600 0    50   Input ~ 0
 26_A12
 Text GLabel 9550 4600 2    50   Input ~ 0
-24_A10
+24_TX6_A10
 Text GLabel 9550 4200 2    50   Input ~ 0
 3V3
 Text GLabel 9550 3000 2    50   Input ~ 0
@@ -39,10 +39,10 @@ Text GLabel 9550 4100 2    50   Input ~ 0
 13(LED)
 Text GLabel 9550 2800 2    50   Input ~ 0
 Vinn_5V
-Text GLabel 9550 3100 2    50   Input ~ 0
-23_CRX1
-Text GLabel 9550 3200 2    50   Input ~ 0
-22_CTX1
+Text GLabel 9550 3300 2    50   Input ~ 0
+21_RX5
+Text GLabel 9550 3400 2    50   Input ~ 0
+20_TX5
 $Comp
 L BreakoutBoardTeensy:Teensy_pins Teensy4.?
 U 1 1 5DFC9DF7
@@ -118,11 +118,11 @@ Text GLabel 7200 4800 0    50   Input ~ 0
 Text GLabel 9550 4800 2    50   Input ~ 0
 27_A13
 Text GLabel 7200 4900 0    50   Input ~ 0
-25_A11
+25_RX6_A11
 Text GLabel 7200 3800 0    50   Input ~ 0
 9_OUT1C
 Text GLabel 7200 3700 0    50   Input ~ 0
-8_IN1
+8_TX2_IN1
 Text GLabel 7200 3600 0    50   Input ~ 0
 7_RX2_OUT1A
 Text GLabel 7200 3500 0    50   Input ~ 0
@@ -9380,26 +9380,16 @@ Wire Wire Line
 	4600 3800 4500 3800
 Wire Wire Line
 	4600 3900 4500 3900
-Text GLabel 4500 3900 0    50   Input ~ 0
-24_A10
-Text GLabel 4400 5200 0    50   Input ~ 0
-26_A12
 Text GLabel 4400 4500 0    50   Input ~ 0
 28_RX7
 Text GLabel 4400 5000 0    50   Input ~ 0
 33_MCLK2
-Text GLabel 4400 4600 0    50   Input ~ 0
-31_CTX3
 Text GLabel 4400 5100 0    50   Input ~ 0
 29_TX7
 Text GLabel 4400 4700 0    50   Input ~ 0
 27_A13
-Text GLabel 4400 4000 0    50   Input ~ 0
-25_A11
 Text GLabel 4500 3600 0    50   Input ~ 0
 9_OUT1C
-Text GLabel 4500 3500 0    50   Input ~ 0
-8_IN1
 Text GLabel 4500 3400 0    50   Input ~ 0
 7_RX2_OUT1A
 Text GLabel 4500 3300 0    50   Input ~ 0
@@ -9450,8 +9440,6 @@ Wire Wire Line
 	4600 5700 4400 5700
 Wire Wire Line
 	4600 5800 4400 5800
-Text GLabel 4400 4800 0    50   Input ~ 0
-30_CRX3
 Text GLabel 4400 4900 0    50   Input ~ 0
 32_OUT1B
 Text GLabel 4500 3800 0    50   Input ~ 0
@@ -9637,8 +9625,6 @@ F 3 "~" H 9200 1250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9050 1250 8900 1250
-Text GLabel 7600 1700 0    50   Input ~ 0
-24_A10
 $Comp
 L Device:C C19
 U 1 1 5DEC35AF
@@ -9701,10 +9687,6 @@ Wire Wire Line
 Connection ~ 7700 1700
 Wire Wire Line
 	7700 1700 7750 1700
-Wire Wire Line
-	10550 2050 10550 2000
-Wire Wire Line
-	10550 2400 10550 2350
 $Comp
 L Device:D_Zener D?
 U 1 1 5DEF67C8
@@ -9725,4 +9707,20 @@ Text GLabel 7800 2400 0    50   Input ~ 0
 Ground
 Wire Wire Line
 	7800 2400 7800 2250
+Text GLabel 4400 4600 0    50   Input ~ 0
+21_RX5
+Text GLabel 4400 4800 0    50   Input ~ 0
+20_TX5
+Text GLabel 4500 3500 0    50   Input ~ 0
+8_TX2_IN1
+Text GLabel 4400 4000 0    50   Input ~ 0
+25_RX6_A11
+Text GLabel 4500 3900 0    50   Input ~ 0
+24_TX6_A10
+Text GLabel 4400 5200 0    50   Input ~ 0
+Ground
+Text GLabel 7600 1700 0    50   Input ~ 0
+26_A12
+Wire Wire Line
+	7800 1700 7700 1700
 $EndSCHEMATC

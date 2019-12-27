@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1700 5550 1150 950 
+S 2400 5250 1150 950 
 U 5DE81E30
 F0 "LM324" 50
 F1 "LM324.sch" 50

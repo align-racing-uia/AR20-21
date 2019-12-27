@@ -24,7 +24,7 @@ L Device:C C11
 U 1 1 5DFD4BFF
 P 5450 2900
 F 0 "C11" H 5565 2946 50  0000 L CNN
-F 1 "100u" H 5565 2855 50  0000 L CNN
+F 1 ".1u" H 5565 2855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5488 2750 50  0001 C CNN
 F 3 "~" H 5450 2900 50  0001 C CNN
 	1    5450 2900
@@ -75,8 +75,6 @@ Wire Wire Line
 	4800 3550 5100 3550
 Wire Wire Line
 	5100 3350 5100 3400
-Wire Wire Line
-	4800 3350 5100 3350
 Wire Wire Line
 	6450 4100 6800 4100
 Wire Wire Line
@@ -164,10 +162,6 @@ F 3 "" H 5600 4250 50  0001 C CNN
 	1    5600 4250
 	1    0    0    -1  
 $EndComp
-Text GLabel 4800 3550 0    50   Input ~ 0
-23_CRX1
-Text GLabel 4800 3350 0    50   Input ~ 0
-22_CTX1
 $Comp
 L Interface_CAN_LIN:MCP2551-I-SN CANmodule1
 U 1 1 5DFD4C52
@@ -188,4 +182,10 @@ Wire Wire Line
 	5300 2900 5200 2900
 Text GLabel 5200 2900 0    50   Input ~ 0
 Ground
+Text GLabel 4800 3550 0    50   Input ~ 0
+30_CRX3
+Text GLabel 4800 3350 0    50   Input ~ 0
+31_CTX3
+Wire Wire Line
+	4800 3350 5100 3350
 $EndSCHEMATC
