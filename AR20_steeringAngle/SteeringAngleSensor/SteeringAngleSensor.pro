@@ -1,4 +1,4 @@
-update=07-Jan-20 06:20:56 PM
+update=07-Jan-20 07:41:35 PM
 version=1
 last_client=kicad
 [general]
@@ -15,7 +15,7 @@ LibDir=
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=
+LastNetListRead=SteeringAngleSensor.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
