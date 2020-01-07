@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:SteeringAngleSensor-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -13,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Connector:Conn_01x03_Female J1
-U 1 1 5E14CE43
-P 6125 3125
-F 0 "J1" H 6153 3151 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 6153 3060 50  0000 L CNN
-F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 6125 3125 50  0001 C CNN
-F 3 "~" H 6125 3125 50  0001 C CNN
-	1    6125 3125
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5575 2975 5750 2975
 Wire Wire Line
@@ -118,4 +108,15 @@ Text HLabel 5775 3175 2    50   Input ~ 0
 Out
 Text HLabel 5825 3300 2    50   Input ~ 0
 GND
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 5E14D28B
+P 6125 3125
+F 0 "J1" H 6097 3007 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 6097 3098 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_S4B-XH-A_1x04_P2.50mm_Horizontal" H 6125 3125 50  0001 C CNN
+F 3 "~" H 6125 3125 50  0001 C CNN
+	1    6125 3125
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
