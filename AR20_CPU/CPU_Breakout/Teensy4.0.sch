@@ -31,7 +31,7 @@ Text GLabel 7200 4600 0    50   Input ~ 0
 26_A12
 Text GLabel 9550 4600 2    50   Input ~ 0
 24_TX6_A10
-Text GLabel 9550 4200 2    50   Input ~ 0
+Text GLabel 10200 4200 2    50   Input ~ 0
 3V3
 Text GLabel 9550 3000 2    50   Input ~ 0
 3.3V
@@ -81,8 +81,6 @@ Wire Wire Line
 	9450 3900 9550 3900
 Wire Wire Line
 	9450 4000 9550 4000
-Wire Wire Line
-	9450 4200 9550 4200
 Wire Wire Line
 	9450 4300 9550 4300
 Wire Wire Line
@@ -9375,10 +9373,6 @@ Wire Wire Line
 Wire Wire Line
 	4600 3600 4500 3600
 Wire Wire Line
-	4600 3700 4500 3700
-Wire Wire Line
-	4600 3800 4500 3800
-Wire Wire Line
 	4600 3900 4500 3900
 Text GLabel 4400 4500 0    50   Input ~ 0
 28_RX7
@@ -9442,7 +9436,7 @@ Wire Wire Line
 	4600 5800 4400 5800
 Text GLabel 4400 4900 0    50   Input ~ 0
 32_OUT1B
-Text GLabel 4500 3800 0    50   Input ~ 0
+Text GLabel 4300 3800 0    50   Input ~ 0
 3V3
 Wire Wire Line
 	4400 4300 4600 4300
@@ -9571,82 +9565,64 @@ Text GLabel 4400 4300 0    50   Input ~ 0
 Ground
 Text GLabel 4400 4400 0    50   Input ~ 0
 Ground
-Text GLabel 4500 3700 0    50   Input ~ 0
-3.3V
 $Comp
 L Device:R R21
 U 1 1 5DE96DA3
-P 9750 1100
-F 0 "R21" H 9820 1146 50  0000 L CNN
-F 1 "?" H 9820 1055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9680 1100 50  0001 C CNN
-F 3 "~" H 9750 1100 50  0001 C CNN
-	1    9750 1100
+P 9450 1100
+F 0 "R21" H 9520 1146 50  0000 L CNN
+F 1 "?" H 9520 1055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9380 1100 50  0001 C CNN
+F 3 "~" H 9450 1100 50  0001 C CNN
+	1    9450 1100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R22
 U 1 1 5DE9741A
-P 9750 1450
-F 0 "R22" H 9820 1496 50  0000 L CNN
-F 1 "?" H 9820 1405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9680 1450 50  0001 C CNN
-F 3 "~" H 9750 1450 50  0001 C CNN
-	1    9750 1450
+P 9450 1450
+F 0 "R22" H 9520 1496 50  0000 L CNN
+F 1 "?" H 9520 1405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9380 1450 50  0001 C CNN
+F 3 "~" H 9450 1450 50  0001 C CNN
+	1    9450 1450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10150 1150 10150 950 
+	9450 1300 9450 1250
 Wire Wire Line
-	10150 1450 10150 1600
-Wire Wire Line
-	9750 1300 9750 1250
-Wire Wire Line
-	9750 950  10150 950 
-Connection ~ 10150 950 
-Wire Wire Line
-	10150 950  10150 900 
-Wire Wire Line
-	9750 1600 10150 1600
-Connection ~ 10150 1600
-Wire Wire Line
-	10150 1600 10150 1650
-Connection ~ 9750 1250
+	9450 950  9850 950 
+Connection ~ 9450 1250
 $Comp
 L Jumper:SolderJumper_2_Open JP10
 U 1 1 5DEBD2EA
-P 9200 1250
-F 0 "JP10" H 9200 1350 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 9250 1400 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 9200 1250 50  0001 C CNN
-F 3 "~" H 9200 1250 50  0001 C CNN
-	1    9200 1250
+P 10000 950
+F 0 "JP10" H 10000 1050 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 10050 1100 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 10000 950 50  0001 C CNN
+F 3 "~" H 10000 950 50  0001 C CNN
+	1    10000 950 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9050 1250 8900 1250
 $Comp
 L Device:C C19
 U 1 1 5DEC35AF
-P 9500 1450
-F 0 "C19" H 9250 1500 50  0000 L CNN
-F 1 "?" H 9250 1350 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9538 1300 50  0001 C CNN
-F 3 "~" H 9500 1450 50  0001 C CNN
-	1    9500 1450
+P 9200 1450
+F 0 "C19" H 8950 1500 50  0000 L CNN
+F 1 "?" H 8950 1350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9238 1300 50  0001 C CNN
+F 3 "~" H 9200 1450 50  0001 C CNN
+	1    9200 1450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9500 1300 9500 1250
-Connection ~ 9500 1250
+	9200 1300 9200 1250
+Connection ~ 9200 1250
 Wire Wire Line
-	9500 1250 9350 1250
-Wire Wire Line
-	9500 1250 9750 1250
-Text GLabel 9500 1650 3    50   Input ~ 0
+	9200 1250 9450 1250
+Text GLabel 9200 1650 3    50   Input ~ 0
 Ground
 Wire Wire Line
-	9500 1600 9500 1650
+	9200 1600 9200 1650
 Text GLabel 8950 900  1    50   Input ~ 0
 Vinn_5V
 Text GLabel 7600 1350 0    50   Input ~ 0
@@ -9723,4 +9699,28 @@ Text GLabel 7600 1700 0    50   Input ~ 0
 26_A12
 Wire Wire Line
 	7800 1700 7700 1700
+Wire Wire Line
+	4300 3800 4600 3800
+Text GLabel 4450 3700 0    50   Input ~ 0
+Ground
+Wire Wire Line
+	4450 3700 4600 3700
+Wire Wire Line
+	10150 900  10150 950 
+Wire Wire Line
+	10150 1450 10150 1600
+Wire Wire Line
+	8900 1250 9200 1250
+Connection ~ 10150 950 
+Wire Wire Line
+	10150 950  10150 1150
+Wire Wire Line
+	9450 1600 10150 1600
+Connection ~ 10150 1600
+Wire Wire Line
+	10150 1600 10150 1650
+Text GLabel 10050 4200 1    50   Input ~ 0
+3.3V
+Wire Wire Line
+	9450 4200 10200 4200
 $EndSCHEMATC
