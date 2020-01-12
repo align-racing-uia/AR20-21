@@ -532,18 +532,8 @@ Wire Wire Line
 	6725 1975 6725 1875
 Text HLabel 6100 1375 0    50   Input ~ 0
 U-Pin5
-Text HLabel 5500 2450 0    50   Input ~ 0
-U-Pin25
-Text HLabel 4800 1250 0    50   Input ~ 0
-U-Pin1
 Text HLabel 6100 1275 0    50   Input ~ 0
 U-Pin3
-Text HLabel 1400 6400 0    50   Input ~ 0
-U-Pin30
-Text HLabel 1400 6500 0    50   Input ~ 0
-U-Pin11
-Text HLabel 1400 6600 0    50   Input ~ 0
-U-Pin9
 Text HLabel 2775 6675 2    50   Input ~ 0
 U-Pin22
 Text HLabel 2775 6575 2    50   Input ~ 0
@@ -1078,20 +1068,12 @@ Wire Wire Line
 Connection ~ 2175 4125
 Wire Wire Line
 	6600 1875 6725 1875
-Text HLabel 8000 2400 2    50   Input ~ 0
-U-Pin26
-Text HLabel 7375 2525 2    50   Input ~ 0
-U-Pin28
 Text HLabel 6600 1475 2    50   Input ~ 0
 U-Pin8
-Text HLabel 4975 2350 0    50   Input ~ 0
-Reset
 Wire Wire Line
 	6725 1875 7125 1875
 Text HLabel 6600 1375 2    50   Input ~ 0
 U-Pin6
-Text HLabel 7875 2250 2    50   Input ~ 0
-U-Pin24
 Text HLabel 6600 2175 2    50   Input ~ 0
 U-Pin22
 Text HLabel 6600 2075 2    50   Input ~ 0
@@ -1115,10 +1097,6 @@ F 3 "" H 7125 1875 50  0001 C CNN
 	1    7125 1875
 	1    0    0    -1  
 $EndComp
-Text HLabel 5175 2050 0    50   Input ~ 0
-CLK_MCP
-Text HLabel 5250 1900 0    50   Input ~ 0
-RED_LED
 Text HLabel 6100 1975 0    50   Input ~ 0
 BLUE_LED
 Text HLabel 6100 1875 0    50   Input ~ 0
@@ -1128,14 +1106,10 @@ MISO
 Text HLabel 6100 1675 0    50   Input ~ 0
 SCK
 Connection ~ 6725 1875
-Text HLabel 4775 1400 2    50   Input ~ 0
-U-Pin10
 Text HLabel 1575 4775 0    50   Input ~ 0
 U-Pin7
 Text HLabel 6100 2475 0    50   Input ~ 0
 U-Pin27
-Text HLabel 5325 2175 0    50   Input ~ 0
-U-Pin21
 Text Notes 9275 2925 0    79   ~ 16
 CAN MCU
 $Comp
@@ -1166,23 +1140,15 @@ Wire Wire Line
 	9675 2900 9675 3650
 Text HLabel 2775 5575 2    50   Input ~ 0
 U-Pin3
-Text HLabel 4650 1600 2    50   Input ~ 0
-U-Pin30
 Wire Wire Line
 	1575 4575 925  4575
 Wire Wire Line
 	925  4575 925  4650
 Text HLabel 5825 2075 0    50   Input ~ 0
 U-Pin19
-Text HLabel 5450 2625 0    50   Input ~ 0
-U-Pin17
-Text HLabel 6100 1575 0    50   Input ~ 0
-U-Pin9
 Wire Wire Line
 	2775 6075 3275 6075
 Connection ~ 3275 6075
-Text HLabel 1400 5125 0    50   Input ~ 0
-U-Pin24
 Text HLabel 6600 1575 2    50   Input ~ 0
 Reset
 Text HLabel 6100 2575 0    50   Input ~ 0
@@ -1199,17 +1165,6 @@ F 2 "" H 6800 2575 50  0001 C CNN
 F 3 "" H 6800 2575 50  0001 C CNN
 	1    6800 2575
 	0    1    1    0   
-$EndComp
-$Comp
-L ACM-pcb-rescue:+12V-power-ACM_Y2020V0.1-rescue #PWR015
-U 1 1 5D3DBA57
-P 5050 1150
-F 0 "#PWR015" H 5050 1000 50  0001 C CNN
-F 1 "+12V" V 5050 1750 50  0000 C CNN
-F 2 "" H 5050 1150 50  0001 C CNN
-F 3 "" H 5050 1150 50  0001 C CNN
-	1    5050 1150
-	0    -1   -1   0   
 $EndComp
 Text HLabel 6100 1175 0    50   Input ~ 0
 U-Pin1
@@ -1266,4 +1221,15 @@ Wire Wire Line
 Wire Wire Line
 	6100 2175 6050 2175
 Connection ~ 6100 2175
+$Comp
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR?
+U 1 1 5E1CB20B
+P 6100 1575
+F 0 "#PWR?" H 6100 1325 50  0001 C CNN
+F 1 "GND" V 6100 1375 50  0000 C CNN
+F 2 "" H 6100 1575 50  0001 C CNN
+F 3 "" H 6100 1575 50  0001 C CNN
+	1    6100 1575
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
