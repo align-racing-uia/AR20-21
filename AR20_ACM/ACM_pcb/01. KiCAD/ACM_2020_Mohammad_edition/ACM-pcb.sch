@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:ACM-pcb-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -14,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ACM_Y2020V0.1-rescue:GND-power #PWR05
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR05
 U 1 1 5D3A8A7B
 P 2175 7275
 F 0 "#PWR05" H 2175 7025 50  0001 C CNN
@@ -25,7 +26,7 @@ F 3 "" H 2175 7275 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:+5V-power #PWR04
+L ACM-pcb-rescue:+5V-power-ACM_Y2020V0.1-rescue #PWR04
 U 1 1 5D3AF650
 P 2175 4125
 F 0 "#PWR04" H 2175 3975 50  0001 C CNN
@@ -36,7 +37,7 @@ F 3 "" H 2175 4125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:C-Device C1
+L ACM-pcb-rescue:C-Device-ACM_Y2020V0.1-rescue C1
 U 1 1 5D3B17F8
 P 1100 5425
 F 0 "C1" H 1215 5471 50  0000 L CNN
@@ -47,7 +48,7 @@ F 3 "~" H 1100 5425 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:+5V-power #PWR01
+L ACM-pcb-rescue:+5V-power-ACM_Y2020V0.1-rescue #PWR01
 U 1 1 5D3B309C
 P 1100 5275
 F 0 "#PWR01" H 1100 5125 50  0001 C CNN
@@ -58,7 +59,7 @@ F 3 "" H 1100 5275 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:GND-power #PWR02
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR02
 U 1 1 5D3B39A1
 P 1100 5575
 F 0 "#PWR02" H 1100 5325 50  0001 C CNN
@@ -71,7 +72,7 @@ $EndComp
 Text Notes 700  5975 0    50   ~ 0
 Place as close as \npossible to pin 4 and 5
 $Comp
-L ACM_Y2020V0.1-rescue:GND-power #PWR010
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR010
 U 1 1 5D3C307D
 P 3950 5300
 F 0 "#PWR010" H 3950 5050 50  0001 C CNN
@@ -86,7 +87,7 @@ Wire Wire Line
 Wire Wire Line
 	3950 5250 3950 5300
 $Comp
-L ACM_Y2020V0.1-rescue:R-Device R1
+L ACM-pcb-rescue:R-Device-ACM_Y2020V0.1-rescue R1
 U 1 1 5D3CAE32
 P 3275 5850
 F 0 "R1" H 3345 5896 50  0000 L CNN
@@ -98,7 +99,7 @@ F 4 "https://no.farnell.com/vishay/crcw0402100kfked/res-100k-1-0-063w-0402-thick
 	1    0    0    -1  
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:+5V-power #PWR09
+L ACM-pcb-rescue:+5V-power-ACM_Y2020V0.1-rescue #PWR09
 U 1 1 5D3CE356
 P 3275 5700
 F 0 "#PWR09" H 3275 5550 50  0001 C CNN
@@ -111,7 +112,7 @@ $EndComp
 Text HLabel 3450 6075 2    50   Input ~ 0
 Reset
 $Comp
-L ACM_Y2020V0.1-rescue:MCP25625-x-SS-Interface_CAN_LIN U2
+L ACM-pcb-rescue:MCP25625-x-SS-Interface_CAN_LIN-ACM_Y2020V0.1-rescue U2
 U 1 1 5D3DCB03
 P 9475 4900
 F 0 "U2" H 9475 3550 50  0000 C CNN
@@ -144,7 +145,7 @@ Wire Wire Line
 Wire Wire Line
 	10225 4300 10075 4300
 $Comp
-L ACM_Y2020V0.1-rescue:R-Device R7
+L ACM-pcb-rescue:R-Device-ACM_Y2020V0.1-rescue R7
 U 1 1 5D3B887F
 P 10325 4050
 F 0 "R7" H 10395 4096 50  0000 L CNN
@@ -173,7 +174,7 @@ Wire Wire Line
 	10325 3900 10775 3900
 Connection ~ 10325 3900
 $Comp
-L ACM_Y2020V0.1-rescue:C-Device C8
+L ACM-pcb-rescue:C-Device-ACM_Y2020V0.1-rescue C8
 U 1 1 5D3BC1DC
 P 9025 3675
 F 0 "C8" V 8773 3675 50  0000 C CNN
@@ -184,7 +185,7 @@ F 3 "~" H 9025 3675 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:C-Device C7
+L ACM-pcb-rescue:C-Device-ACM_Y2020V0.1-rescue C7
 U 1 1 5D3BE3C3
 P 9025 3275
 F 0 "C7" V 8773 3275 50  0000 C CNN
@@ -195,7 +196,7 @@ F 3 "~" H 9025 3275 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:C-Device C9
+L ACM-pcb-rescue:C-Device-ACM_Y2020V0.1-rescue C9
 U 1 1 5D3BEACF
 P 9900 3650
 F 0 "C9" V 9648 3650 50  0000 C CNN
@@ -220,7 +221,7 @@ Wire Wire Line
 	9375 3275 9175 3275
 Connection ~ 9375 3675
 $Comp
-L ACM_Y2020V0.1-rescue:GND-power #PWR027
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR027
 U 1 1 5D3C238E
 P 8825 3725
 F 0 "#PWR027" H 8825 3475 50  0001 C CNN
@@ -235,7 +236,7 @@ Wire Wire Line
 Wire Wire Line
 	8825 3675 8875 3675
 $Comp
-L ACM_Y2020V0.1-rescue:GND-power #PWR026
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR026
 U 1 1 5D3C3A23
 P 8825 3350
 F 0 "#PWR026" H 8825 3100 50  0001 C CNN
@@ -250,7 +251,7 @@ Wire Wire Line
 Wire Wire Line
 	8825 3275 8875 3275
 $Comp
-L ACM_Y2020V0.1-rescue:GND-power #PWR030
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR030
 U 1 1 5D3C5388
 P 10100 3700
 F 0 "#PWR030" H 10100 3450 50  0001 C CNN
@@ -271,7 +272,7 @@ Wire Wire Line
 Connection ~ 9375 3275
 Connection ~ 9675 3650
 $Comp
-L ACM_Y2020V0.1-rescue:GND-power #PWR028
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR028
 U 1 1 5D3CB4CE
 P 9375 6000
 F 0 "#PWR028" H 9375 5750 50  0001 C CNN
@@ -282,7 +283,7 @@ F 3 "" H 9375 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:GND-power #PWR029
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR029
 U 1 1 5D3CC107
 P 9675 6000
 F 0 "#PWR029" H 9675 5750 50  0001 C CNN
@@ -297,7 +298,7 @@ CAN_INT
 Text HLabel 8875 5600 0    50   Input ~ 0
 CAN_INT
 $Comp
-L ACM_Y2020V0.1-rescue:C-Device C6
+L ACM-pcb-rescue:C-Device-ACM_Y2020V0.1-rescue C6
 U 1 1 5D3D3465
 P 8050 4925
 F 0 "C6" H 8165 4971 50  0000 L CNN
@@ -308,7 +309,7 @@ F 3 "~" H 8050 4925 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:R-Device R6
+L ACM-pcb-rescue:R-Device-ACM_Y2020V0.1-rescue R6
 U 1 1 5D3D4504
 P 8475 4700
 F 0 "R6" V 8268 4700 50  0000 C CNN
@@ -319,7 +320,7 @@ F 3 "~" H 8475 4700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:+5V-power #PWR023
+L ACM-pcb-rescue:+5V-power-ACM_Y2020V0.1-rescue #PWR023
 U 1 1 5D3D4BBE
 P 8050 4625
 F 0 "#PWR023" H 8050 4475 50  0001 C CNN
@@ -330,7 +331,7 @@ F 3 "" H 8050 4625 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:GND-power #PWR024
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR024
 U 1 1 5D3D5861
 P 8050 5075
 F 0 "#PWR024" H 8050 4825 50  0001 C CNN
@@ -374,7 +375,7 @@ Wire Wire Line
 Wire Wire Line
 	8625 4700 8875 4700
 $Comp
-L ACM_Y2020V0.1-rescue:+12V-power #PWR017
+L ACM-pcb-rescue:+12V-power-ACM_Y2020V0.1-rescue #PWR017
 U 1 1 5D442037
 P 5800 3675
 F 0 "#PWR017" H 5800 3525 50  0001 C CNN
@@ -385,7 +386,7 @@ F 3 "" H 5800 3675 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:Polyfuse_Small-Device F1
+L ACM-pcb-rescue:Polyfuse_Small-Device-ACM_Y2020V0.1-rescue F1
 U 1 1 5D45109C
 P 5800 3850
 F 0 "F1" H 5925 3800 50  0000 R CNN
@@ -397,7 +398,7 @@ F 4 "https://no.farnell.com/bel-fuse-circuit-protection/0zcm0010ff2g/fuse-resett
 	-1   0    0    1   
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:D_Zener-Device D1
+L ACM-pcb-rescue:D_Zener-Device-ACM_Y2020V0.1-rescue D1
 U 1 1 5D452681
 P 5525 4150
 F 0 "D1" H 5525 3934 50  0000 C CNN
@@ -409,7 +410,7 @@ F 4 "https://no.farnell.com/nexperia/bzx585-c15-115/diode-zener-0-3w-15v-sod523/
 	-1   0    0    1   
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:GND-power #PWR013
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR013
 U 1 1 5D458B9B
 P 5275 4225
 F 0 "#PWR013" H 5275 3975 50  0001 C CNN
@@ -424,7 +425,7 @@ Wire Wire Line
 Wire Wire Line
 	5275 4150 5275 4225
 $Comp
-L ACM_Y2020V0.1-rescue:GND-power #PWR016
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR016
 U 1 1 5D3F2B57
 P 5500 5250
 F 0 "#PWR016" H 5500 5000 50  0001 C CNN
@@ -441,7 +442,7 @@ P-mosfet for reverse\npolarity protection
 Text Notes 5875 3900 0    39   ~ 0
 Polyfuse for\novercurrent protection
 $Comp
-L ACM_Y2020V0.1-rescue:Conn_02x15_Odd_Even-Connector_Generic P1
+L ACM-pcb-rescue:Conn_02x15_Odd_Even-Connector_Generic-ACM_Y2020V0.1-rescue P1
 U 1 1 5D40B272
 P 6300 1875
 F 0 "P1" H 6350 2792 50  0000 C CNN
@@ -457,7 +458,7 @@ GREEN_LED
 Text Notes 3425 6225 0    50   ~ 0
 Legg ut RESET for Debugwire
 $Comp
-L ACM_Y2020V0.1-rescue:GND-power #PWR025
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR025
 U 1 1 5D493FC3
 P 8500 4050
 F 0 "#PWR025" H 8500 3800 50  0001 C CNN
@@ -472,7 +473,7 @@ Wire Wire Line
 Wire Wire Line
 	8500 4000 8875 4000
 $Comp
-L ACM_Y2020V0.1-rescue:Q_PMOS_GSD-Device Q1
+L ACM-pcb-rescue:Q_PMOS_GSD-Device-ACM_Y2020V0.1-rescue Q1
 U 1 1 5D49C78B
 P 5700 4650
 F 0 "Q1" H 5906 4696 50  0000 L CNN
@@ -490,7 +491,7 @@ Trenger flere Decupling Caps?
 Text Notes 5475 4925 2    50   ~ 0
 NB! Vgs max: ±10V!\n2.4V zener diode\nfor Vgs -2.4V
 $Comp
-L ACM_Y2020V0.1-rescue:R-Device R2
+L ACM-pcb-rescue:R-Device-ACM_Y2020V0.1-rescue R2
 U 1 1 5D4B82FB
 P 5500 5100
 F 0 "R2" H 5570 5146 50  0000 L CNN
@@ -502,7 +503,7 @@ F 4 "https://no.farnell.com/vishay/crcw0402100kfked/res-100k-1-0-063w-0402-thick
 	1    0    0    -1  
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:D_Zener-Device D2
+L ACM-pcb-rescue:D_Zener-Device-ACM_Y2020V0.1-rescue D2
 U 1 1 5D4B9259
 P 5650 4950
 F 0 "D2" H 5650 4734 50  0000 C CNN
@@ -582,7 +583,7 @@ GREEN_LED
 Text HLabel 6100 2275 0    50   Input ~ 0
 U-Pin23
 $Comp
-L ACM_Y2020V0.1-rescue:C_Small-Device C3
+L ACM-pcb-rescue:C_Small-Device-ACM_Y2020V0.1-rescue C3
 U 1 1 5D42F0C6
 P 2850 4225
 F 0 "C3" H 2758 4179 50  0000 R CNN
@@ -594,7 +595,7 @@ F 4 "https://no.farnell.com/vishay/vj0402y104kxjcw1bc/cap-0-1-f-16v-10-x7r-0402/
 	-1   0    0    1   
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:GND-power #PWR06
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR06
 U 1 1 5D431A06
 P 2850 4325
 F 0 "#PWR06" H 2850 4075 50  0001 C CNN
@@ -605,7 +606,7 @@ F 3 "" H 2850 4325 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:L_Small-Device L1
+L ACM-pcb-rescue:L_Small-Device-ACM_Y2020V0.1-rescue L1
 U 1 1 5D438986
 P 2500 4125
 F 0 "L1" V 2685 4125 50  0000 C CNN
@@ -623,7 +624,7 @@ Wire Wire Line
 Text Notes 1350 4500 2    50   ~ 0
 Place as close as \npossible to pin 20
 $Comp
-L ACM_Y2020V0.1-rescue:GND-power #PWR03
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR03
 U 1 1 5D434DF4
 P 925 4950
 F 0 "#PWR03" H 925 4700 50  0001 C CNN
@@ -634,7 +635,7 @@ F 3 "" H 925 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:C-Device C2
+L ACM-pcb-rescue:C-Device-ACM_Y2020V0.1-rescue C2
 U 1 1 5D434DE8
 P 925 4800
 F 0 "C2" H 725 4900 50  0000 L CNN
@@ -659,7 +660,7 @@ Close as possible to MCP-chip.\n    Route on single layer with ground
 Text HLabel 2775 4575 2    50   Input ~ 0
 CLK_MCP
 $Comp
-L ACM_Y2020V0.1-rescue:Resonator_Small-Device Y1
+L ACM-pcb-rescue:Resonator_Small-Device-ACM_Y2020V0.1-rescue Y1
 U 1 1 5D3C125F
 P 3700 5250
 F 0 "Y1" V 3975 5225 50  0000 C CNN
@@ -678,7 +679,7 @@ SCK
 Wire Notes Line
 	1000 2450 1000 3275
 $Comp
-L ACM_Y2020V0.1-rescue:NCV890430MW50TXG-NCV890430MW50TXG U3
+L ACM-pcb-rescue:NCV890430MW50TXG-NCV890430MW50TXG-ACM_Y2020V0.1-rescue U3
 U 1 1 5D46D022
 P 5525 5800
 F 0 "U3" H 6125 6065 50  0000 C CNN
@@ -697,7 +698,7 @@ F 11 "http://uk.rs-online.com/web/p/products/1263468P" H 6575 5000 50  0001 L CN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:C-Device C5
+L ACM-pcb-rescue:C-Device-ACM_Y2020V0.1-rescue C5
 U 1 1 5D471BBC
 P 7225 5950
 F 0 "C5" H 7025 6025 50  0000 L CNN
@@ -708,7 +709,7 @@ F 3 "~" H 7225 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:C-Device C4
+L ACM-pcb-rescue:C-Device-ACM_Y2020V0.1-rescue C4
 U 1 1 5D4707C2
 P 5175 6175
 F 0 "C4" H 5290 6221 50  0000 L CNN
@@ -719,7 +720,7 @@ F 3 "~" H 5175 6175 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:L_Small-Device L2
+L ACM-pcb-rescue:L_Small-Device-ACM_Y2020V0.1-rescue L2
 U 1 1 5D48CBD7
 P 6975 5800
 F 0 "L2" V 7160 5800 50  0000 C CNN
@@ -753,7 +754,7 @@ Wire Wire Line
 Wire Wire Line
 	5350 6000 5350 6325
 $Comp
-L ACM_Y2020V0.1-rescue:GND-power #PWR012
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR012
 U 1 1 5D4B3D9A
 P 5175 6325
 F 0 "#PWR012" H 5175 6075 50  0001 C CNN
@@ -764,7 +765,7 @@ F 3 "" H 5175 6325 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:GND-power #PWR014
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR014
 U 1 1 5D4B4C75
 P 5350 6325
 F 0 "#PWR014" H 5350 6075 50  0001 C CNN
@@ -775,7 +776,7 @@ F 3 "" H 5350 6325 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:GND-power #PWR018
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR018
 U 1 1 5D4B506E
 P 6125 6600
 F 0 "#PWR018" H 6125 6350 50  0001 C CNN
@@ -792,7 +793,7 @@ Wire Wire Line
 Wire Wire Line
 	6725 5800 6875 5800
 $Comp
-L ACM_Y2020V0.1-rescue:GND-power #PWR020
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR020
 U 1 1 5D4B9D6B
 P 6925 6300
 F 0 "#PWR020" H 6925 6050 50  0001 C CNN
@@ -803,7 +804,7 @@ F 3 "" H 6925 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:GND-power #PWR021
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR021
 U 1 1 5D4C28F2
 P 7225 6100
 F 0 "#PWR021" H 7225 5850 50  0001 C CNN
@@ -828,7 +829,7 @@ Connection ~ 7225 5800
 Wire Wire Line
 	7700 5800 7700 5700
 $Comp
-L ACM_Y2020V0.1-rescue:+5V-power #PWR022
+L ACM-pcb-rescue:+5V-power-ACM_Y2020V0.1-rescue #PWR022
 U 1 1 5D4DE85A
 P 7700 5700
 F 0 "#PWR022" H 7700 5550 50  0001 C CNN
@@ -839,7 +840,7 @@ F 3 "" H 7700 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:C-Device C11
+L ACM-pcb-rescue:C-Device-ACM_Y2020V0.1-rescue C11
 U 1 1 5D4736E4
 P 7450 5950
 F 0 "C11" H 7565 5996 50  0000 L CNN
@@ -855,7 +856,7 @@ Wire Wire Line
 	7450 5800 7600 5800
 Connection ~ 7450 5800
 $Comp
-L ACM_Y2020V0.1-rescue:GND-power #PWR0101
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR0101
 U 1 1 5D486DC3
 P 7450 6100
 F 0 "#PWR0101" H 7450 5850 50  0001 C CNN
@@ -866,7 +867,7 @@ F 3 "" H 7450 6100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:C-Device C10
+L ACM-pcb-rescue:C-Device-ACM_Y2020V0.1-rescue C10
 U 1 1 5D487807
 P 4750 6200
 F 0 "C10" H 4865 6246 50  0000 L CNN
@@ -886,7 +887,7 @@ Connection ~ 4750 5800
 Wire Wire Line
 	4750 5800 5175 5800
 $Comp
-L ACM_Y2020V0.1-rescue:GND-power #PWR0102
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR0102
 U 1 1 5D49183D
 P 4750 6350
 F 0 "#PWR0102" H 4750 6100 50  0001 C CNN
@@ -909,7 +910,7 @@ Wire Wire Line
 Text Notes 1850 700  0    79   ~ 16
 ICSP
 $Comp
-L ACM_Y2020V0.1-rescue:+5V-power #PWR07
+L ACM-pcb-rescue:+5V-power-ACM_Y2020V0.1-rescue #PWR07
 U 1 1 5D3A42C5
 P 3075 1050
 F 0 "#PWR07" H 3075 900 50  0001 C CNN
@@ -920,7 +921,7 @@ F 3 "" H 3075 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:GND-power #PWR08
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR08
 U 1 1 5D3A6728
 P 3075 1400
 F 0 "#PWR08" H 3075 1150 50  0001 C CNN
@@ -939,7 +940,7 @@ Reset
 Text HLabel 2975 1225 2    50   Input ~ 0
 MOSI
 $Comp
-L ACM_Y2020V0.1-rescue:TC2030-MCP-NL-TC2030-MCP-NL J1
+L ACM-pcb-rescue:TC2030-MCP-NL-TC2030-MCP-NL-ACM_Y2020V0.1-rescue J1
 U 1 1 5D389624
 P 975 1125
 F 0 "J1" H 1975 1390 50  0000 C CNN
@@ -965,7 +966,7 @@ Wire Notes Line
 Text Notes 1225 2425 0    79   ~ 16
 Mechanical
 $Comp
-L ACM_Y2020V0.1-rescue:MountingHole-Mechanical H1
+L ACM-pcb-rescue:MountingHole-Mechanical-ACM_Y2020V0.1-rescue H1
 U 1 1 5D45C896
 P 1125 2600
 F 0 "H1" H 1225 2646 50  0000 L CNN
@@ -976,7 +977,7 @@ F 3 "~" H 1125 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:ASMB-MTB0-0A3A2-LED D3
+L ACM-pcb-rescue:ASMB-MTB0-0A3A2-LED-ACM_Y2020V0.1-rescue D3
 U 1 1 5DD7E33E
 P 9825 1525
 F 0 "D3" H 9825 2042 50  0000 C CNN
@@ -987,7 +988,7 @@ F 3 "https://docs.broadcom.com/docs/AV02-4186EN" H 9825 1075 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:R-Device R3
+L ACM-pcb-rescue:R-Device-ACM_Y2020V0.1-rescue R3
 U 1 1 5DD8F0AE
 P 9375 1325
 F 0 "R3" V 9168 1325 50  0000 C CNN
@@ -998,7 +999,7 @@ F 3 "~" H 9375 1325 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:R-Device R4
+L ACM-pcb-rescue:R-Device-ACM_Y2020V0.1-rescue R4
 U 1 1 5DD96084
 P 9375 1525
 F 0 "R4" V 9168 1525 50  0000 C CNN
@@ -1009,7 +1010,7 @@ F 3 "~" H 9375 1525 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:R-Device R5
+L ACM-pcb-rescue:R-Device-ACM_Y2020V0.1-rescue R5
 U 1 1 5DD9CFD2
 P 9375 1725
 F 0 "R5" V 9168 1725 50  0000 C CNN
@@ -1026,7 +1027,7 @@ Wire Wire Line
 Wire Wire Line
 	9625 1725 9525 1725
 $Comp
-L ACM_Y2020V0.1-rescue:+5V-power #PWR0103
+L ACM-pcb-rescue:+5V-power-ACM_Y2020V0.1-rescue #PWR0103
 U 1 1 5DDBB889
 P 10100 1475
 F 0 "#PWR0103" H 10100 1325 50  0001 C CNN
@@ -1057,7 +1058,7 @@ RGB krets\n
 Wire Wire Line
 	2600 4125 2850 4125
 $Comp
-L ACM_Y2020V0.1-rescue:ATmega328P-AU-MCU_Microchip_ATmega U1
+L ACM-pcb-rescue:ATmega328P-AU-MCU_Microchip_ATmega-ACM_Y2020V0.1-rescue U1
 U 1 1 5DD5D06D
 P 2175 5775
 F 0 "U1" H 2175 4186 50  0000 C CNN
@@ -1104,7 +1105,7 @@ U-Pin14
 Text HLabel 6600 1675 2    50   Input ~ 0
 U-Pin12
 $Comp
-L ACM_Y2020V0.1-rescue:GND-power #PWR019
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR019
 U 1 1 5D47FCD3
 P 7125 1875
 F 0 "#PWR019" H 7125 1625 50  0001 C CNN
@@ -1138,7 +1139,7 @@ U-Pin21
 Text Notes 9275 2925 0    79   ~ 16
 CAN MCU
 $Comp
-L ACM_Y2020V0.1-rescue:+5V-power #PWR0104
+L ACM-pcb-rescue:+5V-power-ACM_Y2020V0.1-rescue #PWR0104
 U 1 1 5E300CFD
 P 9375 2925
 F 0 "#PWR0104" H 9375 2775 50  0001 C CNN
@@ -1151,7 +1152,7 @@ $EndComp
 Wire Wire Line
 	9375 2925 9375 3275
 $Comp
-L ACM_Y2020V0.1-rescue:+5V-power #PWR0105
+L ACM-pcb-rescue:+5V-power-ACM_Y2020V0.1-rescue #PWR0105
 U 1 1 5E304DB4
 P 9675 2900
 F 0 "#PWR0105" H 9675 2750 50  0001 C CNN
@@ -1189,7 +1190,7 @@ U-Pin29
 Text HLabel 1575 4875 0    50   Input ~ 0
 U-Pin5
 $Comp
-L ACM_Y2020V0.1-rescue:+12V-power #PWR0106
+L ACM-pcb-rescue:+12V-power-ACM_Y2020V0.1-rescue #PWR0106
 U 1 1 5E1D7493
 P 6800 2575
 F 0 "#PWR0106" H 6800 2425 50  0001 C CNN
@@ -1200,7 +1201,7 @@ F 3 "" H 6800 2575 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:+12V-power #PWR015
+L ACM-pcb-rescue:+12V-power-ACM_Y2020V0.1-rescue #PWR015
 U 1 1 5D3DBA57
 P 5050 1150
 F 0 "#PWR015" H 5050 1000 50  0001 C CNN
@@ -1215,7 +1216,7 @@ U-Pin1
 Text HLabel 6100 1475 0    50   Input ~ 0
 U-Pin7
 $Comp
-L ACM_Y2020V0.1-rescue:GND-power #PWR0107
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR0107
 U 1 1 5E243E92
 P 7325 2125
 F 0 "#PWR0107" H 7325 1875 50  0001 C CNN
@@ -1226,7 +1227,7 @@ F 3 "" H 7325 2125 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:GND-power #PWR0108
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR0108
 U 1 1 5E24CDDB
 P 6050 2175
 F 0 "#PWR0108" H 6050 1925 50  0001 C CNN
@@ -1237,7 +1238,7 @@ F 3 "" H 6050 2175 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:+5V-power #PWR011
+L ACM-pcb-rescue:+5V-power-ACM_Y2020V0.1-rescue #PWR011
 U 1 1 5D3DED37
 P 6700 2375
 F 0 "#PWR011" H 6700 2225 50  0001 C CNN
