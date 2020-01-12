@@ -200,23 +200,10 @@ F 3 "~" V 10150 1410 50  0001 C CNN
 	1    10150 1350
 	1    0    0    -1  
 $EndComp
-$Comp
-L Switch:SW_SPST SW1
-U 1 1 5DFDECE5
-P 6300 1450
-F 0 "SW1" V 6350 1700 50  0000 C CNN
-F 1 "SW_SPST" V 6250 1700 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin" H 6300 1450 50  0001 C CNN
-F 3 "~" H 6300 1450 50  0001 C CNN
-	1    6300 1450
-	0    -1   -1   0   
-$EndComp
 Text GLabel 6300 1650 3    50   Input ~ 0
 Ground
 Text GLabel 6300 1000 1    50   Input ~ 0
 ON_OFF
-Wire Wire Line
-	6300 1250 6300 1000
 Text GLabel 10150 900  1    50   Input ~ 0
 VBAT
 $Bitmap
@@ -9723,4 +9710,29 @@ Text GLabel 10050 4200 1    50   Input ~ 0
 3.3V
 Wire Wire Line
 	9450 4200 10200 4200
+$Comp
+L Switch:SW_Push_Dual SW1
+U 1 1 5E1C0144
+P 6300 1300
+F 0 "SW1" H 5700 1350 50  0000 C CNN
+F 1 "SW_Push_Dual" H 5750 1250 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 6300 1500 50  0001 C CNN
+F 3 "~" H 6300 1500 50  0001 C CNN
+	1    6300 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 1650 6300 1650
+Wire Wire Line
+	6100 1500 6100 1650
+Wire Wire Line
+	6500 1000 6500 1300
+Wire Wire Line
+	6300 1000 6500 1000
+Connection ~ 6100 1500
+Wire Wire Line
+	6100 1300 6100 1500
+Connection ~ 6500 1300
+Wire Wire Line
+	6500 1300 6500 1500
 $EndSCHEMATC
