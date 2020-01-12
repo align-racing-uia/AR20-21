@@ -1337,7 +1337,7 @@
   )
 
   (module MountingHole:MountingHole_2.2mm_M2 (layer B.Cu) (tedit 56D1B4CB) (tstamp 5E1C5889)
-    (at 66.04 88.91)
+    (at 66 89)
     (descr "Mounting Hole 2.2mm, no annular, M2")
     (tags "mounting hole 2.2mm no annular m2")
     (path /5D45C896)
