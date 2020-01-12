@@ -1077,9 +1077,9 @@ Wire Wire Line
 Connection ~ 2175 4125
 Wire Wire Line
 	6600 1875 6725 1875
-Text HLabel 6600 2375 2    50   Input ~ 0
+Text HLabel 8000 2400 2    50   Input ~ 0
 U-Pin26
-Text HLabel 7000 2475 2    50   Input ~ 0
+Text HLabel 7375 2525 2    50   Input ~ 0
 U-Pin28
 Text HLabel 6600 1475 2    50   Input ~ 0
 U-Pin8
@@ -1089,7 +1089,7 @@ Wire Wire Line
 	6725 1875 7125 1875
 Text HLabel 6600 1375 2    50   Input ~ 0
 U-Pin6
-Text HLabel 6900 2275 2    50   Input ~ 0
+Text HLabel 7875 2250 2    50   Input ~ 0
 U-Pin24
 Text HLabel 6600 2175 2    50   Input ~ 0
 U-Pin22
@@ -1133,7 +1133,7 @@ Text HLabel 1575 4775 0    50   Input ~ 0
 U-Pin7
 Text HLabel 6100 2475 0    50   Input ~ 0
 U-Pin27
-Text HLabel 5825 2175 0    50   Input ~ 0
+Text HLabel 5325 2175 0    50   Input ~ 0
 U-Pin21
 Text Notes 9275 2925 0    79   ~ 16
 CAN MCU
@@ -1175,7 +1175,7 @@ Text HLabel 5825 2075 0    50   Input ~ 0
 U-Pin19
 Text HLabel 5450 2625 0    50   Input ~ 0
 U-Pin17
-Text HLabel 5775 1600 0    50   Input ~ 0
+Text HLabel 6100 1575 0    50   Input ~ 0
 U-Pin9
 Wire Wire Line
 	2775 6075 3275 6075
@@ -1191,12 +1191,12 @@ U-Pin5
 $Comp
 L ACM_Y2020V0.1-rescue:+12V-power #PWR0106
 U 1 1 5E1D7493
-P 6600 2575
-F 0 "#PWR0106" H 6600 2425 50  0001 C CNN
-F 1 "+12V" V 6600 2775 50  0000 C CNN
-F 2 "" H 6600 2575 50  0001 C CNN
-F 3 "" H 6600 2575 50  0001 C CNN
-	1    6600 2575
+P 6800 2575
+F 0 "#PWR0106" H 6800 2425 50  0001 C CNN
+F 1 "+12V" V 6800 2775 50  0000 C CNN
+F 2 "" H 6800 2575 50  0001 C CNN
+F 3 "" H 6800 2575 50  0001 C CNN
+	1    6800 2575
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1212,39 +1212,57 @@ F 3 "" H 5050 1150 50  0001 C CNN
 $EndComp
 Text HLabel 6100 1175 0    50   Input ~ 0
 U-Pin1
-$Comp
-L ACM_Y2020V0.1-rescue:+5V-power #PWR011
-U 1 1 5D3DED37
-P 6600 2475
-F 0 "#PWR011" H 6600 2325 50  0001 C CNN
-F 1 "+5V" V 6600 2650 50  0000 C CNN
-F 2 "" H 6600 2475 50  0001 C CNN
-F 3 "" H 6600 2475 50  0001 C CNN
-	1    6600 2475
-	0    1    1    0   
-$EndComp
 Text HLabel 6100 1475 0    50   Input ~ 0
 U-Pin7
 $Comp
 L ACM_Y2020V0.1-rescue:GND-power #PWR0107
 U 1 1 5E243E92
-P 6600 2275
-F 0 "#PWR0107" H 6600 2025 50  0001 C CNN
-F 1 "GND" H 6605 2102 50  0000 C CNN
-F 2 "" H 6600 2275 50  0001 C CNN
-F 3 "" H 6600 2275 50  0001 C CNN
-	1    6600 2275
+P 7325 2125
+F 0 "#PWR0107" H 7325 1875 50  0001 C CNN
+F 1 "GND" H 7330 1952 50  0000 C CNN
+F 2 "" H 7325 2125 50  0001 C CNN
+F 3 "" H 7325 2125 50  0001 C CNN
+	1    7325 2125
 	0    -1   -1   0   
 $EndComp
 $Comp
-L ACM_Y2020V0.1-rescue:GND-power #PWR?
+L ACM_Y2020V0.1-rescue:GND-power #PWR0108
 U 1 1 5E24CDDB
-P 6100 2175
-F 0 "#PWR?" H 6100 1925 50  0001 C CNN
-F 1 "GND" H 6105 2002 50  0000 C CNN
-F 2 "" H 6100 2175 50  0001 C CNN
-F 3 "" H 6100 2175 50  0001 C CNN
-	1    6100 2175
+P 6050 2175
+F 0 "#PWR0108" H 6050 1925 50  0001 C CNN
+F 1 "GND" H 6055 2002 50  0000 C CNN
+F 2 "" H 6050 2175 50  0001 C CNN
+F 3 "" H 6050 2175 50  0001 C CNN
+	1    6050 2175
 	0    1    1    0   
 $EndComp
+$Comp
+L ACM_Y2020V0.1-rescue:+5V-power #PWR011
+U 1 1 5D3DED37
+P 6700 2375
+F 0 "#PWR011" H 6700 2225 50  0001 C CNN
+F 1 "+5V" V 6700 2550 50  0000 C CNN
+F 2 "" H 6700 2375 50  0001 C CNN
+F 3 "" H 6700 2375 50  0001 C CNN
+	1    6700 2375
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 2375 6600 2375
+Wire Wire Line
+	6600 2275 6700 2275
+Wire Wire Line
+	6700 2275 6700 2375
+Connection ~ 6700 2375
+Wire Wire Line
+	6600 2575 6800 2575
+Wire Wire Line
+	6600 2475 6700 2475
+Wire Wire Line
+	6700 2475 6700 2375
+Wire Wire Line
+	6100 2075 6100 2175
+Wire Wire Line
+	6100 2175 6050 2175
+Connection ~ 6100 2175
 $EndSCHEMATC
