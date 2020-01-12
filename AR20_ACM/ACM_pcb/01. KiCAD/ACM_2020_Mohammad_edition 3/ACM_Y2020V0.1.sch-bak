@@ -432,13 +432,13 @@ Wire Wire Line
 $Comp
 L ACM_Y2020V0.1-rescue:+12V-power #PWR015
 U 1 1 5D3DBA57
-P 6125 2850
-F 0 "#PWR015" H 6125 2700 50  0001 C CNN
-F 1 "+12V" H 6140 3023 50  0000 C CNN
-F 2 "" H 6125 2850 50  0001 C CNN
-F 3 "" H 6125 2850 50  0001 C CNN
-	1    6125 2850
-	1    0    0    -1  
+P 5750 1225
+F 0 "#PWR015" H 5750 1075 50  0001 C CNN
+F 1 "+12V" H 5765 1398 50  0000 C CNN
+F 2 "" H 5750 1225 50  0001 C CNN
+F 3 "" H 5750 1225 50  0001 C CNN
+	1    5750 1225
+	-1   0    0    1   
 $EndComp
 $Comp
 L ACM_Y2020V0.1-rescue:+5V-power #PWR011
@@ -557,13 +557,13 @@ Wire Wire Line
 	6600 1975 6725 1975
 Wire Wire Line
 	6725 1975 6725 1875
-Text HLabel 5675 1350 0    50   Input ~ 0
+Text HLabel 6100 1375 0    50   Input ~ 0
 U-Pin5
-Text HLabel 5675 1250 0    50   Input ~ 0
-U-Pin7
+Text HLabel 6100 2475 0    50   Input ~ 0
+U-Pin27
 Text HLabel 5675 1050 0    50   Input ~ 0
 U-Pin1
-Text HLabel 5675 1150 0    50   Input ~ 0
+Text HLabel 5625 1325 0    50   Input ~ 0
 U-Pin3
 Text HLabel 1575 6275 0    50   Input ~ 0
 U-Pin24
@@ -598,7 +598,7 @@ U-Pin3
 Text HLabel 10775 4200 2    50   Input ~ 0
 U-Pin1
 Wire Wire Line
-	6125 2900 6125 2850
+	5750 1175 5750 1225
 Wire Wire Line
 	5300 2775 5300 2700
 Wire Wire Line
@@ -611,9 +611,9 @@ Text HLabel 2775 6875 2    50   Input ~ 0
 U-Pin23
 Wire Wire Line
 	3275 6075 3450 6075
-Text HLabel 5675 2250 0    50   Input ~ 0
+Text HLabel 5175 2175 0    50   Input ~ 0
 GREEN_LED
-Text HLabel 5675 2150 0    50   Input ~ 0
+Text HLabel 6100 2275 0    50   Input ~ 0
 U-Pin23
 $Comp
 L ACM_Y2020V0.1-rescue:C_Small-Device C3
@@ -1115,33 +1115,33 @@ Wire Wire Line
 	1300 4575 1300 4625
 Wire Wire Line
 	6600 1875 6725 1875
-Text HLabel 6850 2350 2    50   Input ~ 0
+Text HLabel 6600 2375 2    50   Input ~ 0
 U-Pin26
-Text HLabel 6850 2450 2    50   Input ~ 0
+Text HLabel 6600 2475 2    50   Input ~ 0
 U-Pin28
-Text HLabel 6850 1450 2    50   Input ~ 0
+Text HLabel 6600 1475 2    50   Input ~ 0
 U-Pin8
 Text HLabel 6100 2575 0    50   Input ~ 0
 Reset
 Wire Wire Line
 	6725 1875 7125 1875
-Text HLabel 6850 1350 2    50   Input ~ 0
+Text HLabel 6600 1375 2    50   Input ~ 0
 U-Pin6
-Text HLabel 6850 2550 2    50   Input ~ 0
+Text HLabel 6600 2575 2    50   Input ~ 0
 U-Pin30
-Text HLabel 6850 2250 2    50   Input ~ 0
+Text HLabel 6600 2275 2    50   Input ~ 0
 U-Pin24
-Text HLabel 6850 2150 2    50   Input ~ 0
+Text HLabel 6600 2175 2    50   Input ~ 0
 U-Pin22
-Text HLabel 6850 2050 2    50   Input ~ 0
+Text HLabel 6600 2075 2    50   Input ~ 0
 U-Pin20
-Text HLabel 6850 1250 2    50   Input ~ 0
+Text HLabel 6600 1275 2    50   Input ~ 0
 U-Pin4
-Text HLabel 6850 1150 2    50   Input ~ 0
+Text HLabel 6600 1175 2    50   Input ~ 0
 U-Pin2
-Text HLabel 6850 1750 2    50   Input ~ 0
+Text HLabel 6600 1775 2    50   Input ~ 0
 U-Pin14
-Text HLabel 6850 1650 2    50   Input ~ 0
+Text HLabel 6600 1675 2    50   Input ~ 0
 U-Pin12
 $Comp
 L ACM_Y2020V0.1-rescue:GND-power #PWR019
@@ -1156,19 +1156,19 @@ F 3 "" H 7125 1875 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5300 2775 5525 2775
-Text HLabel 5675 2050 0    50   Input ~ 0
+Text HLabel 6100 1575 0    50   Input ~ 0
 CAN_CS
-Text HLabel 5675 1950 0    50   Input ~ 0
+Text HLabel 5175 2050 0    50   Input ~ 0
 CLK_MCP
-Text HLabel 5675 1850 0    50   Input ~ 0
+Text HLabel 5300 1925 0    50   Input ~ 0
 RED_LED
-Text HLabel 5675 1750 0    50   Input ~ 0
+Text HLabel 5325 1800 0    50   Input ~ 0
 BLUE_LED
-Text HLabel 5675 1650 0    50   Input ~ 0
+Text HLabel 6100 1875 0    50   Input ~ 0
 MOSI
-Text HLabel 5675 1550 0    50   Input ~ 0
+Text HLabel 6100 1775 0    50   Input ~ 0
 MISO
-Text HLabel 5675 1450 0    50   Input ~ 0
+Text HLabel 6100 1675 0    50   Input ~ 0
 SCK
 Connection ~ 6725 1875
 Wire Wire Line
@@ -1180,9 +1180,7 @@ Wire Wire Line
 Wire Wire Line
 	5525 2350 5925 2350
 Wire Wire Line
-	6100 2475 5775 2475
-Wire Wire Line
-	5775 2475 5775 2900
-Wire Wire Line
-	5775 2900 6125 2900
+	6100 1175 5750 1175
+Text HLabel 6600 1575 2    50   Input ~ 0
+U-Pin10
 $EndSCHEMATC
