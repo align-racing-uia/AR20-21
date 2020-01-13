@@ -204,4 +204,26 @@ Text HLabel 4050 2800 2    50   Input ~ 0
 Pin18
 Text HLabel 4050 4000 2    50   Input ~ 0
 Pin19
+Text HLabel 4050 2900 2    50   Input ~ 0
+Pin20
+Text HLabel 4050 3900 2    50   Input ~ 0
+Pin21
+Text HLabel 4050 3000 2    50   Input ~ 0
+Pin22
+Text HLabel 4050 3800 2    50   Input ~ 0
+Pin23
+Text HLabel 4050 3100 2    50   Input ~ 0
+Pin24
+Text HLabel 4050 3700 2    50   Input ~ 0
+Pin25
+Text HLabel 4050 3200 2    50   Input ~ 0
+Pin26
+Text HLabel 4050 3600 2    50   Input ~ 0
+Pin27
+Text HLabel 4050 3300 2    50   Input ~ 0
+Pin28
+Text HLabel 4050 3500 2    50   Input ~ 0
+Pin29
+Text HLabel 4050 3400 2    50   Input ~ 0
+Pin30
 $EndSCHEMATC
