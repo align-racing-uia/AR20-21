@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 1.27)
+    (last_trace_width 0.25)
     (user_trace_width 1.27)
     (trace_clearance 0.2)
     (zone_clearance 0.508)
@@ -42,7 +42,7 @@
     (trace_min 0.2)
     (via_size 0.8)
     (via_drill 0.4)
-    (via_min_size 0.4)
+    (via_min_size 0.6)
     (via_min_drill 0.3)
     (uvia_size 0.3)
     (uvia_drill 0.1)
@@ -86,9 +86,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory "Gerber/"))
   )
 
   (net 0 "")
@@ -292,7 +292,7 @@
   (segment (start 139.23 87.46) (end 139.949999 86.740001) (width 1.27) (layer F.Cu) (net 2))
   (segment (start 139.949999 86.740001) (end 142.630001 86.740001) (width 1.27) (layer F.Cu) (net 2))
 
-  (zone (net 3) (net_name /5V) (layer F.Cu) (tstamp 5E14DBDF) (hatch edge 0.508)
+  (zone (net 3) (net_name /5V) (layer F.Cu) (tstamp 5E1C8560) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -376,7 +376,7 @@
       )
     )
   )
-  (zone (net 1) (net_name /GND) (layer B.Cu) (tstamp 5E14DBDC) (hatch edge 0.508)
+  (zone (net 1) (net_name /GND) (layer B.Cu) (tstamp 5E1C855D) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
