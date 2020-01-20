@@ -3,3 +3,6 @@ int SensorConverter (int& a){
   return output;
 }
 
+const uint8_t min = 0;
+const uint8_t max = 255;
+const uint16_t duration = 100;
