@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TC9400COD
+D TC9400COD, Voltage-to-Frequency Converter, Voltage, 100kHz 0.05 %FSR @ 10 kHz, 14-Pin SOIC
+K
+F http://ww1.microchip.com/downloads/en/devicedoc/21483d.pdf
+$ENDCMP
+#
+#End Doc Library
