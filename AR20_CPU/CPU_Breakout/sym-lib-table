@@ -1,0 +1,11 @@
+(sym_lib_table
+  (lib (name BreakoutBoardTeensy)(type Legacy)(uri ${KIPRJMOD}/library/BreakoutBoardTeensy.lib)(options "")(descr ""))
+  (lib (name Connector_1_17)(type Legacy)(uri ${KIPRJMOD}/library/Connector_1_17.lib)(options "")(descr ""))
+  (lib (name Connector_Generic)(type Legacy)(uri ${KIPRJMOD}/library/Connector_Generic.lib)(options "")(descr ""))
+  (lib (name Connector_Generic_TEENSY)(type Legacy)(uri ${KIPRJMOD}/library/Connector_Generic_TEENSY.lib)(options "")(descr ""))
+  (lib (name LM324DRG3)(type Legacy)(uri ${KIPRJMOD}/library/LM324DRG3.lib)(options "")(descr ""))
+  (lib (name teensy4_header_breakout-cache)(type Legacy)(uri ${KIPRJMOD}/library/teensy4_header_breakout-cache.lib)(options "")(descr ""))
+  (lib (name VoltageDivider-rescue)(type Legacy)(uri ${KIPRJMOD}/library/VoltageDivider-rescue.lib)(options "")(descr ""))
+  (lib (name NCV890430MW50TXG)(type Legacy)(uri ${KIPRJMOD}/NCV890430/NCV890430MW50TXG.lib)(options "")(descr ""))
+  (lib (name SamacSys_Parts)(type Legacy)(uri ${KIPRJMOD}/library/SamacSys_Parts.lib)(options "")(descr ""))
+)
