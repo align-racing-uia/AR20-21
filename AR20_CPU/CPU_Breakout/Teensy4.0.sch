@@ -9688,8 +9688,6 @@ Wire Wire Line
 	7800 1700 7700 1700
 Wire Wire Line
 	4300 3800 4600 3800
-Text GLabel 4450 3700 0    50   Input ~ 0
-Ground
 Wire Wire Line
 	4450 3700 4600 3700
 Wire Wire Line
@@ -9735,4 +9733,6 @@ Wire Wire Line
 Connection ~ 6500 1300
 Wire Wire Line
 	6500 1300 6500 1500
+Text GLabel 4450 3700 0    50   Input ~ 0
+Vinn_5V
 $EndSCHEMATC

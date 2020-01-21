@@ -9688,8 +9688,6 @@ Wire Wire Line
 	7800 1700 7700 1700
 Wire Wire Line
 	4300 3800 4600 3800
-Text GLabel 4450 3700 0    50   Input ~ 0
-Ground
 Wire Wire Line
 	4450 3700 4600 3700
 Wire Wire Line
@@ -9722,25 +9720,40 @@ F 3 "~" H 6300 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6300 1000 6300 1100
+	6100 1650 6300 1650
 Wire Wire Line
-	6300 1100 6100 1100
+	6100 1500 6100 1650
 Wire Wire Line
-	6100 1100 6100 1300
+	6500 1000 6500 1300
 Wire Wire Line
-	6300 1100 6500 1100
+	6300 1000 6500 1000
+Connection ~ 6100 1500
 Wire Wire Line
-	6500 1100 6500 1300
-Connection ~ 6300 1100
+	6100 1300 6100 1500
+Connection ~ 6500 1300
 Wire Wire Line
-	6300 1650 6300 1600
-Wire Wire Line
-	6300 1600 6100 1600
-Wire Wire Line
-	6100 1600 6100 1500
-Wire Wire Line
-	6300 1600 6500 1600
-Wire Wire Line
-	6500 1600 6500 1500
-Connection ~ 6300 1600
+	6500 1300 6500 1500
+$Comp
+L BreakoutBoardTeensy:TC9400COD IC1
+U 1 1 5E2727DF
+P 1100 5300
+F 0 "IC1" H 2100 5565 50  0000 C CNN
+F 1 "TC9400COD" H 2100 5474 50  0000 C CNN
+F 2 "SOIC127P600X175-14N" H 2950 5400 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21483d.pdf" H 2950 5300 50  0001 L CNN
+F 4 "TC9400COD, Voltage-to-Frequency Converter, Voltage, 100kHz 0.05 %FSR @ 10 kHz, 14-Pin SOIC" H 2950 5200 50  0001 L CNN "Description"
+F 5 "1.75" H 2950 5100 50  0001 L CNN "Height"
+F 6 "Microchip" H 2950 5000 50  0001 L CNN "Manufacturer_Name"
+F 7 "TC9400COD" H 2950 4900 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "579-TC9400COD" H 2950 4800 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=579-TC9400COD" H 2950 4700 50  0001 L CNN "Mouser Price/Stock"
+F 10 "1779726P" H 2950 4600 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/1779726P" H 2950 4500 50  0001 L CNN "RS Price/Stock"
+F 12 "70451561" H 2950 4400 50  0001 L CNN "Allied_Number"
+F 13 "https://www.alliedelec.com/microchiptechnologyinc-tc9400cod/70451561/" H 2950 4300 50  0001 L CNN "Allied Price/Stock"
+	1    1100 5300
+	1    0    0    -1  
+$EndComp
+Text GLabel 4450 3700 0    50   Input ~ 0
+Vinn_5V
 $EndSCHEMATC
