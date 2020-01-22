@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name ACM_2020_Symbol)(type Legacy)(uri ${KIPRJMOD}/Library/ACM_2020_Symbol.lib)(options "")(descr ""))
+)

@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "Pedalbox Extenion Board")(type KiCad)(uri "${KIPRJMOD}/Library/Pedalbox Extenion Board.pretty")(options "")(descr ""))
+)
