@@ -45,21 +45,22 @@ void setup() {
 void loop() {
   
   
-//  for(i=min; i<max; i++){
-//      out++;
-//      canMsg1.data[0] = out;
-//      canMsg1.data[2] = out;
-//      mcp2515.sendMessage(&canMsg2);
-//      mcp2515.sendMessage(&canMsg1);    
-//      delay(duration);
-//  }
+  for(i=min; i<max; i++){
+      out++;
+      canMsg1.data[0] = out;
+      canMsg1.data[2] = out;
+      mcp2515.sendMessage(&canMsg2);
+      mcp2515.sendMessage(&canMsg1);    
+      delay(duration);
+  }
+delay(1000);
 
-out = map(analogRead(pedalInput),41,847,0,255);
-
-canMsg1.data[0] = out;
-canMsg1.data[2] = out;
-mcp2515.sendMessage(&canMsg2);
-mcp2515.sendMessage(&canMsg1);
+//out = map(analogRead(pedalInput),41,847,0,255);
+//
+//canMsg1.data[0] = out;
+//canMsg1.data[2] = out;
+//mcp2515.sendMessage(&canMsg2);
+//mcp2515.sendMessage(&canMsg1);
   
 
 }
