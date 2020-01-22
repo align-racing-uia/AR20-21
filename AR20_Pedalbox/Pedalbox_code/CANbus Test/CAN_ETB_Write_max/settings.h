@@ -11,7 +11,7 @@ int led = 9;
 
 //Function settings
 const uint8_t min = 0;
-const uint8_t max = 255;
+const uint8_t max = 128;
 const uint16_t duration = 4;
 
 // Input settings
