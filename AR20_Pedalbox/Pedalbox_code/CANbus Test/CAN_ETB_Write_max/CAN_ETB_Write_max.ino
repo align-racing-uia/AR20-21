@@ -5,10 +5,10 @@
 struct can_frame canMsg1;
 struct can_frame canMsg2;
 MCP2515 mcp2515(7);
-
+int array [255];
 int i = 0;
 int i1 = 0;
-int out = 0;
+
 unsigned long previousMillis = 0;
 unsigned long currentMillis = 0;
 
@@ -46,14 +46,19 @@ void loop() {
   
   
   for(i=min; i<max; i++){
-      out++;
-      canMsg1.data[0] = out;
-      canMsg1.data[2] = out;
+      canMsg1.data[0] = i;
+      canMsg1.data[2] = i;
       mcp2515.sendMessage(&canMsg2);
       mcp2515.sendMessage(&canMsg1);    
       delay(duration);
   }
-delay(1000);
+  for(i=max; i>min; i--){
+      canMsg1.data[0] = i;
+      canMsg1.data[2] = i;
+      mcp2515.sendMessage(&canMsg2);
+      mcp2515.sendMessage(&canMsg1);    
+      delay(duration);
+  }
 
 //out = map(analogRead(pedalInput),41,847,0,255);
 //
