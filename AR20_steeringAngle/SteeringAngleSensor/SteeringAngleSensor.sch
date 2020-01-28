@@ -15,8 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	5575 2975 5750 2975
-Wire Wire Line
 	5925 3025 5800 3025
 Wire Wire Line
 	5800 2975 5800 3025
@@ -89,21 +87,12 @@ Connection ~ 5750 3125
 Wire Wire Line
 	5750 3125 5725 3125
 Wire Wire Line
-	5750 2975 5750 2925
-Wire Wire Line
-	5750 2925 5800 2925
-Connection ~ 5750 2975
-Wire Wire Line
-	5750 2975 5800 2975
-Wire Wire Line
 	5750 3275 5750 3300
 Wire Wire Line
 	5750 3300 5825 3300
 Connection ~ 5750 3275
 Wire Wire Line
 	5750 3275 5575 3275
-Text HLabel 5800 2925 2    50   Input ~ 0
-5V
 Text HLabel 5775 3175 2    50   Input ~ 0
 Out
 Text HLabel 5825 3300 2    50   Input ~ 0
@@ -114,9 +103,22 @@ U 1 1 5E14D28B
 P 6125 3125
 F 0 "J1" H 6097 3007 50  0000 R CNN
 F 1 "Conn_01x04_Male" H 6097 3098 50  0000 R CNN
-F 2 "Connector_JST:JST_XH_S4B-XH-A_1x04_P2.50mm_Horizontal" H 6125 3125 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_B4B-PH-SM4-TB_1x04-1MP_P2.00mm_Vertical" H 6125 3125 50  0001 C CNN
 F 3 "~" H 6125 3125 50  0001 C CNN
 	1    6125 3125
 	-1   0    0    1   
 $EndComp
+Text HLabel 5925 2925 0    50   Input ~ 0
+GND
+Wire Wire Line
+	5575 2975 5675 2975
+Text HLabel 5575 2900 0    50   Input ~ 0
+5V
+Wire Wire Line
+	5575 2900 5675 2900
+Wire Wire Line
+	5675 2900 5675 2975
+Connection ~ 5675 2975
+Wire Wire Line
+	5675 2975 5800 2975
 $EndSCHEMATC
