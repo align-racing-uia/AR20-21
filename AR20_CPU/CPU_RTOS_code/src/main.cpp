@@ -13,7 +13,11 @@
 //#include <FlexCAN_T4.h> - needs new library
 #ifndef INCLUSION_GUARD_FLEX_CAN
     #define INCLUSION_GUARD_FLEX_CAN
+<<<<<<< HEAD
     #include "..\lib\FlexCAN_T4\FlexCAN_T4.h"
+=======
+    #include <FlexCAN_T4.h>
+>>>>>>> master
 #endif 
 
 //Additional .h files for threads and API
@@ -30,6 +34,7 @@ thread_t* canListen;
 
 #define DEBUG_MAIL
 #ifdef DEBUG_MAIL
+<<<<<<< HEAD
   const size_t MAILBOX_COUNT = 6;
 
   CANFD_message_t CanMail_Element[MAILBOX_COUNT];
@@ -37,6 +42,15 @@ thread_t* canListen;
   MEMORYPOOL_DECL(canTxPool, sizeof(CANFD_message_t), PORT_NATURAL_ALIGN, NULL);
   msg_t letter[MAILBOX_COUNT];
   MAILBOX_DECL(canTxMail, &letter, MAILBOX_COUNT);
+=======
+const size_t MAILBOX_COUNT = 6;
+
+CANFD_message_t CanMail_Element[MAILBOX_COUNT];
+
+MEMORYPOOL_DECL(canTxPool, sizeof(CANFD_message_t), PORT_NATURAL_ALIGN, NULL);
+msg_t letter[MAILBOX_COUNT];
+MAILBOX_DECL(canTxMail, &letter, MAILBOX_COUNT);
+>>>>>>> master
 
 #endif
 
