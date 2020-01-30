@@ -882,10 +882,10 @@ Wire Wire Line
 	3975 3375 3975 3475
 Connection ~ 3975 3475
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H1
 U 1 1 5E460860
 P 5700 7075
-F 0 "H?" H 5800 7121 50  0000 L CNN
+F 0 "H1" H 5800 7121 50  0000 L CNN
 F 1 "MountingHole" H 5800 7030 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2" H 5700 7075 50  0001 C CNN
 F 3 "~" H 5700 7075 50  0001 C CNN

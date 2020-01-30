@@ -20,7 +20,7 @@ U 1 1 5E284E53
 P 9225 6200
 F 0 "U1" H 9250 8765 50  0000 C CNN
 F 1 "ACM_2020" H 9250 8674 50  0000 C CNN
-F 2 "Pedalbox Extenion Board:ACM_2020_Footprint" H 9225 6200 50  0001 C CNN
+F 2 "Pedalbox Extenion Board:ACM_2020_Footprint_wo_silk" H 9225 6200 50  0001 C CNN
 F 3 "" H 9225 6200 50  0001 C CNN
 	1    9225 6200
 	1    0    0    -1  
