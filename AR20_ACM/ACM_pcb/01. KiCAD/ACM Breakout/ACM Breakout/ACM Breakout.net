@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "C:\\Users\\Nylund\\Documents\\Align Racing\\AR20\\AR20-git\\AR20_ACM\\ACM_pcb\\01. KiCAD\\ACM Breakout\\ACM Breakout\\ACM Breakout.sch")
-    (date "13-Jan-20 05:45:26 PM")
+    (date "30-Jan-20 01:23:22 PM")
     (tool "Eeschema (5.1.2)-2")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -17,7 +17,7 @@
   (components
     (comp (ref U1)
       (value ACM_2020)
-      (footprint ACM_2020_Footprintandsymbol:ACM_2020Footprint)
+      (footprint ACM_2020_Footprintandsymbol:ACM_2020_Footprint_wo_silk)
       (libsource (lib ACM_2020_Symbol) (part ACM_2020) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 5E1C7CAC))
