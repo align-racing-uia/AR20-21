@@ -52,7 +52,7 @@ U 1 1 5DFD4C0E
 P 5700 4200
 F 0 "GND1" V 5654 4350 50  0000 L CNN
 F 1 "GND" V 5745 4350 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 5700 4200 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5700 4200 50  0001 C CNN
 F 3 "~" H 5700 4200 50  0001 C CNN
 	1    5700 4200
 	1    0    0    -1  
@@ -63,7 +63,7 @@ U 1 1 5DFD4C14
 P 7000 3500
 F 0 "H1" V 6954 3650 50  0000 L CNN
 F 1 "CANH_out" V 7045 3650 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 7000 3500 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 7000 3500 50  0001 C CNN
 F 3 "~" H 7000 3500 50  0001 C CNN
 	1    7000 3500
 	0    1    1    0   
@@ -95,7 +95,7 @@ U 1 1 5DFD4C28
 P 7000 4100
 F 0 "H2" V 6954 4250 50  0000 L CNN
 F 1 "CANL_out" V 7045 4250 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm" H 7000 4100 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 7000 4100 50  0001 C CNN
 F 3 "~" H 7000 4100 50  0001 C CNN
 	1    7000 4100
 	0    1    1    0   
