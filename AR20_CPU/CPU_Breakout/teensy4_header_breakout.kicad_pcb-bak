@@ -3268,7 +3268,7 @@
   (gr_text 1 (at 117.25 147) (layer Front_GND)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
-  (gr_text YOLO-AR20 (at 144.26184 141.04112) (layer Back_GND)
+  (gr_text T4.0AR20 (at 144.26184 141.04112) (layer Back_GND)
     (effects (font (size 2.5 2.5) (thickness 0.625)) (justify mirror))
   )
   (gr_line (start 110.56888 68.64324) (end 110.56888 148.64324) (layer Edge.Cuts) (width 0.1))
