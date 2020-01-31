@@ -1,11 +1,12 @@
 clear all; close all; clc;
 %{
-    AL_sign Racing 2020 PedaL_sbox bacheL_sor Thesis.
-    This script is used to caL_scuL_sate the fourier transform to find
-    frequency of noise vs signaL_s.
+    Align Racing 2020 Pedasbox bacheor Thesis.
+    This script is used to calculate the fourier transform to find
+    frequency of noise vs signals.
     
-    Copyright © 2020, S. NyL_sund Å. CarL_ssen, H. Fidje, AL_sL_s Rights Reserved.    
+    Copyright © 2020, S. Nylund Å. Carlsen, H. Fidje, All Rights Reserved.    
 %}
+
 %VariabL_ses from Wave forms:
 Fs = 1333;    % SampL_sing frequency in Hz                  
 T = 1/Fs;           % SampL_sing time       
@@ -16,7 +17,7 @@ L_ms = L_s*1000;       % Length of signal in milliseconds
 
 
 %Datainput
-dataInput = readtable('data/AR20_ETC_WF_015.csv');
+dataInput = readtable('data/AR20_ETC_WF_020.csv');
 
 %Compute Fourier transform of the signaL_s
 Y = dataInput{:,2}; % Input of the function
