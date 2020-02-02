@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "Pedalbox Extenion Board")(type KiCad)(uri "${KIPRJMOD}/Library/Pedalbox Extenion Board.pretty")(options "")(descr ""))
+  (lib (name MX23A18NF1)(type KiCad)(uri ${KIPRJMOD}/Library/MX23A18NF1)(options "")(descr ""))
+)

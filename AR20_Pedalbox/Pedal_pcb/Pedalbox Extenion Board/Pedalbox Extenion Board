@@ -1,0 +1,28 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>KiCad BOM Example 5</title>
+    </head>
+    <body>
+    <h1>C:\Users\Nylund\Documents\Align Racing\AR20\AR20-git\AR20_Pedalbox\Pedal_pcb\Pedalbox Extenion Board\Pedalbox Extenion Board.sch</h1>
+    <p>31-Jan-20 11:36:04 AM</p>
+    <p>Eeschema (5.1.2)-2</p>
+    <p><b>Component Count:</b>24</p>
+    <table>
+    <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Footprint</th><th>Description</th><th>Vendor</th></tr>
+    <tr><td>C1, C3</td><td>2</td><td>0.33uF</td><td>Device:C_Small</td><td>Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder</td><td>Unpolarized capacitor, small symbol</td><td></td></tr>
+    <tr><td>C2, C4</td><td>2</td><td>0.1uF</td><td>Device:C_Small</td><td>Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder</td><td>Unpolarized capacitor, small symbol</td><td></td></tr>
+    <tr><td>C5, C6, C7, C8, C9</td><td>5</td><td>C_Small</td><td>Device:C_Small</td><td>Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder</td><td>Unpolarized capacitor, small symbol</td><td></td></tr>
+    <tr><td>H1</td><td>1</td><td>MountingHole</td><td>Mechanical:MountingHole</td><td>MountingHole:MountingHole_2.2mm_M2</td><td>Mounting Hole without connection</td><td></td></tr>
+    <tr><td>P1</td><td>1</td><td>MX23A18NF1</td><td>ACM_2020_Symbol:MX23A18NF1</td><td>MX23A18NF1:JAE_MX23A18NF1</td><td></td><td></td></tr>
+    <tr><td>R1, R2, R3, R4, R5</td><td>5</td><td>R_Small</td><td>Device:R_Small</td><td>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</td><td>Resistor, small symbol</td><td></td></tr>
+    <tr><td>R6, R7, R8, R9, R10</td><td>5</td><td>4K7</td><td>Device:R_Small</td><td>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</td><td>Resistor, small symbol</td><td></td></tr>
+    <tr><td>U1</td><td>1</td><td>ACM_2020</td><td>ACM_2020_Symbol:ACM_2020</td><td>Pedalbox Extenion Board:ACM_2020_Footprint_wo_silk</td><td></td><td></td></tr>
+    <tr><td>U2, U3</td><td>2</td><td>L78L05_SO8</td><td>Regulator_Linear:L78L05_SO8</td><td>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</td><td>Positive 100mA 30V Linear Regulator, Fixed Output 5V, SO-8</td><td></td></tr><!--TABLEROW-->
+    </table>
+    </body>
+</html>
+    
