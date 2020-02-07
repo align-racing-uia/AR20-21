@@ -50,15 +50,20 @@ void loop() {
       canMsg1.data[2] = i;
       mcp2515.sendMessage(&canMsg2);
       mcp2515.sendMessage(&canMsg1);    
-      delay(duration);
+      delayMicroseconds(duration_uS);
+      if (i>max){
+        i = min;
+        }
   }
-  for(i=max; i>min; i--){
+
+  
+  /*for(i=max; i>min; i--){
       canMsg1.data[0] = i;
       canMsg1.data[2] = i;
       mcp2515.sendMessage(&canMsg2);
       mcp2515.sendMessage(&canMsg1);    
       delay(duration);
-  }
+  }*/
 
 //out = map(analogRead(pedalInput),41,847,0,255);
 //
