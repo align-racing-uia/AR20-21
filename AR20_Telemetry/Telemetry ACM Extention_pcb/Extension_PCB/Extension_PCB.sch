@@ -17,29 +17,245 @@ $EndDescr
 $Comp
 L ACM_2020_Symbol:ACM_2020 U1
 U 1 1 5E20AD4D
-P 4600 5300
-F 0 "U1" H 4625 7865 50  0000 C CNN
-F 1 "ACM_2020" H 4625 7774 50  0000 C CNN
-F 2 "MCP25625_Breakoutboard:ACM_2020_Footprint" H 4600 5300 50  0001 C CNN
-F 3 "" H 4600 5300 50  0001 C CNN
-	1    4600 5300
+P 7700 5000
+F 0 "U1" H 7725 7565 50  0000 C CNN
+F 1 "ACM_2020" H 7725 7474 50  0000 C CNN
+F 2 "MCP25625_Breakoutboard:ACM_2020_Footprint" H 7700 5000 50  0001 C CNN
+F 3 "" H 7700 5000 50  0001 C CNN
+	1    7700 5000
 	1    0    0    -1  
 $EndComp
 $Comp
 L MCU_Module:Arduino_UNO_R3 A1
 U 1 1 5E22F864
-P 7850 4000
-F 0 "A1" H 7850 5181 50  0000 C CNN
-F 1 "Arduino_UNO_R3" H 7850 5090 50  0000 C CNN
-F 2 "MCP25625_Breakoutboard:Arduino_UNO_R3_WithMountingHoles_telemetry" H 8000 2950 50  0001 L CNN
-F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 7650 5050 50  0001 C CNN
-	1    7850 4000
+P 10100 3800
+F 0 "A1" H 10500 4950 50  0000 C CNN
+F 1 "Arduino_UNO_R3" H 10500 5050 50  0000 C CNN
+F 2 "MCP25625_Breakoutboard:Arduino_UNO_R3_WithMountingHoles_telemetry" H 10250 2750 50  0001 L CNN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 9900 4850 50  0001 C CNN
+	1    10100 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L NCV890430MW50TXG:NCV890430MW50TXG SWReg_NVC?
+U 1 1 5DFC1FB6
+P 2750 4100
+F 0 "SWReg_NVC?" H 3350 4365 50  0000 C CNN
+F 1 "NCV890430MW50TXG" H 3350 4274 50  0000 C CNN
+F 2 "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.7x2.05mm" H 3800 4200 50  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/NCV890430-D.PDF" H 3800 4100 50  0001 L CNN
+F 4 "ON Semiconductor, NCV890430MW50TXG Step-Down Switching Regulator, 1-Channel 600mA 8-Pin, DFN" H 3800 4000 50  0001 L CNN "Description"
+F 5 "1" H 3800 3900 50  0001 L CNN "Height"
+F 6 "ON Semiconductor" H 3800 3800 50  0001 L CNN "Manufacturer_Name"
+F 7 "NCV890430MW50TXG" H 3800 3700 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "863-NCV890430MW50TXG" H 3800 3600 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=863-NCV890430MW50TXG" H 3800 3500 50  0001 L CNN "Mouser Price/Stock"
+F 10 "1263468P" H 3800 3400 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/1263468P" H 3800 3300 50  0001 L CNN "RS Price/Stock"
+	1    2750 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DFC1FBC
+P 1900 4300
+F 0 "C?" H 2015 4346 50  0000 L CNN
+F 1 "0.1u" H 2015 4255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1938 4150 50  0001 C CNN
+F 3 "~" H 1900 4300 50  0001 C CNN
+	1    1900 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DFC1FC2
+P 1500 4300
+F 0 "C?" H 1615 4346 50  0000 L CNN
+F 1 "10u" H 1615 4255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1538 4150 50  0001 C CNN
+F 3 "~" H 1500 4300 50  0001 C CNN
+	1    1500 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DFC1FC8
+P 4500 4250
+F 0 "C?" H 4615 4296 50  0000 L CNN
+F 1 "0.1u" H 4615 4205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4538 4100 50  0001 C CNN
+F 3 "~" H 4500 4250 50  0001 C CNN
+	1    4500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DFC1FCE
+P 4900 4250
+F 0 "C?" H 5015 4296 50  0000 L CNN
+F 1 "10u" H 5015 4205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4938 4100 50  0001 C CNN
+F 3 "~" H 4900 4250 50  0001 C CNN
+	1    4900 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5DFC1FD4
+P 4200 4100
+F 0 "L?" V 4390 4100 50  0000 C CNN
+F 1 "2.2u" V 4299 4100 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 4200 4100 50  0001 C CNN
+F 3 "~" H 4200 4100 50  0001 C CNN
+	1    4200 4100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3950 4100 4050 4100
+Wire Wire Line
+	4350 4100 4500 4100
+Wire Wire Line
+	4900 4100 4500 4100
+Connection ~ 4500 4100
+Wire Wire Line
+	1300 4100 1300 4000
+Wire Wire Line
+	1500 4150 1500 4100
+Connection ~ 1500 4100
+Wire Wire Line
+	1500 4100 1300 4100
+Wire Wire Line
+	1900 4150 1900 4100
+Connection ~ 1900 4100
+Wire Wire Line
+	1900 4100 1500 4100
+Wire Wire Line
+	1500 4450 1500 4550
+Wire Wire Line
+	1500 4550 1900 4550
+Wire Wire Line
+	1900 4550 1900 4450
+Connection ~ 1900 4550
+Wire Wire Line
+	1900 4900 1900 4550
+Wire Wire Line
+	3950 4200 4100 4200
+Wire Wire Line
+	4100 4200 4100 4900
+Wire Wire Line
+	4500 4400 4500 4900
+Wire Wire Line
+	4500 4900 4100 4900
+Connection ~ 4100 4900
+Wire Wire Line
+	4900 4400 4900 4900
+Wire Wire Line
+	4900 4900 4500 4900
+Connection ~ 4500 4900
+Wire Wire Line
+	4900 4100 5200 4100
+Wire Wire Line
+	5300 4100 5300 4000
+Connection ~ 4900 4100
+Wire Wire Line
+	5200 4400 5200 4100
+Connection ~ 5200 4100
+Wire Wire Line
+	5200 4100 5300 4100
+Text GLabel 1300 4000 1    50   Input ~ 0
+12V_IN
+Text GLabel 5300 4000 1    50   Input ~ 0
+Vinn_5V
+$Comp
+L Device:R R?
+U 1 1 5DFC1FFA
+P 2300 4250
+F 0 "R?" H 2100 4350 50  0000 L CNN
+F 1 "10k" H 2350 4350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2230 4250 50  0001 C CNN
+F 3 "~" H 2300 4250 50  0001 C CNN
+	1    2300 4250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7750 3000 5850 3000
+	1900 4100 2300 4100
+Connection ~ 2300 4100
 Wire Wire Line
-	5850 3000 5850 4800
+	2300 4100 2750 4100
 Wire Wire Line
-	5850 4800 5400 4800
+	2300 4400 2750 4400
+Wire Wire Line
+	1900 4900 2700 4900
+Wire Wire Line
+	2700 4900 2700 5000
+Connection ~ 2700 4900
+Text GLabel 2700 5000 3    50   Input ~ 0
+Ground
+Text GLabel 2700 4300 0    50   Input ~ 0
+Ground
+Wire Wire Line
+	2700 4300 2750 4300
+Wire Wire Line
+	2700 4900 3350 4900
+Text Notes 1150 4500 0    50   ~ 0
+Decoupling cap, as close to pin as possible\n
+Connection ~ 3350 4900
+Wire Wire Line
+	3350 4900 4100 4900
+Wire Wire Line
+	3950 4400 4500 4400
+Connection ~ 4500 4400
+Wire Wire Line
+	4500 4400 4900 4400
+Connection ~ 4900 4400
+Wire Wire Line
+	4900 4400 5200 4400
+Text GLabel 8700 4200 2    50   Input ~ 0
+Vinn_5V
+Text GLabel 10000 2550 1    50   Input ~ 0
+Vinn_5V
+Wire Wire Line
+	10000 2800 10000 2550
+Wire Wire Line
+	8700 4200 8500 4200
+Text GLabel 10000 5100 3    50   Input ~ 0
+Ground
+Text GLabel 10100 5100 3    50   Input ~ 0
+Ground
+Text GLabel 10200 5100 3    50   Input ~ 0
+Ground
+Text GLabel 8800 3450 2    50   Input ~ 0
+Ground
+Text GLabel 8800 3150 2    50   Input ~ 0
+Ground
+Text GLabel 8800 3000 2    50   Input ~ 0
+Ground
+Text GLabel 8800 2700 2    50   Input ~ 0
+Ground
+Wire Wire Line
+	8800 2700 8500 2700
+Wire Wire Line
+	8500 3000 8800 3000
+Wire Wire Line
+	8800 3150 8500 3150
+Wire Wire Line
+	8500 3450 8800 3450
+Wire Wire Line
+	10000 5100 10000 4900
+Wire Wire Line
+	10100 5100 10100 4900
+Wire Wire Line
+	10200 5100 10200 4900
+Text GLabel 9450 3300 0    50   Input ~ 0
+TX_4G
+Text GLabel 9450 3200 0    50   Input ~ 0
+RX_4G
+Wire Wire Line
+	9450 3200 9600 3200
+Wire Wire Line
+	9450 3300 9600 3300
+Text GLabel 6700 4650 0    50   Input ~ 0
+RX_4G
+Text GLabel 6500 3350 0    50   Input ~ 0
+TX_4G
 $EndSCHEMATC
