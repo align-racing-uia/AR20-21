@@ -191,14 +191,6 @@ Decoupling cap, as close to pin as possible\n
 Connection ~ 3350 4900
 Wire Wire Line
 	3350 4900 4100 4900
-Wire Wire Line
-	3950 4400 4500 4400
-Connection ~ 4500 4400
-Wire Wire Line
-	4500 4400 4900 4400
-Connection ~ 4900 4400
-Wire Wire Line
-	4900 4400 5200 4400
 Text GLabel 6800 3550 0    50   Input ~ 0
 Vinn_5V
 Text GLabel 10000 2550 1    50   Input ~ 0
@@ -245,7 +237,7 @@ U 1 1 5E4084EF
 P 7000 3350
 F 0 "IC1" H 8344 3046 50  0000 L CNN
 F 1 "MCP25625T-E_ML" H 8344 2955 50  0000 L CNN
-F 2 "QFN65P600X600X100-29N-D" H 8150 3850 50  0001 L CNN
+F 2 "MCP25625_Breakoutboard:QFN65P600X600X100-29N-D" H 8150 3850 50  0001 L CNN
 F 3 "https://www.mouser.com/datasheet/2/268/20005282B-708896.pdf" H 8150 3750 50  0001 L CNN
 F 4 "Microchip Technology MCP25625T-E/ML, CAN Controller 1Mbit/s CAN 2.0B, 28-Pin QFN" H 8150 3650 50  0001 L CNN "Description"
 F 5 "1" H 8150 3550 50  0001 L CNN "Height"
@@ -268,4 +260,6 @@ Wire Wire Line
 	7500 4950 7500 4750
 Wire Wire Line
 	8500 3850 8300 3850
+Wire Wire Line
+	3950 4400 5200 4400
 $EndSCHEMATC
