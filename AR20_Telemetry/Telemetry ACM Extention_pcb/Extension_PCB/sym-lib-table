@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name ACM_2020_Symbol)(type Legacy)(uri "C:/Users/Rawi/Documents/Align Racing/Github/AR20/AR20_Telemetry/Telemetry ACM Extention_pcb/lib/ACM_2020_Symbol.lib")(options "")(descr ""))
   (lib (name NCV890430MW50TXG)(type Legacy)(uri "C:/Users/Rawi/Documents/Align Racing/KiCad/CPU_Breakout_Schematic - S.Alrawi/NCV890430/NCV890430MW50TXG.lib")(options "")(descr ""))
+  (lib (name MCP25625T-E_ML)(type Legacy)(uri "C:/Users/Rawi/Documents/Align Racing/Github/AR20/AR20_Telemetry/Telemetry ACM Extention_pcb/lib/MCP25625T-E_ML/MCP25625T-E_ML.lib")(options "")(descr ""))
 )
