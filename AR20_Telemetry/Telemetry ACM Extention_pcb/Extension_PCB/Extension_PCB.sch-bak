@@ -189,8 +189,6 @@ Wire Wire Line
 Text Notes 1150 4500 0    50   ~ 0
 Decoupling cap, as close to pin as possible\n
 Connection ~ 3350 4900
-Wire Wire Line
-	3350 4900 4100 4900
 Text GLabel 6800 3550 0    50   Input ~ 0
 Vinn_5V
 Text GLabel 10000 2550 1    50   Input ~ 0
@@ -262,4 +260,121 @@ Wire Wire Line
 	8500 3850 8300 3850
 Wire Wire Line
 	3950 4400 5200 4400
+Text Notes 3500 5900 0    79   Italic 0
+RX going out of MCP25625, TX going in to MCP25625\nRX is connected to TX intern in ARDUINO(Telemetry module), TX is connected intern to RX in ARDUINO(Telemetry module)
+Wire Notes Line
+	950  3450 950  5450
+Wire Notes Line
+	950  5450 5750 5450
+Wire Notes Line
+	5750 5450 5750 3450
+Wire Notes Line
+	5750 3450 950  3450
+Wire Notes Line
+	6200 5350 8900 5350
+Wire Notes Line
+	8900 5350 8900 1350
+Wire Notes Line
+	8900 1350 6200 1350
+Wire Notes Line
+	6200 1350 6200 5350
+Wire Notes Line
+	8950 1350 8950 5650
+Wire Notes Line
+	8950 5650 11050 5650
+Wire Notes Line
+	11050 5650 11050 1350
+Wire Notes Line
+	11050 1350 8950 1350
+Text Notes 7450 1300 0    50   ~ 0
+MCP25625\n
+Text Notes 9200 1300 0    50   ~ 0
+Telemetry module (ARDUINO)
+Text Notes 2750 3400 0    50   ~ 0
+Switching regulator 12V to 5V
+$Comp
+L MCP25625T-E_ML:MX23A12NF1 J1
+U 1 1 5E41E365
+P 2650 1750
+F 0 "J1" H 3100 2015 50  0000 C CNN
+F 1 "MX23A12NF1" H 3100 1924 50  0000 C CNN
+F 2 "MCP25625_Breakoutboard:MX23A12NF1" H 3400 1850 50  0001 L CNN
+F 3 "https://www.jae.com/z-en/pdf_download_exec.cfm?param=SJ100917.pdf" H 3400 1750 50  0001 L CNN
+F 4 "JAE MX23A Series, 2.5mm Pitch 12 Way 2 Row Right Angle PCB Header, Solder Termination, 3A" H 3400 1650 50  0001 L CNN "Description"
+F 5 "16" H 3400 1550 50  0001 L CNN "Height"
+F 6 "JAE Electronics" H 3400 1450 50  0001 L CNN "Manufacturer_Name"
+F 7 "MX23A12NF1" H 3400 1350 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "656-MX23A12NF1" H 3400 1250 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=656-MX23A12NF1" H 3400 1150 50  0001 L CNN "Mouser Price/Stock"
+F 10 "0435780" H 3400 1050 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/0435780" H 3400 950 50  0001 L CNN "RS Price/Stock"
+	1    2650 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 1750 2650 1750
+Wire Wire Line
+	2550 1850 2650 1850
+Wire Wire Line
+	2550 1950 2650 1950
+Wire Wire Line
+	2550 2050 2650 2050
+Wire Wire Line
+	2550 2150 2650 2150
+Wire Wire Line
+	2550 2250 2650 2250
+Wire Wire Line
+	2550 2350 2650 2350
+Wire Wire Line
+	3550 2350 3700 2350
+Wire Wire Line
+	3550 2250 3700 2250
+Wire Wire Line
+	3550 2150 3700 2150
+Wire Wire Line
+	3550 2050 3700 2050
+Wire Wire Line
+	3550 1950 3700 1950
+Wire Wire Line
+	3550 1850 3700 1850
+Wire Wire Line
+	3550 1750 3700 1750
+Wire Wire Line
+	3350 4900 4100 4900
+Text GLabel 7800 4950 3    50   Input ~ 0
+CANH
+Wire Wire Line
+	7700 4750 7700 4950
+Wire Wire Line
+	7800 4750 7800 4950
+Text GLabel 2550 1850 0    50   Input ~ 0
+CANH
+Text GLabel 7700 4950 3    50   Input ~ 0
+CANL
+Text GLabel 2550 1750 0    50   Input ~ 0
+CANL
+Text GLabel 2550 1950 0    50   Input ~ 0
+Vinn_5V
+Text GLabel 2550 2250 0    50   Input ~ 0
+Vinn_5V
+Text GLabel 2550 2150 0    50   Input ~ 0
+Vinn_5V
+Text GLabel 2550 2050 0    50   Input ~ 0
+Vinn_5V
+Text GLabel 3700 2150 2    50   Input ~ 0
+Vinn_5V
+Text GLabel 3700 1750 2    50   Input ~ 0
+Ground
+Text GLabel 3700 2050 2    50   Input ~ 0
+Ground
+Text GLabel 3700 1950 2    50   Input ~ 0
+Ground
+Text GLabel 3700 1850 2    50   Input ~ 0
+Ground
+Text GLabel 2550 2350 0    50   Input ~ 0
+12V_IN
+Text GLabel 3700 2250 2    50   Input ~ 0
+Ground
+Text GLabel 3700 2350 2    50   Input ~ 0
+Ground
 $EndSCHEMATC
