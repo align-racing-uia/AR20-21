@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MX23A12NF1
+D JAE MX23A Series, 2.5mm Pitch 12 Way 2 Row Right Angle PCB Header, Solder Termination, 3A
+K
+F https://www.jae.com/z-en/pdf_download_exec.cfm?param=SJ100917.pdf
+$ENDCMP
+#
+#End Doc Library

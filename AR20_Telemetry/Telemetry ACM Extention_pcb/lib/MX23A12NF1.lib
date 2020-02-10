@@ -1,0 +1,37 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model MX23A12NF1
+#/538453/190036/2.45/14/4/Connector
+DEF MX23A12NF1 J 0 30 Y Y 1 F N
+F0 "J" 750 300 50 H V L CNN
+F1 "MX23A12NF1" 750 200 50 H V L CNN
+F2 "MX23A12NF1" 750 100 50 H I L CNN
+F3 "https://www.jae.com/z-en/pdf_download_exec.cfm?param=SJ100917.pdf" 750 0 50 H I L CNN
+F4 "JAE MX23A Series, 2.5mm Pitch 12 Way 2 Row Right Angle PCB Header, Solder Termination, 3A" 750 -100 50 H I L CNN "Description"
+F5 "16" 750 -200 50 H I L CNN "Height"
+F6 "JAE Electronics" 750 -300 50 H I L CNN "Manufacturer_Name"
+F7 "MX23A12NF1" 750 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "656-MX23A12NF1" 750 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=656-MX23A12NF1" 750 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "0435780" 750 -700 50 H I L CNN "RS Part Number"
+F11 "http://uk.rs-online.com/web/p/products/0435780" 750 -800 50 H I L CNN "RS Price/Stock"
+DRAW
+X 1 1 0 0 200 R 50 50 0 0 U
+X 2 2 0 -100 200 R 50 50 0 0 U
+X 3 3 0 -200 200 R 50 50 0 0 U
+X 4 4 0 -300 200 R 50 50 0 0 U
+X 5 5 0 -400 200 R 50 50 0 0 U
+X 6 6 0 -500 200 R 50 50 0 0 U
+X 7 7 0 -600 200 R 50 50 0 0 U
+X 8 8 900 0 200 L 50 50 0 0 U
+X 9 9 900 -100 200 L 50 50 0 0 U
+X 10 10 900 -200 200 L 50 50 0 0 U
+X 11 11 900 -300 200 L 50 50 0 0 U
+X 12 12 900 -400 200 L 50 50 0 0 U
+X 13 13 900 -500 200 L 50 50 0 0 U
+X 14 14 900 -600 200 L 50 50 0 0 U
+P 5 0 1 6 200 100 700 100 700 -700 200 -700 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

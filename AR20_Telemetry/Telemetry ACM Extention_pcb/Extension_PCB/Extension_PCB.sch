@@ -262,4 +262,36 @@ Wire Wire Line
 	8500 3850 8300 3850
 Wire Wire Line
 	3950 4400 5200 4400
+Text Notes 3500 5900 0    79   Italic 0
+RX going out of MCP25625, TX going in to MCP25625\nRX is connected to TX intern in ARDUINO(Telemetry module), TX is connected intern to RX in ARDUINO(Telemetry module)
+Wire Notes Line
+	950  3450 950  5450
+Wire Notes Line
+	950  5450 5750 5450
+Wire Notes Line
+	5750 5450 5750 3450
+Wire Notes Line
+	5750 3450 950  3450
+Wire Notes Line
+	6200 5350 8900 5350
+Wire Notes Line
+	8900 5350 8900 1350
+Wire Notes Line
+	8900 1350 6200 1350
+Wire Notes Line
+	6200 1350 6200 5350
+Wire Notes Line
+	8950 1350 8950 5650
+Wire Notes Line
+	8950 5650 11050 5650
+Wire Notes Line
+	11050 5650 11050 1350
+Wire Notes Line
+	11050 1350 8950 1350
+Text Notes 9750 1300 0    50   ~ 0
+MCP25625\n
+Text Notes 6950 1300 0    50   ~ 0
+Telemetry module (ARDUINO)
+Text Notes 2750 3400 0    50   ~ 0
+Switching regulator 12V to 5V
 $EndSCHEMATC
