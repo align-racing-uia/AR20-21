@@ -1,0 +1,59 @@
+DATA fra CAN:
+5E8 ,
+4 
+F 
+5E8 ,
+4 
+F 
+5E8 ,
+4 
+F 
+5E8 ,
+4 
+F 
+DATA fra CAN:
+0 ,
+4 
+F 
+BC 
+0 ,
+4 
+F 
+BC 
+0 ,
+4 
+F 
+BC 
+0 ,
+4 
+F 
+BC 
+0 ,
+4 
+F 
+BC 
+0 ,
+4 
+F 
+BC 
+0 ,
+4 
+F 
+BC 
+0 ,
+4 
+F 
+BC 
+0 ,
+4 
+F 
+BC 
+0 ,
+4 
+F 
+BC 
+0 ,
+4 
+F 
+BC 
+DATA fra CAN:
