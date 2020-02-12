@@ -15,8 +15,17 @@ int led = 9;
 const uint8_t min = 0;
 const uint8_t max = 255;
 
+/*
+Frequency
+10Hz = 100
+20Hz = 50
+30Hz = 25
+40Hz = 12
+50Hz = 
+*/
+int frequency = 1; //Frequency in hz
 
-float duration_uS = (10  *1E3)/256;//period_us/max;
+float duration_uS = (1000/(frequency)  *1E3)/256;//period_us/max;
 
 // Input settings
 const uint8_t pedalInput = A3;
