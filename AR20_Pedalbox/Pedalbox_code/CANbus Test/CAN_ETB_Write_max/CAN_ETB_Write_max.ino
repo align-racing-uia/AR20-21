@@ -1,6 +1,7 @@
-#include <SPI.h>
+//#include <SPI.h>
 #include <mcp2515.h>
 #include "settings.h"
+#include "functions.h"
 
 struct can_frame canMsg1;
 struct can_frame canMsg2;
