@@ -1,7 +1,7 @@
 //#include <SPI.h>
 #include <mcp2515.h>
 #include "settings.h"
-#include "functions.h"
+
 
 struct can_frame canMsg1;
 struct can_frame canMsg2;
@@ -43,35 +43,13 @@ void setup() {
   
 }
 
+#include "functions.h"
+
 void loop() {
-  
-  
-  for(i=min; i<max; i++){
-      canMsg1.data[0] = i;
-      canMsg1.data[2] = i;
-      mcp2515.sendMessage(&canMsg2);
-      mcp2515.sendMessage(&canMsg1);    
-      delayMicroseconds(duration_uS);
-      if (i>max){
-        i = min;
-        }
-  }
 
-  
-  /*for(i=max; i>min; i--){
-      canMsg1.data[0] = i;
-      canMsg1.data[2] = i;
-      mcp2515.sendMessage(&canMsg2);
-      mcp2515.sendMessage(&canMsg1);    
-      delay(duration);
-  }*/
 
-//out = map(analogRead(pedalInput),41,847,0,255);
-//
-//canMsg1.data[0] = out;
-//canMsg1.data[2] = out;
-//mcp2515.sendMessage(&canMsg2);
-//mcp2515.sendMessage(&canMsg1);
+sawtooth();
+//constant();
   
 
 }
