@@ -23,7 +23,7 @@ Frequency
 40Hz = 12
 50Hz = 
 */
-int frequency = 1; //Frequency in hz
+float frequency = 5; //Frequency in hz
 
 float duration_uS = (1000/(frequency)  *1E3)/256;//period_us/max;
 
