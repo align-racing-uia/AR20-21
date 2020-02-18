@@ -8,7 +8,7 @@ clear all; close all; clc;
 %}
 
 %VariabL_ses from Wave forms:
-Fs = 1333;    % SampL_sing frequency in Hz                  
+Fs = 10959;    % SampL_sing frequency in Hz  1333                
 T = 1/Fs;           % SampL_sing time       
 N = 8000;           % Number of SampL_ses
 L_s = T*N;             % Length of signal in seconds
