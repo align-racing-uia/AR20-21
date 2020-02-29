@@ -5,14 +5,10 @@
   const int pressureSensor2Pin = 2;
   const int pressureSensor3Pin = 0;
 
-  const unsigned long sdCardUpdateRate_millis = 1000;
 
-  // Temperature resistance callibration 
+  // Data rate, sd card and analog sensors
+  const unsigned long sdCardUpdateRate_millis = 100;
 
-  
-  const int tempSensorResistancePin5 = 991; 
-  const int tempSensorResistancePin3 = 1004; 
-  const int tempSensorResistancePin1 = 988; 
 
   //To calculate the constants use this guide 
   //thinksrs.com/downloads/pdfs/applicationnotes/LDC%20Note%204%20NTC%20Calculator.pdf 
