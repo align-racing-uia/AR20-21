@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.254)
+    (last_trace_width 0.25)
     (user_trace_width 0.254)
     (trace_clearance 0.2)
     (zone_clearance 0.508)
@@ -324,9 +324,9 @@
     (pad 15 thru_hole oval (at 0 35.56) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 9 /Pin17))
     (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x15_P2.54mm_Vertical.wrl
-      (at (xyz 0 0 0))
+      (offset (xyz 0 0 -2))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 180 0))
     )
   )
 
@@ -390,9 +390,9 @@
     (pad 1 thru_hole rect (at 0 0 180) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 8 /Pin15))
     (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x15_P2.54mm_Vertical.wrl
-      (at (xyz 0 0 0))
+      (offset (xyz 0 0 -2))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 180 0))
     )
   )
 
