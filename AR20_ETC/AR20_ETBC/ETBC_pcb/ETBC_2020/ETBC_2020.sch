@@ -31,16 +31,14 @@ U 1 1 5E29C19E
 P 5075 2475
 F 0 "IC1" H 5775 2740 50  0000 C CNN
 F 1 "MC33931EK" H 5775 2649 50  0000 C CNN
-F 2 "SOP65P1030X245-33N" H 6325 2575 50  0001 L CNN
+F 2 "ETBC_2020:SOP65P1030X245-33N" H 6325 2575 50  0001 L CNN
 F 3 "http://www.mouser.com/ds/2/302/MC33931-1126556.pdf" H 6325 2475 50  0001 L CNN
-F 4 "Motor / Motion / Ignition Controllers & Drivers 5A H-BRIDGE" H 6325 2375 50  0001 L CNN "Description"
+F 4 "Motor Driver/Controller, DC Brush" H 6325 2375 50  0001 L CNN "Description"
 F 5 "2.45" H 6325 2275 50  0001 L CNN "Height"
 F 6 "Nexperia" H 6325 2175 50  0001 L CNN "Manufacturer_Name"
 F 7 "MC33931EK" H 6325 2075 50  0001 L CNN "Manufacturer_Part_Number"
 F 8 "841-MC33931EK" H 6325 1975 50  0001 L CNN "Mouser Part Number"
 F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=841-MC33931EK" H 6325 1875 50  0001 L CNN "Mouser Price/Stock"
-F 10 "" H 6325 1775 50  0001 L CNN "RS Part Number"
-F 11 "" H 6325 1675 50  0001 L CNN "RS Price/Stock"
 	1    5075 2475
 	1    0    0    -1  
 $EndComp
@@ -49,9 +47,10 @@ L Device:D_Zener D3
 U 1 1 5E2F4E12
 P 5425 5350
 F 0 "D3" V 5471 5271 50  0000 R CNN
-F 1 "D_Zener" V 5380 5271 50  0000 R CNN
-F 2 "" H 5425 5350 50  0001 C CNN
-F 3 "~" H 5425 5350 50  0001 C CNN
+F 1 "RB521VM-40TE-17 " V 5400 5300 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323F" H 5425 5350 50  0001 C CNN
+F 3 "https://no.farnell.com/rohm/rb521vm-40te-17/schottky-rect-single-40v-sod-323fl/dp/2918863" H 5425 5350 50  0001 C CNN
+F 4 "Zener diode for LED" H 5425 5350 50  0001 C CNN "Description"
 	1    5425 5350
 	0    -1   -1   0   
 $EndComp
@@ -60,8 +59,8 @@ L pspice:DIODE D1
 U 1 1 5E2F58CD
 P 4875 7150
 F 0 "D1" H 4875 7415 50  0000 C CNN
-F 1 "DIODE" H 4875 7324 50  0000 C CNN
-F 2 "" H 4875 7150 50  0001 C CNN
+F 1 "DCBU0340-HF" H 4875 7324 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4875 7150 50  0001 C CNN
 F 3 "~" H 4875 7150 50  0001 C CNN
 	1    4875 7150
 	1    0    0    -1  
@@ -193,8 +192,9 @@ U 1 1 5E30CC6A
 P 5425 5100
 F 0 "D2" V 5471 5032 50  0000 R CNN
 F 1 "Green" V 5380 5032 50  0000 R CNN
-F 2 "" V 5425 5100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5425 5100 50  0001 C CNN
 F 3 "~" V 5425 5100 50  0001 C CNN
+F 4 "Green LED" H 5425 5100 50  0001 C CNN "Description"
 	1    5425 5100
 	0    -1   -1   0   
 $EndComp
@@ -287,9 +287,10 @@ L Device:D_Zener D5
 U 1 1 5E325CE5
 P 6075 5350
 F 0 "D5" V 6121 5271 50  0000 R CNN
-F 1 "D_Zener" V 6030 5271 50  0000 R CNN
-F 2 "" H 6075 5350 50  0001 C CNN
-F 3 "~" H 6075 5350 50  0001 C CNN
+F 1 "RB521VM-40TE-17 " V 6030 5271 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323F" H 6075 5350 50  0001 C CNN
+F 3 "https://no.farnell.com/rohm/rb521vm-40te-17/schottky-rect-single-40v-sod-323fl/dp/2918863" H 6075 5350 50  0001 C CNN
+F 4 "Zener diode for LED" H 6075 5350 50  0001 C CNN "Description"
 	1    6075 5350
 	0    -1   -1   0   
 $EndComp
@@ -299,8 +300,9 @@ U 1 1 5E325CEB
 P 6075 5100
 F 0 "D4" V 6121 5032 50  0000 R CNN
 F 1 "Yellow" V 6030 5032 50  0000 R CNN
-F 2 "" V 6075 5100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6075 5100 50  0001 C CNN
 F 3 "~" V 6075 5100 50  0001 C CNN
+F 4 "Yellow LED" H 6075 5100 50  0001 C CNN "Description"
 	1    6075 5100
 	0    -1   -1   0   
 $EndComp
@@ -353,6 +355,7 @@ F 0 "C3" H 4138 3571 50  0000 L CNN
 F 1 "250uF" H 4138 3480 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4050 3525 50  0001 C CNN
 F 3 "~" H 4050 3525 50  0001 C CNN
+F 4 "Input Capacitor Electrolytic" H 4050 3525 50  0001 C CNN "Description"
 	1    4050 3525
 	1    0    0    -1  
 $EndComp
@@ -386,6 +389,7 @@ F 0 "C9" H 7263 3421 50  0000 L CNN
 F 1 "250uF" H 7263 3330 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7175 3375 50  0001 C CNN
 F 3 "~" H 7175 3375 50  0001 C CNN
+F 4 "Input Capacitor Electrolytic" H 7175 3375 50  0001 C CNN "Description"
 	1    7175 3375
 	1    0    0    -1  
 $EndComp
@@ -429,7 +433,7 @@ L Device:R_Small R6
 U 1 1 5E33C909
 P 5425 5600
 F 0 "R6" H 5484 5646 50  0000 L CNN
-F 1 "10K" H 5484 5555 50  0000 L CNN
+F 1 "1K" H 5484 5555 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5425 5600 50  0001 C CNN
 F 3 "~" H 5425 5600 50  0001 C CNN
 	1    5425 5600
@@ -440,7 +444,7 @@ L Device:R_Small R7
 U 1 1 5E33DEA1
 P 6075 5600
 F 0 "R7" H 6134 5646 50  0000 L CNN
-F 1 "10K" H 6134 5555 50  0000 L CNN
+F 1 "1K" H 6134 5555 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6075 5600 50  0001 C CNN
 F 3 "~" H 6075 5600 50  0001 C CNN
 	1    6075 5600
@@ -625,6 +629,7 @@ F 0 "C2" H 2367 6971 50  0000 L CNN
 F 1 "C_Small" H 2367 6880 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2275 6925 50  0001 C CNN
 F 3 "~" H 2275 6925 50  0001 C CNN
+F 4 "TPS1 and TPS2 Filtering capacitors" H 2275 6925 50  0001 C CNN "Description"
 	1    2275 6925
 	1    0    0    -1  
 $EndComp
@@ -633,7 +638,7 @@ L Device:R_Small R4
 U 1 1 5E38FCFD
 P 2750 6925
 F 0 "R4" H 2809 6971 50  0000 L CNN
-F 1 "R_Small" H 2809 6880 50  0000 L CNN
+F 1 "4.7K" H 2809 6880 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2750 6925 50  0001 C CNN
 F 3 "~" H 2750 6925 50  0001 C CNN
 	1    2750 6925
@@ -703,6 +708,7 @@ F 0 "C1" H 2342 5846 50  0000 L CNN
 F 1 "C_Small" H 2342 5755 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2250 5800 50  0001 C CNN
 F 3 "~" H 2250 5800 50  0001 C CNN
+F 4 "TPS1 and TPS2 Filtering capacitors" H 2250 5800 50  0001 C CNN "Description"
 	1    2250 5800
 	1    0    0    -1  
 $EndComp
@@ -711,7 +717,7 @@ L Device:R_Small R3
 U 1 1 5E3A3534
 P 2725 5800
 F 0 "R3" H 2784 5846 50  0000 L CNN
-F 1 "R_Small" H 2784 5755 50  0000 L CNN
+F 1 "4.7K" H 2784 5755 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2725 5800 50  0001 C CNN
 F 3 "~" H 2725 5800 50  0001 C CNN
 	1    2725 5800
@@ -758,7 +764,7 @@ Wire Wire Line
 Connection ~ 2750 6650
 Text GLabel 1225 1875 0    50   Input ~ 0
 OUT1
-Text GLabel 1725 1875 2    50   Input ~ 0
+Text GLabel 1225 2375 0    50   Input ~ 0
 OUT2
 $Comp
 L power:+5V #PWR0124
@@ -786,7 +792,7 @@ Text GLabel 900  2975 0    50   Input ~ 0
 TPS1
 Text GLabel 925  2800 0    50   Input ~ 0
 TPS2
-Text GLabel 2100 3200 2    50   Input ~ 0
+Text GLabel 1225 2075 0    50   Input ~ 0
 PWR
 $Comp
 L power:GND #PWR0126
@@ -803,10 +809,8 @@ Text GLabel 10075 2925 2    50   Input ~ 0
 CANH
 Text GLabel 10075 3225 2    50   Input ~ 0
 CANL
-Text GLabel 1050 3300 2    50   Input ~ 0
+Text GLabel 1725 2675 2    50   Input ~ 0
 CANL
-Text GLabel 1075 3175 2    50   Input ~ 0
-CANH
 $Comp
 L Connector_Generic:Conn_02x09_Top_Bottom J1
 U 1 1 5E3AE990
@@ -916,7 +920,7 @@ Wire Notes Line
 	5525 6800 4325 6800
 Text GLabel 1225 1975 0    50   Input ~ 0
 OUT1
-Text GLabel 1725 1975 2    50   Input ~ 0
+Text GLabel 1225 2275 0    50   Input ~ 0
 OUT2
 Text Notes 4275 2400 0    50   ~ 0
 Connected to PGND\nLow impedance\n(<10 mΩ, 0Hz to 20kHz)
@@ -928,15 +932,110 @@ Text Notes 5225 4050 3    50   ~ 0
 One wide trace
 Text Notes 6375 4050 3    50   ~ 0
 One wide trace
-Text Notes 5975 2000 0    50   ~ 0
+Text Notes 5750 1450 0    50   ~ 0
 Need to change this and connect it directly to the MCU.\nSF can handle current up to < 0.5mA
 Wire Wire Line
 	6625 2400 6625 2475
-Wire Wire Line
-	6625 2475 6825 2475
 Connection ~ 6625 2475
-Text GLabel 6825 2475 2    50   Input ~ 0
+Text GLabel 7475 2475 2    50   Input ~ 0
 SFlag
 Text GLabel 8525 2025 0    50   Input ~ 0
 SFlag
+$Comp
+L Device:LED_Small D6
+U 1 1 5E5F07FD
+P 6925 1950
+F 0 "D6" V 6925 1900 50  0000 R CNN
+F 1 "Red" V 6825 1900 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6925 1950 50  0001 C CNN
+F 3 "~" V 6925 1950 50  0001 C CNN
+F 4 "Yellow LED" H 6925 1950 50  0001 C CNN "Description"
+	1    6925 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5E5F565F
+P 7675 2125
+F 0 "#PWR0108" H 7675 1875 50  0001 C CNN
+F 1 "GND" H 7680 1952 50  0000 C CNN
+F 2 "" H 7675 2125 50  0001 C CNN
+F 3 "" H 7675 2125 50  0001 C CNN
+	1    7675 2125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7525 2050 7675 2050
+Wire Wire Line
+	7675 2050 7675 2125
+Wire Wire Line
+	6625 2475 7325 2475
+Wire Wire Line
+	7325 2350 7325 2475
+Connection ~ 7325 2475
+Wire Wire Line
+	7325 2475 7475 2475
+Wire Wire Line
+	6925 2050 7125 2050
+$Comp
+L power:+5V #PWR0129
+U 1 1 5E60388A
+P 6925 1650
+F 0 "#PWR0129" H 6925 1500 50  0001 C CNN
+F 1 "+5V" H 6925 1800 50  0000 C CNN
+F 2 "" H 6925 1650 50  0001 C CNN
+F 3 "" H 6925 1650 50  0001 C CNN
+	1    6925 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PJFET_GSD Q1
+U 1 1 5E6041FA
+P 7325 2150
+F 0 "Q1" V 7653 2150 50  0000 C CNN
+F 1 "NDS356AP" V 7562 2150 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7525 2250 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2286294.pdf?_ga=2.148709367.1570536622.1583238368-686461928.1578838796" H 7325 2150 50  0001 C CNN
+	1    7325 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R8
+U 1 1 5E6086AD
+P 6925 1750
+F 0 "R8" H 7025 1750 50  0000 C CNN
+F 1 "1K" H 6775 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6925 1750 50  0001 C CNN
+F 3 "~" H 6925 1750 50  0001 C CNN
+	1    6925 1750
+	-1   0    0    1   
+$EndComp
+Text Notes 6850 4050 1    50   ~ 0
+One wide trace
+Text Notes 4925 4100 1    50   ~ 0
+One wide trace
+Text Notes 4400 6575 0    50   ~ 0
+Away from critical components
+Text GLabel 1725 2575 2    50   Input ~ 0
+CANH
+Text GLabel 1225 2175 0    50   Input ~ 0
+PWR
+$Comp
+L power:GND #PWR0130
+U 1 1 5E630617
+P 2000 1900
+F 0 "#PWR0130" H 2000 1650 50  0001 C CNN
+F 1 "GND" H 2005 1727 50  0000 C CNN
+F 2 "" H 2000 1900 50  0001 C CNN
+F 3 "" H 2000 1900 50  0001 C CNN
+	1    2000 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1725 1975 1725 1875
+Wire Wire Line
+	1725 1875 2000 1875
+Wire Wire Line
+	2000 1875 2000 1900
+Connection ~ 1725 1875
 $EndSCHEMATC
