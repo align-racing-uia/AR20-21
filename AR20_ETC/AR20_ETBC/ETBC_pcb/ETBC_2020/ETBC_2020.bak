@@ -400,47 +400,30 @@ Wire Wire Line
 	7175 3175 7175 3275
 Wire Wire Line
 	7175 3175 7500 3175
-$Comp
-L Device:LED_Small D6
-U 1 1 5E33755A
-P 6725 2475
-F 0 "D6" H 6725 2710 50  0000 C CNN
-F 1 "Red" H 6725 2619 50  0000 C CNN
-F 2 "" V 6725 2475 50  0001 C CNN
-F 3 "~" V 6725 2475 50  0001 C CNN
-	1    6725 2475
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6475 2475 6625 2475
 $Comp
 L Device:R_Small R9
 U 1 1 5E339186
-P 7175 2475
-F 0 "R9" V 6979 2475 50  0000 C CNN
-F 1 "4.7K" V 7070 2475 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7175 2475 50  0001 C CNN
-F 3 "~" H 7175 2475 50  0001 C CNN
-	1    7175 2475
-	0    1    1    0   
+P 6625 2300
+F 0 "R9" H 6725 2300 50  0000 C CNN
+F 1 "4.7K" H 6475 2300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6625 2300 50  0001 C CNN
+F 3 "~" H 6625 2300 50  0001 C CNN
+	1    6625 2300
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	6825 2475 7075 2475
 $Comp
 L power:+5V #PWR0111
 U 1 1 5E33B1A4
-P 7550 2375
-F 0 "#PWR0111" H 7550 2225 50  0001 C CNN
-F 1 "+5V" H 7565 2548 50  0000 C CNN
-F 2 "" H 7550 2375 50  0001 C CNN
-F 3 "" H 7550 2375 50  0001 C CNN
-	1    7550 2375
+P 6625 2200
+F 0 "#PWR0111" H 6625 2050 50  0001 C CNN
+F 1 "+5V" H 6625 2350 50  0000 C CNN
+F 2 "" H 6625 2200 50  0001 C CNN
+F 3 "" H 6625 2200 50  0001 C CNN
+	1    6625 2200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7275 2475 7550 2475
-Wire Wire Line
-	7550 2475 7550 2375
 $Comp
 L Device:R_Small R6
 U 1 1 5E33C909
@@ -945,4 +928,15 @@ Text Notes 5225 4050 3    50   ~ 0
 One wide trace
 Text Notes 6375 4050 3    50   ~ 0
 One wide trace
+Text Notes 5975 2000 0    50   ~ 0
+Need to change this and connect it directly to the MCU.\nSF can handle current up to < 0.5mA
+Wire Wire Line
+	6625 2400 6625 2475
+Wire Wire Line
+	6625 2475 6825 2475
+Connection ~ 6625 2475
+Text GLabel 6825 2475 2    50   Input ~ 0
+SFlag
+Text GLabel 8525 2025 0    50   Input ~ 0
+SFlag
 $EndSCHEMATC
