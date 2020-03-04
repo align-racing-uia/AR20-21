@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name MCP25625T-E_ML)(type Legacy)(uri ${KIPRJMOD}/Lib/MCP25625T-E_ML/MCP25625T-E_ML.mod)(options "")(descr ""))
+)
