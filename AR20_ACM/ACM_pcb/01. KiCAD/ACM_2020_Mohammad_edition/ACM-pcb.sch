@@ -1232,4 +1232,25 @@ F 3 "" H 6100 1575 50  0001 C CNN
 	1    6100 1575
 	0    1    1    0   
 $EndComp
+$Comp
+L ACM-pcb-rescue:MCP25625T-E_ML IC?
+U 1 1 5E5FCA78
+P 10675 5075
+F 0 "IC?" H 12019 4771 50  0000 L CNN
+F 1 "MCP25625T-E_ML" H 12019 4680 50  0000 L CNN
+F 2 "QFN65P600X600X100-29N-D" H 11825 5575 50  0001 L CNN
+F 3 "https://www.mouser.com/datasheet/2/268/20005282B-708896.pdf" H 11825 5475 50  0001 L CNN
+F 4 "Microchip Technology MCP25625T-E/ML, CAN Controller 1Mbit/s CAN 2.0B, 28-Pin QFN" H 11825 5375 50  0001 L CNN "Description"
+F 5 "1" H 11825 5275 50  0001 L CNN "Height"
+F 6 "Microchip" H 11825 5175 50  0001 L CNN "Manufacturer_Name"
+F 7 "MCP25625T-E/ML" H 11825 5075 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "579-MCP25625T-E/ML" H 11825 4975 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=579-MCP25625T-E%2FML" H 11825 4875 50  0001 L CNN "Mouser Price/Stock"
+F 10 "1773171P" H 11825 4775 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/1773171P" H 11825 4675 50  0001 L CNN "RS Price/Stock"
+F 12 "70568355" H 11825 4575 50  0001 L CNN "Allied_Number"
+F 13 "https://www.alliedelec.com/microchiptechnologyinc-mcp25625t-e-ml/70568355/" H 11825 4475 50  0001 L CNN "Allied Price/Stock"
+	1    10675 5075
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

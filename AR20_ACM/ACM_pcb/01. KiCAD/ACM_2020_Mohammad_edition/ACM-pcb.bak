@@ -1068,18 +1068,12 @@ Wire Wire Line
 Connection ~ 2175 4125
 Wire Wire Line
 	6600 1875 6725 1875
-Text HLabel 8000 2400 2    50   Input ~ 0
-U-Pin26
-Text HLabel 7375 2525 2    50   Input ~ 0
-U-Pin28
 Text HLabel 6600 1475 2    50   Input ~ 0
 U-Pin8
 Wire Wire Line
 	6725 1875 7125 1875
 Text HLabel 6600 1375 2    50   Input ~ 0
 U-Pin6
-Text HLabel 7875 2250 2    50   Input ~ 0
-U-Pin24
 Text HLabel 6600 2175 2    50   Input ~ 0
 U-Pin22
 Text HLabel 6600 2075 2    50   Input ~ 0
@@ -1152,13 +1146,9 @@ Wire Wire Line
 	925  4575 925  4650
 Text HLabel 5825 2075 0    50   Input ~ 0
 U-Pin19
-Text HLabel 6050 1575 0    50   Input ~ 0
-U-Pin9
 Wire Wire Line
 	2775 6075 3275 6075
 Connection ~ 3275 6075
-Text HLabel 1400 5125 0    50   Input ~ 0
-U-Pin24
 Text HLabel 6600 1575 2    50   Input ~ 0
 Reset
 Text HLabel 6100 2575 0    50   Input ~ 0
@@ -1231,4 +1221,15 @@ Wire Wire Line
 Wire Wire Line
 	6100 2175 6050 2175
 Connection ~ 6100 2175
+$Comp
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR?
+U 1 1 5E1CB20B
+P 6100 1575
+F 0 "#PWR?" H 6100 1325 50  0001 C CNN
+F 1 "GND" V 6100 1375 50  0000 C CNN
+F 2 "" H 6100 1575 50  0001 C CNN
+F 3 "" H 6100 1575 50  0001 C CNN
+	1    6100 1575
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
