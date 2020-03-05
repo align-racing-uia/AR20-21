@@ -51,97 +51,77 @@ F 0 "D3" V 5471 5271 50  0000 R CNN
 F 1 "RB521VM-40TE-17 " V 5400 5300 50  0000 R CNN
 F 2 "Diode_SMD:D_SOD-323F" H 5425 5350 50  0001 C CNN
 F 3 "https://no.farnell.com/rohm/rb521vm-40te-17/schottky-rect-single-40v-sod-323fl/dp/2918863" H 5425 5350 50  0001 C CNN
-F 4 "Zener diode for LED" H 5425 5350 50  0001 C CNN "Description"
+F 4 "Schottky diode for LED" H 5425 5350 50  0001 C CNN "Description"
 F 5 "AR20_ETC_007" H 5425 5350 50  0001 C CNN "AR-ID"
 	1    5425 5350
 	0    -1   -1   0   
 $EndComp
 $Comp
-L pspice:DIODE D1
-U 1 1 5E2F58CD
-P 4875 7150
-F 0 "D1" H 4875 7415 50  0000 C CNN
-F 1 "DCBU0340-HF" H 4875 7324 50  0000 C CNN
-F 2 "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4875 7150 50  0001 C CNN
-F 3 "~" H 4875 7150 50  0001 C CNN
-F 4 "AR20_ETC_003" H 4875 7150 50  0001 C CNN "AR-ID"
-	1    4875 7150
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0101
 U 1 1 5E2F64E6
-P 4550 2450
-F 0 "#PWR0101" H 4550 2200 50  0001 C CNN
-F 1 "GND" H 4555 2277 50  0000 C CNN
-F 2 "" H 4550 2450 50  0001 C CNN
-F 3 "" H 4550 2450 50  0001 C CNN
-	1    4550 2450
+P 5175 2125
+F 0 "#PWR0101" H 5175 1875 50  0001 C CNN
+F 1 "GND" H 5180 1952 50  0000 C CNN
+F 2 "" H 5175 2125 50  0001 C CNN
+F 3 "" H 5175 2125 50  0001 C CNN
+	1    5175 2125
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5075 2475 4575 2475
-Wire Wire Line
-	4550 2450 4575 2450
-Wire Wire Line
-	4575 2450 4575 2475
 $Comp
 L Device:C_Small C4
 U 1 1 5E2FA7AE
-P 4375 2875
-F 0 "C4" H 4467 2921 50  0000 L CNN
-F 1 "1uF" H 4467 2830 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4375 2875 50  0001 C CNN
-F 3 "~" H 4375 2875 50  0001 C CNN
-F 4 "AR20_ETC_014" H 4375 2875 50  0001 C CNN "AR-ID"
-F 5 "Feedback Capacitor" H 4375 2875 50  0001 C CNN "Description"
-	1    4375 2875
+P 4000 2875
+F 0 "C4" H 4092 2921 50  0000 L CNN
+F 1 "1uF" H 4092 2830 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4000 2875 50  0001 C CNN
+F 3 "~" H 4000 2875 50  0001 C CNN
+F 4 "AR20_ETC_014" H 4000 2875 50  0001 C CNN "AR-ID"
+F 5 "Feedback Capacitor" H 4000 2875 50  0001 C CNN "Description"
+	1    4000 2875
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R5
 U 1 1 5E2FB095
-P 4050 2875
-F 0 "R5" H 4109 2921 50  0000 L CNN
-F 1 "270" H 4109 2830 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4050 2875 50  0001 C CNN
-F 3 "~" H 4050 2875 50  0001 C CNN
-F 4 "AR20_ETC_008" H 4050 2875 50  0001 C CNN "AR-ID"
-	1    4050 2875
+P 3675 2875
+F 0 "R5" H 3734 2921 50  0000 L CNN
+F 1 "255" H 3734 2830 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3675 2875 50  0001 C CNN
+F 3 "~" H 3675 2875 50  0001 C CNN
+F 4 "AR20_ETC_008" H 3675 2875 50  0001 C CNN "AR-ID"
+	1    3675 2875
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0102
 U 1 1 5E2FBDB3
-P 4225 3075
-F 0 "#PWR0102" H 4225 2825 50  0001 C CNN
-F 1 "GND" H 4230 2902 50  0000 C CNN
-F 2 "" H 4225 3075 50  0001 C CNN
-F 3 "" H 4225 3075 50  0001 C CNN
-	1    4225 3075
+P 3850 3075
+F 0 "#PWR0102" H 3850 2825 50  0001 C CNN
+F 1 "GND" H 3855 2902 50  0000 C CNN
+F 2 "" H 3850 3075 50  0001 C CNN
+F 3 "" H 3850 3075 50  0001 C CNN
+	1    3850 3075
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4050 2975 4050 3075
+	3675 2975 3675 3075
 Wire Wire Line
-	4050 3075 4225 3075
+	3675 3075 3850 3075
 Wire Wire Line
-	4225 3075 4375 3075
+	3850 3075 4000 3075
 Wire Wire Line
-	4375 3075 4375 2975
-Connection ~ 4225 3075
+	4000 3075 4000 2975
+Connection ~ 3850 3075
 Wire Wire Line
-	3800 2675 4050 2675
+	3425 2675 3675 2675
 Wire Wire Line
-	4050 2775 4050 2675
-Connection ~ 4050 2675
+	3675 2775 3675 2675
+Connection ~ 3675 2675
 Wire Wire Line
-	4050 2675 4375 2675
+	3675 2675 4000 2675
 Wire Wire Line
-	4375 2775 4375 2675
-Connection ~ 4375 2675
-Wire Wire Line
-	4375 2675 5075 2675
+	4000 2775 4000 2675
+Connection ~ 4000 2675
 $Comp
 L Device:C_Small C5
 U 1 1 5E308477
@@ -299,7 +279,7 @@ F 0 "D5" V 6121 5271 50  0000 R CNN
 F 1 "RB521VM-40TE-17 " V 6030 5271 50  0000 R CNN
 F 2 "Diode_SMD:D_SOD-323F" H 6075 5350 50  0001 C CNN
 F 3 "https://no.farnell.com/rohm/rb521vm-40te-17/schottky-rect-single-40v-sod-323fl/dp/2918863" H 6075 5350 50  0001 C CNN
-F 4 "Zener diode for LED" H 6075 5350 50  0001 C CNN "Description"
+F 4 "Schottky diode for LED" H 6075 5350 50  0001 C CNN "Description"
 F 5 "AR20_ETC_007" H 6075 5350 50  0001 C CNN "AR-ID"
 	1    6075 5350
 	0    -1   -1   0   
@@ -484,11 +464,11 @@ Wire Wire Line
 	4575 6150 4575 5000
 Wire Wire Line
 	4575 5000 4950 5000
-Text GLabel 5075 2575 0    50   Input ~ 0
+Text GLabel 4375 2250 0    50   Input ~ 0
 D1
-Text GLabel 3800 2675 0    50   Input ~ 0
+Text GLabel 3425 2675 0    50   Input ~ 0
 Feedback
-Text GLabel 5075 2875 0    50   Input ~ 0
+Text GLabel 4650 2775 0    50   Input ~ 0
 EN_D2
 Text GLabel 3475 3325 0    50   Input ~ 0
 PWR
@@ -787,20 +767,20 @@ Connection ~ 2725 5525
 Wire Wire Line
 	3000 6650 2750 6650
 Connection ~ 2750 6650
-Text GLabel 1225 1875 0    50   Input ~ 0
+Text GLabel 1225 2275 0    50   Input ~ 0
 OUT1
-Text GLabel 1225 2375 0    50   Input ~ 0
+Text GLabel 1225 1875 0    50   Input ~ 0
 OUT2
 $Comp
 L power:+5V #PWR0124
 U 1 1 5E3A949C
-P 1750 3200
-F 0 "#PWR0124" H 1750 3050 50  0001 C CNN
-F 1 "+5V" H 1765 3373 50  0000 C CNN
-F 2 "" H 1750 3200 50  0001 C CNN
-F 3 "" H 1750 3200 50  0001 C CNN
-	1    1750 3200
-	1    0    0    -1  
+P 1725 2475
+F 0 "#PWR0124" H 1725 2325 50  0001 C CNN
+F 1 "+5V" H 1740 2648 50  0000 C CNN
+F 2 "" H 1725 2475 50  0001 C CNN
+F 3 "" H 1725 2475 50  0001 C CNN
+	1    1725 2475
+	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR0125
@@ -813,11 +793,11 @@ F 3 "" H 1925 3075 50  0001 C CNN
 	1    1925 3075
 	1    0    0    -1  
 $EndComp
-Text GLabel 900  2975 0    50   Input ~ 0
+Text GLabel 1725 1975 2    50   Input ~ 0
 TPS1
-Text GLabel 925  2800 0    50   Input ~ 0
+Text GLabel 1725 1875 2    50   Input ~ 0
 TPS2
-Text GLabel 1225 2075 0    50   Input ~ 0
+Text GLabel 725  2075 0    50   Input ~ 0
 PWR
 $Comp
 L power:GND #PWR0126
@@ -834,7 +814,7 @@ Text GLabel 10075 2925 2    50   Input ~ 0
 CANH
 Text GLabel 10075 3225 2    50   Input ~ 0
 CANL
-Text GLabel 1725 2675 2    50   Input ~ 0
+Text GLabel 1225 2675 0    50   Input ~ 0
 CANL
 $Comp
 L Connector_Generic:Conn_02x09_Top_Bottom J1
@@ -854,23 +834,12 @@ Text GLabel 8525 3375 0    50   Input ~ 0
 EN_D2
 Text GLabel 8525 2325 0    50   Input ~ 0
 Feedback
-Text Notes 4000 2950 2    50   ~ 0
+Text Notes 3625 2950 2    50   ~ 0
 Resistor as close as\npossible to ACM Pin
 Text Notes 5225 6750 2    50   ~ 0
-Reverse Polarity\nprotection diode
-Text GLabel 5075 7150 2    50   Input ~ 0
+Filtering diode
+Text GLabel 4875 7300 3    50   Input ~ 0
 PWR
-$Comp
-L power:GND #PWR0127
-U 1 1 5E382CFF
-P 4675 7150
-F 0 "#PWR0127" H 4675 6900 50  0001 C CNN
-F 1 "GND" H 4680 6977 50  0000 C CNN
-F 2 "" H 4675 7150 50  0001 C CNN
-F 3 "" H 4675 7150 50  0001 C CNN
-	1    4675 7150
-	0    1    1    0   
-$EndComp
 $Comp
 L Device:CP_Small C12
 U 1 1 5E386C55
@@ -939,20 +908,14 @@ Connection ~ 3700 3325
 Wire Wire Line
 	3700 3325 4050 3325
 Wire Notes Line
-	4325 6800 4325 7350
-Wire Notes Line
-	4325 7350 5525 7350
-Wire Notes Line
-	5525 7350 5525 6800
-Wire Notes Line
 	5525 6800 4325 6800
-Text GLabel 1225 1975 0    50   Input ~ 0
+Text GLabel 1225 2375 0    50   Input ~ 0
 OUT1
-Text GLabel 1225 2275 0    50   Input ~ 0
+Text GLabel 1225 1975 0    50   Input ~ 0
 OUT2
-Text Notes 4275 2400 0    50   ~ 0
+Text Notes 4375 2000 0    50   ~ 0
 Connected to PGND\nLow impedance\n(<10 mΩ, 0Hz to 20kHz)
-Text Notes 3525 3275 0    50   ~ 0
+Text Notes 4075 3275 0    50   ~ 0
 One wide trace
 Text Notes 7250 3150 0    50   ~ 0
 One wide trace
@@ -1045,28 +1008,155 @@ Text Notes 6850 4050 1    50   ~ 0
 One wide trace
 Text Notes 4925 4100 1    50   ~ 0
 One wide trace
-Text Notes 4400 6575 0    50   ~ 0
+Text Notes 4400 6675 0    50   ~ 0
 Away from critical components
-Text GLabel 1725 2575 2    50   Input ~ 0
+Text GLabel 1225 2575 0    50   Input ~ 0
 CANH
-Text GLabel 1225 2175 0    50   Input ~ 0
+Text GLabel 725  2175 0    50   Input ~ 0
 PWR
 $Comp
 L power:GND #PWR0130
 U 1 1 5E630617
-P 2000 1900
-F 0 "#PWR0130" H 2000 1650 50  0001 C CNN
-F 1 "GND" H 2005 1727 50  0000 C CNN
-F 2 "" H 2000 1900 50  0001 C CNN
-F 3 "" H 2000 1900 50  0001 C CNN
-	1    2000 1900
+P 1725 2075
+F 0 "#PWR0130" H 1725 1825 50  0001 C CNN
+F 1 "GND" H 1730 1902 50  0000 C CNN
+F 2 "" H 1725 2075 50  0001 C CNN
+F 3 "" H 1725 2075 50  0001 C CNN
+	1    1725 2075
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4000 2675 5075 2675
+$Comp
+L Device:R_Small R11
+U 1 1 5E614C6C
+P 4750 2875
+F 0 "R11" H 4809 2921 50  0000 L CNN
+F 1 "4.7K" H 4809 2830 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4750 2875 50  0001 C CNN
+F 3 "~" H 4750 2875 50  0001 C CNN
+F 4 "AR20_ETC_010" H 4750 2875 50  0001 C CNN "AR-ID"
+	1    4750 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0131
+U 1 1 5E618410
+P 4750 2975
+F 0 "#PWR0131" H 4750 2725 50  0001 C CNN
+F 1 "GND" H 4755 2802 50  0000 C CNN
+F 2 "" H 4750 2975 50  0001 C CNN
+F 3 "" H 4750 2975 50  0001 C CNN
+	1    4750 2975
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1725 1975 1725 1875
+	5075 2875 4950 2875
 Wire Wire Line
-	1725 1875 2000 1875
+	4950 2875 4950 2775
 Wire Wire Line
-	2000 1875 2000 1900
-Connection ~ 1725 1875
+	4950 2775 4750 2775
+Wire Wire Line
+	4650 2775 4750 2775
+Connection ~ 4750 2775
+$Comp
+L Device:R_Small R10
+U 1 1 5E62474D
+P 4550 2350
+F 0 "R10" H 4609 2396 50  0000 L CNN
+F 1 "4.7K" H 4609 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4550 2350 50  0001 C CNN
+F 3 "~" H 4550 2350 50  0001 C CNN
+F 4 "AR20_ETC_010" H 4550 2350 50  0001 C CNN "AR-ID"
+	1    4550 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0132
+U 1 1 5E624753
+P 4550 2450
+F 0 "#PWR0132" H 4550 2200 50  0001 C CNN
+F 1 "GND" H 4555 2277 50  0000 C CNN
+F 2 "" H 4550 2450 50  0001 C CNN
+F 3 "" H 4550 2450 50  0001 C CNN
+	1    4550 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5075 2475 5075 2125
+Wire Wire Line
+	5075 2125 5175 2125
+Wire Wire Line
+	5075 2575 4900 2575
+Wire Wire Line
+	4900 2575 4900 2250
+Wire Wire Line
+	4900 2250 4550 2250
+Wire Wire Line
+	4375 2250 4550 2250
+Connection ~ 4550 2250
+$Comp
+L Device:D_x2_KCom_AKA D1
+U 1 1 5E63A4C5
+P 4875 7100
+F 0 "D1" H 4875 7316 50  0000 C CNN
+F 1 "WNS20S100CB" H 4875 7225 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 4875 7100 50  0001 C CNN
+F 3 "~" H 4875 7100 50  0001 C CNN
+	1    4875 7100
+	1    0    0    -1  
+$EndComp
+Text GLabel 1225 2175 0    50   Input ~ 0
+12V
+Text GLabel 4575 7100 0    50   Input ~ 0
+12V
+Text GLabel 5175 7100 2    50   Input ~ 0
+12V
+Wire Notes Line
+	5525 7600 4325 7600
+Wire Notes Line
+	4325 6800 4325 7600
+Wire Notes Line
+	5525 6800 5525 7600
+Text GLabel 1225 2075 0    50   Input ~ 0
+12V
+Text GLabel 10075 1875 2    50   Input ~ 0
+PWM_3
+Text GLabel 10075 1425 2    50   Input ~ 0
+PWM_10
+$Comp
+L power:GND #PWR0127
+U 1 1 5E6D1566
+P 1725 2175
+F 0 "#PWR0127" H 1725 1925 50  0001 C CNN
+F 1 "GND" H 1730 2002 50  0000 C CNN
+F 2 "" H 1725 2175 50  0001 C CNN
+F 3 "" H 1725 2175 50  0001 C CNN
+	1    1725 2175
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0133
+U 1 1 5E6FFF36
+P 1725 2375
+F 0 "#PWR0133" H 1725 2225 50  0001 C CNN
+F 1 "+5V" H 1740 2548 50  0000 C CNN
+F 2 "" H 1725 2375 50  0001 C CNN
+F 3 "" H 1725 2375 50  0001 C CNN
+	1    1725 2375
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0134
+U 1 1 5E700A87
+P 1725 2575
+F 0 "#PWR0134" H 1725 2325 50  0001 C CNN
+F 1 "GND" H 1730 2402 50  0000 C CNN
+F 2 "" H 1725 2575 50  0001 C CNN
+F 3 "" H 1725 2575 50  0001 C CNN
+	1    1725 2575
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1725 2675 2    50   Input ~ 0
+12V
 $EndSCHEMATC
