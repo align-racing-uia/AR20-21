@@ -14,197 +14,88 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 7200 4300 0    50   Input ~ 0
+Text GLabel 6800 4250 0    50   Input ~ 0
 Ground
-Text GLabel 9550 2900 2    50   Input ~ 0
+Text GLabel 9150 2850 2    50   Input ~ 0
 Ground
-Text GLabel 9550 3500 2    50   Input ~ 0
+Text GLabel 9150 3250 2    50   Input ~ 0
 Out3
-Text GLabel 9550 3200 2    50   Input ~ 0
+Text GLabel 9150 3150 2    50   Input ~ 0
 Out1
-Text GLabel 9550 3100 2    50   Input ~ 0
+Text GLabel 9150 3050 2    50   Input ~ 0
 Out2
-Text GLabel 9550 3600 2    50   Input ~ 0
+Text GLabel 9150 3350 2    50   Input ~ 0
 Out4
-NoConn ~ 9550 4300
-Text GLabel 7200 4600 0    50   Input ~ 0
+NoConn ~ 9150 4250
+Text GLabel 6800 4550 0    50   Input ~ 0
 26_A12
-Text GLabel 9550 4600 2    50   Input ~ 0
+Text GLabel 9150 4550 2    50   Input ~ 0
 24_TX6_A10
-Text GLabel 10200 4200 2    50   Input ~ 0
+Text GLabel 9750 4150 2    50   Input ~ 0
 3V3
-Text GLabel 9550 3000 2    50   Input ~ 0
+Text GLabel 9150 2950 2    50   Input ~ 0
 3.3V
-Text GLabel 9550 4100 2    50   Input ~ 0
-13(LED)
-Text GLabel 9550 2800 2    50   Input ~ 0
+Text GLabel 9150 4050 2    50   Input ~ 0
+SCLK
+Text GLabel 9150 2750 2    50   Input ~ 0
 Vinn_5V
-Text GLabel 9550 3300 2    50   Input ~ 0
-21_RX5
-Text GLabel 9550 3400 2    50   Input ~ 0
-20_TX5
-$Comp
-L BreakoutBoardTeensy:Teensy_pins Teensy4.?
-U 1 1 5DFC9DF7
-P 7850 3500
-AR Path="/5DFC9DF7" Ref="Teensy4.?"  Part="1" 
-AR Path="/5DFC2DB2/5DFC9DF7" Ref="Teensy4.0"  Part="1" 
-AR Path="/5DE8C5CE/5DFC9DF7" Ref="Teensy4.0"  Part="1" 
-F 0 "Teensy4.0" H 8425 4425 50  0000 C CNN
-F 1 "Teensy_pins" H 8425 4334 50  0000 C CNN
-F 2 "Teensy_Footprint_Library:Teensy_40_footprint" H 9150 3500 50  0001 C CNN
-F 3 "" H 9150 3500 50  0001 C CNN
-	1    7850 3500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9450 2800 9550 2800
-Wire Wire Line
-	9450 2900 9550 2900
-Wire Wire Line
-	9450 3100 9550 3100
-Wire Wire Line
-	9450 3200 9550 3200
-Wire Wire Line
-	9450 3300 9550 3300
-Wire Wire Line
-	9450 3400 9550 3400
-Wire Wire Line
-	9450 3500 9550 3500
-Wire Wire Line
-	9450 3600 9550 3600
-Wire Wire Line
-	9450 3700 9550 3700
-Wire Wire Line
-	9450 3800 9550 3800
-Wire Wire Line
-	9450 3900 9550 3900
-Wire Wire Line
-	9450 4000 9550 4000
-Wire Wire Line
-	9450 4300 9550 4300
-Wire Wire Line
-	9450 4400 9550 4400
-Wire Wire Line
-	9450 4500 9550 4500
-Wire Wire Line
-	9450 4600 9550 4600
-Wire Wire Line
-	9450 4700 9550 4700
-Wire Wire Line
-	9450 4800 9550 4800
-Wire Wire Line
-	9550 3000 9450 3000
-Text GLabel 9550 4500 2    50   Input ~ 0
+Text GLabel 9150 3850 2    50   Input ~ 0
+21_RX3
+Text GLabel 9150 3950 2    50   Input ~ 0
+20_TX3
+Text GLabel 9150 4450 2    50   Input ~ 0
 28_RX7
-Text GLabel 7200 4500 0    50   Input ~ 0
+Text GLabel 6800 4450 0    50   Input ~ 0
 30_CRX3
-Text GLabel 9550 4400 2    50   Input ~ 0
+Text GLabel 9150 4350 2    50   Input ~ 0
 32_OUT1B
-Wire Wire Line
-	9550 4100 9450 4100
-Text GLabel 7200 4000 0    50   Input ~ 0
+Text GLabel 6800 3950 0    50   Input ~ 0
 11_MOSI
-Text GLabel 7200 3900 0    50   Input ~ 0
+Text GLabel 6800 3850 0    50   Input ~ 0
 10_CS
-Text GLabel 7200 4700 0    50   Input ~ 0
+Text GLabel 6800 4650 0    50   Input ~ 0
 33_MCLK2
-Text GLabel 9550 4700 2    50   Input ~ 0
+Text GLabel 9150 4650 2    50   Input ~ 0
 31_CTX3
-Text GLabel 7200 4800 0    50   Input ~ 0
+Text GLabel 6800 4750 0    50   Input ~ 0
 29_TX7
-Text GLabel 9550 4800 2    50   Input ~ 0
+Text GLabel 9150 4750 2    50   Input ~ 0
 27_A13
-Text GLabel 7200 4900 0    50   Input ~ 0
+Text GLabel 6800 4850 0    50   Input ~ 0
 25_RX6_A11
-Text GLabel 7200 3800 0    50   Input ~ 0
+Text GLabel 6800 3750 0    50   Input ~ 0
 9_OUT1C
-Text GLabel 7200 3700 0    50   Input ~ 0
+Text GLabel 6800 3650 0    50   Input ~ 0
 8_TX2_IN1
-Text GLabel 7200 3600 0    50   Input ~ 0
+Text GLabel 6800 3550 0    50   Input ~ 0
 7_RX2_OUT1A
-Text GLabel 7200 3500 0    50   Input ~ 0
+Text GLabel 6800 3450 0    50   Input ~ 0
 6_OUT1D
-Text GLabel 7200 3400 0    50   Input ~ 0
+Text GLabel 6800 3350 0    50   Input ~ 0
 5_IN2
-Text GLabel 7200 3300 0    50   Input ~ 0
+Text GLabel 6800 3250 0    50   Input ~ 0
 4_BCLK2
-Text GLabel 7200 3200 0    50   Input ~ 0
+Text GLabel 6800 3150 0    50   Input ~ 0
 3_LRCLK2
-Text GLabel 7200 3100 0    50   Input ~ 0
+Text GLabel 6800 3050 0    50   Input ~ 0
 2_OUT2
-Text GLabel 7200 3000 0    50   Input ~ 0
+Text GLabel 6800 2950 0    50   Input ~ 0
 1_TX1
-Text GLabel 7200 2900 0    50   Input ~ 0
+Text GLabel 6800 2850 0    50   Input ~ 0
 0_RX1
-Wire Wire Line
-	7400 2800 7200 2800
-Wire Wire Line
-	7400 2900 7200 2900
-Wire Wire Line
-	7400 3000 7200 3000
-Wire Wire Line
-	7400 3100 7200 3100
-Wire Wire Line
-	7400 3200 7200 3200
-Wire Wire Line
-	7400 3300 7200 3300
-Wire Wire Line
-	7400 3400 7200 3400
-Wire Wire Line
-	7400 3500 7200 3500
-Wire Wire Line
-	7400 3600 7200 3600
-Wire Wire Line
-	7400 3700 7200 3700
-Wire Wire Line
-	7400 3800 7200 3800
-Wire Wire Line
-	7400 4900 7200 4900
-Wire Wire Line
-	7400 4800 7200 4800
-Wire Wire Line
-	7400 4700 7200 4700
-Wire Wire Line
-	7400 4600 7200 4600
-Wire Wire Line
-	7400 4500 7200 4500
-Wire Wire Line
-	7200 3900 7400 3900
-Wire Wire Line
-	7200 4000 7400 4000
-Wire Wire Line
-	7200 4100 7400 4100
-Wire Wire Line
-	7400 4400 7200 4400
-Wire Wire Line
-	7400 4300 7200 4300
-Wire Wire Line
-	7400 4200 7200 4200
-Text GLabel 7200 4100 0    50   Input ~ 0
+Text GLabel 6800 4050 0    50   Input ~ 0
 12_MISO
-Text GLabel 7200 4200 0    50   Input ~ 0
+Text GLabel 6800 4150 0    50   Input ~ 0
 VBAT
-Text GLabel 7200 4400 0    50   Input ~ 0
+Text GLabel 6800 4350 0    50   Input ~ 0
 ON_OFF
-Text GLabel 7200 2800 0    50   Input ~ 0
+Text GLabel 6800 2750 0    50   Input ~ 0
 Ground
-$Comp
-L Device:Battery_Cell BT1
-U 1 1 5DFDECDE
-P 10150 1350
-F 0 "BT1" H 10300 1500 50  0000 L CNN
-F 1 "3V cell coin" H 10250 1350 50  0000 L CNN
-F 2 "Battery:BatteryHolder_Keystone_3034_1x20mm" V 10150 1410 50  0001 C CNN
-F 3 "~" V 10150 1410 50  0001 C CNN
-	1    10150 1350
-	1    0    0    -1  
-$EndComp
 Text GLabel 6300 1650 3    50   Input ~ 0
 Ground
 Text GLabel 6300 1000 1    50   Input ~ 0
 ON_OFF
-Text GLabel 10150 900  1    50   Input ~ 0
+Text GLabel 7900 1000 1    50   Input ~ 0
 VBAT
 $Bitmap
 Pos 1600 1500
@@ -9343,122 +9234,42 @@ FF 1D 3B AE BD 53 D2 22 79 FC E8 F1 89 E3 C7 CD CC CC DE 7B FF FD 37 DF 2B 00 40
 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-Wire Wire Line
-	4600 2900 4500 2900
-Wire Wire Line
-	4600 3000 4500 3000
-Wire Wire Line
-	4600 3100 4500 3100
-Wire Wire Line
-	4600 3200 4500 3200
-Wire Wire Line
-	4600 3300 4500 3300
-Wire Wire Line
-	4600 3400 4500 3400
-Wire Wire Line
-	4600 3500 4500 3500
-Wire Wire Line
-	4600 3600 4500 3600
-Wire Wire Line
-	4600 3900 4500 3900
-Text GLabel 4400 4500 0    50   Input ~ 0
+Text GLabel 4000 4200 0    50   Input ~ 0
 28_RX7
-Text GLabel 4400 5000 0    50   Input ~ 0
+Text GLabel 4000 4400 0    50   Input ~ 0
 33_MCLK2
-Text GLabel 4400 5100 0    50   Input ~ 0
+Text GLabel 4000 4000 0    50   Input ~ 0
 29_TX7
-Text GLabel 4400 4700 0    50   Input ~ 0
+Text GLabel 4000 3800 0    50   Input ~ 0
 27_A13
-Text GLabel 4500 3600 0    50   Input ~ 0
+Text GLabel 4000 4800 0    50   Input ~ 0
 9_OUT1C
-Text GLabel 4500 3400 0    50   Input ~ 0
+Text GLabel 4000 4500 0    50   Input ~ 0
 7_RX2_OUT1A
-Text GLabel 4500 3300 0    50   Input ~ 0
+Text GLabel 4000 4300 0    50   Input ~ 0
 6_OUT1D
-Text GLabel 4500 3200 0    50   Input ~ 0
+Text GLabel 4000 4100 0    50   Input ~ 0
 5_IN2
-Text GLabel 4500 3100 0    50   Input ~ 0
+Text GLabel 4000 3900 0    50   Input ~ 0
 4_BCLK2
-Text GLabel 4500 3000 0    50   Input ~ 0
+Text GLabel 4000 3700 0    50   Input ~ 0
 3_LRCLK2
-Text GLabel 4500 2900 0    50   Input ~ 0
+Text GLabel 4000 3600 0    50   Input ~ 0
 2_OUT2
-Text GLabel 4500 2800 0    50   Input ~ 0
+Text GLabel 4000 3400 0    50   Input ~ 0
 1_TX1
-Text GLabel 4400 2700 0    50   Input ~ 0
+Text GLabel 4000 3200 0    50   Input ~ 0
 0_RX1
-Wire Wire Line
-	4600 4400 4400 4400
-Wire Wire Line
-	4600 4500 4400 4500
-Wire Wire Line
-	4600 4600 4400 4600
-Wire Wire Line
-	4600 4700 4400 4700
-Wire Wire Line
-	4600 4800 4400 4800
-Wire Wire Line
-	4600 4900 4400 4900
-Wire Wire Line
-	4600 5000 4400 5000
-Wire Wire Line
-	4600 5100 4400 5100
-Wire Wire Line
-	4600 5300 4400 5300
-Wire Wire Line
-	4600 5400 4400 5400
-Wire Wire Line
-	4600 2700 4400 2700
-Wire Wire Line
-	4600 5600 4400 5600
-Wire Wire Line
-	4600 5500 4400 5500
-Wire Wire Line
-	4600 2800 4500 2800
-Wire Wire Line
-	4400 5200 4600 5200
-Wire Wire Line
-	4600 5700 4400 5700
-Wire Wire Line
-	4600 5800 4400 5800
-Text GLabel 4400 4900 0    50   Input ~ 0
+Text GLabel 4000 4700 0    50   Input ~ 0
 32_OUT1B
-Text GLabel 4300 3800 0    50   Input ~ 0
+Text GLabel 4000 4900 0    50   Input ~ 0
 3V3
-Wire Wire Line
-	4400 4300 4600 4300
-Wire Wire Line
-	4600 5900 4400 5900
-Wire Wire Line
-	4600 6000 4400 6000
-Wire Wire Line
-	4600 6100 4400 6100
-Wire Wire Line
-	4600 6200 4500 6200
-Text GLabel 4400 6200 0    50   Input ~ 0
-12V_IN
-Text GLabel 10150 1650 3    50   Input ~ 0
+Text GLabel 7700 1350 0    50   Input ~ 0
 Ground
-Text GLabel 4400 6100 0    50   Input ~ 0
+Text GLabel 4000 5300 0    50   Input ~ 0
 Ground
-$Comp
-L Device:C C18
-U 1 1 5DFDED4D
-P 4500 6350
-F 0 "C18" H 4615 6396 50  0000 L CNN
-F 1 "10u" H 4615 6305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4538 6200 50  0001 C CNN
-F 3 "~" H 4500 6350 50  0001 C CNN
-	1    4500 6350
-	1    0    0    -1  
-$EndComp
-Connection ~ 4500 6200
-Wire Wire Line
-	4500 6200 4400 6200
-Text GLabel 4500 6650 3    50   Input ~ 0
+Text GLabel 4100 2300 2    50   Input ~ 0
 Ground
-Wire Wire Line
-	4500 6500 4500 6650
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 5DFDED57
@@ -9503,75 +9314,46 @@ F 3 "~" H 9050 6200 50  0001 C CNN
 	1    9050 6200
 	1    0    0    -1  
 $EndComp
-$Comp
-L teensy4_header_breakout-cache:MX34_36_pins MX1
-U 1 1 5DFDED6F
-P 4800 4400
-F 0 "MX1" H 3400 4450 50  0000 L CNN
-F 1 "MX34_36_pins" H 3300 4600 50  0000 L CNN
-F 2 "Teensy_Footprint_Library:Connector_MX34_36pins" H 4800 4400 50  0001 C CNN
-F 3 "" H 4800 4400 50  0001 C CNN
-	1    4800 4400
-	1    0    0    -1  
-$EndComp
-Text GLabel 4400 5600 0    50   Input ~ 0
+Text GLabel 4000 3100 0    50   Input ~ 0
 Sensor_Input_4
-Text GLabel 4400 5500 0    50   Input ~ 0
+Text GLabel 4000 3000 0    50   Input ~ 0
 Sensor_Input_3
-Text GLabel 4400 5400 0    50   Input ~ 0
+Text GLabel 4000 2900 0    50   Input ~ 0
 Sensor_Input_2
-Text GLabel 4400 5300 0    50   Input ~ 0
+Text GLabel 4000 2800 0    50   Input ~ 0
 Sensor_Input_1
-Text GLabel 4400 6000 0    50   Input ~ 0
+Text GLabel 4000 5700 0    50   Input ~ 0
 Sensor_Input_8
-Text GLabel 4400 5900 0    50   Input ~ 0
+Text GLabel 4000 5600 0    50   Input ~ 0
 Sensor_Input_7
-Text GLabel 4400 5800 0    50   Input ~ 0
+Text GLabel 4000 5900 0    50   Input ~ 0
 Sensor_Input_6
-Text GLabel 4400 5700 0    50   Input ~ 0
+Text GLabel 4000 5800 0    50   Input ~ 0
 Sensor_Input_5
-Text GLabel 9550 4000 2    50   Input ~ 0
+Text GLabel 9150 3750 2    50   Input ~ 0
 Out7
-Text GLabel 9550 3700 2    50   Input ~ 0
+Text GLabel 9150 3550 2    50   Input ~ 0
 Out5
-Text GLabel 9550 3800 2    50   Input ~ 0
+Text GLabel 9150 3450 2    50   Input ~ 0
 Out6
-Text GLabel 9550 3900 2    50   Input ~ 0
+Text GLabel 9150 3650 2    50   Input ~ 0
 Out8
-Text GLabel 4400 4200 0    50   Input ~ 0
+Text GLabel 4000 5100 0    50   Input ~ 0
 Ground
-Wire Wire Line
-	4400 4200 4600 4200
-Wire Wire Line
-	4400 4100 4600 4100
-Wire Wire Line
-	4400 4000 4600 4000
-Text GLabel 4400 4100 0    50   Input ~ 0
+Text GLabel 4000 5000 0    50   Input ~ 0
 Ground
-Text GLabel 4400 4300 0    50   Input ~ 0
+Text GLabel 4000 5200 0    50   Input ~ 0
 Ground
-Text GLabel 4400 4400 0    50   Input ~ 0
-Ground
-Text GLabel 4400 4600 0    50   Input ~ 0
-21_RX5
-Text GLabel 4400 4800 0    50   Input ~ 0
-20_TX5
-Text GLabel 4500 3500 0    50   Input ~ 0
+Text GLabel 4000 5400 0    50   Input ~ 0
+21_RX3
+Text GLabel 4000 5500 0    50   Input ~ 0
+20_TX3
+Text GLabel 4000 4600 0    50   Input ~ 0
 8_TX2_IN1
-Text GLabel 4400 4000 0    50   Input ~ 0
+Text GLabel 4000 3500 0    50   Input ~ 0
 25_RX6_A11
-Text GLabel 4500 3900 0    50   Input ~ 0
+Text GLabel 4000 3300 0    50   Input ~ 0
 24_TX6_A10
-Text GLabel 4400 5200 0    50   Input ~ 0
-Ground
-Wire Wire Line
-	4300 3800 4600 3800
-Wire Wire Line
-	4450 3700 4600 3700
-Text GLabel 10050 4200 1    50   Input ~ 0
-3.3V
-Wire Wire Line
-	9450 4200 10200 4200
 $Comp
 L Switch:SW_Push_Dual SW1
 U 1 1 5E1C0144
@@ -9597,10 +9379,236 @@ Wire Wire Line
 Connection ~ 6500 1300
 Wire Wire Line
 	6500 1300 6500 1500
-Text GLabel 4450 3700 0    50   Input ~ 0
+Text GLabel 4000 6100 0    50   Input ~ 0
+CANH
+Text GLabel 4000 6000 0    50   Input ~ 0
+CANL
+Wire Wire Line
+	7900 1000 7900 1250
+Text GLabel 4000 2600 0    50   Input ~ 0
+12V_IN
+$Comp
+L Device:C C18
+U 1 1 5DFDED4D
+P 4100 2450
+F 0 "C18" H 4215 2496 50  0000 L CNN
+F 1 "10u" H 4215 2405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4138 2300 50  0001 C CNN
+F 3 "~" H 4100 2450 50  0001 C CNN
+	1    4100 2450
+	1    0    0    -1  
+$EndComp
+Text GLabel 4000 2700 0    50   Input ~ 0
 Vinn_5V
+$Comp
+L teensy4_header_breakout-cache:MX34_36_pins MX1
+U 1 1 5DFDED6F
+P 4400 4300
+F 0 "MX1" H 5212 3140 50  0000 L CNN
+F 1 "MX34_36_pins" H 4917 3408 50  0000 L CNN
+F 2 "Teensy_Footprint_Library:Connector_MX34_36pins" H 4400 4300 50  0001 C CNN
+F 3 "" H 4400 4300 50  0001 C CNN
+	1    4400 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L teensy4_header_breakout-cache:BreakoutBoardTeensy_Teensy_pins T4
+U 1 1 5E646C7B
+P 7400 3450
+F 0 "T4" H 7975 4375 50  0000 C CNN
+F 1 "BreakoutBoardTeensy_Teensy_pins" H 7975 4284 50  0000 C CNN
+F 2 "Teensy_Footprint_Library:Teensy_40_footprint" H 8700 3450 50  0001 C CNN
+F 3 "" H 8700 3450 50  0001 C CNN
+	1    7400 3450
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	10150 1450 10150 1650
+	6950 2750 6800 2750
 Wire Wire Line
-	10150 900  10150 1150
+	6950 4850 6800 4850
+Wire Wire Line
+	6950 4750 6800 4750
+Wire Wire Line
+	6950 4650 6800 4650
+Wire Wire Line
+	6950 4550 6800 4550
+Wire Wire Line
+	6950 4450 6800 4450
+Wire Wire Line
+	6950 4350 6800 4350
+Wire Wire Line
+	6950 4250 6800 4250
+Wire Wire Line
+	6950 4150 6800 4150
+Wire Wire Line
+	6950 4050 6800 4050
+Wire Wire Line
+	6950 3950 6800 3950
+Wire Wire Line
+	6950 3850 6800 3850
+Wire Wire Line
+	6950 3750 6800 3750
+Wire Wire Line
+	6950 3650 6800 3650
+Wire Wire Line
+	6950 3550 6800 3550
+Wire Wire Line
+	6950 3450 6800 3450
+Wire Wire Line
+	6950 3350 6800 3350
+Wire Wire Line
+	6950 3250 6800 3250
+Wire Wire Line
+	6950 3150 6800 3150
+Wire Wire Line
+	6950 3050 6800 3050
+Wire Wire Line
+	6950 2950 6800 2950
+Wire Wire Line
+	6950 2850 6800 2850
+Wire Wire Line
+	9000 2750 9150 2750
+Wire Wire Line
+	9000 2850 9150 2850
+Wire Wire Line
+	9000 2950 9150 2950
+Wire Wire Line
+	9000 3050 9150 3050
+Wire Wire Line
+	9000 3150 9150 3150
+Wire Wire Line
+	9000 3250 9150 3250
+Wire Wire Line
+	9000 3350 9150 3350
+Wire Wire Line
+	9000 3450 9150 3450
+Wire Wire Line
+	9000 3550 9150 3550
+Wire Wire Line
+	9000 3650 9150 3650
+Wire Wire Line
+	9000 3750 9150 3750
+Wire Wire Line
+	9000 3850 9150 3850
+Wire Wire Line
+	9000 3950 9150 3950
+Wire Wire Line
+	9000 4050 9150 4050
+Wire Wire Line
+	9000 4150 9750 4150
+Wire Wire Line
+	9000 4250 9150 4250
+Wire Wire Line
+	9000 4350 9150 4350
+Wire Wire Line
+	9000 4450 9150 4450
+Wire Wire Line
+	9000 4550 9150 4550
+Wire Wire Line
+	9000 4650 9150 4650
+Wire Wire Line
+	9000 4750 9150 4750
+Wire Wire Line
+	4200 2600 4100 2600
+Wire Wire Line
+	4200 2700 4000 2700
+Wire Wire Line
+	4000 2800 4200 2800
+Wire Wire Line
+	4000 2900 4200 2900
+Wire Wire Line
+	4000 3000 4200 3000
+Wire Wire Line
+	4000 3100 4200 3100
+Wire Wire Line
+	4000 3200 4200 3200
+Wire Wire Line
+	4000 3300 4200 3300
+Wire Wire Line
+	4000 3400 4200 3400
+Wire Wire Line
+	4000 3500 4200 3500
+Wire Wire Line
+	4000 3600 4200 3600
+Wire Wire Line
+	4000 3700 4200 3700
+Wire Wire Line
+	4000 3800 4200 3800
+Wire Wire Line
+	4000 3900 4200 3900
+Wire Wire Line
+	4000 4000 4200 4000
+Wire Wire Line
+	4000 4100 4200 4100
+Wire Wire Line
+	4000 4200 4200 4200
+Wire Wire Line
+	4000 4300 4200 4300
+Wire Wire Line
+	4000 4400 4200 4400
+Wire Wire Line
+	4000 4500 4200 4500
+Wire Wire Line
+	4000 4600 4200 4600
+Wire Wire Line
+	4000 4700 4200 4700
+Wire Wire Line
+	4000 4800 4200 4800
+Wire Wire Line
+	4000 4900 4200 4900
+Wire Wire Line
+	4000 5000 4200 5000
+Wire Wire Line
+	4000 5100 4200 5100
+Wire Wire Line
+	4000 5200 4200 5200
+Wire Wire Line
+	4000 5300 4200 5300
+Wire Wire Line
+	4000 5400 4200 5400
+Wire Wire Line
+	4000 5500 4200 5500
+Wire Wire Line
+	4000 5600 4200 5600
+Wire Wire Line
+	4000 5700 4200 5700
+Wire Wire Line
+	4000 5800 4200 5800
+Wire Wire Line
+	4000 5900 4200 5900
+Wire Wire Line
+	4000 6000 4200 6000
+Wire Wire Line
+	4000 6100 4200 6100
+Connection ~ 4100 2600
+Wire Wire Line
+	4100 2600 4000 2600
+$Comp
+L teensy4_header_breakout-cache:S8211-46R U1
+U 1 1 5E603AF4
+P 8100 1250
+F 0 "U1" H 8842 1515 50  0000 C CNN
+F 1 "S8211-46R" H 8842 1424 50  0000 C CNN
+F 2 "Teensy_Footprint_Library:S8211-46R" H 9650 1350 50  0001 L CNN
+F 3 "https://cdn.harwin.com/pdfs/S8211R.pdf" H 9650 1250 50  0001 L CNN
+F 4 "HARWIN - S8211-46R - HOLDER, EZ-COIN, CR/BR2032 CELLS" H 9650 1150 50  0001 L CNN "Description"
+F 5 "" H 9650 1050 50  0001 L CNN "Height"
+F 6 "HARWIN" H 9650 950 50  0001 L CNN "Manufacturer_Name"
+F 7 "S8211-46R" H 9650 850 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "855-S8211-46R" H 9650 750 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=855-S8211-46R" H 9650 650 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 9650 550 50  0001 L CNN "RS Part Number"
+F 11 "" H 9650 450 50  0001 L CNN "RS Price/Stock"
+	1    8100 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 1250 8100 1250
+Wire Wire Line
+	7700 1350 8100 1350
+Wire Wire Line
+	8100 1450 7900 1450
+Wire Wire Line
+	7900 1450 7900 1250
+Connection ~ 7900 1250
 $EndSCHEMATC

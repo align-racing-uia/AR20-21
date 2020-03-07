@@ -1,0 +1,1503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Users\Rawi\Documents\Align Racing\Github\AR20\AR20_CPU\CPU_Breakout\teensy4_header_breakout.sch</source>
+    <date>9. jan. 2020 17:30:01</date>
+    <tool>Eeschema (5.1.4)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>teensy4_header_breakout.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/LM324/" tstamps="/5DE81E30/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>LM324.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/MCP2551/" tstamps="/5DE8C472/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>MCP2551.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/microSD/" tstamps="/5DE8C4DF/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>microSD.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/VoltageReg/" tstamps="/5DE8C550/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>NCV890430MW50TXG.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/T4/" tstamps="/5DE8C5CE/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Teensy4.0.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C8">
+      <value>C</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DF97761</tstamp>
+    </comp>
+    <comp ref="D8">
+      <value>3V</value>
+      <footprint>Diode_SMD:D_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DF977A0</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DF977A6</tstamp>
+    </comp>
+    <comp ref="D6">
+      <value>3V</value>
+      <footprint>Diode_SMD:D_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DF977B6</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DF977BC</tstamp>
+    </comp>
+    <comp ref="D7">
+      <value>3V</value>
+      <footprint>Diode_SMD:D_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DF977CC</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DF977D2</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>3V</value>
+      <footprint>Diode_SMD:D_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DF977EF</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>1.5n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DF977F5</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>20k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DF977FB</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DF97801</tstamp>
+    </comp>
+    <comp ref="LM2">
+      <value>LM324DRG3</value>
+      <footprint>Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</footprint>
+      <datasheet>http://www.ti.com/lit/gpn/lm324</datasheet>
+      <fields>
+        <field name="Description">QUADRUPLE OPERATIONAL AMPLIFIERS</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">LM324DRG3</field>
+        <field name="Mouser Part Number">595-LM324DRG3</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=595-LM324DRG3</field>
+      </fields>
+      <libsource lib="BreakoutBoardTeensy" part="LM324DRG3" description=""/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DF97811</tstamp>
+    </comp>
+    <comp ref="JP5">
+      <value>SJ_Open</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DF9781E</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>1.5n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DF97830</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>20k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DF97836</tstamp>
+    </comp>
+    <comp ref="JP6">
+      <value>SJ_Open</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DF9783C</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>1.5n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DF9784D</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>20k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DF97853</tstamp>
+    </comp>
+    <comp ref="JP7">
+      <value>SJ_Open</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DF97859</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>1.5n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DF9786A</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>20k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DF97870</tstamp>
+    </comp>
+    <comp ref="JP8">
+      <value>SJ_Open</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DF97876</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>C</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DFAD327</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>3V</value>
+      <footprint>Diode_SMD:D_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DFAD366</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DFAD36C</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>3V</value>
+      <footprint>Diode_SMD:D_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DFAD37C</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DFAD382</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>3V</value>
+      <footprint>Diode_SMD:D_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DFAD392</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DFAD398</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>3V</value>
+      <footprint>Diode_SMD:D_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DFAD3B5</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>1.5n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DFAD3BB</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>20k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DFAD3C1</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DFAD3C7</tstamp>
+    </comp>
+    <comp ref="LM1">
+      <value>LM324DRG3</value>
+      <footprint>Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</footprint>
+      <datasheet>http://www.ti.com/lit/gpn/lm324</datasheet>
+      <fields>
+        <field name="Description">QUADRUPLE OPERATIONAL AMPLIFIERS</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">LM324DRG3</field>
+        <field name="Mouser Part Number">595-LM324DRG3</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=595-LM324DRG3</field>
+      </fields>
+      <libsource lib="BreakoutBoardTeensy" part="LM324DRG3" description=""/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DFAD3D7</tstamp>
+    </comp>
+    <comp ref="JP1">
+      <value>SJ_Open</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DFAD3E4</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>1.5n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DFAD3F6</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>20k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DFAD3FC</tstamp>
+    </comp>
+    <comp ref="JP2">
+      <value>SJ_Open</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DFAD402</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>1.5n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DFAD413</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>20k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DFAD419</tstamp>
+    </comp>
+    <comp ref="JP3">
+      <value>SJ_Open</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DFAD41F</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>1.5n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DFAD430</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>20k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DFAD436</tstamp>
+    </comp>
+    <comp ref="JP4">
+      <value>SJ_Open</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
+      <sheetpath names="/LM324/" tstamps="/5DE81E30/"/>
+      <tstamp>5DFAD43C</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>.1u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/MCP2551/" tstamps="/5DE8C472/"/>
+      <tstamp>5DFD4BFF</tstamp>
+    </comp>
+    <comp ref="GND1">
+      <value>GND</value>
+      <footprint>TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/MCP2551/" tstamps="/5DE8C472/"/>
+      <tstamp>5DFD4C0E</tstamp>
+    </comp>
+    <comp ref="H1">
+      <value>CANH_out</value>
+      <footprint>TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/MCP2551/" tstamps="/5DE8C472/"/>
+      <tstamp>5DFD4C14</tstamp>
+    </comp>
+    <comp ref="H2">
+      <value>CANL_out</value>
+      <footprint>TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/MCP2551/" tstamps="/5DE8C472/"/>
+      <tstamp>5DFD4C28</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>120</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCP2551/" tstamps="/5DE8C472/"/>
+      <tstamp>5DFD4C2E</tstamp>
+    </comp>
+    <comp ref="JP9">
+      <value>SolderJumper_2_Open</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
+      <sheetpath names="/MCP2551/" tstamps="/5DE8C472/"/>
+      <tstamp>5DFD4C34</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>60</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/MCP2551/" tstamps="/5DE8C472/"/>
+      <tstamp>5DFD4C3D</tstamp>
+    </comp>
+    <comp ref="CANmodule1">
+      <value>MCP2551-I-SN</value>
+      <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf</datasheet>
+      <libsource lib="Interface_CAN_LIN" part="MCP2551-I-SN" description="High-Speed CAN Transceiver, 1Mbps, 5V supply, SOIC8 package"/>
+      <sheetpath names="/MCP2551/" tstamps="/5DE8C472/"/>
+      <tstamp>5DFD4C52</tstamp>
+    </comp>
+    <comp ref="SDcard1">
+      <value>Micro_SD_Card</value>
+      <footprint>Connector_Card:microSD_HC_Hirose_DM3D-SF</footprint>
+      <datasheet>http://katalog.we-online.de/em/datasheet/693072010801.pdf</datasheet>
+      <libsource lib="Connector" part="Micro_SD_Card" description="Micro SD Card Socket"/>
+      <sheetpath names="/microSD/" tstamps="/5DE8C4DF/"/>
+      <tstamp>5DFCE3F6</tstamp>
+    </comp>
+    <comp ref="SWReg_NVC1">
+      <value>NCV890430MW50TXG</value>
+      <footprint>Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.65mm_EP1.7x2.05mm</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/NCV890430-D.PDF</datasheet>
+      <fields>
+        <field name="Description">ON Semiconductor, NCV890430MW50TXG Step-Down Switching Regulator, 1-Channel 600mA 8-Pin, DFN</field>
+        <field name="Height">1</field>
+        <field name="Manufacturer_Name">ON Semiconductor</field>
+        <field name="Manufacturer_Part_Number">NCV890430MW50TXG</field>
+        <field name="Mouser Part Number">863-NCV890430MW50TXG</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=863-NCV890430MW50TXG</field>
+        <field name="RS Part Number">1263468P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/1263468P</field>
+      </fields>
+      <libsource lib="NCV890430MW50TXG" part="NCV890430MW50TXG" description="ON Semiconductor, NCV890430MW50TXG Step-Down Switching Regulator, 1-Channel 600mA 8-Pin, DFN"/>
+      <sheetpath names="/VoltageReg/" tstamps="/5DE8C550/"/>
+      <tstamp>5DFC1FB6</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>0.1u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/VoltageReg/" tstamps="/5DE8C550/"/>
+      <tstamp>5DFC1FBC</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>10u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/VoltageReg/" tstamps="/5DE8C550/"/>
+      <tstamp>5DFC1FC2</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>0.1u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/VoltageReg/" tstamps="/5DE8C550/"/>
+      <tstamp>5DFC1FC8</tstamp>
+    </comp>
+    <comp ref="C17">
+      <value>10u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/VoltageReg/" tstamps="/5DE8C550/"/>
+      <tstamp>5DFC1FCE</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>2.2u</value>
+      <footprint>Inductor_SMD:L_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <sheetpath names="/VoltageReg/" tstamps="/5DE8C550/"/>
+      <tstamp>5DFC1FD4</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/VoltageReg/" tstamps="/5DE8C550/"/>
+      <tstamp>5DFC1FFA</tstamp>
+    </comp>
+    <comp ref="Teensy4.0">
+      <value>Teensy_pins</value>
+      <footprint>Teensy_Footprint_Library:Teensy_40_footprint</footprint>
+      <libsource lib="BreakoutBoardTeensy" part="Teensy_pins" description=""/>
+      <sheetpath names="/T4/" tstamps="/5DE8C5CE/"/>
+      <tstamp>5DFC9DF7</tstamp>
+    </comp>
+    <comp ref="BT1">
+      <value>3V cell coin</value>
+      <footprint>Battery:BatteryHolder_Keystone_3034_1x20mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Battery_Cell" description="Single-cell battery"/>
+      <sheetpath names="/T4/" tstamps="/5DE8C5CE/"/>
+      <tstamp>5DFDECDE</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_SPST</value>
+      <footprint>Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Switch" part="SW_SPST" description="Single Pole Single Throw (SPST) switch"/>
+      <sheetpath names="/T4/" tstamps="/5DE8C5CE/"/>
+      <tstamp>5DFDECE5</tstamp>
+    </comp>
+    <comp ref="C18">
+      <value>10u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/T4/" tstamps="/5DE8C5CE/"/>
+      <tstamp>5DFDED4D</tstamp>
+    </comp>
+    <comp ref="H4">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_2.5mm_Pad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/T4/" tstamps="/5DE8C5CE/"/>
+      <tstamp>5DFDED57</tstamp>
+    </comp>
+    <comp ref="H5">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_2.5mm_Pad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/T4/" tstamps="/5DE8C5CE/"/>
+      <tstamp>5DFDED5D</tstamp>
+    </comp>
+    <comp ref="H6">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_2.5mm_Pad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/T4/" tstamps="/5DE8C5CE/"/>
+      <tstamp>5DFDED63</tstamp>
+    </comp>
+    <comp ref="H7">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_2.5mm_Pad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/T4/" tstamps="/5DE8C5CE/"/>
+      <tstamp>5DFDED69</tstamp>
+    </comp>
+    <comp ref="MX1">
+      <value>MX34_36_pins</value>
+      <footprint>Teensy_Footprint_Library:Connector_MX34_36pins</footprint>
+      <libsource lib="teensy4_header_breakout-cache" part="MX34_36_pins" description=""/>
+      <sheetpath names="/T4/" tstamps="/5DE8C5CE/"/>
+      <tstamp>5DFDED6F</tstamp>
+    </comp>
+    <comp ref="R21">
+      <value>?</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/T4/" tstamps="/5DE8C5CE/"/>
+      <tstamp>5DE96DA3</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>?</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/T4/" tstamps="/5DE8C5CE/"/>
+      <tstamp>5DE9741A</tstamp>
+    </comp>
+    <comp ref="JP10">
+      <value>SolderJumper_2_Open</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
+      <sheetpath names="/T4/" tstamps="/5DE8C5CE/"/>
+      <tstamp>5DEBD2EA</tstamp>
+    </comp>
+    <comp ref="C19">
+      <value>?</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/T4/" tstamps="/5DE8C5CE/"/>
+      <tstamp>5DEC35AF</tstamp>
+    </comp>
+    <comp ref="OpAmp1">
+      <value>NCV20091SQ3T2G</value>
+      <footprint>Teensy_Footprint_Library:SC−70_NCV20091SQ3T2G</footprint>
+      <libsource lib="BreakoutBoardTeensy" part="NCV20091SQ3T2G" description=""/>
+      <sheetpath names="/T4/" tstamps="/5DE8C5CE/"/>
+      <tstamp>5DEC29A5</tstamp>
+    </comp>
+    <comp ref="D9">
+      <value>3V</value>
+      <footprint>Diode_SMD:D_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <sheetpath names="/T4/" tstamps="/5DE8C5CE/"/>
+      <tstamp>5DEF67C8</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="BreakoutBoardTeensy" part="LM324DRG3">
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">LM324DRG3</field>
+        <field name="Footprint">SOIC127P600X175-14N</field>
+        <field name="Datasheet">http://www.ti.com/lit/gpn/lm324</field>
+        <field name="Description">QUADRUPLE OPERATIONAL AMPLIFIERS</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">LM324DRG3</field>
+        <field name="Mouser Part Number">595-LM324DRG3</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=595-LM324DRG3</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1OUT" type="unspc"/>
+        <pin num="2" name="1IN-" type="unspc"/>
+        <pin num="3" name="1IN+" type="unspc"/>
+        <pin num="4" name="VCC" type="unspc"/>
+        <pin num="5" name="2IN+" type="unspc"/>
+        <pin num="6" name="2IN-" type="unspc"/>
+        <pin num="7" name="2OUT" type="unspc"/>
+        <pin num="8" name="3OUT" type="unspc"/>
+        <pin num="9" name="3IN-" type="unspc"/>
+        <pin num="10" name="3IN+" type="unspc"/>
+        <pin num="11" name="GND" type="unspc"/>
+        <pin num="12" name="4IN+" type="unspc"/>
+        <pin num="13" name="4IN-" type="unspc"/>
+        <pin num="14" name="4OUT" type="unspc"/>
+      </pins>
+    </libpart>
+    <libpart lib="BreakoutBoardTeensy" part="NCV20091SQ3T2G">
+      <fields>
+        <field name="Reference">OpAmp</field>
+        <field name="Value">NCV20091SQ3T2G</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN+" type="output"/>
+        <pin num="2" name="VSS" type="output"/>
+        <pin num="3" name="IN-" type="input"/>
+        <pin num="4" name="OUT" type="input"/>
+        <pin num="5" name="VDD" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="BreakoutBoardTeensy" part="Teensy_pins">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Teensy_pins</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="input"/>
+        <pin num="2" name="Vin(3V3_TO_5V5)" type="input"/>
+        <pin num="3" name="0_RX1_CRX2" type="input"/>
+        <pin num="4" name="GND" type="input"/>
+        <pin num="5" name="1_TX1_CTX2" type="input"/>
+        <pin num="6" name="3V3(250_mA_max)" type="input"/>
+        <pin num="7" name="2-OUT2" type="input"/>
+        <pin num="8" name="23_A9" type="input"/>
+        <pin num="9" name="3_LRCLK2" type="input"/>
+        <pin num="10" name="22_A8" type="input"/>
+        <pin num="11" name="4_BCLK2" type="input"/>
+        <pin num="12" name="21_A7_RX5" type="input"/>
+        <pin num="13" name="5-IN2" type="input"/>
+        <pin num="14" name="20_A6_TX5" type="input"/>
+        <pin num="15" name="6_OUT1D" type="input"/>
+        <pin num="16" name="19_A5" type="input"/>
+        <pin num="17" name="7_RX2_OUT1A" type="input"/>
+        <pin num="18" name="18_A4" type="input"/>
+        <pin num="19" name="8_TX2_IN1" type="input"/>
+        <pin num="20" name="17_A3_TX4" type="input"/>
+        <pin num="21" name="9_OUT1C" type="input"/>
+        <pin num="22" name="16_A2_RX4" type="input"/>
+        <pin num="23" name="10_CS" type="input"/>
+        <pin num="24" name="15_A1_RX3" type="input"/>
+        <pin num="25" name="11_MOSI" type="input"/>
+        <pin num="26" name="14_A0_TX3" type="input"/>
+        <pin num="27" name="12_MISO" type="input"/>
+        <pin num="28" name="13(LED)" type="input"/>
+        <pin num="29" name="VBat" type="input"/>
+        <pin num="30" name="3V3" type="input"/>
+        <pin num="31" name="GND" type="input"/>
+        <pin num="32" name="PROGRAM" type="input"/>
+        <pin num="33" name="On\Off" type="input"/>
+        <pin num="34" name="32_OUT1B" type="input"/>
+        <pin num="35" name="30_CRX3" type="input"/>
+        <pin num="36" name="28_RX7" type="input"/>
+        <pin num="37" name="26_A12" type="input"/>
+        <pin num="38" name="24_A10_TX6" type="input"/>
+        <pin num="39" name="33_MCLK2" type="input"/>
+        <pin num="40" name="31_CTX3" type="input"/>
+        <pin num="41" name="29_TX7" type="input"/>
+        <pin num="42" name="27_A13" type="input"/>
+        <pin num="43" name="25_A11_RX6" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Micro_SD_Card">
+      <description>Micro SD Card Socket</description>
+      <docs>http://katalog.we-online.de/em/datasheet/693072010801.pdf</docs>
+      <footprints>
+        <fp>microSD*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Micro_SD_Card</field>
+      </fields>
+      <pins>
+        <pin num="1" name="DAT2" type="BiDi"/>
+        <pin num="2" name="DAT3/CD" type="BiDi"/>
+        <pin num="3" name="CMD" type="input"/>
+        <pin num="4" name="VDD" type="power_in"/>
+        <pin num="5" name="CLK" type="input"/>
+        <pin num="6" name="VSS" type="power_in"/>
+        <pin num="7" name="DAT0" type="BiDi"/>
+        <pin num="8" name="DAT1" type="BiDi"/>
+        <pin num="9" name="SHIELD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Battery_Cell">
+      <description>Single-cell battery</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery_Cell</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Zener">
+      <description>Zener diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Zener</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L">
+      <description>Inductor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Interface_CAN_LIN" part="MCP2551-I-SN">
+      <description>High-Speed CAN Transceiver, 1Mbps, 5V supply, SOIC8 package</description>
+      <docs>http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf</docs>
+      <footprints>
+        <fp>SOIC*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP2551-I-SN</field>
+        <field name="Footprint">Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="TXD" type="input"/>
+        <pin num="2" name="VSS" type="power_in"/>
+        <pin num="3" name="VDD" type="power_in"/>
+        <pin num="4" name="RXD" type="output"/>
+        <pin num="5" name="Vref" type="power_out"/>
+        <pin num="6" name="CANL" type="BiDi"/>
+        <pin num="7" name="CANH" type="BiDi"/>
+        <pin num="8" name="Rs" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Jumper" part="SolderJumper_2_Open">
+      <description>Solder Jumper, 2-pole, open</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SolderJumper*Open*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">SolderJumper_2_Open</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+      </fields>
+    </libpart>
+    <libpart lib="NCV890430MW50TXG" part="NCV890430MW50TXG">
+      <description>ON Semiconductor, NCV890430MW50TXG Step-Down Switching Regulator, 1-Channel 600mA 8-Pin, DFN</description>
+      <docs>https://www.onsemi.com/pub/Collateral/NCV890430-D.PDF</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">NCV890430MW50TXG</field>
+        <field name="Footprint">SON65P300X300X100-9N</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/NCV890430-D.PDF</field>
+        <field name="Description">ON Semiconductor, NCV890430MW50TXG Step-Down Switching Regulator, 1-Channel 600mA 8-Pin, DFN</field>
+        <field name="Height">1</field>
+        <field name="Manufacturer_Name">ON Semiconductor</field>
+        <field name="Manufacturer_Part_Number">NCV890430MW50TXG</field>
+        <field name="Mouser Part Number">863-NCV890430MW50TXG</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=863-NCV890430MW50TXG</field>
+        <field name="RS Part Number">1263468P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/1263468P</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN" type="BiDi"/>
+        <pin num="2" name="RSTB" type="BiDi"/>
+        <pin num="3" name="GND" type="BiDi"/>
+        <pin num="4" name="EN" type="BiDi"/>
+        <pin num="5" name="VOUT" type="BiDi"/>
+        <pin num="6" name="SYNC" type="BiDi"/>
+        <pin num="7" name="PGND" type="BiDi"/>
+        <pin num="8" name="SW" type="BiDi"/>
+        <pin num="9" name="EP" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_SPST">
+      <description>Single Pole Single Throw (SPST) switch</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_SPST</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="teensy4_header_breakout-cache" part="MX34_36_pins">
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">MX34_36_pins</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+        <pin num="17" name="Pin_17" type="passive"/>
+        <pin num="19" name="Pin_19" type="passive"/>
+        <pin num="20" name="Pin_20" type="passive"/>
+        <pin num="21" name="Pin_21" type="passive"/>
+        <pin num="22" name="Pin_22" type="passive"/>
+        <pin num="24" name="Pin_24" type="passive"/>
+        <pin num="26" name="Pin_26" type="passive"/>
+        <pin num="30" name="Pin_30" type="passive"/>
+        <pin num="34" name="Pin_34" type="passive"/>
+        <pin num="35" name="Pin_35" type="passive"/>
+        <pin num="36" name="Pin_36" type="passive"/>
+        <pin num="37" name="Pin_37" type="passive"/>
+        <pin num="38" name="Pin_38" type="passive"/>
+        <pin num="39" name="Pin_39" type="passive"/>
+        <pin num="40" name="Pin_40" type="passive"/>
+        <pin num="41" name="Pin_41" type="passive"/>
+        <pin num="42" name="Pin_42" type="passive"/>
+        <pin num="43" name="Pin_43" type="passive"/>
+        <pin num="44" name="Pin_44" type="passive"/>
+        <pin num="45" name="Pin_45" type="passive"/>
+        <pin num="46" name="Pin_46" type="passive"/>
+        <pin num="47" name="Pin_47" type="passive"/>
+        <pin num="48" name="Pin_48" type="passive"/>
+        <pin num="49" name="Pin_49" type="passive"/>
+        <pin num="50" name="Pin_50" type="passive"/>
+        <pin num="51" name="Pin_51" type="passive"/>
+        <pin num="52" name="Pin_52" type="passive"/>
+        <pin num="GND" name="Pin_GND" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="BreakoutBoardTeensy">
+      <uri>C:\Users\Rawi\Documents\Align Racing\Github\AR20\AR20_CPU\CPU_Breakout/library/BreakoutBoardTeensy.lib</uri>
+    </library>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="Interface_CAN_LIN">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Interface_CAN_LIN.lib</uri>
+    </library>
+    <library logical="Jumper">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Jumper.lib</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Mechanical.lib</uri>
+    </library>
+    <library logical="NCV890430MW50TXG">
+      <uri>C:\Users\Rawi\Documents\Align Racing\Github\AR20\AR20_CPU\CPU_Breakout/NCV890430/NCV890430MW50TXG.lib</uri>
+    </library>
+    <library logical="Switch">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Switch.lib</uri>
+    </library>
+    <library logical="teensy4_header_breakout-cache">
+      <uri>C:\Users\Rawi\Documents\Align Racing\Github\AR20\AR20_CPU\CPU_Breakout/library/teensy4_header_breakout-cache.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Out2">
+      <node ref="LM1" pin="6"/>
+      <node ref="LM1" pin="7"/>
+      <node ref="Teensy4.0" pin="8"/>
+      <node ref="D2" pin="1"/>
+    </net>
+    <net code="2" name="Sensor_Input_4">
+      <node ref="MX1" pin="47"/>
+      <node ref="R7" pin="1"/>
+    </net>
+    <net code="3" name="Out4">
+      <node ref="Teensy4.0" pin="18"/>
+      <node ref="LM1" pin="14"/>
+      <node ref="LM1" pin="13"/>
+      <node ref="D4" pin="1"/>
+    </net>
+    <net code="4" name="Out1">
+      <node ref="D1" pin="1"/>
+      <node ref="LM1" pin="1"/>
+      <node ref="Teensy4.0" pin="10"/>
+      <node ref="LM1" pin="2"/>
+    </net>
+    <net code="5" name="IN1+">
+      <node ref="R1" pin="2"/>
+      <node ref="R2" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="LM1" pin="3"/>
+    </net>
+    <net code="6" name="Out3">
+      <node ref="D3" pin="1"/>
+      <node ref="LM1" pin="9"/>
+      <node ref="LM1" pin="8"/>
+      <node ref="Teensy4.0" pin="16"/>
+    </net>
+    <net code="7" name="Ground">
+      <node ref="SWReg_NVC1" pin="7"/>
+      <node ref="MX1" pin="30"/>
+      <node ref="BT1" pin="2"/>
+      <node ref="C8" pin="1"/>
+      <node ref="C15" pin="2"/>
+      <node ref="C14" pin="2"/>
+      <node ref="C16" pin="2"/>
+      <node ref="SWReg_NVC1" pin="3"/>
+      <node ref="D7" pin="2"/>
+      <node ref="C17" pin="2"/>
+      <node ref="MX1" pin="34"/>
+      <node ref="MX1" pin="35"/>
+      <node ref="SWReg_NVC1" pin="9"/>
+      <node ref="SW1" pin="1"/>
+      <node ref="R16" pin="2"/>
+      <node ref="R17" pin="1"/>
+      <node ref="JP8" pin="2"/>
+      <node ref="LM2" pin="11"/>
+      <node ref="D5" pin="2"/>
+      <node ref="R10" pin="2"/>
+      <node ref="JP5" pin="2"/>
+      <node ref="CANmodule1" pin="2"/>
+      <node ref="JP7" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="GND1" pin="1"/>
+      <node ref="R12" pin="2"/>
+      <node ref="JP6" pin="2"/>
+      <node ref="R14" pin="2"/>
+      <node ref="SDcard1" pin="6"/>
+      <node ref="SDcard1" pin="9"/>
+      <node ref="D9" pin="2"/>
+      <node ref="C3" pin="1"/>
+      <node ref="R6" pin="2"/>
+      <node ref="JP2" pin="2"/>
+      <node ref="C18" pin="2"/>
+      <node ref="R4" pin="2"/>
+      <node ref="OpAmp1" pin="2"/>
+      <node ref="D2" pin="2"/>
+      <node ref="D4" pin="2"/>
+      <node ref="Teensy4.0" pin="1"/>
+      <node ref="D3" pin="2"/>
+      <node ref="R22" pin="2"/>
+      <node ref="MX1" pin="20"/>
+      <node ref="D6" pin="2"/>
+      <node ref="MX1" pin="GND"/>
+      <node ref="LM1" pin="11"/>
+      <node ref="JP3" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="MX1" pin="43"/>
+      <node ref="D1" pin="2"/>
+      <node ref="JP1" pin="2"/>
+      <node ref="R8" pin="2"/>
+      <node ref="C19" pin="2"/>
+      <node ref="MX1" pin="26"/>
+      <node ref="JP4" pin="2"/>
+      <node ref="Teensy4.0" pin="4"/>
+      <node ref="D8" pin="2"/>
+      <node ref="Teensy4.0" pin="31"/>
+    </net>
+    <net code="8" name="Sensor_Input_2">
+      <node ref="MX1" pin="45"/>
+      <node ref="R3" pin="1"/>
+    </net>
+    <net code="9" name="Sensor_Input_1">
+      <node ref="MX1" pin="44"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="10" name="Sensor_Input_3">
+      <node ref="MX1" pin="46"/>
+      <node ref="R5" pin="1"/>
+    </net>
+    <net code="11" name="Net-(C4-Pad2)">
+      <node ref="C4" pin="2"/>
+      <node ref="JP3" pin="1"/>
+    </net>
+    <net code="12" name="IN3+">
+      <node ref="R6" pin="1"/>
+      <node ref="LM1" pin="10"/>
+      <node ref="C4" pin="1"/>
+      <node ref="R5" pin="2"/>
+    </net>
+    <net code="13" name="Net-(C2-Pad2)">
+      <node ref="JP2" pin="1"/>
+      <node ref="C2" pin="2"/>
+    </net>
+    <net code="14" name="IN2+">
+      <node ref="R3" pin="2"/>
+      <node ref="R4" pin="1"/>
+      <node ref="LM1" pin="5"/>
+      <node ref="C2" pin="1"/>
+    </net>
+    <net code="15" name="Net-(C5-Pad2)">
+      <node ref="C5" pin="2"/>
+      <node ref="JP4" pin="1"/>
+    </net>
+    <net code="16" name="IN4+">
+      <node ref="R7" pin="2"/>
+      <node ref="LM1" pin="12"/>
+      <node ref="C5" pin="1"/>
+      <node ref="R8" pin="1"/>
+    </net>
+    <net code="17" name="Net-(C1-Pad2)">
+      <node ref="JP1" pin="1"/>
+      <node ref="C1" pin="2"/>
+    </net>
+    <net code="18" name="Vinn_5V">
+      <node ref="SWReg_NVC1" pin="5"/>
+      <node ref="C11" pin="1"/>
+      <node ref="OpAmp1" pin="5"/>
+      <node ref="LM1" pin="4"/>
+      <node ref="C16" pin="1"/>
+      <node ref="C8" pin="2"/>
+      <node ref="Teensy4.0" pin="2"/>
+      <node ref="LM2" pin="4"/>
+      <node ref="L1" pin="2"/>
+      <node ref="C17" pin="1"/>
+      <node ref="CANmodule1" pin="3"/>
+      <node ref="C3" pin="2"/>
+    </net>
+    <net code="19" name="Out6">
+      <node ref="D6" pin="1"/>
+      <node ref="LM2" pin="6"/>
+      <node ref="LM2" pin="7"/>
+      <node ref="Teensy4.0" pin="22"/>
+    </net>
+    <net code="20" name="Sensor_Input_8">
+      <node ref="MX1" pin="51"/>
+      <node ref="R15" pin="1"/>
+    </net>
+    <net code="21" name="Out8">
+      <node ref="D8" pin="1"/>
+      <node ref="Teensy4.0" pin="24"/>
+      <node ref="LM2" pin="13"/>
+      <node ref="LM2" pin="14"/>
+    </net>
+    <net code="22" name="Out5">
+      <node ref="D5" pin="1"/>
+      <node ref="LM2" pin="1"/>
+      <node ref="Teensy4.0" pin="20"/>
+      <node ref="LM2" pin="2"/>
+    </net>
+    <net code="23" name="IN5+">
+      <node ref="C6" pin="1"/>
+      <node ref="R10" pin="1"/>
+      <node ref="LM2" pin="3"/>
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="24" name="Out7">
+      <node ref="Teensy4.0" pin="26"/>
+      <node ref="D7" pin="1"/>
+      <node ref="LM2" pin="9"/>
+      <node ref="LM2" pin="8"/>
+    </net>
+    <net code="25" name="Sensor_Input_6">
+      <node ref="R11" pin="1"/>
+      <node ref="MX1" pin="49"/>
+    </net>
+    <net code="26" name="Sensor_Input_5">
+      <node ref="MX1" pin="48"/>
+      <node ref="R9" pin="1"/>
+    </net>
+    <net code="27" name="Sensor_Input_7">
+      <node ref="MX1" pin="50"/>
+      <node ref="R13" pin="1"/>
+    </net>
+    <net code="28" name="Net-(C9-Pad2)">
+      <node ref="JP7" pin="1"/>
+      <node ref="C9" pin="2"/>
+    </net>
+    <net code="29" name="IN7+">
+      <node ref="C9" pin="1"/>
+      <node ref="R14" pin="1"/>
+      <node ref="LM2" pin="10"/>
+      <node ref="R13" pin="2"/>
+    </net>
+    <net code="30" name="Net-(C7-Pad2)">
+      <node ref="JP6" pin="1"/>
+      <node ref="C7" pin="2"/>
+    </net>
+    <net code="31" name="IN6+">
+      <node ref="LM2" pin="5"/>
+      <node ref="R11" pin="2"/>
+      <node ref="R12" pin="1"/>
+      <node ref="C7" pin="1"/>
+    </net>
+    <net code="32" name="Net-(C10-Pad2)">
+      <node ref="JP8" pin="1"/>
+      <node ref="C10" pin="2"/>
+    </net>
+    <net code="33" name="IN8+">
+      <node ref="LM2" pin="12"/>
+      <node ref="C10" pin="1"/>
+      <node ref="R16" pin="1"/>
+      <node ref="R15" pin="2"/>
+    </net>
+    <net code="34" name="Net-(C6-Pad2)">
+      <node ref="JP5" pin="1"/>
+      <node ref="C6" pin="2"/>
+    </net>
+    <net code="35" name="Net-(CANmodule1-Pad8)">
+      <node ref="CANmodule1" pin="8"/>
+      <node ref="R17" pin="2"/>
+    </net>
+    <net code="36" name="30_CRX3">
+      <node ref="Teensy4.0" pin="35"/>
+      <node ref="CANmodule1" pin="4"/>
+    </net>
+    <net code="37" name="Net-(CANmodule1-Pad5)">
+      <node ref="CANmodule1" pin="5"/>
+    </net>
+    <net code="38" name="Net-(CANmodule1-Pad6)">
+      <node ref="JP9" pin="2"/>
+      <node ref="CANmodule1" pin="6"/>
+      <node ref="H2" pin="1"/>
+    </net>
+    <net code="39" name="31_CTX3">
+      <node ref="CANmodule1" pin="1"/>
+      <node ref="Teensy4.0" pin="40"/>
+    </net>
+    <net code="40" name="Net-(JP9-Pad1)">
+      <node ref="R18" pin="2"/>
+      <node ref="JP9" pin="1"/>
+    </net>
+    <net code="41" name="Net-(CANmodule1-Pad7)">
+      <node ref="H1" pin="1"/>
+      <node ref="R18" pin="1"/>
+      <node ref="CANmodule1" pin="7"/>
+    </net>
+    <net code="42" name="10_CS">
+      <node ref="SDcard1" pin="2"/>
+      <node ref="Teensy4.0" pin="23"/>
+    </net>
+    <net code="43" name="11_MOSI">
+      <node ref="Teensy4.0" pin="25"/>
+      <node ref="SDcard1" pin="3"/>
+    </net>
+    <net code="44" name="13(LED)">
+      <node ref="SDcard1" pin="5"/>
+      <node ref="Teensy4.0" pin="28"/>
+    </net>
+    <net code="45" name="12_MISO">
+      <node ref="Teensy4.0" pin="27"/>
+      <node ref="SDcard1" pin="7"/>
+    </net>
+    <net code="46" name="Net-(SDcard1-Pad8)">
+      <node ref="SDcard1" pin="8"/>
+    </net>
+    <net code="47" name="Net-(SDcard1-Pad1)">
+      <node ref="SDcard1" pin="1"/>
+    </net>
+    <net code="48" name="Net-(R20-Pad2)">
+      <node ref="SWReg_NVC1" pin="4"/>
+      <node ref="R20" pin="2"/>
+    </net>
+    <net code="49" name="Net-(SWReg_NVC1-Pad6)">
+      <node ref="SWReg_NVC1" pin="6"/>
+    </net>
+    <net code="50" name="12V_IN">
+      <node ref="C14" pin="1"/>
+      <node ref="C15" pin="1"/>
+      <node ref="SWReg_NVC1" pin="1"/>
+      <node ref="C18" pin="1"/>
+      <node ref="MX1" pin="52"/>
+      <node ref="R20" pin="1"/>
+    </net>
+    <net code="51" name="Net-(SWReg_NVC1-Pad2)">
+      <node ref="SWReg_NVC1" pin="2"/>
+    </net>
+    <net code="52" name="Net-(L1-Pad1)">
+      <node ref="SWReg_NVC1" pin="8"/>
+      <node ref="L1" pin="1"/>
+    </net>
+    <net code="53" name="33_MCLK2">
+      <node ref="Teensy4.0" pin="39"/>
+      <node ref="MX1" pin="41"/>
+    </net>
+    <net code="54" name="32_OUT1B">
+      <node ref="MX1" pin="40"/>
+      <node ref="Teensy4.0" pin="34"/>
+    </net>
+    <net code="55" name="20_TX5">
+      <node ref="Teensy4.0" pin="14"/>
+      <node ref="MX1" pin="39"/>
+    </net>
+    <net code="56" name="27_A13">
+      <node ref="MX1" pin="38"/>
+      <node ref="Teensy4.0" pin="42"/>
+    </net>
+    <net code="57" name="21_RX5">
+      <node ref="Teensy4.0" pin="12"/>
+      <node ref="MX1" pin="37"/>
+    </net>
+    <net code="58" name="28_RX7">
+      <node ref="MX1" pin="36"/>
+      <node ref="Teensy4.0" pin="36"/>
+    </net>
+    <net code="59" name="1_TX1">
+      <node ref="MX1" pin="3"/>
+      <node ref="Teensy4.0" pin="5"/>
+    </net>
+    <net code="60" name="3_LRCLK2">
+      <node ref="MX1" pin="7"/>
+      <node ref="Teensy4.0" pin="9"/>
+    </net>
+    <net code="61" name="29_TX7">
+      <node ref="MX1" pin="42"/>
+      <node ref="Teensy4.0" pin="41"/>
+    </net>
+    <net code="62" name="2_OUT2">
+      <node ref="MX1" pin="5"/>
+      <node ref="Teensy4.0" pin="7"/>
+    </net>
+    <net code="63" name="0_RX1">
+      <node ref="MX1" pin="1"/>
+      <node ref="Teensy4.0" pin="3"/>
+    </net>
+    <net code="64" name="3.3V">
+      <node ref="MX1" pin="21"/>
+      <node ref="Teensy4.0" pin="30"/>
+      <node ref="SDcard1" pin="4"/>
+      <node ref="Teensy4.0" pin="6"/>
+    </net>
+    <net code="65" name="26_A12">
+      <node ref="D9" pin="1"/>
+      <node ref="Teensy4.0" pin="37"/>
+      <node ref="OpAmp1" pin="4"/>
+      <node ref="OpAmp1" pin="3"/>
+    </net>
+    <net code="66" name="IN+">
+      <node ref="C19" pin="1"/>
+      <node ref="R22" pin="1"/>
+      <node ref="R21" pin="2"/>
+      <node ref="OpAmp1" pin="1"/>
+    </net>
+    <net code="67" name="VBAT">
+      <node ref="Teensy4.0" pin="29"/>
+      <node ref="JP10" pin="2"/>
+      <node ref="BT1" pin="1"/>
+    </net>
+    <net code="68" name="24_TX6_A10">
+      <node ref="Teensy4.0" pin="38"/>
+      <node ref="MX1" pin="22"/>
+    </net>
+    <net code="69" name="25_RX6_A11">
+      <node ref="MX1" pin="24"/>
+      <node ref="Teensy4.0" pin="43"/>
+    </net>
+    <net code="70" name="8_TX2_IN1">
+      <node ref="Teensy4.0" pin="19"/>
+      <node ref="MX1" pin="17"/>
+    </net>
+    <net code="71" name="Net-(JP10-Pad1)">
+      <node ref="JP10" pin="1"/>
+      <node ref="R21" pin="1"/>
+    </net>
+    <net code="72" name="Net-(Teensy4.0-Pad32)">
+      <node ref="Teensy4.0" pin="32"/>
+    </net>
+    <net code="73" name="ON_OFF">
+      <node ref="Teensy4.0" pin="33"/>
+      <node ref="SW1" pin="2"/>
+    </net>
+    <net code="74" name="4_BCLK2">
+      <node ref="Teensy4.0" pin="11"/>
+      <node ref="MX1" pin="9"/>
+    </net>
+    <net code="75" name="5_IN2">
+      <node ref="MX1" pin="11"/>
+      <node ref="Teensy4.0" pin="13"/>
+    </net>
+    <net code="76" name="6_OUT1D">
+      <node ref="Teensy4.0" pin="15"/>
+      <node ref="MX1" pin="13"/>
+    </net>
+    <net code="77" name="7_RX2_OUT1A">
+      <node ref="Teensy4.0" pin="17"/>
+      <node ref="MX1" pin="15"/>
+    </net>
+    <net code="78" name="9_OUT1C">
+      <node ref="MX1" pin="19"/>
+      <node ref="Teensy4.0" pin="21"/>
+    </net>
+  </nets>
+</export>
