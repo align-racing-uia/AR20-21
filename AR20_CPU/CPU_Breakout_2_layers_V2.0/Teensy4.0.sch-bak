@@ -9621,4 +9621,21 @@ Text GLabel 9150 4250 2    50   Input ~ 0
 Program
 Text GLabel 3400 1000 1    50   Input ~ 0
 Program
+Text GLabel 3300 2200 2    50   Input ~ 0
+Ground
+$Comp
+L Device:C C?
+U 1 1 5E64746B
+P 3300 2350
+F 0 "C?" H 3415 2396 50  0000 L CNN
+F 1 "10u" H 3415 2305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3338 2200 50  0001 C CNN
+F 3 "~" H 3300 2350 50  0001 C CNN
+	1    3300 2350
+	1    0    0    -1  
+$EndComp
+Text GLabel 3300 2650 0    50   Input ~ 0
+Vinn_5V
+Wire Wire Line
+	3300 2500 3300 2650
 $EndSCHEMATC
