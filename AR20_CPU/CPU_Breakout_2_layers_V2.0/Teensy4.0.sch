@@ -9340,8 +9340,6 @@ Text GLabel 9150 3650 2    50   Input ~ 0
 Out8
 Text GLabel 4000 5100 0    50   Input ~ 0
 Ground
-Text GLabel 4000 5000 0    50   Input ~ 0
-Ground
 Text GLabel 4000 5200 0    50   Input ~ 0
 Ground
 Text GLabel 4000 5400 0    50   Input ~ 0
@@ -9354,31 +9352,6 @@ Text GLabel 4000 3500 0    50   Input ~ 0
 25_RX6_A11
 Text GLabel 4000 3300 0    50   Input ~ 0
 24_TX6_A10
-$Comp
-L Switch:SW_Push_Dual SW1
-U 1 1 5E1C0144
-P 6300 1300
-F 0 "SW1" H 5700 1350 50  0000 C CNN
-F 1 "SW_Push_Dual" H 5750 1250 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 6300 1500 50  0001 C CNN
-F 3 "~" H 6300 1500 50  0001 C CNN
-	1    6300 1300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6100 1650 6300 1650
-Wire Wire Line
-	6100 1500 6100 1650
-Wire Wire Line
-	6500 1000 6500 1300
-Wire Wire Line
-	6300 1000 6500 1000
-Connection ~ 6100 1500
-Wire Wire Line
-	6100 1300 6100 1500
-Connection ~ 6500 1300
-Wire Wire Line
-	6500 1300 6500 1500
 Text GLabel 4000 6100 0    50   Input ~ 0
 CANH
 Text GLabel 4000 6000 0    50   Input ~ 0
@@ -9611,4 +9584,33 @@ Wire Wire Line
 Wire Wire Line
 	7900 1450 7900 1250
 Connection ~ 7900 1250
+Wire Wire Line
+	6300 1000 6300 1100
+Wire Wire Line
+	6300 1100 6500 1100
+Wire Wire Line
+	6500 1100 6500 1300
+Wire Wire Line
+	6500 1300 6500 1500
+Connection ~ 6500 1300
+Wire Wire Line
+	6100 1300 6100 1500
+Wire Wire Line
+	6100 1500 6100 1650
+Wire Wire Line
+	6100 1650 6300 1650
+Connection ~ 6100 1500
+$Comp
+L teensy4_header_breakout-cache:SW_Push_Dual SW1
+U 1 1 5E659C41
+P 6300 1300
+F 0 "SW1" H 6300 1585 50  0000 C CNN
+F 1 "SW_Push_Dual" H 6300 1494 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 6300 1500 50  0001 C CNN
+F 3 "~" H 6300 1500 50  0001 C CNN
+	1    6300 1300
+	1    0    0    -1  
+$EndComp
+Text GLabel 4000 5000 0    50   Input ~ 0
+26_A12
 $EndSCHEMATC
