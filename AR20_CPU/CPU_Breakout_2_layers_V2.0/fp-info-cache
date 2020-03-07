@@ -1,981 +1,722 @@
-219162998321680
-Button_Switch_SMD
-Nidec_Copal_SH-7010A
-4-bit rotary coded switch, J-hook, https://www.nidec-copal-electronics.com/e/catalog/switch/sh-7000.pdf
-rotary switch bcd
+161241348765241
+Capacitor_SMD
+CP_Elec_3x5.3
+SMT capacitor, aluminium electrolytic, 3x5.3, Cornell Dubilier Electronics 
+Capacitor Electrolytic
 0
-6
-5
-Button_Switch_SMD
-Nidec_Copal_SH-7010B
-4-bit rotary coded switch, gull wing, https://www.nidec-copal-electronics.com/e/catalog/switch/sh-7000.pdf
-rotary switch bcd
+2
+2
+Capacitor_SMD
+CP_Elec_3x5.4
+SMD capacitor, aluminum electrolytic, Nichicon, 3.0x5.4mm
+capacitor electrolytic
 0
-6
-5
-Button_Switch_SMD
-Nidec_Copal_SH-7040B
-4-bit rotary coded switch, gull wing, Gray code, https://www.nidec-copal-electronics.com/e/catalog/switch/sh-7000.pdf
-rotary switch bcd
+2
+2
+Capacitor_SMD
+CP_Elec_4x3
+SMD capacitor, aluminum electrolytic, Nichicon, 4.0x3mm
+capacitor electrolytic
 0
-5
-5
-Button_Switch_SMD
-Panasonic_EVQPUJ_EVQPUA
-http://industrial.panasonic.com/cdbs/www-data/pdf/ATV0000/ATV0000CE5.pdf
-SMD SMT SPST EVQPUJ EVQPUA
+2
+2
+Capacitor_SMD
+CP_Elec_4x3.9
+SMD capacitor, aluminum electrolytic, Nichicon, 4.0x3.9mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_4x4.5
+SMD capacitor, aluminum electrolytic, Nichicon, 4.0x4.5mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_4x5.3
+SMD capacitor, aluminum electrolytic, Vishay, 4.0x5.3mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_4x5.4
+SMD capacitor, aluminum electrolytic, Panasonic A5 / Nichicon, 4.0x5.4mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_4x5.7
+SMD capacitor, aluminum electrolytic, United Chemi-Con, 4.0x5.7mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_4x5.8
+SMD capacitor, aluminum electrolytic, Panasonic, 4.0x5.8mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_5x3
+SMD capacitor, aluminum electrolytic, Nichicon, 5.0x3.0mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_5x3.9
+SMD capacitor, aluminum electrolytic, Nichicon, 5.0x3.9mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_5x4.4
+SMD capacitor, aluminum electrolytic, Panasonic B45, 5.0x4.4mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_5x4.5
+SMD capacitor, aluminum electrolytic, Nichicon, 5.0x4.5mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_5x5.3
+SMD capacitor, aluminum electrolytic, Nichicon, 5.0x5.3mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_5x5.4
+SMD capacitor, aluminum electrolytic, Nichicon, 5.0x5.4mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_5x5.7
+SMD capacitor, aluminum electrolytic, United Chemi-Con, 5.0x5.7mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_5x5.8
+SMD capacitor, aluminum electrolytic, Panasonic, 5.0x5.8mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_5x5.9
+SMD capacitor, aluminum electrolytic, Panasonic B6, 5.0x5.9mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_6.3x3
+SMD capacitor, aluminum electrolytic, Nichicon, 6.3x3.0mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_6.3x3.9
+SMD capacitor, aluminum electrolytic, Nichicon, 6.3x3.9mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_6.3x4.5
+SMD capacitor, aluminum electrolytic, Nichicon, 6.3x4.5mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_6.3x4.9
+SMD capacitor, aluminum electrolytic, Panasonic C5, 6.3x4.9mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_6.3x5.2
+SMD capacitor, aluminum electrolytic, United Chemi-Con, 6.3x5.2mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_6.3x5.3
+SMD capacitor, aluminum electrolytic, Cornell Dubilier, 6.3x5.3mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_6.3x5.4
+SMD capacitor, aluminum electrolytic, Panasonic C55, 6.3x5.4mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_6.3x5.4_Nichicon
+SMD capacitor, aluminum electrolytic, Nichicon, 6.3x5.4mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_6.3x5.7
+SMD capacitor, aluminum electrolytic, United Chemi-Con, 6.3x5.7mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_6.3x5.8
+SMD capacitor, aluminum electrolytic, Nichicon, 6.3x5.8mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_6.3x5.9
+SMD capacitor, aluminum electrolytic, Panasonic C6, 6.3x5.9mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_6.3x7.7
+SMD capacitor, aluminum electrolytic, Nichicon, 6.3x7.7mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_6.3x9.9
+SMD capacitor, aluminum electrolytic, Panasonic C10, 6.3x9.9mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_8x5.4
+SMD capacitor, aluminum electrolytic, Nichicon, 8.0x5.4mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_8x6.2
+SMD capacitor, aluminum electrolytic, Nichicon, 8.0x6.2mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_8x6.5
+SMD capacitor, aluminum electrolytic, Rubycon, 8.0x6.5mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_8x6.7
+SMD capacitor, aluminum electrolytic, United Chemi-Con, 8.0x6.7mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_8x6.9
+SMD capacitor, aluminum electrolytic, Panasonic E7, 8.0x6.9mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_8x10
+SMD capacitor, aluminum electrolytic, Nichicon, 8.0x10mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_8x10.5
+SMD capacitor, aluminum electrolytic, Vishay 0810, 8.0x10.5mm, http://www.vishay.com/docs/28395/150crz.pdf
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_8x11.9
+SMD capacitor, aluminum electrolytic, Panasonic E12, 8.0x11.9mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_10x7.7
+SMD capacitor, aluminum electrolytic, Nichicon, 10.0x7.7mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_10x7.9
+SMD capacitor, aluminum electrolytic, Panasonic F8, 10.0x7.9mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_10x10
+SMD capacitor, aluminum electrolytic, Nichicon, 10.0x10.0mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_10x10.5
+SMD capacitor, aluminum electrolytic, Vishay 1010, 10.0x10.5mm, http://www.vishay.com/docs/28395/150crz.pdf
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_10x12.5
+SMD capacitor, aluminum electrolytic, Vishay 1012, 10.0x12.5mm, http://www.vishay.com/docs/28395/150crz.pdf
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_10x12.6
+SMD capacitor, aluminum electrolytic, Panasonic F12, 10.0x12.6mm
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_10x14.3
+SMD capacitor, aluminum electrolytic, Vishay 1014, 10.0x14.3mm, http://www.vishay.com/docs/28395/150crz.pdf
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_16x17.5
+SMD capacitor, aluminum electrolytic, Vishay 1616, 16.0x17.5mm, http://www.vishay.com/docs/28395/150crz.pdf
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_16x22
+SMD capacitor, aluminum electrolytic, Vishay 1621, 16.0x22.0mm, http://www.vishay.com/docs/28395/150crz.pdf
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_18x17.5
+SMD capacitor, aluminum electrolytic, Vishay 1816, 18.0x17.5mm, http://www.vishay.com/docs/28395/150crz.pdf
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+CP_Elec_18x22
+SMD capacitor, aluminum electrolytic, Vishay 1821, 18.0x22.0mm, http://www.vishay.com/docs/28395/150crz.pdf
+capacitor electrolytic
+0
+2
+2
+Capacitor_SMD
+C_0201_0603Metric
+Capacitor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator
+capacitor
 0
 4
 2
-Button_Switch_SMD
-Panasonic_EVQPUK_EVQPUB
-http://industrial.panasonic.com/cdbs/www-data/pdf/ATV0000/ATV0000CE5.pdf
-SMD SMT SPST EVQPUK EVQPUB
+Capacitor_SMD
+C_0402_1005Metric
+Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+capacitor
+0
+2
+2
+Capacitor_SMD
+C_0603_1608Metric
+Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+capacitor
+0
+2
+2
+Capacitor_SMD
+C_0603_1608Metric_Pad1.05x0.95mm_HandSolder
+Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+capacitor handsolder
+0
+2
+2
+Capacitor_SMD
+C_0805_2012Metric
+Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator
+capacitor
+0
+2
+2
+Capacitor_SMD
+C_0805_2012Metric_Pad1.15x1.40mm_HandSolder
+Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator
+capacitor handsolder
+0
+2
+2
+Capacitor_SMD
+C_01005_0402Metric
+Capacitor SMD 01005 (0402 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.vishay.com/docs/20056/crcw01005e3.pdf), generated with kicad-footprint-generator
+capacitor
 0
 4
 2
-Button_Switch_SMD
-Panasonic_EVQPUL_EVQPUC
-http://industrial.panasonic.com/cdbs/www-data/pdf/ATV0000/ATV0000CE5.pdf
-SMD SMT SPST EVQPUL EVQPUC
-0
-4
-2
-Button_Switch_SMD
-Panasonic_EVQPUM_EVQPUD
-http://industrial.panasonic.com/cdbs/www-data/pdf/ATV0000/ATV0000CE5.pdf
-SMD SMT SPST EVQPUM EVQPUD
-0
-4
-2
-Button_Switch_SMD
-SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin
-SMD 1x-dip-switch SPST , Slide, row spacing 6.73 mm (264 mils), body size 6.7x4.1mm (see e.g. https://www.ctscorp.com/wp-content/uploads/219.pdf), SMD, LowProfile, JPin
-SMD DIP Switch SPST Slide 6.73mm 264mil SMD LowProfile JPin
+Capacitor_SMD
+C_1206_3216Metric
+Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+capacitor
 0
 2
 2
-Button_Switch_SMD
-SW_DIP_SPSTx01_Slide_6.7x4.1mm_W8.61mm_P2.54mm_LowProfile
-SMD 1x-dip-switch SPST , Slide, row spacing 8.61 mm (338 mils), body size 6.7x4.1mm (see e.g. https://www.ctscorp.com/wp-content/uploads/219.pdf), SMD, LowProfile
-SMD DIP Switch SPST Slide 8.61mm 338mil SMD LowProfile
+Capacitor_SMD
+C_1206_3216Metric_Pad1.42x1.75mm_HandSolder
+Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+capacitor handsolder
 0
 2
 2
-Button_Switch_SMD
-SW_DIP_SPSTx01_Slide_9.78x4.72mm_W8.61mm_P2.54mm
-SMD 1x-dip-switch SPST , Slide, row spacing 8.61 mm (338 mils), body size 9.78x4.72mm (see e.g. https://www.ctscorp.com/wp-content/uploads/204.pdf), SMD
-SMD DIP Switch SPST Slide 8.61mm 338mil SMD
+Capacitor_SMD
+C_1210_3225Metric
+Capacitor SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+capacitor
 0
 2
 2
-Button_Switch_SMD
-SW_DIP_SPSTx01_Slide_Copal_CHS-01A_W5.08mm_P1.27mm_JPin
-SMD 1x-dip-switch SPST Copal_CHS-01A, Slide, row spacing 5.08 mm (200 mils), body size  (see http://www.nidec-copal-electronics.com/e/catalog/switch/chs.pdf), SMD, JPin
-SMD DIP Switch SPST Slide 5.08mm 200mil SMD JPin
+Capacitor_SMD
+C_1210_3225Metric_Pad1.42x2.65mm_HandSolder
+Capacitor SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+capacitor handsolder
 0
 2
 2
-Button_Switch_SMD
-SW_DIP_SPSTx01_Slide_Copal_CHS-01B_W7.62mm_P1.27mm
-SMD 1x-dip-switch SPST Copal_CHS-01B, Slide, row spacing 7.62 mm (300 mils), body size  (see http://www.nidec-copal-electronics.com/e/catalog/switch/chs.pdf), SMD
-SMD DIP Switch SPST Slide 7.62mm 300mil SMD
+Capacitor_SMD
+C_1806_4516Metric
+Capacitor SMD 1806 (4516 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.modelithics.com/models/Vendor/MuRata/BLM41P.pdf), generated with kicad-footprint-generator
+capacitor
 0
 2
 2
-Button_Switch_SMD
-SW_DIP_SPSTx01_Slide_Copal_CVS-01xB_W5.9mm_P1mm
-SMD 1x-dip-switch SPST Copal_CVS-01xB, Slide, row spacing 5.9 mm (232 mils), body size  (see http://www.nidec-copal-electronics.com/e/catalog/switch/cvs.pdf)
-SMD DIP Switch SPST Slide 5.9mm 232mil
-0
-6
-3
-Button_Switch_SMD
-SW_DIP_SPSTx01_Slide_Omron_A6S-110x_W8.9mm_P2.54mm
-SMD 1x-dip-switch SPST Omron_A6S-110x, Slide, row spacing 8.9 mm (350 mils), body size  (see http://omronfs.omron.com/en_US/ecb/products/pdf/en-a6s.pdf)
-SMD DIP Switch SPST Slide 8.9mm 350mil
+Capacitor_SMD
+C_1806_4516Metric_Pad1.57x1.80mm_HandSolder
+Capacitor SMD 1806 (4516 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://www.modelithics.com/models/Vendor/MuRata/BLM41P.pdf), generated with kicad-footprint-generator
+capacitor handsolder
 0
 2
 2
-Button_Switch_SMD
-SW_DIP_SPSTx02_Slide_6.7x6.64mm_W6.73mm_P2.54mm_LowProfile_JPin
-SMD 2x-dip-switch SPST , Slide, row spacing 6.73 mm (264 mils), body size 6.7x6.64mm (see e.g. https://www.ctscorp.com/wp-content/uploads/219.pdf), SMD, LowProfile, JPin
-SMD DIP Switch SPST Slide 6.73mm 264mil SMD LowProfile JPin
-0
-4
-4
-Button_Switch_SMD
-SW_DIP_SPSTx02_Slide_6.7x6.64mm_W8.61mm_P2.54mm_LowProfile
-SMD 2x-dip-switch SPST , Slide, row spacing 8.61 mm (338 mils), body size 6.7x6.64mm (see e.g. https://www.ctscorp.com/wp-content/uploads/219.pdf), SMD, LowProfile
-SMD DIP Switch SPST Slide 8.61mm 338mil SMD LowProfile
-0
-4
-4
-Button_Switch_SMD
-SW_DIP_SPSTx02_Slide_9.78x7.26mm_W8.61mm_P2.54mm
-SMD 2x-dip-switch SPST , Slide, row spacing 8.61 mm (338 mils), body size 9.78x7.26mm (see e.g. https://www.ctscorp.com/wp-content/uploads/204.pdf), SMD
-SMD DIP Switch SPST Slide 8.61mm 338mil SMD
-0
-4
-4
-Button_Switch_SMD
-SW_DIP_SPSTx02_Slide_Copal_CHS-02A_W5.08mm_P1.27mm_JPin
-SMD 2x-dip-switch SPST Copal_CHS-02A, Slide, row spacing 5.08 mm (200 mils), body size  (see http://www.nidec-copal-electronics.com/e/catalog/switch/chs.pdf), SMD, JPin
-SMD DIP Switch SPST Slide 5.08mm 200mil SMD JPin
-0
-4
-4
-Button_Switch_SMD
-SW_DIP_SPSTx02_Slide_Copal_CHS-02B_W7.62mm_P1.27mm
-SMD 2x-dip-switch SPST Copal_CHS-02B, Slide, row spacing 7.62 mm (300 mils), body size  (see http://www.nidec-copal-electronics.com/e/catalog/switch/chs.pdf), SMD
-SMD DIP Switch SPST Slide 7.62mm 300mil SMD
-0
-4
-4
-Button_Switch_SMD
-SW_DIP_SPSTx02_Slide_Copal_CVS-02xB_W5.9mm_P1mm
-SMD 2x-dip-switch SPST Copal_CVS-02xB, Slide, row spacing 5.9 mm (232 mils), body size  (see http://www.nidec-copal-electronics.com/e/catalog/switch/cvs.pdf)
-SMD DIP Switch SPST Slide 5.9mm 232mil
-0
-8
-5
-Button_Switch_SMD
-SW_DIP_SPSTx02_Slide_KingTek_DSHP02TJ_W5.25mm_P1.27mm_JPin
-SMD 2x-dip-switch SPST KingTek_DSHP02TJ, Slide, row spacing 5.25 mm (206 mils), body size  (see http://www.kingtek.net.cn/pic/201601201446313350.pdf), JPin
-SMD DIP Switch SPST Slide 5.25mm 206mil JPin
-0
-4
-4
-Button_Switch_SMD
-SW_DIP_SPSTx02_Slide_KingTek_DSHP02TS_W7.62mm_P1.27mm
-SMD 2x-dip-switch SPST KingTek_DSHP02TS, Slide, row spacing 7.62 mm (300 mils), body size  (see http://www.kingtek.net.cn/pic/201601201417455112.pdf)
-SMD DIP Switch SPST Slide 7.62mm 300mil
-0
-4
-4
-Button_Switch_SMD
-SW_DIP_SPSTx02_Slide_Omron_A6H-2101_W6.15mm_P1.27mm
-SMD 2x-dip-switch SPST Omron_A6H-2101, Slide, row spacing 6.15 mm (242 mils), body size  (see https://www.omron.com/ecb/products/pdf/en-a6h.pdf)
-SMD DIP Switch SPST Slide 6.15mm 242mil
-0
-4
-4
-Button_Switch_SMD
-SW_DIP_SPSTx02_Slide_Omron_A6S-210x_W8.9mm_P2.54mm
-SMD 2x-dip-switch SPST Omron_A6S-210x, Slide, row spacing 8.9 mm (350 mils), body size  (see http://omronfs.omron.com/en_US/ecb/products/pdf/en-a6s.pdf)
-SMD DIP Switch SPST Slide 8.9mm 350mil
-0
-4
-4
-Button_Switch_SMD
-SW_DIP_SPSTx03_Slide_6.7x9.18mm_W6.73mm_P2.54mm_LowProfile_JPin
-SMD 3x-dip-switch SPST , Slide, row spacing 6.73 mm (264 mils), body size 6.7x9.18mm (see e.g. https://www.ctscorp.com/wp-content/uploads/219.pdf), SMD, LowProfile, JPin
-SMD DIP Switch SPST Slide 6.73mm 264mil SMD LowProfile JPin
-0
-6
-6
-Button_Switch_SMD
-SW_DIP_SPSTx03_Slide_6.7x9.18mm_W8.61mm_P2.54mm_LowProfile
-SMD 3x-dip-switch SPST , Slide, row spacing 8.61 mm (338 mils), body size 6.7x9.18mm (see e.g. https://www.ctscorp.com/wp-content/uploads/219.pdf), SMD, LowProfile
-SMD DIP Switch SPST Slide 8.61mm 338mil SMD LowProfile
-0
-6
-6
-Button_Switch_SMD
-SW_DIP_SPSTx03_Slide_9.78x9.8mm_W8.61mm_P2.54mm
-SMD 3x-dip-switch SPST , Slide, row spacing 8.61 mm (338 mils), body size 9.78x9.8mm (see e.g. https://www.ctscorp.com/wp-content/uploads/204.pdf), SMD
-SMD DIP Switch SPST Slide 8.61mm 338mil SMD
-0
-6
-6
-Button_Switch_SMD
-SW_DIP_SPSTx03_Slide_Copal_CVS-03xB_W5.9mm_P1mm
-SMD 3x-dip-switch SPST Copal_CVS-03xB, Slide, row spacing 5.9 mm (232 mils), body size  (see http://www.nidec-copal-electronics.com/e/catalog/switch/cvs.pdf)
-SMD DIP Switch SPST Slide 5.9mm 232mil
-0
-10
-7
-Button_Switch_SMD
-SW_DIP_SPSTx03_Slide_KingTek_DSHP03TJ_W5.25mm_P1.27mm_JPin
-SMD 3x-dip-switch SPST KingTek_DSHP03TJ, Slide, row spacing 5.25 mm (206 mils), body size  (see http://www.kingtek.net.cn/pic/201601201446313350.pdf), JPin
-SMD DIP Switch SPST Slide 5.25mm 206mil JPin
-0
-6
-6
-Button_Switch_SMD
-SW_DIP_SPSTx03_Slide_KingTek_DSHP03TS_W7.62mm_P1.27mm
-SMD 3x-dip-switch SPST KingTek_DSHP03TS, Slide, row spacing 7.62 mm (300 mils), body size  (see http://www.kingtek.net.cn/pic/201601201417455112.pdf)
-SMD DIP Switch SPST Slide 7.62mm 300mil
-0
-6
-6
-Button_Switch_SMD
-SW_DIP_SPSTx03_Slide_Omron_A6S-310x_W8.9mm_P2.54mm
-SMD 3x-dip-switch SPST Omron_A6S-310x, Slide, row spacing 8.9 mm (350 mils), body size  (see http://omronfs.omron.com/en_US/ecb/products/pdf/en-a6s.pdf)
-SMD DIP Switch SPST Slide 8.9mm 350mil
-0
-6
-6
-Button_Switch_SMD
-SW_DIP_SPSTx04_Slide_6.7x11.72mm_W6.73mm_P2.54mm_LowProfile_JPin
-SMD 4x-dip-switch SPST , Slide, row spacing 6.73 mm (264 mils), body size 6.7x11.72mm (see e.g. https://www.ctscorp.com/wp-content/uploads/219.pdf), SMD, LowProfile, JPin
-SMD DIP Switch SPST Slide 6.73mm 264mil SMD LowProfile JPin
-0
-8
-8
-Button_Switch_SMD
-SW_DIP_SPSTx04_Slide_6.7x11.72mm_W8.61mm_P2.54mm_LowProfile
-SMD 4x-dip-switch SPST , Slide, row spacing 8.61 mm (338 mils), body size 6.7x11.72mm (see e.g. https://www.ctscorp.com/wp-content/uploads/219.pdf), SMD, LowProfile
-SMD DIP Switch SPST Slide 8.61mm 338mil SMD LowProfile
-0
-8
-8
-Button_Switch_SMD
-SW_DIP_SPSTx04_Slide_9.78x12.34mm_W8.61mm_P2.54mm
-SMD 4x-dip-switch SPST , Slide, row spacing 8.61 mm (338 mils), body size 9.78x12.34mm (see e.g. https://www.ctscorp.com/wp-content/uploads/204.pdf), SMD
-SMD DIP Switch SPST Slide 8.61mm 338mil SMD
-0
-8
-8
-Button_Switch_SMD
-SW_DIP_SPSTx04_Slide_Copal_CHS-04A_W5.08mm_P1.27mm_JPin
-SMD 4x-dip-switch SPST Copal_CHS-04A, Slide, row spacing 5.08 mm (200 mils), body size  (see http://www.nidec-copal-electronics.com/e/catalog/switch/chs.pdf), SMD, JPin
-SMD DIP Switch SPST Slide 5.08mm 200mil SMD JPin
-0
-8
-8
-Button_Switch_SMD
-SW_DIP_SPSTx04_Slide_Copal_CHS-04B_W7.62mm_P1.27mm
-SMD 4x-dip-switch SPST Copal_CHS-04B, Slide, row spacing 7.62 mm (300 mils), body size  (see http://www.nidec-copal-electronics.com/e/catalog/switch/chs.pdf), SMD
-SMD DIP Switch SPST Slide 7.62mm 300mil SMD
-0
-8
-8
-Button_Switch_SMD
-SW_DIP_SPSTx04_Slide_Copal_CVS-04xB_W5.9mm_P1mm
-SMD 4x-dip-switch SPST Copal_CVS-04xB, Slide, row spacing 5.9 mm (232 mils), body size  (see http://www.nidec-copal-electronics.com/e/catalog/switch/cvs.pdf)
-SMD DIP Switch SPST Slide 5.9mm 232mil
-0
-12
-9
-Button_Switch_SMD
-SW_DIP_SPSTx04_Slide_KingTek_DSHP04TJ_W5.25mm_P1.27mm_JPin
-SMD 4x-dip-switch SPST KingTek_DSHP04TJ, Slide, row spacing 5.25 mm (206 mils), body size  (see http://www.kingtek.net.cn/pic/201601201446313350.pdf), JPin
-SMD DIP Switch SPST Slide 5.25mm 206mil JPin
-0
-8
-8
-Button_Switch_SMD
-SW_DIP_SPSTx04_Slide_KingTek_DSHP04TS_W7.62mm_P1.27mm
-SMD 4x-dip-switch SPST KingTek_DSHP04TS, Slide, row spacing 7.62 mm (300 mils), body size  (see http://www.kingtek.net.cn/pic/201601201417455112.pdf)
-SMD DIP Switch SPST Slide 7.62mm 300mil
-0
-8
-8
-Button_Switch_SMD
-SW_DIP_SPSTx04_Slide_Omron_A6H-4101_W6.15mm_P1.27mm
-SMD 4x-dip-switch SPST Omron_A6H-4101, Slide, row spacing 6.15 mm (242 mils), body size  (see https://www.omron.com/ecb/products/pdf/en-a6h.pdf)
-SMD DIP Switch SPST Slide 6.15mm 242mil
-0
-8
-8
-Button_Switch_SMD
-SW_DIP_SPSTx04_Slide_Omron_A6S-410x_W8.9mm_P2.54mm
-SMD 4x-dip-switch SPST Omron_A6S-410x, Slide, row spacing 8.9 mm (350 mils), body size  (see http://omronfs.omron.com/en_US/ecb/products/pdf/en-a6s.pdf)
-SMD DIP Switch SPST Slide 8.9mm 350mil
-0
-8
-8
-Button_Switch_SMD
-SW_DIP_SPSTx05_Slide_6.7x14.26mm_W6.73mm_P2.54mm_LowProfile_JPin
-SMD 5x-dip-switch SPST , Slide, row spacing 6.73 mm (264 mils), body size 6.7x14.26mm (see e.g. https://www.ctscorp.com/wp-content/uploads/219.pdf), SMD, LowProfile, JPin
-SMD DIP Switch SPST Slide 6.73mm 264mil SMD LowProfile JPin
-0
-10
-10
-Button_Switch_SMD
-SW_DIP_SPSTx05_Slide_6.7x14.26mm_W8.61mm_P2.54mm_LowProfile
-SMD 5x-dip-switch SPST , Slide, row spacing 8.61 mm (338 mils), body size 6.7x14.26mm (see e.g. https://www.ctscorp.com/wp-content/uploads/219.pdf), SMD, LowProfile
-SMD DIP Switch SPST Slide 8.61mm 338mil SMD LowProfile
-0
-10
-10
-Button_Switch_SMD
-SW_DIP_SPSTx05_Slide_9.78x14.88mm_W8.61mm_P2.54mm
-SMD 5x-dip-switch SPST , Slide, row spacing 8.61 mm (338 mils), body size 9.78x14.88mm (see e.g. https://www.ctscorp.com/wp-content/uploads/204.pdf), SMD
-SMD DIP Switch SPST Slide 8.61mm 338mil SMD
-0
-10
-10
-Button_Switch_SMD
-SW_DIP_SPSTx05_Slide_KingTek_DSHP05TJ_W5.25mm_P1.27mm_JPin
-SMD 5x-dip-switch SPST KingTek_DSHP05TJ, Slide, row spacing 5.25 mm (206 mils), body size  (see http://www.kingtek.net.cn/pic/201601201446313350.pdf), JPin
-SMD DIP Switch SPST Slide 5.25mm 206mil JPin
-0
-10
-10
-Button_Switch_SMD
-SW_DIP_SPSTx05_Slide_KingTek_DSHP05TS_W7.62mm_P1.27mm
-SMD 5x-dip-switch SPST KingTek_DSHP05TS, Slide, row spacing 7.62 mm (300 mils), body size  (see http://www.kingtek.net.cn/pic/201601201417455112.pdf)
-SMD DIP Switch SPST Slide 7.62mm 300mil
-0
-10
-10
-Button_Switch_SMD
-SW_DIP_SPSTx05_Slide_Omron_A6S-510x_W8.9mm_P2.54mm
-SMD 5x-dip-switch SPST Omron_A6S-510x, Slide, row spacing 8.9 mm (350 mils), body size  (see http://omronfs.omron.com/en_US/ecb/products/pdf/en-a6s.pdf)
-SMD DIP Switch SPST Slide 8.9mm 350mil
-0
-10
-10
-Button_Switch_SMD
-SW_DIP_SPSTx06_Slide_6.7x16.8mm_W6.73mm_P2.54mm_LowProfile_JPin
-SMD 6x-dip-switch SPST , Slide, row spacing 6.73 mm (264 mils), body size 6.7x16.8mm (see e.g. https://www.ctscorp.com/wp-content/uploads/219.pdf), SMD, LowProfile, JPin
-SMD DIP Switch SPST Slide 6.73mm 264mil SMD LowProfile JPin
-0
-12
-12
-Button_Switch_SMD
-SW_DIP_SPSTx06_Slide_6.7x16.8mm_W8.61mm_P2.54mm_LowProfile
-SMD 6x-dip-switch SPST , Slide, row spacing 8.61 mm (338 mils), body size 6.7x16.8mm (see e.g. https://www.ctscorp.com/wp-content/uploads/219.pdf), SMD, LowProfile
-SMD DIP Switch SPST Slide 8.61mm 338mil SMD LowProfile
-0
-12
-12
-Button_Switch_SMD
-SW_DIP_SPSTx06_Slide_9.78x17.42mm_W8.61mm_P2.54mm
-SMD 6x-dip-switch SPST , Slide, row spacing 8.61 mm (338 mils), body size 9.78x17.42mm (see e.g. https://www.ctscorp.com/wp-content/uploads/204.pdf), SMD
-SMD DIP Switch SPST Slide 8.61mm 338mil SMD
-0
-12
-12
-Button_Switch_SMD
-SW_DIP_SPSTx06_Slide_Copal_CHS-06A_W5.08mm_P1.27mm_JPin
-SMD 6x-dip-switch SPST Copal_CHS-06A, Slide, row spacing 5.08 mm (200 mils), body size  (see http://www.nidec-copal-electronics.com/e/catalog/switch/chs.pdf), SMD, JPin
-SMD DIP Switch SPST Slide 5.08mm 200mil SMD JPin
-0
-12
-12
-Button_Switch_SMD
-SW_DIP_SPSTx06_Slide_Copal_CHS-06B_W7.62mm_P1.27mm
-SMD 6x-dip-switch SPST Copal_CHS-06B, Slide, row spacing 7.62 mm (300 mils), body size  (see http://www.nidec-copal-electronics.com/e/catalog/switch/chs.pdf), SMD
-SMD DIP Switch SPST Slide 7.62mm 300mil SMD
-0
-12
-12
-Button_Switch_SMD
-SW_DIP_SPSTx06_Slide_KingTek_DSHP06TJ_W5.25mm_P1.27mm_JPin
-SMD 6x-dip-switch SPST KingTek_DSHP06TJ, Slide, row spacing 5.25 mm (206 mils), body size  (see http://www.kingtek.net.cn/pic/201601201446313350.pdf), JPin
-SMD DIP Switch SPST Slide 5.25mm 206mil JPin
-0
-12
-12
-Button_Switch_SMD
-SW_DIP_SPSTx06_Slide_KingTek_DSHP06TS_W7.62mm_P1.27mm
-SMD 6x-dip-switch SPST KingTek_DSHP06TS, Slide, row spacing 7.62 mm (300 mils), body size  (see http://www.kingtek.net.cn/pic/201601201417455112.pdf)
-SMD DIP Switch SPST Slide 7.62mm 300mil
-0
-12
-12
-Button_Switch_SMD
-SW_DIP_SPSTx06_Slide_Omron_A6H-6101_W6.15mm_P1.27mm
-SMD 6x-dip-switch SPST Omron_A6H-6101, Slide, row spacing 6.15 mm (242 mils), body size  (see https://www.omron.com/ecb/products/pdf/en-a6h.pdf)
-SMD DIP Switch SPST Slide 6.15mm 242mil
-0
-12
-12
-Button_Switch_SMD
-SW_DIP_SPSTx06_Slide_Omron_A6S-610x_W8.9mm_P2.54mm
-SMD 6x-dip-switch SPST Omron_A6S-610x, Slide, row spacing 8.9 mm (350 mils), body size  (see http://omronfs.omron.com/en_US/ecb/products/pdf/en-a6s.pdf)
-SMD DIP Switch SPST Slide 8.9mm 350mil
-0
-12
-12
-Button_Switch_SMD
-SW_DIP_SPSTx07_Slide_6.7x19.34mm_W6.73mm_P2.54mm_LowProfile_JPin
-SMD 7x-dip-switch SPST , Slide, row spacing 6.73 mm (264 mils), body size 6.7x19.34mm (see e.g. https://www.ctscorp.com/wp-content/uploads/219.pdf), SMD, LowProfile, JPin
-SMD DIP Switch SPST Slide 6.73mm 264mil SMD LowProfile JPin
-0
-14
-14
-Button_Switch_SMD
-SW_DIP_SPSTx07_Slide_6.7x19.34mm_W8.61mm_P2.54mm_LowProfile
-SMD 7x-dip-switch SPST , Slide, row spacing 8.61 mm (338 mils), body size 6.7x19.34mm (see e.g. https://www.ctscorp.com/wp-content/uploads/219.pdf), SMD, LowProfile
-SMD DIP Switch SPST Slide 8.61mm 338mil SMD LowProfile
-0
-14
-14
-Button_Switch_SMD
-SW_DIP_SPSTx07_Slide_9.78x19.96mm_W8.61mm_P2.54mm
-SMD 7x-dip-switch SPST , Slide, row spacing 8.61 mm (338 mils), body size 9.78x19.96mm (see e.g. https://www.ctscorp.com/wp-content/uploads/204.pdf), SMD
-SMD DIP Switch SPST Slide 8.61mm 338mil SMD
-0
-14
-14
-Button_Switch_SMD
-SW_DIP_SPSTx07_Slide_KingTek_DSHP07TJ_W5.25mm_P1.27mm_JPin
-SMD 7x-dip-switch SPST KingTek_DSHP07TJ, Slide, row spacing 5.25 mm (206 mils), body size  (see http://www.kingtek.net.cn/pic/201601201446313350.pdf), JPin
-SMD DIP Switch SPST Slide 5.25mm 206mil JPin
-0
-14
-14
-Button_Switch_SMD
-SW_DIP_SPSTx07_Slide_KingTek_DSHP07TS_W7.62mm_P1.27mm
-SMD 7x-dip-switch SPST KingTek_DSHP07TS, Slide, row spacing 7.62 mm (300 mils), body size  (see http://www.kingtek.net.cn/pic/201601201417455112.pdf)
-SMD DIP Switch SPST Slide 7.62mm 300mil
-0
-14
-14
-Button_Switch_SMD
-SW_DIP_SPSTx07_Slide_Omron_A6S-710x_W8.9mm_P2.54mm
-SMD 7x-dip-switch SPST Omron_A6S-710x, Slide, row spacing 8.9 mm (350 mils), body size  (see http://omronfs.omron.com/en_US/ecb/products/pdf/en-a6s.pdf)
-SMD DIP Switch SPST Slide 8.9mm 350mil
-0
-14
-14
-Button_Switch_SMD
-SW_DIP_SPSTx08_Slide_6.7x21.88mm_W6.73mm_P2.54mm_LowProfile_JPin
-SMD 8x-dip-switch SPST , Slide, row spacing 6.73 mm (264 mils), body size 6.7x21.88mm (see e.g. https://www.ctscorp.com/wp-content/uploads/219.pdf), SMD, LowProfile, JPin
-SMD DIP Switch SPST Slide 6.73mm 264mil SMD LowProfile JPin
-0
-16
-16
-Button_Switch_SMD
-SW_DIP_SPSTx08_Slide_6.7x21.88mm_W8.61mm_P2.54mm_LowProfile
-SMD 8x-dip-switch SPST , Slide, row spacing 8.61 mm (338 mils), body size 6.7x21.88mm (see e.g. https://www.ctscorp.com/wp-content/uploads/219.pdf), SMD, LowProfile
-SMD DIP Switch SPST Slide 8.61mm 338mil SMD LowProfile
-0
-16
-16
-Button_Switch_SMD
-SW_DIP_SPSTx08_Slide_9.78x22.5mm_W8.61mm_P2.54mm
-SMD 8x-dip-switch SPST , Slide, row spacing 8.61 mm (338 mils), body size 9.78x22.5mm (see e.g. https://www.ctscorp.com/wp-content/uploads/204.pdf), SMD
-SMD DIP Switch SPST Slide 8.61mm 338mil SMD
-0
-16
-16
-Button_Switch_SMD
-SW_DIP_SPSTx08_Slide_Copal_CHS-08A_W5.08mm_P1.27mm_JPin
-SMD 8x-dip-switch SPST Copal_CHS-08A, Slide, row spacing 5.08 mm (200 mils), body size  (see http://www.nidec-copal-electronics.com/e/catalog/switch/chs.pdf), SMD, JPin
-SMD DIP Switch SPST Slide 5.08mm 200mil SMD JPin
-0
-16
-16
-Button_Switch_SMD
-SW_DIP_SPSTx08_Slide_Copal_CHS-08B_W7.62mm_P1.27mm
-SMD 8x-dip-switch SPST Copal_CHS-08B, Slide, row spacing 7.62 mm (300 mils), body size  (see http://www.nidec-copal-electronics.com/e/catalog/switch/chs.pdf), SMD
-SMD DIP Switch SPST Slide 7.62mm 300mil SMD
-0
-16
-16
-Button_Switch_SMD
-SW_DIP_SPSTx08_Slide_Copal_CVS-08xB_W5.9mm_P1mm
-SMD 8x-dip-switch SPST Copal_CVS-08xB, Slide, row spacing 5.9 mm (232 mils), body size  (see http://www.nidec-copal-electronics.com/e/catalog/switch/cvs.pdf)
-SMD DIP Switch SPST Slide 5.9mm 232mil
-0
-20
-17
-Button_Switch_SMD
-SW_DIP_SPSTx08_Slide_KingTek_DSHP08TJ_W5.25mm_P1.27mm_JPin
-SMD 8x-dip-switch SPST KingTek_DSHP08TJ, Slide, row spacing 5.25 mm (206 mils), body size  (see http://www.kingtek.net.cn/pic/201601201446313350.pdf), JPin
-SMD DIP Switch SPST Slide 5.25mm 206mil JPin
-0
-16
-16
-Button_Switch_SMD
-SW_DIP_SPSTx08_Slide_KingTek_DSHP08TS_W7.62mm_P1.27mm
-SMD 8x-dip-switch SPST KingTek_DSHP08TS, Slide, row spacing 7.62 mm (300 mils), body size  (see http://www.kingtek.net.cn/pic/201601201417455112.pdf)
-SMD DIP Switch SPST Slide 7.62mm 300mil
-0
-16
-16
-Button_Switch_SMD
-SW_DIP_SPSTx08_Slide_Omron_A6H-8101_W6.15mm_P1.27mm
-SMD 8x-dip-switch SPST Omron_A6H-8101, Slide, row spacing 6.15 mm (242 mils), body size  (see https://www.omron.com/ecb/products/pdf/en-a6h.pdf)
-SMD DIP Switch SPST Slide 6.15mm 242mil
-0
-16
-16
-Button_Switch_SMD
-SW_DIP_SPSTx08_Slide_Omron_A6S-810x_W8.9mm_P2.54mm
-SMD 8x-dip-switch SPST Omron_A6S-810x, Slide, row spacing 8.9 mm (350 mils), body size  (see http://omronfs.omron.com/en_US/ecb/products/pdf/en-a6s.pdf)
-SMD DIP Switch SPST Slide 8.9mm 350mil
-0
-16
-16
-Button_Switch_SMD
-SW_DIP_SPSTx09_Slide_6.7x24.42mm_W6.73mm_P2.54mm_LowProfile_JPin
-SMD 9x-dip-switch SPST , Slide, row spacing 6.73 mm (264 mils), body size 6.7x24.42mm (see e.g. https://www.ctscorp.com/wp-content/uploads/219.pdf), SMD, LowProfile, JPin
-SMD DIP Switch SPST Slide 6.73mm 264mil SMD LowProfile JPin
-0
-18
-18
-Button_Switch_SMD
-SW_DIP_SPSTx09_Slide_6.7x24.42mm_W8.61mm_P2.54mm_LowProfile
-SMD 9x-dip-switch SPST , Slide, row spacing 8.61 mm (338 mils), body size 6.7x24.42mm (see e.g. https://www.ctscorp.com/wp-content/uploads/219.pdf), SMD, LowProfile
-SMD DIP Switch SPST Slide 8.61mm 338mil SMD LowProfile
-0
-18
-18
-Button_Switch_SMD
-SW_DIP_SPSTx09_Slide_9.78x25.04mm_W8.61mm_P2.54mm
-SMD 9x-dip-switch SPST , Slide, row spacing 8.61 mm (338 mils), body size 9.78x25.04mm (see e.g. https://www.ctscorp.com/wp-content/uploads/204.pdf), SMD
-SMD DIP Switch SPST Slide 8.61mm 338mil SMD
-0
-18
-18
-Button_Switch_SMD
-SW_DIP_SPSTx09_Slide_KingTek_DSHP09TJ_W5.25mm_P1.27mm_JPin
-SMD 9x-dip-switch SPST KingTek_DSHP09TJ, Slide, row spacing 5.25 mm (206 mils), body size  (see http://www.kingtek.net.cn/pic/201601201446313350.pdf), JPin
-SMD DIP Switch SPST Slide 5.25mm 206mil JPin
-0
-18
-18
-Button_Switch_SMD
-SW_DIP_SPSTx09_Slide_KingTek_DSHP09TS_W7.62mm_P1.27mm
-SMD 9x-dip-switch SPST KingTek_DSHP09TS, Slide, row spacing 7.62 mm (300 mils), body size  (see http://www.kingtek.net.cn/pic/201601201417455112.pdf)
-SMD DIP Switch SPST Slide 7.62mm 300mil
-0
-18
-18
-Button_Switch_SMD
-SW_DIP_SPSTx09_Slide_Omron_A6S-910x_W8.9mm_P2.54mm
-SMD 9x-dip-switch SPST Omron_A6S-910x, Slide, row spacing 8.9 mm (350 mils), body size  (see http://omronfs.omron.com/en_US/ecb/products/pdf/en-a6s.pdf)
-SMD DIP Switch SPST Slide 8.9mm 350mil
-0
-18
-18
-Button_Switch_SMD
-SW_DIP_SPSTx10_Slide_6.7x26.96mm_W6.73mm_P2.54mm_LowProfile_JPin
-SMD 10x-dip-switch SPST , Slide, row spacing 6.73 mm (264 mils), body size 6.7x26.96mm (see e.g. https://www.ctscorp.com/wp-content/uploads/219.pdf), SMD, LowProfile, JPin
-SMD DIP Switch SPST Slide 6.73mm 264mil SMD LowProfile JPin
-0
-20
-20
-Button_Switch_SMD
-SW_DIP_SPSTx10_Slide_6.7x26.96mm_W8.61mm_P2.54mm_LowProfile
-SMD 10x-dip-switch SPST , Slide, row spacing 8.61 mm (338 mils), body size 6.7x26.96mm (see e.g. https://www.ctscorp.com/wp-content/uploads/219.pdf), SMD, LowProfile
-SMD DIP Switch SPST Slide 8.61mm 338mil SMD LowProfile
-0
-20
-20
-Button_Switch_SMD
-SW_DIP_SPSTx10_Slide_9.78x27.58mm_W8.61mm_P2.54mm
-SMD 10x-dip-switch SPST , Slide, row spacing 8.61 mm (338 mils), body size 9.78x27.58mm (see e.g. https://www.ctscorp.com/wp-content/uploads/204.pdf), SMD
-SMD DIP Switch SPST Slide 8.61mm 338mil SMD
-0
-20
-20
-Button_Switch_SMD
-SW_DIP_SPSTx10_Slide_Copal_CHS-10A_W5.08mm_P1.27mm_JPin
-SMD 10x-dip-switch SPST Copal_CHS-10A, Slide, row spacing 5.08 mm (200 mils), body size  (see http://www.nidec-copal-electronics.com/e/catalog/switch/chs.pdf), SMD, JPin
-SMD DIP Switch SPST Slide 5.08mm 200mil SMD JPin
-0
-20
-20
-Button_Switch_SMD
-SW_DIP_SPSTx10_Slide_Copal_CHS-10B_W7.62mm_P1.27mm
-SMD 10x-dip-switch SPST Copal_CHS-10B, Slide, row spacing 7.62 mm (300 mils), body size  (see http://www.nidec-copal-electronics.com/e/catalog/switch/chs.pdf), SMD
-SMD DIP Switch SPST Slide 7.62mm 300mil SMD
-0
-20
-20
-Button_Switch_SMD
-SW_DIP_SPSTx10_Slide_KingTek_DSHP10TJ_W5.25mm_P1.27mm_JPin
-SMD 10x-dip-switch SPST KingTek_DSHP10TJ, Slide, row spacing 5.25 mm (206 mils), body size  (see http://www.kingtek.net.cn/pic/201601201446313350.pdf), JPin
-SMD DIP Switch SPST Slide 5.25mm 206mil JPin
-0
-20
-20
-Button_Switch_SMD
-SW_DIP_SPSTx10_Slide_KingTek_DSHP10TS_W7.62mm_P1.27mm
-SMD 10x-dip-switch SPST KingTek_DSHP10TS, Slide, row spacing 7.62 mm (300 mils), body size  (see http://www.kingtek.net.cn/pic/201601201417455112.pdf)
-SMD DIP Switch SPST Slide 7.62mm 300mil
-0
-20
-20
-Button_Switch_SMD
-SW_DIP_SPSTx10_Slide_Omron_A6H-10101_W6.15mm_P1.27mm
-SMD 10x-dip-switch SPST Omron_A6H-10101, Slide, row spacing 6.15 mm (242 mils), body size  (see https://www.omron.com/ecb/products/pdf/en-a6h.pdf)
-SMD DIP Switch SPST Slide 6.15mm 242mil
-0
-20
-20
-Button_Switch_SMD
-SW_DIP_SPSTx10_Slide_Omron_A6S-1010x_W8.9mm_P2.54mm
-SMD 10x-dip-switch SPST Omron_A6S-1010x, Slide, row spacing 8.9 mm (350 mils), body size  (see http://omronfs.omron.com/en_US/ecb/products/pdf/en-a6s.pdf)
-SMD DIP Switch SPST Slide 8.9mm 350mil
-0
-20
-20
-Button_Switch_SMD
-SW_DIP_SPSTx11_Slide_6.7x29.5mm_W6.73mm_P2.54mm_LowProfile_JPin
-SMD 11x-dip-switch SPST , Slide, row spacing 6.73 mm (264 mils), body size 6.7x29.5mm (see e.g. https://www.ctscorp.com/wp-content/uploads/219.pdf), SMD, LowProfile, JPin
-SMD DIP Switch SPST Slide 6.73mm 264mil SMD LowProfile JPin
-0
-22
-22
-Button_Switch_SMD
-SW_DIP_SPSTx11_Slide_6.7x29.5mm_W8.61mm_P2.54mm_LowProfile
-SMD 11x-dip-switch SPST , Slide, row spacing 8.61 mm (338 mils), body size 6.7x29.5mm (see e.g. https://www.ctscorp.com/wp-content/uploads/219.pdf), SMD, LowProfile
-SMD DIP Switch SPST Slide 8.61mm 338mil SMD LowProfile
-0
-22
-22
-Button_Switch_SMD
-SW_DIP_SPSTx11_Slide_9.78x30.12mm_W8.61mm_P2.54mm
-SMD 11x-dip-switch SPST , Slide, row spacing 8.61 mm (338 mils), body size 9.78x30.12mm (see e.g. https://www.ctscorp.com/wp-content/uploads/204.pdf), SMD
-SMD DIP Switch SPST Slide 8.61mm 338mil SMD
-0
-22
-22
-Button_Switch_SMD
-SW_DIP_SPSTx12_Slide_6.7x32.04mm_W6.73mm_P2.54mm_LowProfile_JPin
-SMD 12x-dip-switch SPST , Slide, row spacing 6.73 mm (264 mils), body size 6.7x32.04mm (see e.g. https://www.ctscorp.com/wp-content/uploads/219.pdf), SMD, LowProfile, JPin
-SMD DIP Switch SPST Slide 6.73mm 264mil SMD LowProfile JPin
-0
-24
-24
-Button_Switch_SMD
-SW_DIP_SPSTx12_Slide_6.7x32.04mm_W8.61mm_P2.54mm_LowProfile
-SMD 12x-dip-switch SPST , Slide, row spacing 8.61 mm (338 mils), body size 6.7x32.04mm (see e.g. https://www.ctscorp.com/wp-content/uploads/219.pdf), SMD, LowProfile
-SMD DIP Switch SPST Slide 8.61mm 338mil SMD LowProfile
-0
-24
-24
-Button_Switch_SMD
-SW_DIP_SPSTx12_Slide_9.78x32.66mm_W8.61mm_P2.54mm
-SMD 12x-dip-switch SPST , Slide, row spacing 8.61 mm (338 mils), body size 9.78x32.66mm (see e.g. https://www.ctscorp.com/wp-content/uploads/204.pdf), SMD
-SMD DIP Switch SPST Slide 8.61mm 338mil SMD
-0
-24
-24
-Button_Switch_SMD
-SW_MEC_5GSH9
-MEC 5G single pole normally-open tactile switch
-switch normally-open pushbutton push-button
-0
-4
-4
-Button_Switch_SMD
-SW_Push_1P1T_NO_6x6mm_H9.5mm
-tactile push button, 6x6mm e.g. PTS645xx series, height=9.5mm
-tact sw push 6mm smd
-0
-4
-2
-Button_Switch_SMD
-SW_Push_1P1T_NO_CK_KMR2
-CK components KMR2 tactile switch http://www.ckswitches.com/media/1479/kmr2.pdf
-tactile switch kmr2
-0
-4
-2
-Button_Switch_SMD
-SW_Push_1P1T_NO_CK_KSC6xxJ
-CK components KSC6 tactile switch https://www.ckswitches.com/media/1972/ksc6.pdf
-tactile switch ksc6
-0
-4
-2
-Button_Switch_SMD
-SW_Push_1P1T_NO_CK_KSC7xxJ
-CK components KSC7 tactile switch https://www.ckswitches.com/media/1973/ksc7.pdf
-tactile switch ksc7
-0
-4
-2
-Button_Switch_SMD
-SW_Push_1P1T_NO_CK_PTS125Sx43PSMTR
-C&K Switches 1P1T SMD PTS125 Series 12mm Tact Switch with Pegs, https://www.ckswitches.com/media/1462/pts125.pdf
-Button Tactile Switch SPST 1P1T
-0
-4
-2
-Button_Switch_SMD
-SW_Push_SPST_NO_Alps_SKRK
-http://www.alps.com/prod/info/E/HTML/Tact/SurfaceMount/SKRK/SKRKAHE020.html
-SMD SMT button
+Capacitor_SMD
+C_1812_4532Metric
+Capacitor SMD 1812 (4532 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.nikhef.nl/pub/departments/mt/projects/detectorR_D/dtddice/ERJ2G.pdf), generated with kicad-footprint-generator
+capacitor
 0
 2
 2
-Button_Switch_SMD
-SW_SP3T_PCM13
-Ultraminiature Surface Mount Slide Switch, right-angle, https://www.ckswitches.com/media/1424/pcm.pdf
-
-0
-8
-4
-Button_Switch_SMD
-SW_SPDT_CK-JS102011SAQN
-Sub-miniature slide switch, right-angle, http://www.ckswitches.com/media/1422/js.pdf
-switch spdt
-0
-3
-3
-Button_Switch_SMD
-SW_SPDT_PCM12
-Ultraminiature Surface Mount Slide Switch, right-angle, https://www.ckswitches.com/media/1424/pcm.pdf
-
-0
-7
-3
-Button_Switch_SMD
-SW_SPST_B3S-1000
-Surface Mount Tactile Switch for High-Density Packaging
-Tactile Switch
-0
-4
-2
-Button_Switch_SMD
-SW_SPST_B3S-1100
-Surface Mount Tactile Switch for High-Density Packaging with Ground Terminal
-Tactile Switch
-0
-5
-3
-Button_Switch_SMD
-SW_SPST_B3SL-1002P
-Middle Stroke Tactile Switch, B3SL
-Middle Stroke Tactile Switch
-0
-4
-2
-Button_Switch_SMD
-SW_SPST_B3SL-1022P
-Middle Stroke Tactile Switch, B3SL
-Middle Stroke Tactile Switch
-0
-4
-2
-Button_Switch_SMD
-SW_SPST_B3U-1000P
-Ultra-small-sized Tactile Switch with High Contact Reliability, Top-actuated Model, without Ground Terminal, without Boss
-Tactile Switch
+Capacitor_SMD
+C_1812_4532Metric_Pad1.30x3.40mm_HandSolder
+Capacitor SMD 1812 (4532 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://www.nikhef.nl/pub/departments/mt/projects/detectorR_D/dtddice/ERJ2G.pdf), generated with kicad-footprint-generator
+capacitor handsolder
 0
 2
 2
-Button_Switch_SMD
-SW_SPST_B3U-1000P-B
-Ultra-small-sized Tactile Switch with High Contact Reliability, Top-actuated Model, without Ground Terminal, with Boss
-Tactile Switch
+Capacitor_SMD
+C_1825_4564Metric
+Capacitor SMD 1825 (4564 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size from: http://datasheets.avx.com/AVX-HV_MLCC.pdf), generated with kicad-footprint-generator
+capacitor
 0
 2
 2
-Button_Switch_SMD
-SW_SPST_B3U-1100P
-Ultra-small-sized Tactile Switch with High Contact Reliability, Top-actuated Model, with Ground Terminal, without Boss
-Tactile Switch
-0
-3
-3
-Button_Switch_SMD
-SW_SPST_B3U-1100P-B
-Ultra-small-sized Tactile Switch with High Contact Reliability, Top-actuated Model, with Ground Terminal, with Boss
-Tactile Switch
-0
-3
-3
-Button_Switch_SMD
-SW_SPST_B3U-3000P
-Ultra-small-sized Tactile Switch with High Contact Reliability, Side-actuated Model, without Ground Terminal, without Boss
-Tactile Switch
+Capacitor_SMD
+C_1825_4564Metric_Pad1.88x6.70mm_HandSolder
+Capacitor SMD 1825 (4564 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size from: http://datasheets.avx.com/AVX-HV_MLCC.pdf), generated with kicad-footprint-generator
+capacitor handsolder
 0
 2
 2
-Button_Switch_SMD
-SW_SPST_B3U-3000P-B
-Ultra-small-sized Tactile Switch with High Contact Reliability, Side-actuated Model, without Ground Terminal, with Boss
-Tactile Switch
+Capacitor_SMD
+C_2010_5025Metric
+Capacitor SMD 2010 (5025 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+capacitor
 0
 2
 2
-Button_Switch_SMD
-SW_SPST_B3U-3100P
-Ultra-small-sized Tactile Switch with High Contact Reliability, Side-actuated Model, with Ground Terminal, without Boss
-Tactile Switch
-0
-3
-3
-Button_Switch_SMD
-SW_SPST_B3U-3100P-B
-Ultra-small-sized Tactile Switch with High Contact Reliability, Side-actuated Model, with Ground Terminal, with Boss
-Tactile Switch
-0
-3
-3
-Button_Switch_SMD
-SW_SPST_CK_KXT3
-https://www.ckswitches.com/media/1465/kxt3.pdf
-Switch SPST KXT3
+Capacitor_SMD
+C_2010_5025Metric_Pad1.52x2.65mm_HandSolder
+Capacitor SMD 2010 (5025 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+capacitor handsolder
 0
 2
 2
-Button_Switch_SMD
-SW_SPST_CK_RS282G05A3
-https://www.mouser.com/ds/2/60/RS-282G05A-SM_RT-1159762.pdf
-SPST button tactile switch
+Capacitor_SMD
+C_2220_5650Metric
+Capacitor SMD 2220 (5650 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size from: http://datasheets.avx.com/AVX-HV_MLCC.pdf), generated with kicad-footprint-generator
+capacitor
 0
 2
 2
-Button_Switch_SMD
-SW_SPST_EVPBF
-Light Touch Switch
-
-0
-4
-2
-Button_Switch_SMD
-SW_SPST_EVQP0
-Light Touch Switch, https://industrial.panasonic.com/cdbs/www-data/pdf/ATK0000/ATK0000CE28.pdf
-
-0
-4
-2
-Button_Switch_SMD
-SW_SPST_EVQP2
-Light Touch Switch
-
-0
-4
-2
-Button_Switch_SMD
-SW_SPST_EVQP7A
-Light Touch Switch,https://industrial.panasonic.com/cdbs/www-data/pdf/ATK0000/ATK0000CE20.pdf
-
-0
-4
-2
-Button_Switch_SMD
-SW_SPST_EVQP7C
-Light Touch Switch
-
-0
-4
-2
-Button_Switch_SMD
-SW_SPST_EVQPE1
-Light Touch Switch, https://industrial.panasonic.com/cdbs/www-data/pdf/ATK0000/ATK0000CE7.pdf
-
+Capacitor_SMD
+C_2220_5650Metric_Pad1.97x5.40mm_HandSolder
+Capacitor SMD 2220 (5650 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size from: http://datasheets.avx.com/AVX-HV_MLCC.pdf), generated with kicad-footprint-generator
+capacitor handsolder
 0
 2
 2
-Button_Switch_SMD
-SW_SPST_EVQQ2
-Light Touch Switch, https://industrial.panasonic.com/cdbs/www-data/pdf/ATK0000/ATK0000CE28.pdf
-
-0
-4
-2
-Button_Switch_SMD
-SW_SPST_FSMSM
-http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1437566-3&DocType=Customer+Drawing&DocLang=English
-SPST button tactile switch
+Capacitor_SMD
+C_2225_5664Metric
+Capacitor SMD 2225 (5664 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size from: http://datasheets.avx.com/AVX-HV_MLCC.pdf), generated with kicad-footprint-generator
+capacitor
 0
 2
 2
-Button_Switch_SMD
-SW_SPST_PTS645
-C&K Components SPST SMD PTS645 Series 6mm Tact Switch
-SPST Button Switch
-0
-4
-2
-Button_Switch_SMD
-SW_SPST_PTS810
-C&K Components, PTS 810 Series, Microminiature SMT Top Actuated, http://www.ckswitches.com/media/1476/pts810.pdf
-SPST Button Switch
-0
-4
-2
-Button_Switch_SMD
-SW_SPST_Panasonic_EVQPL_3PL_5PL_PT_A08
-Light Touch Switch, http://industrial.panasonic.com/cdbs/www-data/pdf/ATK0000/ATK0000CE3.pdf
-SMD SMT SPST EVQPL EVQPT
-0
-6
-3
-Button_Switch_SMD
-SW_SPST_Panasonic_EVQPL_3PL_5PL_PT_A15
-Light Touch Switch, http://industrial.panasonic.com/cdbs/www-data/pdf/ATK0000/ATK0000CE3.pdf
-SMD SMT SPST EVQPL EVQPT
-0
-6
-3
-Button_Switch_SMD
-SW_SPST_REED_CT05-XXXX-G1
-Coto Technologies SPST Reed Switch CT05-XXXX-G1
-Coto Reed SPST Switch
+Capacitor_SMD
+C_2225_5664Metric_Pad1.80x6.60mm_HandSolder
+Capacitor SMD 2225 (5664 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size from: http://datasheets.avx.com/AVX-HV_MLCC.pdf), generated with kicad-footprint-generator
+capacitor handsolder
 0
 2
 2
-Button_Switch_SMD
-SW_SPST_REED_CT05-XXXX-J1
-Coto Technologies SPST Reed Switch CT05-XXXX-J1
-Coto Reed SPST Switch
+Capacitor_SMD
+C_2512_6332Metric
+Capacitor SMD 2512 (6332 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+capacitor
 0
 2
 2
-Button_Switch_SMD
-SW_SPST_REED_CT10-XXXX-G1
-Coto Technologies SPST Reed Switch CT10-XXXX-G1
-Coto Reed SPST Switch
+Capacitor_SMD
+C_2512_6332Metric_Pad1.52x3.35mm_HandSolder
+Capacitor SMD 2512 (6332 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+capacitor handsolder
 0
 2
 2
-Button_Switch_SMD
-SW_SPST_REED_CT10-XXXX-G2
-Coto Technologies SPST Reed Switch CT10-XXXX-G2
-Coto Reed SPST Switch
+Capacitor_SMD
+C_2816_7142Metric
+Capacitor SMD 2816 (7142 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size from: https://www.vishay.com/docs/30100/wsl.pdf), generated with kicad-footprint-generator
+capacitor
 0
 2
 2
-Button_Switch_SMD
-SW_SPST_REED_CT10-XXXX-G4
-Coto Technologies SPST Reed Switch CT10-XXXX-G4
-Coto Reed SPST Switch
+Capacitor_SMD
+C_2816_7142Metric_Pad3.20x4.45mm_HandSolder
+Capacitor SMD 2816 (7142 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size from: https://www.vishay.com/docs/30100/wsl.pdf), generated with kicad-footprint-generator
+capacitor handsolder
 0
 2
 2
-Button_Switch_SMD
-SW_SPST_SKQG_WithStem
-ALPS 5.2mm Square Low-profile Type (Surface Mount) SKQG Series, With stem, http://www.alps.com/prod/info/E/HTML/Tact/SurfaceMount/SKQG/SKQGAFE010.html
-SPST Button Switch
+Capacitor_SMD
+C_3640_9110Metric
+Capacitor SMD 3640 (9110 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size from: http://datasheets.avx.com/AVX-HV_MLCC.pdf), generated with kicad-footprint-generator
+capacitor
 0
-4
 2
-Button_Switch_SMD
-SW_SPST_SKQG_WithoutStem
-ALPS 5.2mm Square Low-profile Type (Surface Mount) SKQG Series, Without stem, http://www.alps.com/prod/info/E/HTML/Tact/SurfaceMount/SKQG/SKQGAEE010.html
-SPST Button Switch
-0
-4
 2
-Button_Switch_SMD
-SW_SPST_TL3305A
-https://www.e-switch.com/system/asset/product_line/data_sheet/213/TL3305.pdf
-TL3305 Series Tact Switch
+Capacitor_SMD
+C_3640_9110Metric_Pad2.10x10.45mm_HandSolder
+Capacitor SMD 3640 (9110 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size from: http://datasheets.avx.com/AVX-HV_MLCC.pdf), generated with kicad-footprint-generator
+capacitor handsolder
 0
-4
 2
-Button_Switch_SMD
-SW_SPST_TL3305B
-https://www.e-switch.com/system/asset/product_line/data_sheet/213/TL3305.pdf
-TL3305 Series Tact Switch
-0
-4
 2
-Button_Switch_SMD
-SW_SPST_TL3305C
-https://www.e-switch.com/system/asset/product_line/data_sheet/213/TL3305.pdf
-TL3305 Series Tact Switch
+Capacitor_SMD
+C_Elec_3x5.4
+SMD capacitor, aluminum electrolytic nonpolar, 3.0x5.4mm
+capacitor electrolyic nonpolar
 0
-4
 2
-Button_Switch_SMD
-SW_SPST_TL3342
-Low-profile SMD Tactile Switch, https://www.e-switch.com/system/asset/product_line/data_sheet/165/TL3342.pdf
-SPST Tactile Switch
+2
+Capacitor_SMD
+C_Elec_4x5.4
+SMD capacitor, aluminum electrolytic nonpolar, 4.0x5.4mm
+capacitor electrolyic nonpolar
 0
-4
+2
+2
+Capacitor_SMD
+C_Elec_4x5.8
+SMD capacitor, aluminum electrolytic nonpolar, 4.0x5.8mm
+capacitor electrolyic nonpolar
+0
+2
+2
+Capacitor_SMD
+C_Elec_5x5.4
+SMD capacitor, aluminum electrolytic nonpolar, 5.0x5.4mm
+capacitor electrolyic nonpolar
+0
+2
+2
+Capacitor_SMD
+C_Elec_5x5.8
+SMD capacitor, aluminum electrolytic nonpolar, 5.0x5.8mm
+capacitor electrolyic nonpolar
+0
+2
+2
+Capacitor_SMD
+C_Elec_6.3x5.4
+SMD capacitor, aluminum electrolytic nonpolar, 6.3x5.4mm
+capacitor electrolyic nonpolar
+0
+2
+2
+Capacitor_SMD
+C_Elec_6.3x5.8
+SMD capacitor, aluminum electrolytic nonpolar, 6.3x5.8mm
+capacitor electrolyic nonpolar
+0
+2
+2
+Capacitor_SMD
+C_Elec_6.3x7.7
+SMD capacitor, aluminum electrolytic nonpolar, 6.3x7.7mm
+capacitor electrolyic nonpolar
+0
+2
+2
+Capacitor_SMD
+C_Elec_8x5.4
+SMD capacitor, aluminum electrolytic nonpolar, 8.0x5.4mm
+capacitor electrolyic nonpolar
+0
+2
+2
+Capacitor_SMD
+C_Elec_8x6.2
+SMD capacitor, aluminum electrolytic nonpolar, 8.0x6.2mm
+capacitor electrolyic nonpolar
+0
+2
+2
+Capacitor_SMD
+C_Elec_8x10.2
+SMD capacitor, aluminum electrolytic nonpolar, 8.0x10.2mm
+capacitor electrolyic nonpolar
+0
+2
+2
+Capacitor_SMD
+C_Elec_10x10.2
+SMD capacitor, aluminum electrolytic nonpolar, 10.0x10.2mm
+capacitor electrolyic nonpolar
+0
+2
+2
+Capacitor_SMD
+C_Trimmer_Murata_TZB4-A
+trimmer capacitor SMD horizontal, http://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/trimmer/t13e.ashx?la=en-gb
+ Murata TZB4 TZB4-A
+0
+2
+2
+Capacitor_SMD
+C_Trimmer_Murata_TZB4-B
+trimmer capacitor SMD horizontal, http://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/trimmer/t13e.ashx?la=en-gb
+ Murata TZB4 TZB4-A
+0
+2
+2
+Capacitor_SMD
+C_Trimmer_Murata_TZC3
+trimmer capacitor SMD horizontal, http://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/trimmer/t13e.ashx?la=en-gb
+ Murata TZC3
+0
+2
+2
+Capacitor_SMD
+C_Trimmer_Murata_TZR1
+trimmer capacitor SMD horizontal, http://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/trimmer/t13e.ashx?la=en-gb
+ Murata TZR1
+0
+2
+2
+Capacitor_SMD
+C_Trimmer_Murata_TZW4
+trimmer capacitor SMD horizontal, http://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/trimmer/t13e.ashx?la=en-gb
+ Murata TZW4
+0
+2
+2
+Capacitor_SMD
+C_Trimmer_Murata_TZY2
+trimmer capacitor SMD horizontal, http://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/trimmer/t13e.ashx?la=en-gb
+ Murata TZY2
+0
+2
+2
+Capacitor_SMD
+C_Trimmer_Sprague-Goodman_SGC3
+trimmer capacitor SMD horizontal, http://media.wix.com/ugd/d86717_38d9821e12823a7aa9cef38c6c2a73cc.pdf
+ Sprague Goodman SGC3
+0
+2
+2
+Capacitor_SMD
+C_Trimmer_Voltronics_JN
+trimmer capacitor SMD horizontal, http://www.knowlescapacitors.com/File%20Library/Voltronics/English/GlobalNavigation/Products/Trimmer%20Capacitors/CerChipTrimCap.pdf
+ Voltronics JN
+0
+2
+2
+Capacitor_SMD
+C_Trimmer_Voltronics_JQ
+trimmer capacitor SMD horizontal, http://www.knowlescapacitors.com/File%20Library/Voltronics/English/GlobalNavigation/Products/Trimmer%20Capacitors/CerChipTrimCap.pdf
+ Voltronics JQ
+0
+2
+2
+Capacitor_SMD
+C_Trimmer_Voltronics_JR
+trimmer capacitor SMD horizontal, http://www.knowlescapacitors.com/File%20Library/Voltronics/English/GlobalNavigation/Products/Trimmer%20Capacitors/CerChipTrimCap.pdf
+ Voltronics JR
+0
+2
+2
+Capacitor_SMD
+C_Trimmer_Voltronics_JV
+trimmer capacitor SMD horizontal, http://www.knowlescapacitors.com/File%20Library/Voltronics/English/GlobalNavigation/Products/Trimmer%20Capacitors/CerChipTrimCap.pdf
+ Voltronics JV
+0
+2
+2
+Capacitor_SMD
+C_Trimmer_Voltronics_JZ
+trimmer capacitor SMD horizontal, http://www.knowlescapacitors.com/File%20Library/Voltronics/English/GlobalNavigation/Products/Trimmer%20Capacitors/CerChipTrimCap.pdf
+ Voltronics JR
+0
+2
 2

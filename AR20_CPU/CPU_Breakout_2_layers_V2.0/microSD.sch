@@ -56,4 +56,23 @@ Text GLabel 5350 3750 3    50   Input ~ 0
 3.3V
 Wire Wire Line
 	5350 3500 5350 3750
+$Comp
+L Device:C C12
+U 1 1 5E66571C
+P 5100 4500
+F 0 "C12" H 5215 4546 50  0000 L CNN
+F 1 "10u" H 5215 4455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5138 4350 50  0001 C CNN
+F 3 "~" H 5100 4500 50  0001 C CNN
+	1    5100 4500
+	1    0    0    -1  
+$EndComp
+Text GLabel 5100 4200 0    50   Input ~ 0
+3.3V
+Text GLabel 5100 4800 0    50   Input ~ 0
+Ground
+Wire Wire Line
+	5100 4800 5100 4650
+Wire Wire Line
+	5100 4200 5100 4350
 $EndSCHEMATC
