@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.25)
+    (last_trace_width 1)
     (user_trace_width 0.5)
     (user_trace_width 1)
     (trace_clearance 0.2)
@@ -637,8 +637,8 @@
   (segment (start 163.87848 86.07848) (end 163.8 86) (width 0.25) (layer F.Cu) (net 2))
   (segment (start 163.87848 87.257) (end 163.87848 86.07848) (width 0.25) (layer F.Cu) (net 2))
   (segment (start 164.4 133.35) (end 166.55 135.5) (width 1) (layer B.Cu) (net 2))
-  (segment (start 163.8 86) (end 164.4 86.6) (width 0.25) (layer B.Cu) (net 2))
   (segment (start 164.4 86.6) (end 164.4 133.35) (width 1) (layer B.Cu) (net 2))
+  (segment (start 164.4 86.6) (end 163.8 86) (width 1) (layer B.Cu) (net 2))
   (segment (start 168.9869 89.46424) (end 168.9996 89.47694) (width 0.5) (layer F.Cu) (net 3))
   (segment (start 168.9996 88.93944) (end 168.9996 89.47694) (width 0.25) (layer F.Cu) (net 3))
   (segment (start 167.31716 87.257) (end 168.9996 88.93944) (width 0.25) (layer F.Cu) (net 3))
