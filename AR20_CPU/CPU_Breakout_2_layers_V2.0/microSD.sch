@@ -30,8 +30,6 @@ Text GLabel 5950 1700 2    50   Input ~ 0
 Ground
 Text GLabel 5150 3700 3    50   Input ~ 0
 10_CS
-Text GLabel 5450 3700 3    50   Input ~ 0
-SCLK
 Text GLabel 5250 3700 3    50   Input ~ 0
 11_MOSI
 Wire Wire Line
@@ -75,4 +73,6 @@ Wire Wire Line
 	5100 4800 5100 4650
 Wire Wire Line
 	5100 4200 5100 4350
+Text GLabel 5450 3700 3    50   Input ~ 0
+27_A13
 $EndSCHEMATC

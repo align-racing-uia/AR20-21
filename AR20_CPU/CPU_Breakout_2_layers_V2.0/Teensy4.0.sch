@@ -34,8 +34,6 @@ Text GLabel 9750 4150 2    50   Input ~ 0
 3V3
 Text GLabel 9150 2950 2    50   Input ~ 0
 3.3V
-Text GLabel 9150 4050 2    50   Input ~ 0
-SCLK
 Text GLabel 9150 2750 2    50   Input ~ 0
 Vinn_5V
 Text GLabel 9150 3850 2    50   Input ~ 0
@@ -9239,8 +9237,6 @@ Text GLabel 4000 4400 0    50   Input ~ 0
 33_MCLK2
 Text GLabel 4000 4000 0    50   Input ~ 0
 29_TX7
-Text GLabel 4000 3800 0    50   Input ~ 0
-27_A13
 Text GLabel 4000 4800 0    50   Input ~ 0
 9_OUT1C
 Text GLabel 4000 4500 0    50   Input ~ 0
@@ -9638,4 +9634,8 @@ Text GLabel 3300 2650 0    50   Input ~ 0
 Vinn_5V
 Wire Wire Line
 	3300 2500 3300 2650
+NoConn ~ 9150 4050
+NoConn ~ 8500 5500
+Text GLabel 4000 3800 0    50   Input ~ 0
+Ground
 $EndSCHEMATC
