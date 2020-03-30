@@ -21,7 +21,7 @@ const uint8_t globalFalse         = 0x0F;
 const uint16_t acmId  = 0x016;
 
 //  PWM frequency for H-bridge controlling the ETB
-const uint16_t pwmFrequency   = 11000;
+const uint16_t pwmFrequency   = 10000;
 
 //  Definitions of CAN ID's
 const uint16_t canIdShutdown                    = 0x001;
@@ -133,8 +133,8 @@ double pidEtbInput, pidEtbSetpoint, pidEtbOutput;
 double pidEtbOutputLimitMin         = -250;
 double pidEtbOutputLimitMax         =  250;
 unsigned long pidEtbSampleTime_us   = 1;
-double pidEtbKp                     = 7.00; //Set standard as 7
-double pidEtbKi                     = 3.00; //Set standard as 3
+double pidEtbKp                     = 1.00; //Set standard as 7 | with filter 3.2
+double pidEtbKi                     = 1.00; //Set standard as 3
 double pidEtbKd                     = 0.00; //Set standard as 0
 //  Idle control by RPM PID
 double pidIdleInput, pidIdleSetpoint, pidIdleOutput;

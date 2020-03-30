@@ -48,8 +48,8 @@ void setup() {
 void loop() {
 
 
-sawtooth();
-//constant();
+//sawtooth();
+constant();
   
 
 }

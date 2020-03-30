@@ -32,8 +32,8 @@ int triangle(){
 }
 
 int constant(){
-      canMsg1.data[0] = 128;
-      canMsg1.data[2] = 128;
+      canMsg1.data[0] = 50;
+      canMsg1.data[2] = 50;
       mcp2515.sendMessage(&canMsg2);
       mcp2515.sendMessage(&canMsg1);    
   }
