@@ -133,9 +133,9 @@ double pidEtbInput, pidEtbSetpoint, pidEtbOutput;
 double pidEtbOutputLimitMin         = -250;
 double pidEtbOutputLimitMax         =  250;
 unsigned long pidEtbSampleTime_us   = 1;
-double pidEtbKp                     = 1.00; //Set standard as 7 | with filter 3.2
-double pidEtbKi                     = 1.00; //Set standard as 3
-double pidEtbKd                     = 0.00; //Set standard as 0
+double pidEtbKp                     = 7.00; //Set standard as 7 | with filter 3.2
+double pidEtbKi                     = 3.00; //Set standard as 3 | with filter 1
+double pidEtbKd                     = 0.05; //Set standard as 0 | with filter 0.5
 //  Idle control by RPM PID
 double pidIdleInput, pidIdleSetpoint, pidIdleOutput;
 double pidIdleOutputLimitMin        = tps1Min+5;
