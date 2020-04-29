@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.2)-2")
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.5)-3")
 
   (general
     (thickness 1)
@@ -11,30 +11,30 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal)
-    (31 B.Cu signal hide)
+    (0 F.Cu signal hide)
+    (31 B.Cu signal)
     (32 B.Adhes user hide)
     (33 F.Adhes user hide)
-    (34 B.Paste user hide)
-    (35 F.Paste user)
-    (36 B.SilkS user hide)
-    (37 F.SilkS user)
-    (38 B.Mask user hide)
-    (39 F.Mask user)
+    (34 B.Paste user)
+    (35 F.Paste user hide)
+    (36 B.SilkS user)
+    (37 F.SilkS user hide)
+    (38 B.Mask user)
+    (39 F.Mask user hide)
     (40 Dwgs.User user hide)
     (41 Cmts.User user hide)
     (42 Eco1.User user hide)
     (43 Eco2.User user hide)
     (44 Edge.Cuts user)
     (45 Margin user hide)
-    (46 B.CrtYd user hide)
-    (47 F.CrtYd user)
-    (48 B.Fab user hide)
-    (49 F.Fab user)
+    (46 B.CrtYd user)
+    (47 F.CrtYd user hide)
+    (48 B.Fab user)
+    (49 F.Fab user hide)
   )
 
   (setup
-    (last_trace_width 0.254)
+    (last_trace_width 0.127)
     (user_trace_width 0.254)
     (user_trace_width 0.508)
     (trace_clearance 0.0889)
@@ -330,7 +330,7 @@
       (net 7 /MISO))
     (pad 29 smd rect (at 0 0 225) (size 4.2 4.2) (layers B.Cu B.Paste B.Mask)
       (net 2 GND))
-    (model MCP25625T-E_ML.stp
+    (model ${KIPRJMOD}/3D-Components/MCP25625T-E_ML.stp
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
