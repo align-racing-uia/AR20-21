@@ -10,11 +10,12 @@ int array [255];
 int i = 0;
 int i1 = 0;
 
+unsigned long previousMillis = 0;
+unsigned long currentMillis = 0;
+
 void setup() {
   pinMode(led, OUTPUT);
-  pinMode(flag, OUTPUT);
   digitalWrite(led, LOW);
-  digitalWrite(flag, LOW);
   
   
   canMsg1.can_id  = 0x11;
@@ -49,8 +50,6 @@ void loop() {
 
 sawtooth();
 //constant();
-flag_out();
-delay(10); //Remove delays!
   
 
 }

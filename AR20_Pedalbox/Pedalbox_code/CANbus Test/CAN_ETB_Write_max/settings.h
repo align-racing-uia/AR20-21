@@ -9,18 +9,11 @@ Settings for ramp function
 
 //LED Settings:
 int led = 9;
-int flag = 10;
-const long flag_duration = 10;  
-
-//Time settings
-unsigned long previousMillis = 0;
-const long interval = 1000;
-int State = LOW;   
 
 
 //Function settings
 const uint8_t min = 0;
-const uint8_t max = 255; //20%|51 - 50%|128 - 100%|255
+const uint8_t max = 255; // 255-100% | 128-50% | 51 - 20%
 
 /*
 Frequency
