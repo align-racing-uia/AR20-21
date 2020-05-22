@@ -265,13 +265,18 @@
     (pad "" np_thru_hole circle (at -8.422 19.912 90) (size 2.2 2.2) (drill 2.2) (layers *.Cu *.Mask))
     (model ${KIPRJMOD}/3d_objects/ACM-connector-pcb.step
       (offset (xyz -5.75 -0.75 1.25))
-      (scale (xyz 1 1 1))
-      (rotate (xyz -90 0 0))
+      (scale (xyz 1 0.7 1))
+      (rotate (xyz -85 0 0))
     )
     (model ${KIPRJMOD}/3d_objects/ACM-pcb.wrl
       (offset (xyz -75.7 70.2 5.35))
       (scale (xyz 0.4 0.4 0.4))
       (rotate (xyz 0 0 0))
+    )
+    (model "${KIPRJMOD}/3D/JAE IL-WX Series 30-pin_Female.STEP"
+      (offset (xyz -0.13 0 -0.1))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
     )
   )
 
