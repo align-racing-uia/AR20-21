@@ -1,9 +1,0 @@
-Manufacturer=Nexperia
-PartNumber=MC33931EK
-PartCategory=Integrated Circuit
-PackageCategory=Small Outline Packages
-PinCount=33
-Version=2.1
-Released=2017-11-26 12:36:32
-Downloaded=2020-01-23 14:20:19
-3D=Y

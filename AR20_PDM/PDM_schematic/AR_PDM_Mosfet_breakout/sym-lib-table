@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name AR20_PDM_v1)(type Legacy)(uri ${AR_LIB}/AR_PDM_Mosfet_breakout/Liberary/AR20_PDM_v1.lib)(options "")(descr ""))
-)

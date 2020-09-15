@@ -1,4 +1,0 @@
-(fp_lib_table
-  (lib (name Library)(type KiCad)(uri ${KIPRJMOD}/Library)(options "")(descr ""))
-  (lib (name ETBC_2020)(type KiCad)(uri ${KIPRJMOD}/Library/ETBC_2020.pretty)(options "")(descr ""))
-)

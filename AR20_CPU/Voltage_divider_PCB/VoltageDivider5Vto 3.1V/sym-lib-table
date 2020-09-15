@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name VoltageDivider)(type Legacy)(uri "C:/Users/Nylund/Documents/Align Racing/AR20/AR20-git/AR20_CPU/Voltage_divider_PCB/VoltageDivider5Vto 3.1V/VoltageDivider.lib")(options "")(descr ""))
-  (lib (name VoltageDivider-rescue)(type Legacy)(uri ${KIPRJMOD}/VoltageDivider-rescue.lib)(options "")(descr ""))
-)

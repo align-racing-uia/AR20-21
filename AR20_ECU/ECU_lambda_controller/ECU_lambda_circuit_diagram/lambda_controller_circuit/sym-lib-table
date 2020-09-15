@@ -1,7 +1,0 @@
-(sym_lib_table
-  (lib (name "Bosch CJ125")(type Legacy)(uri "${KIPRJMOD}/Bosch CJ125.lib")(options "")(descr ""))
-  (lib (name mic5239-5.0bs)(type Legacy)(uri "C:/Users/Jørgen-Skole/Documents/02. GitHub/AR20/AR20_ECU/ECU_lambda_controller/ECU_lambda_circuit_diagram/mic5239-5.0bs.lib")(options "")(descr ""))
-  (lib (name MIC_LDO)(type Legacy)(uri ${KIPRJMOD}/MIC_LDO.lib)(options "")(descr ""))
-  (lib (name MCP_MOSFET)(type Legacy)(uri "C:/Users/Jørgen-Skole/Documents/02. GitHub/AR20/AR20_ECU/ECU_lambda_controller/ECU_lambda_circuit_diagram/MCP_MOSFET.lib")(options "")(descr ""))
-  (lib (name lambda_controller_circuit-rescue)(type Legacy)(uri ${KIPRJMOD}/lambda_controller_circuit-rescue.lib)(options "")(descr ""))
-)
