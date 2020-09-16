@@ -18,7 +18,7 @@
 
 ## Introduction
 
-This is the repository for Align Racing's 2019 formula student race car.
+This is the repository for Align Racing's formula student race car's different systems.
 
 
 ## Align Racing UiA
