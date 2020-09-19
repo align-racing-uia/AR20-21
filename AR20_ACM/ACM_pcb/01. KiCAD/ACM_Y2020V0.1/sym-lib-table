@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name ACM_Y2020V0.1-rescue)(type Legacy)(uri ${KIPRJMOD}/ACM_Y2020V0.1-rescue.lib)(options "")(descr ""))
-)

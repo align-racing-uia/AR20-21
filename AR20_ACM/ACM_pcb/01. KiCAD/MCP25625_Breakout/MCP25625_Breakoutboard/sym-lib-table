@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name MCP25625_BreakoutLibrary)(type Legacy)(uri ${KIPRJMOD}/MCP25625_BreakoutLibrary.lib)(options "")(descr ""))
-)
