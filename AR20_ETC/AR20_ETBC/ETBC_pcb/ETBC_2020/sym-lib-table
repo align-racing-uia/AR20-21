@@ -1,5 +1,0 @@
-(sym_lib_table
-  (lib (name ACM_2020_Symbol)(type Legacy)(uri ${KIPRJMOD}/Library/ACM_2020_Symbol.lib)(options "")(descr ""))
-  (lib (name MX23A12NF1)(type Legacy)(uri ${KIPRJMOD}/Library/MX23A12NF1/MX23A12NF1.lib)(options "")(descr ""))
-  (lib (name MC33931EK)(type Legacy)(uri ${KIPRJMOD}/Library/MC33931EK/KiCad/MC33931EK.lib)(options "")(descr ""))
-)
