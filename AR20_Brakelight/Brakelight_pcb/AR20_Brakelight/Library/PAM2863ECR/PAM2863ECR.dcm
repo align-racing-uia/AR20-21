@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP PAM2863ECR
-D Step-down LED Driver 1MHz 40V 2A SOP-8EP DiodesZetex PAM2863ECR LED Driver IC, 4.5  40 V dc 2A 8-Pin SOP
-K
-F https://componentsearchengine.com/Datasheets/1/PAM2863ECR.pdf
-$ENDCMP
-#
-#End Doc Library

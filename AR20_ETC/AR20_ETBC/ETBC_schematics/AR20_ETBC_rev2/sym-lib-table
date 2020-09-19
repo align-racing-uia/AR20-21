@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name AR20_ETBC_rev1-eagle-import)(type Legacy)(uri ${KIPRJMOD}/AR20_ETBC_rev1-eagle-import.lib)(options "")(descr ""))
-  (lib (name 1-776267-1)(type Legacy)(uri ${KIPRJMOD}/Libraries/1-776267-1.lib)(options "")(descr ""))
-)
