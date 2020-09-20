@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP SMLP36RGB2W3R
-D LED,RGB,35/110/35mcd,top-looking,1510 ROHM SMLP36RGB2W3R, SML-P36 Series 3 RGB LED, 475 (Blue) nm, 535 (Green) nm, 629 (Red) nm 6-Pin Milky White
-K
-F http://www.rohm.com/web/global/datasheet/SMLP36RGB2W(R)
-$ENDCMP
-#
-#End Doc Library
