@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.2)-2")
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.5)-3")
 
   (general
     (thickness 1.6)
@@ -1053,8 +1053,8 @@
       (net 20 APPS1_Signal))
     (pad 1 thru_hole rect (at 10 -4.5) (size 1.65 1.65) (drill 1.1) (layers *.Cu *.Mask)
       (net 21 APPS1_Supply))
-    (model "C:/Users/Nylund/Documents/GrabCAD/AR20 - Electronics/Connectors/STL/K3D-MX23A18NF1-R5 JAE Connector Division Proprietary.STEP"
-      (offset (xyz 0 -28.25 8.25))
+    (model "${KIPRJMOD}/3D/K3D-MX23A18NF1-R5 JAE Connector Division Proprietary.STEP"
+      (offset (xyz 0 -28.25 8))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
     )
