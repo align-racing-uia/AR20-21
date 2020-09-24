@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:teensy4_header_breakout-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268

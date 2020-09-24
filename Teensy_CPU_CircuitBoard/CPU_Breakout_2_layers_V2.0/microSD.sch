@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:teensy4_header_breakout-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -34,20 +33,6 @@ Text GLabel 5250 3700 3    50   Input ~ 0
 11_MOSI
 Wire Wire Line
 	5650 3500 5650 3900
-$Comp
-L Connector:Micro_SD_Card SDcard?
-U 1 1 5DFCE3F6
-P 5350 2600
-AR Path="/5DFCE3F6" Ref="SDcard?"  Part="1" 
-AR Path="/5DFCB53C/5DFCE3F6" Ref="SDcard1"  Part="1" 
-AR Path="/5DE8C4DF/5DFCE3F6" Ref="SDcard1"  Part="1" 
-F 0 "SDcard1" H 5300 3317 50  0000 C CNN
-F 1 "Micro_SD_Card" H 5300 3226 50  0000 C CNN
-F 2 "Connector_Card:microSD_HC_Hirose_DM3D-SF" H 6500 2900 50  0001 C CNN
-F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 5350 2600 50  0001 C CNN
-	1    5350 2600
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	5150 3500 5150 3700
 Text GLabel 5350 3750 3    50   Input ~ 0
@@ -75,4 +60,18 @@ Wire Wire Line
 	5100 4200 5100 4350
 Text GLabel 5450 3700 3    50   Input ~ 0
 27_A13
+$Comp
+L Connector:Micro_SD_Card SDcard?
+U 1 1 5DFCE3F6
+P 5350 2600
+AR Path="/5DFCE3F6" Ref="SDcard?"  Part="1" 
+AR Path="/5DFCB53C/5DFCE3F6" Ref="SDcard1"  Part="1" 
+AR Path="/5DE8C4DF/5DFCE3F6" Ref="SDcard1"  Part="1" 
+F 0 "SDcard1" H 5300 3317 50  0000 C CNN
+F 1 "Micro_SD_Card" H 5300 3226 50  0000 C CNN
+F 2 "Connector_Card:microSD_HC_Hirose_DM3D-SF" H 6500 2900 50  0001 C CNN
+F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 5350 2600 50  0001 C CNN
+	1    5350 2600
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
