@@ -229,6 +229,28 @@ X Pin_9 9 -200 300 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# ACM-pcb-rescue_D_Schottky_MBR0520LT1G
+#
+DEF ACM-pcb-rescue_D_Schottky_MBR0520LT1G D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "ACM-pcb-rescue_D_Schottky_MBR0520LT1G" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
+P 6 0 1 10 -75 25 -75 50 -50 50 -50 -50 -25 -50 -25 -25 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # ACM-pcb-rescue_D_Zener-Device-ACM_Y2020V0.1-rescue
 #
 DEF ACM-pcb-rescue_D_Zener-Device-ACM_Y2020V0.1-rescue D 0 40 N N 1 F N
@@ -402,11 +424,11 @@ X ~ 2 0 -100 25 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ACM-pcb-rescue_Q_PMOS_GSD-Device-ACM_Y2020V0.1-rescue
+# ACM-pcb-rescue_Q_PMOS_DMP3099L-13
 #
-DEF ACM-pcb-rescue_Q_PMOS_GSD-Device-ACM_Y2020V0.1-rescue Q 0 0 Y N 1 F N
+DEF ACM-pcb-rescue_Q_PMOS_DMP3099L-13 Q 0 0 Y N 1 F N
 F0 "Q" 200 50 50 H V L CNN
-F1 "ACM-pcb-rescue_Q_PMOS_GSD-Device-ACM_Y2020V0.1-rescue" 200 -50 50 H V L CNN
+F1 "ACM-pcb-rescue_Q_PMOS_DMP3099L-13" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW

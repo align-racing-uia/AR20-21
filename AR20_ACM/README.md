@@ -53,6 +53,10 @@
 - Created a ACM simulation folder
 - Connected pins that are equal to Atmega328PB
 
+**26.09.2020:**
+- Changed reverse polarity protection
+- Added 5v USB backwards current protection
+
 ### ACM 2019 - Documentation
 
 List of possible imporvements for ACM 2019

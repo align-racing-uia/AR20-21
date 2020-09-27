@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:ACM-pcb-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -283,7 +282,7 @@ F 3 "" H 7525 3600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3600 5350 3500 5350
-Text Notes 4925 3350 0    79   ~ 16
+Text Notes 4575 2925 0    79   ~ 16
 Power and protection circuits
 Text Notes 1925 3850 0    79   ~ 16
 Main MCU
@@ -307,12 +306,12 @@ Wire Wire Line
 $Comp
 L ACM-pcb-rescue:+12V-power-ACM_Y2020V0.1-rescue #PWR017
 U 1 1 5D442037
-P 5800 3675
-F 0 "#PWR017" H 5800 3525 50  0001 C CNN
-F 1 "+12V" H 5815 3848 50  0000 C CNN
-F 2 "" H 5800 3675 50  0001 C CNN
-F 3 "" H 5800 3675 50  0001 C CNN
-	1    5800 3675
+P 5800 3375
+F 0 "#PWR017" H 5800 3225 50  0001 C CNN
+F 1 "+12V" H 5815 3548 50  0000 C CNN
+F 2 "" H 5800 3375 50  0001 C CNN
+F 3 "" H 5800 3375 50  0001 C CNN
+	1    5800 3375
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -354,21 +353,8 @@ Wire Wire Line
 	5375 4150 5275 4150
 Wire Wire Line
 	5275 4150 5275 4225
-$Comp
-L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR016
-U 1 1 5D3F2B57
-P 5500 5250
-F 0 "#PWR016" H 5500 5000 50  0001 C CNN
-F 1 "GND" H 5505 5077 50  0000 C CNN
-F 2 "" H 5500 5250 50  0001 C CNN
-F 3 "" H 5500 5250 50  0001 C CNN
-	1    5500 5250
-	1    0    0    -1  
-$EndComp
 Text Notes 4775 4125 0    39   ~ 0
 Zener diode for\novervoltage protection
-Text Notes 4900 4675 0    39   ~ 0
-P-mosfet for reverse\npolarity protection
 Text Notes 5875 3900 0    39   ~ 0
 Polyfuse for\novercurrent protection
 $Comp
@@ -398,60 +384,13 @@ F 3 "" H 9950 4800 50  0001 C CNN
 	1    9950 4800
 	0    -1   -1   0   
 $EndComp
-$Comp
-L ACM-pcb-rescue:Q_PMOS_GSD-Device-ACM_Y2020V0.1-rescue Q1
-U 1 1 5D49C78B
-P 5700 4650
-F 0 "Q1" H 5906 4696 50  0000 L CNN
-F 1 "Q_PMOS_DGS" H 5906 4605 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5900 4750 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2040104.pdf?_ga=2.59461290.620744209.1564174328-1415930916.1560114588&_gac=1.194072415.1564075292.CjwKCAjwpuXpBRAAEiwAyRRPgXwHZ1wF4xXBoNI_FJEvoVORJn7NbJB9jjbidsg8_qDnlLi_44u6wRoCV2MQAvD_BwE" H 5700 4650 50  0001 C CNN
-F 4 "2543551" H 5700 4650 50  0001 C CNN "Farnell"
-	1    5700 4650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 4850 5800 4950
 Text Notes 950  4075 0    50   ~ 0
 Trenger flere Decupling Caps?
-Text Notes 5475 4925 2    50   ~ 0
-NB! Vgs max: ±10V!\n2.4V zener diode\nfor Vgs -2.4V
-$Comp
-L ACM-pcb-rescue:R-Device-ACM_Y2020V0.1-rescue R2
-U 1 1 5D4B82FB
-P 5500 5100
-F 0 "R2" H 5570 5146 50  0000 L CNN
-F 1 "100K Ohm" H 5570 5055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 5430 5100 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2310790.pdf?_ga=2.261974922.620744209.1564174328-1415930916.1560114588&_gac=1.24838472.1564075292.CjwKCAjwpuXpBRAAEiwAyRRPgXwHZ1wF4xXBoNI_FJEvoVORJn7NbJB9jjbidsg8_qDnlLi_44u6wRoCV2MQAvD_BwE" H 5500 5100 50  0001 C CNN
-F 4 "https://no.farnell.com/vishay/crcw0402100kfked/res-100k-1-0-063w-0402-thick-film/dp/1469671" H 5500 5100 50  0001 C CNN "Farnell"
-	1    5500 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L ACM-pcb-rescue:D_Zener-Device-ACM_Y2020V0.1-rescue D2
-U 1 1 5D4B9259
-P 5650 4950
-F 0 "D2" H 5650 4734 50  0000 C CNN
-F 1 "2.4V" H 5650 4825 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-523" H 5650 4950 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2174102.pdf?_ga=2.89435932.620744209.1564174328-1415930916.1560114588&_gac=1.184758107.1564075292.CjwKCAjwpuXpBRAAEiwAyRRPgXwHZ1wF4xXBoNI_FJEvoVORJn7NbJB9jjbidsg8_qDnlLi_44u6wRoCV2MQAvD_BwE" H 5650 4950 50  0001 C CNN
-F 4 "https://no.farnell.com/nexperia/bzx585-c2v4-115/diode-zener-0-3w-2-4v-sod523/dp/1907635" H 5650 4950 50  0001 C CNN "Farnell"
-	1    5650 4950
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5500 4650 5500 4950
-Connection ~ 5500 4950
 Wire Wire Line
 	5800 3675 5800 3750
 Wire Wire Line
-	5800 3950 5800 4150
-Wire Wire Line
 	5675 4150 5800 4150
 Connection ~ 5800 4150
-Wire Wire Line
-	5800 4150 5800 4450
 Wire Wire Line
 	6600 1975 6725 1975
 Wire Wire Line
@@ -646,11 +585,6 @@ F 3 "http://www.farnell.com/datasheets/1681963.pdf?_ga=2.58538474.1596001485.156
 	1    6975 5800
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5800 4950 6125 4950
-Connection ~ 5800 4950
-Text GLabel 6125 4950 2    50   Input ~ 0
-+12V_Safe
 Text GLabel 4625 5725 1    50   Input ~ 0
 +12V_Safe
 Wire Wire Line
@@ -819,22 +753,18 @@ Wire Wire Line
 	3075 1325 3075 1400
 Wire Wire Line
 	2975 1325 3075 1325
-Wire Wire Line
-	3075 1125 3075 1050
-Wire Wire Line
-	2975 1125 3075 1125
 Text Notes 1850 700  0    79   ~ 16
 ICSP
 $Comp
 L ACM-pcb-rescue:+5V-power-ACM_Y2020V0.1-rescue #PWR07
 U 1 1 5D3A42C5
-P 3075 1050
-F 0 "#PWR07" H 3075 900 50  0001 C CNN
-F 1 "+5V" H 3090 1223 50  0000 C CNN
-F 2 "" H 3075 1050 50  0001 C CNN
-F 3 "" H 3075 1050 50  0001 C CNN
-	1    3075 1050
-	1    0    0    -1  
+P 4125 1125
+F 0 "#PWR07" H 4125 975 50  0001 C CNN
+F 1 "+5V" H 4140 1298 50  0000 C CNN
+F 2 "" H 4125 1125 50  0001 C CNN
+F 3 "" H 4125 1125 50  0001 C CNN
+	1    4125 1125
+	0    1    1    0   
 $EndComp
 $Comp
 L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR08
@@ -1153,7 +1083,7 @@ U 1 1 5E5FCA78
 P 8550 4200
 F 0 "IC1" H 9894 3896 50  0000 L CNN
 F 1 "MCP25625T-E_ML" H 9900 2900 50  0000 L CNN
-F 2 "QFN65P600X600X100-29N-D" H 9700 4700 50  0001 L CNN
+F 2 "ACM_2020_V2:QFN65P600X600X100-29N-D" H 9700 4700 50  0001 L CNN
 F 3 "https://www.mouser.com/datasheet/2/268/20005282B-708896.pdf" H 9700 4600 50  0001 L CNN
 F 4 "Microchip Technology MCP25625T-E/ML, CAN Controller 1Mbit/s CAN 2.0B, 28-Pin QFN" H 9700 4500 50  0001 L CNN "Description"
 F 5 "1" H 9700 4400 50  0001 L CNN "Height"
@@ -1261,4 +1191,63 @@ F 3 "" H 8850 3500 50  0001 C CNN
 	1    8850 3500
 	-1   0    0    1   
 $EndComp
+$Comp
+L ACM-pcb-rescue:Q_PMOS_DMP3099L-13 Q1
+U 1 1 5F70E300
+P 3925 1225
+F 0 "Q1" V 4268 1225 50  0000 C CNN
+F 1 "Q_PMOS_DMP3099L-13" V 4177 1225 50  0000 C CNN
+F 2 "ACM_2020_V2:Pmos_DMP3099L-13" H 4125 1325 50  0001 C CNN
+F 3 "" H 3925 1225 50  0001 C CNN
+	1    3925 1225
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ACM-pcb-rescue:D_Schottky_MBR0520LT1G D4
+U 1 1 5F71C208
+P 5800 3525
+F 0 "D4" H 5800 3742 50  0000 C CNN
+F 1 "D_Schottky_MBR0520LT1G" H 5800 3651 50  0000 C CNN
+F 2 "ACM_2020_V2:D_schotky_MBR0520LT1G" H 5800 3525 50  0001 C CNN
+F 3 "~" H 5800 3525 50  0001 C CNN
+	1    5800 3525
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5800 3950 5800 4150
+Text GLabel 5800 4525 3    50   Input ~ 0
++12V_Safe
+Wire Wire Line
+	5800 4150 5800 4525
+Text GLabel 3925 1750 3    50   Input ~ 0
++12V_Safe
+$Comp
+L ACM-pcb-rescue:R-Device-ACM_Y2020V0.1-rescue R2
+U 1 1 5F78E3CB
+P 4075 1550
+F 0 "R2" V 3868 1550 50  0000 C CNN
+F 1 "10K Ohm" V 3959 1550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4005 1550 50  0001 C CNN
+F 3 "~" H 4075 1550 50  0001 C CNN
+	1    4075 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR0110
+U 1 1 5F7936AE
+P 4225 1550
+F 0 "#PWR0110" H 4225 1300 50  0001 C CNN
+F 1 "GND" H 4230 1377 50  0000 C CNN
+F 2 "" H 4225 1550 50  0001 C CNN
+F 3 "" H 4225 1550 50  0001 C CNN
+	1    4225 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3925 1425 3925 1550
+Connection ~ 3925 1550
+Wire Wire Line
+	3925 1550 3925 1750
+Wire Wire Line
+	2975 1125 3725 1125
 $EndSCHEMATC
