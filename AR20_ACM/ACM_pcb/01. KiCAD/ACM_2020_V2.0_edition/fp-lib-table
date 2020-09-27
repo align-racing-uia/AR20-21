@@ -2,4 +2,5 @@
   (lib (name ACM_2020_V2)(type KiCad)(uri ${KIPRJMOD}/ACM_2020_V2.pretty)(options "")(descr ""))
   (lib (name NCV890430MW50TXG)(type Legacy)(uri ${KIPRJMOD}/Lib/NCV890430/NCV890430MW50TXG.mod)(options "")(descr ""))
   (lib (name CSTNE16M0V530000R0)(type Legacy)(uri ${KIPRJMOD}/Lib/CSTNE16M0V530000R0/CSTNE16M0V530000R0.mod)(options "")(descr ""))
+  (lib (name ASMB-TTF0-0A20B)(type Legacy)(uri ${KIPRJMOD}/Lib/ASMB-TTF0-0A20B/ASMB-TTF0-0A20B.mod)(options "")(descr ""))
 )

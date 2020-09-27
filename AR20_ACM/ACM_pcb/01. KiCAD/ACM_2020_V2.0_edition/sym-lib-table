@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name ACM-pcb-rescue)(type Legacy)(uri ${KIPRJMOD}/ACM-pcb-rescue.lib)(options "")(descr ""))
+  (lib (name ASMB-TTF0-0A20B)(type Legacy)(uri ${KIPRJMOD}/Lib/ASMB-TTF0-0A20B/ASMB-TTF0-0A20B.lib)(options "")(descr ""))
 )

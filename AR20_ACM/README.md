@@ -57,6 +57,9 @@
 - Changed reverse polarity protection
 - Added 5v USB backwards current protection
 
+**27.09.2020** 
+- Changed RGB led from from common Anode to common Cathode
+
 ### ACM 2019 - Documentation
 
 List of possible imporvements for ACM 2019
