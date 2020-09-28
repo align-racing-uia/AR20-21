@@ -1,3 +1,15 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP LM324DRG3
+F http://www.ti.com/lit/gpn/lm324
+$ENDCMP
+#
+$CMP NCV890430MW50TXG
+F https://www.onsemi.com/pub/Collateral/NCV890430-D.PDF
+$ENDCMP
+#
+$CMP S8211-46R
+F https://cdn.harwin.com/pdfs/S8211R.pdf
+$ENDCMP
+#
 #End Doc Library

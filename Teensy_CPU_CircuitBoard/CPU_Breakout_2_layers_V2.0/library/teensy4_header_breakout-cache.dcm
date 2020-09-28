@@ -1,14 +1,15 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP S8211-46R
-D HARWIN - S8211-46R - HOLDER, EZ-COIN, CR/BR2032 CELLS
-F https://cdn.harwin.com/pdfs/S8211R.pdf
+$CMP LM324DRG3
+F http://www.ti.com/lit/gpn/lm324
 $ENDCMP
 #
-$CMP SW_Push_Dual
-D Push button switch, generic, symbol, four pins
-K switch normally-open pushbutton push-button
-F ~
+$CMP NCV890430MW50TXG
+F https://www.onsemi.com/pub/Collateral/NCV890430-D.PDF
+$ENDCMP
+#
+$CMP S8211-46R
+F https://cdn.harwin.com/pdfs/S8211R.pdf
 $ENDCMP
 #
 #End Doc Library
