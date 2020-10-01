@@ -60,6 +60,9 @@
 **27.09.2020** 
 - Changed RGB led from from common Anode to common Cathode
 
+**30.09.2020 - V3.0**
+- Started upgrading to CAN FD chips. 
+
 ### ACM 2019 - Documentation
 
 List of possible imporvements for ACM 2019
