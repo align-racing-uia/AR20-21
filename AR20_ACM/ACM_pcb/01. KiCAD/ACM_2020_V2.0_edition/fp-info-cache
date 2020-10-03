@@ -1,4 +1,11 @@
-18638055522505208
+18641258874164747
+ACM_2020_V2
+ASMBTTF00A20B
+PLCC-6
+LED
+0
+6
+6
 ACM_2020_V2
 Can_MCP2517FD_SOIC
 SOIC, 14 Pin (JEDEC MS-012AB, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_14.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
@@ -27,6 +34,13 @@ Integrated Circuit
 0
 29
 29
+ACM_2020_V2
+SOIC_MCP2542FD
+SOIC, 8 Pin (JEDEC MS-012AA, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_8.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC SO
+0
+8
+8
 ASMB-TTF0-0A20B
 ASMBTTF00A20B
 PLCC-6
