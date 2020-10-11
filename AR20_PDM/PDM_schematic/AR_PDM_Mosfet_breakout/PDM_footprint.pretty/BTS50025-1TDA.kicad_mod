@@ -1,8 +1,0 @@
-(module BTS50025-1TDA (layer F.Cu) (tedit 5DC036B8)
-  (fp_text reference REF** (at 0 -8.89) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text value BTS50025-1TDA (at 0 7.62) (layer F.Fab)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-)
