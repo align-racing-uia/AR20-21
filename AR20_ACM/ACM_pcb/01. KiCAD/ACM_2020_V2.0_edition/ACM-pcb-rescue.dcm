@@ -12,6 +12,12 @@ K diode Schottky
 F ~
 $ENDCMP
 #
+$CMP D_Zener_KDZVTR5.6B
+D Zener diode, small symbol
+K diode
+F ~
+$ENDCMP
+#
 $CMP MCP2517FD-xSL
 D External CAN FD Controller with SPI Interface, SOIC-14
 K CAN FD Controller SPI

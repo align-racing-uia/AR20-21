@@ -174,13 +174,13 @@ $EndComp
 $Comp
 L ACM-pcb-rescue:Polyfuse_Small-Device-ACM_Y2020V0.1-rescue F1
 U 1 1 5D45109C
-P 5800 3850
-F 0 "F1" H 5925 3800 50  0000 R CNN
-F 1 "250mA" H 6125 3875 50  0000 R CNN
-F 2 "Fuse:Fuse_0603_1608Metric" H 5850 3650 50  0001 L CNN
-F 3 "http://www.farnell.com/datasheets/2571643.pdf?_ga=2.98152344.620744209.1564174328-1415930916.1560114588&_gac=1.180027990.1564075292.CjwKCAjwpuXpBRAAEiwAyRRPgXwHZ1wF4xXBoNI_FJEvoVORJn7NbJB9jjbidsg8_qDnlLi_44u6wRoCV2MQAvD_BwE" H 5800 3850 50  0001 C CNN
-F 4 "https://no.farnell.com/bel-fuse-circuit-protection/0zcm0010ff2g/fuse-resettable-ptc-15vdc-0-1a/dp/2834930" H 5800 3850 50  0001 C CNN "Farnell"
-	1    5800 3850
+P 5800 3475
+F 0 "F1" H 5925 3425 50  0000 R CNN
+F 1 "250mA" H 6125 3500 50  0000 R CNN
+F 2 "Fuse:Fuse_0603_1608Metric" H 5850 3275 50  0001 L CNN
+F 3 "http://www.farnell.com/datasheets/2571643.pdf?_ga=2.98152344.620744209.1564174328-1415930916.1560114588&_gac=1.180027990.1564075292.CjwKCAjwpuXpBRAAEiwAyRRPgXwHZ1wF4xXBoNI_FJEvoVORJn7NbJB9jjbidsg8_qDnlLi_44u6wRoCV2MQAvD_BwE" H 5800 3475 50  0001 C CNN
+F 4 "https://no.farnell.com/bel-fuse-circuit-protection/0zcm0010ff2g/fuse-resettable-ptc-15vdc-0-1a/dp/2834930" H 5800 3475 50  0001 C CNN "Farnell"
+	1    5800 3475
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -212,7 +212,7 @@ Wire Wire Line
 	5275 4150 5275 4225
 Text Notes 4775 4125 0    39   ~ 0
 Zener diode for\novervoltage protection
-Text Notes 5875 3900 0    39   ~ 0
+Text Notes 5875 3450 0    39   ~ 0
 Polyfuse for\novercurrent protection
 $Comp
 L ACM-pcb-rescue:Conn_02x15_Odd_Even-Connector_Generic-ACM_Y2020V0.1-rescue P1
@@ -232,8 +232,6 @@ Text Notes 3425 6225 0    50   ~ 0
 Legg ut RESET for Debugwire
 Text Notes 950  4075 0    50   ~ 0
 Trenger flere Decupling Caps?
-Wire Wire Line
-	5800 3675 5800 3750
 Wire Wire Line
 	5675 4150 5800 4150
 Connection ~ 5800 4150
@@ -527,12 +525,12 @@ Wire Wire Line
 $Comp
 L ACM-pcb-rescue:+5V-power-ACM_Y2020V0.1-rescue #PWR022
 U 1 1 5D4DE85A
-P 7700 5700
-F 0 "#PWR022" H 7700 5550 50  0001 C CNN
-F 1 "+5V" H 7715 5873 50  0000 C CNN
-F 2 "" H 7700 5700 50  0001 C CNN
-F 3 "" H 7700 5700 50  0001 C CNN
-	1    7700 5700
+P 7700 5475
+F 0 "#PWR022" H 7700 5325 50  0001 C CNN
+F 1 "+5V" H 7715 5648 50  0000 C CNN
+F 2 "" H 7700 5475 50  0001 C CNN
+F 3 "" H 7700 5475 50  0001 C CNN
+	1    7700 5475
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -852,10 +850,6 @@ Connection ~ 6700 2375
 Wire Wire Line
 	6600 2575 6800 2575
 Wire Wire Line
-	6600 2475 6700 2475
-Wire Wire Line
-	6700 2475 6700 2375
-Wire Wire Line
 	6100 2075 6100 2175
 Wire Wire Line
 	6100 2175 6050 2175
@@ -894,12 +888,12 @@ $EndComp
 $Comp
 L ACM-pcb-rescue:D_Schottky_MBR0520LT1G D4
 U 1 1 5F71C208
-P 5800 3525
-F 0 "D4" H 5800 3742 50  0000 C CNN
-F 1 "D_Schottky_MBR0520LT1G" H 5800 3651 50  0000 C CNN
-F 2 "ACM_2020_V2:D_schotky_MBR0520LT1G" H 5800 3525 50  0001 C CNN
-F 3 "~" H 5800 3525 50  0001 C CNN
-	1    5800 3525
+P 5800 3800
+F 0 "D4" H 5800 4017 50  0000 C CNN
+F 1 "D_Schottky_MBR0520LT1G" H 5575 3625 50  0000 C CNN
+F 2 "ACM_2020_V2:D_schotky_MBR0520LT1G" H 5800 3800 50  0001 C CNN
+F 3 "~" H 5800 3800 50  0001 C CNN
+	1    5800 3800
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -1168,4 +1162,31 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP2542FD-4FD-MCP2542WFD-4W
 	1    9550 4050
 	1    0    0    -1  
 $EndComp
+$Comp
+L ACM-pcb-rescue:D_Zener_KDZVTR5.6B D2
+U 1 1 5F86EBF9
+P 7800 5700
+F 0 "D2" H 7900 5925 50  0000 C CNN
+F 1 "D_Zener_KDZVTR5.6B" H 8125 5825 50  0000 C CNN
+F 2 "ACM_2020_V2:D_Zener_KDZV5.6B_SOD-123" V 7800 5700 50  0001 C CNN
+F 3 "~" V 7800 5700 50  0001 C CNN
+	1    7800 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 5475 7700 5700
+Connection ~ 7700 5700
+$Comp
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR023
+U 1 1 5F8750C3
+P 7900 5700
+F 0 "#PWR023" H 7900 5450 50  0001 C CNN
+F 1 "GND" H 7905 5527 50  0000 C CNN
+F 2 "" H 7900 5700 50  0001 C CNN
+F 3 "" H 7900 5700 50  0001 C CNN
+	1    7900 5700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5800 3575 5800 3650
 $EndSCHEMATC

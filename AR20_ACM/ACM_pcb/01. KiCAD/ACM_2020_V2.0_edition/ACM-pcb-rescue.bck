@@ -12,16 +12,16 @@ K diode Schottky
 F ~
 $ENDCMP
 #
+$CMP D_Zener_KDZVTR5.6B
+D Zener diode, small symbol
+K diode
+F ~
+$ENDCMP
+#
 $CMP MCP2517FD-xSL
 D External CAN FD Controller with SPI Interface, SOIC-14
 K CAN FD Controller SPI
 F https://ww1.microchip.com/downloads/en/DeviceDoc/20005688A.pdf
-$ENDCMP
-#
-$CMP MCP2542FD
-D CAN-FD Transceiver, Wake-Up on CAN Pattern, 8Mbps, 5V supply, STBY pin, 3x3 DFN-8
-K CAN transceiver
-F http://www.farnell.com/datasheets/2648004.pdf?_ga=2.206592337.315831133.1601671065-784805094.1600274873
 $ENDCMP
 #
 $CMP MCP2542FDxMF
