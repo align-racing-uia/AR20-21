@@ -1,4 +1,4 @@
-18642861484327593
+18644464508661748
 ACM_2020_V2
 ASMBTTF00A20B
 PLCC-6
@@ -41,6 +41,13 @@ Integrated Circuit
 0
 29
 29
+ACM_2020_V2
+Resonator_CSTNE20M0V51Z000R0
+SMD Resomator/Filter Murata CSTCE, https://www.murata.com/en-eu/products/productdata/8801162264606/SPEC-CSTNE16M0VH3C000R0.pdf
+SMD SMT ceramic resonator filter
+0
+3
+3
 ACM_2020_V2
 SOIC_MCP2542FD
 SOIC, 8 Pin (JEDEC MS-012AA, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_8.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py

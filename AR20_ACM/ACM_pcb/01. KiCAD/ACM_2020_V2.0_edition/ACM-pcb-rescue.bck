@@ -41,4 +41,10 @@ D Microchip Technology MCP25625T-E/ML, CAN Controller 1Mbit/s CAN 2.0B, 28-Pin Q
 F https://www.mouser.com/datasheet/2/268/20005282B-708896.pdf
 $ENDCMP
 #
+$CMP Resonator_20Mhz_CSTNE20M0V51Z000R0
+D Three pin ceramic resonator, small symbol
+K ceramic resonator
+F https://www.murata.com/products/productdata/8801428209694/SPEC-CSTNE20M0V51Z000R0.pdf?1559743213000
+$ENDCMP
+#
 #End Doc Library
