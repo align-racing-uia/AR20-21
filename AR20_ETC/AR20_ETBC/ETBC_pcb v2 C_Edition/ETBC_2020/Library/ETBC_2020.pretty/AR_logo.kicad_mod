@@ -1,0 +1,8 @@
+(module AR_logo (layer F.Cu) (tedit 5E62876F)
+  (fp_text reference G*** (at 0 -2.5) (layer F.SilkS) hide
+    (effects (font (size 1.524 1.524) (thickness 0.3)))
+  )
+  (fp_text value LOGO (at 0.75 0) (layer F.SilkS) hide
+    (effects (font (size 1.524 1.524) (thickness 0.3)))
+  )
+)
