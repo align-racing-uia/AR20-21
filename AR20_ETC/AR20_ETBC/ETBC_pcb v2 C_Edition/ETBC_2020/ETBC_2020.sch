@@ -827,10 +827,6 @@ Text GLabel 9025 1900 0    50   Input ~ 0
 Feedback
 Text Notes 3625 2950 2    50   ~ 0
 Resistor as close as\npossible to ACM Pin
-Text Notes 5225 6750 2    50   ~ 0
-Filtering diode
-Text GLabel 4875 7300 3    50   Input ~ 0
-PWR
 $Comp
 L Device:CP_Small C12
 U 1 1 5E386C55
@@ -898,8 +894,6 @@ Wire Wire Line
 Connection ~ 3700 3325
 Wire Wire Line
 	3700 3325 4050 3325
-Wire Notes Line
-	5525 6800 4325 6800
 Text GLabel 1225 2375 0    50   Input ~ 0
 OUT1
 Text GLabel 1225 2175 0    50   Input ~ 0
@@ -949,8 +943,6 @@ Text Notes 6850 4050 1    50   ~ 0
 One wide trace
 Text Notes 4925 4100 1    50   ~ 0
 One wide trace
-Text Notes 4400 6675 0    50   ~ 0
-Away from critical components
 Text GLabel 1225 1875 0    50   Input ~ 0
 CANH
 $Comp
@@ -1034,29 +1026,8 @@ Wire Wire Line
 Wire Wire Line
 	4375 2250 4550 2250
 Connection ~ 4550 2250
-$Comp
-L Device:D_x2_KCom_AKA D1
-U 1 1 5E63A4C5
-P 4875 7100
-F 0 "D1" H 4875 7316 50  0000 C CNN
-F 1 "WNS20S100CB" H 4875 7225 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 4875 7100 50  0001 C CNN
-F 3 "~" H 4875 7100 50  0001 C CNN
-	1    4875 7100
-	1    0    0    -1  
-$EndComp
 Text GLabel 1225 2675 0    50   Input ~ 0
 12V
-Text GLabel 4575 7100 0    50   Input ~ 0
-12V
-Text GLabel 5175 7100 2    50   Input ~ 0
-12V
-Wire Notes Line
-	5525 7600 4325 7600
-Wire Notes Line
-	4325 6800 4325 7600
-Wire Notes Line
-	5525 6800 5525 7600
 Text GLabel 10575 1450 2    50   Input ~ 0
 PWM_3
 Text GLabel 10575 1000 2    50   Input ~ 0
@@ -1282,4 +1253,33 @@ F 3 "~" H 1650 4400 50  0001 C CNN
 	1    1650 4400
 	1    0    0    -1  
 $EndComp
+Wire Notes Line
+	5525 6800 5525 7600
+Wire Notes Line
+	4325 6800 4325 7600
+Wire Notes Line
+	5525 7600 4325 7600
+Text GLabel 5175 7100 2    50   Input ~ 0
+12V
+Text GLabel 4575 7100 0    50   Input ~ 0
+12V
+$Comp
+L Device:D_x2_KCom_AKA D1
+U 1 1 5E63A4C5
+P 4875 7100
+F 0 "D1" H 4875 7316 50  0000 C CNN
+F 1 "WNS20S100CB" H 4875 7225 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 4875 7100 50  0001 C CNN
+F 3 "~" H 4875 7100 50  0001 C CNN
+	1    4875 7100
+	1    0    0    -1  
+$EndComp
+Text Notes 4400 6675 0    50   ~ 0
+Away from critical components
+Wire Notes Line
+	5525 6800 4325 6800
+Text GLabel 4875 7300 3    50   Input ~ 0
+PWR
+Text Notes 5225 6750 2    50   ~ 0
+Filtering diode
 $EndSCHEMATC
