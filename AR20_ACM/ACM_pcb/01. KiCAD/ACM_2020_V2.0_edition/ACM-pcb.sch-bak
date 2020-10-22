@@ -220,7 +220,7 @@ U 1 1 5D40B272
 P 6300 1875
 F 0 "P1" H 6350 2792 50  0000 C CNN
 F 1 "Conn_02x15_Odd_Even" H 6350 2701 50  0000 C CNN
-F 2 "SMLP36RGB2W3R:ILWX10SBVFBE" H 6300 1875 50  0001 C CNN
+F 2 "ACM_2020_V2:IL-WX-30SB-VF-BE" H 6300 1875 50  0001 C CNN
 F 3 "https://docs-emea.rs-online.com/webdocs/0fc1/0900766b80fc155d.pdf" H 6300 1875 50  0001 C CNN
 F 4 "https://no.rs-online.com/web/p/pcb-sockets/0437152/" H 6300 1875 50  0001 C CNN "RS"
 	1    6300 1875
@@ -900,8 +900,6 @@ Text GLabel 5800 4525 3    50   Input ~ 0
 +12V_Safe
 Wire Wire Line
 	5800 4150 5800 4525
-Text GLabel 3925 1750 3    50   Input ~ 0
-+12V_Safe
 $Comp
 L ACM-pcb-rescue:R-Device-ACM_Y2020V0.1-rescue R2
 U 1 1 5F78E3CB
@@ -1218,4 +1216,15 @@ Wire Wire Line
 	8450 4100 8550 4100
 Wire Wire Line
 	8850 4000 8850 4050
+$Comp
+L ACM-pcb-rescue:+12V-power-ACM_Y2020V0.1-rescue #PWR?
+U 1 1 5F91EA0D
+P 3925 1750
+F 0 "#PWR?" H 3925 1600 50  0001 C CNN
+F 1 "+12V" H 3940 1923 50  0000 C CNN
+F 2 "" H 3925 1750 50  0001 C CNN
+F 3 "" H 3925 1750 50  0001 C CNN
+	1    3925 1750
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

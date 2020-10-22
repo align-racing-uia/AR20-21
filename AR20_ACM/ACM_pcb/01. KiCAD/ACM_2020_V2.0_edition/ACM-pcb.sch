@@ -900,8 +900,6 @@ Text GLabel 5800 4525 3    50   Input ~ 0
 +12V_Safe
 Wire Wire Line
 	5800 4150 5800 4525
-Text GLabel 3925 1750 3    50   Input ~ 0
-+12V_Safe
 $Comp
 L ACM-pcb-rescue:R-Device-ACM_Y2020V0.1-rescue R2
 U 1 1 5F78E3CB
@@ -1218,4 +1216,11 @@ Wire Wire Line
 	8450 4100 8550 4100
 Wire Wire Line
 	8850 4000 8850 4050
+Text GLabel 5725 3650 0    50   Input ~ 0
+12V_fused
+Text GLabel 3925 1750 3    50   Input ~ 0
+12V_fused
+Wire Wire Line
+	5725 3650 5800 3650
+Connection ~ 5800 3650
 $EndSCHEMATC
