@@ -469,8 +469,6 @@ Text GLabel 3425 2675 0    50   Input ~ 0
 Feedback
 Text GLabel 4650 2775 0    50   Input ~ 0
 EN_D2
-Text GLabel 8300 3175 2    50   Input ~ 0
-PWR
 Connection ~ 7500 3175
 $Comp
 L Device:C_Small C10
@@ -490,8 +488,6 @@ Text GLabel 6475 2575 2    50   Input ~ 0
 PWM_10
 Text GLabel 6475 2775 2    50   Input ~ 0
 PWM_3
-Text GLabel 10800 2950 2    50   Input ~ 0
-PWR
 Wire Wire Line
 	10575 2950 10800 2950
 $Comp
@@ -627,18 +623,6 @@ F 5 "AR20_ETC_012" H 2275 6925 50  0001 C CNN "AR-ID"
 	1    2275 6925
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small R4
-U 1 1 5E38FCFD
-P 2750 6925
-F 0 "R4" H 2809 6971 50  0000 L CNN
-F 1 "4.7K" H 2809 6880 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2750 6925 50  0001 C CNN
-F 3 "~" H 2750 6925 50  0001 C CNN
-F 4 "AR20_ETC_010" H 2750 6925 50  0001 C CNN "AR-ID"
-	1    2750 6925
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	3675 6100 3675 5325
 Wire Notes Line
@@ -657,22 +641,7 @@ Wire Wire Line
 	2150 6650 2275 6650
 Wire Wire Line
 	2275 6650 2275 6825
-Wire Wire Line
-	2275 6650 2750 6650
-Wire Wire Line
-	2750 6650 2750 6825
 Connection ~ 2275 6650
-$Comp
-L power:GND #PWR0120
-U 1 1 5E39A7AF
-P 2750 7025
-F 0 "#PWR0120" H 2750 6775 50  0001 C CNN
-F 1 "GND" H 2755 6852 50  0000 C CNN
-F 2 "" H 2750 7025 50  0001 C CNN
-F 3 "" H 2750 7025 50  0001 C CNN
-	1    2750 7025
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0121
 U 1 1 5E39B18A
@@ -709,40 +678,13 @@ F 5 "AR20_ETC_012" H 2250 5800 50  0001 C CNN "AR-ID"
 	1    2250 5800
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small R3
-U 1 1 5E3A3534
-P 2725 5800
-F 0 "R3" H 2784 5846 50  0000 L CNN
-F 1 "4.7K" H 2784 5755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2725 5800 50  0001 C CNN
-F 3 "~" H 2725 5800 50  0001 C CNN
-F 4 "AR20_ETC_010" H 2725 5800 50  0001 C CNN "AR-ID"
-	1    2725 5800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1800 5525 1925 5525
 Wire Wire Line
 	2125 5525 2250 5525
 Wire Wire Line
 	2250 5525 2250 5700
-Wire Wire Line
-	2250 5525 2725 5525
-Wire Wire Line
-	2725 5525 2725 5700
 Connection ~ 2250 5525
-$Comp
-L power:GND #PWR0122
-U 1 1 5E3A3540
-P 2725 5900
-F 0 "#PWR0122" H 2725 5650 50  0001 C CNN
-F 1 "GND" H 2730 5727 50  0000 C CNN
-F 2 "" H 2725 5900 50  0001 C CNN
-F 3 "" H 2725 5900 50  0001 C CNN
-	1    2725 5900
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0123
 U 1 1 5E3A3546
@@ -754,12 +696,6 @@ F 3 "" H 2250 5900 50  0001 C CNN
 	1    2250 5900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2950 5525 2725 5525
-Connection ~ 2725 5525
-Wire Wire Line
-	3000 6650 2750 6650
-Connection ~ 2750 6650
 Text GLabel 1225 2275 0    50   Input ~ 0
 OUT1
 Text GLabel 1225 2075 0    50   Input ~ 0
@@ -786,9 +722,9 @@ F 3 "" H 1925 3075 50  0001 C CNN
 	1    1925 3075
 	1    0    0    -1  
 $EndComp
-Text GLabel 1725 2075 2    50   Input ~ 0
+Text GLabel 1225 1875 0    50   Input ~ 0
 TPS1
-Text GLabel 1725 1975 2    50   Input ~ 0
+Text GLabel 1225 1975 0    50   Input ~ 0
 TPS2
 $Comp
 L power:GND #PWR0126
@@ -805,7 +741,7 @@ Text GLabel 10575 2500 2    50   Input ~ 0
 CANH
 Text GLabel 10575 2800 2    50   Input ~ 0
 CANL
-Text GLabel 1225 1975 0    50   Input ~ 0
+Text GLabel 1725 1975 2    50   Input ~ 0
 CANL
 $Comp
 L Connector_Generic:Conn_02x09_Top_Bottom J1
@@ -827,10 +763,6 @@ Text GLabel 9025 1900 0    50   Input ~ 0
 Feedback
 Text Notes 3625 2950 2    50   ~ 0
 Resistor as close as\npossible to ACM Pin
-Text Notes 5225 6750 2    50   ~ 0
-Filtering diode
-Text GLabel 4875 7300 3    50   Input ~ 0
-PWR
 $Comp
 L Device:CP_Small C12
 U 1 1 5E386C55
@@ -898,8 +830,6 @@ Wire Wire Line
 Connection ~ 3700 3325
 Wire Wire Line
 	3700 3325 4050 3325
-Wire Notes Line
-	5525 6800 4325 6800
 Text GLabel 1225 2375 0    50   Input ~ 0
 OUT1
 Text GLabel 1225 2175 0    50   Input ~ 0
@@ -949,9 +879,7 @@ Text Notes 6850 4050 1    50   ~ 0
 One wide trace
 Text Notes 4925 4100 1    50   ~ 0
 One wide trace
-Text Notes 4400 6675 0    50   ~ 0
-Away from critical components
-Text GLabel 1225 1875 0    50   Input ~ 0
+Text GLabel 1725 1875 2    50   Input ~ 0
 CANH
 $Comp
 L power:GND #PWR0130
@@ -1034,29 +962,8 @@ Wire Wire Line
 Wire Wire Line
 	4375 2250 4550 2250
 Connection ~ 4550 2250
-$Comp
-L Device:D_x2_KCom_AKA D1
-U 1 1 5E63A4C5
-P 4875 7100
-F 0 "D1" H 4875 7316 50  0000 C CNN
-F 1 "WNS20S100CB" H 4875 7225 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 4875 7100 50  0001 C CNN
-F 3 "~" H 4875 7100 50  0001 C CNN
-	1    4875 7100
-	1    0    0    -1  
-$EndComp
 Text GLabel 1225 2675 0    50   Input ~ 0
 12V
-Text GLabel 4575 7100 0    50   Input ~ 0
-12V
-Text GLabel 5175 7100 2    50   Input ~ 0
-12V
-Wire Notes Line
-	5525 7600 4325 7600
-Wire Notes Line
-	4325 6800 4325 7600
-Wire Notes Line
-	5525 6800 5525 7600
 Text GLabel 10575 1450 2    50   Input ~ 0
 PWM_3
 Text GLabel 10575 1000 2    50   Input ~ 0
@@ -1185,8 +1092,6 @@ F 3 "" H 8775 5350 50  0001 C CNN
 $EndComp
 Text Notes -3700 4000 0    50   ~ 0
 Test Points
-Text GLabel 3475 3325 0    50   Input ~ 0
-PWR
 $Comp
 L Jumper:Jumper_2_Bridged JP1
 U 1 1 5F8E3C2F
@@ -1205,8 +1110,6 @@ Wire Wire Line
 Connection ~ 7650 3175
 Wire Wire Line
 	7650 3175 7875 3175
-Text GLabel 7650 2875 2    50   Input ~ 0
-PWR
 $Comp
 L power:GND #PWR0134
 U 1 1 5FA19345
@@ -1282,4 +1185,16 @@ F 3 "~" H 1650 4400 50  0001 C CNN
 	1    1650 4400
 	1    0    0    -1  
 $EndComp
+Text GLabel 8300 3175 2    50   Input ~ 0
+12V
+Text GLabel 3475 3325 0    50   Input ~ 0
+12V
+Text GLabel 7650 2875 2    50   Input ~ 0
+12V
+Wire Wire Line
+	2250 5525 2950 5525
+Wire Wire Line
+	2275 6650 3000 6650
+Text GLabel 10800 2950 2    50   Input ~ 0
+12V
 $EndSCHEMATC
