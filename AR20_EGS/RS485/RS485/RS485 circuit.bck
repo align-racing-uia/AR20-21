@@ -1,0 +1,27 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 0.1uF
+D Unpolarized capacitor, small symbol
+K capacitor cap
+F ~
+$ENDCMP
+#
+$CMP MM3Z3V6T1G
+D 300mW Zener Diode, SOD-123F
+K zener diode
+F http://www.farnell.com/datasheets/1876691.pdf
+$ENDCMP
+#
+$CMP MM3Zxx
+D 300mW Zener Diode, SOD-123F
+K zener diode
+F https://diotec.com/tl_files/diotec/files/pdf/datasheets/mm3z2v4.pdf
+$ENDCMP
+#
+$CMP R120Ω
+D Resistor, small symbol
+K R resistor
+F ~
+$ENDCMP
+#
+#End Doc Library

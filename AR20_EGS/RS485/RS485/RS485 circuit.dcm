@@ -1,0 +1,33 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 0.1uF
+D Unpolarized capacitor, small symbol
+K capacitor cap
+F ~
+$ENDCMP
+#
+$CMP Conn_01x02_Female
+D Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP Conn_01x06_Female
+D Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP MM3Z3V6T1G
+D 300mW Zener Diode, SOD-123F
+K zener diode
+F http://www.farnell.com/datasheets/1876691.pdf
+$ENDCMP
+#
+$CMP R120Ω
+D Resistor, small symbol
+K R resistor
+F ~
+$ENDCMP
+#
+#End Doc Library

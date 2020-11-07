@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "RS485 circuit")(type Legacy)(uri "${KIPRJMOD}/RS485 circuit.lib")(options "")(descr ""))
+  (lib (name MAX3362)(type Legacy)(uri ${KIPRJMOD}/lib/MAX3362.lib)(options "")(descr ""))
+)

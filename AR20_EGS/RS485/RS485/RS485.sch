@@ -1,0 +1,200 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RS485~circuit:MAX3362EKA+T U1
+U 1 1 5FA7077E
+P 6000 3600
+F 0 "U1" H 6800 3987 60  0000 C CNN
+F 1 "MAX3362EKA+T" H 6800 3881 60  0000 C CNN
+F 2 "RS485:MAX3362EKA+T" H 6800 3840 60  0001 C CNN
+F 3 "" H 6000 3600 60  0000 C CNN
+	1    6000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L RS485~circuit:R120Ω R1
+U 1 1 5FA75308
+P 8150 3750
+F 0 "R1" H 8209 3796 50  0000 L CNN
+F 1 "R120Ω" H 8209 3705 50  0000 L CNN
+F 2 "RS485:C_0603_1608Metric" H 8150 3750 50  0001 C CNN
+F 3 "~" H 8150 3750 50  0001 C CNN
+	1    8150 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 3700 7825 3700
+Wire Wire Line
+	7825 3700 7825 3650
+Wire Wire Line
+	7825 3650 8150 3650
+Wire Wire Line
+	7600 3800 7825 3800
+Wire Wire Line
+	7825 3800 7825 3850
+Wire Wire Line
+	7825 3850 8150 3850
+$Comp
+L power:GND #PWR02
+U 1 1 5FA7640B
+P 7600 3900
+F 0 "#PWR02" H 7600 3650 50  0001 C CNN
+F 1 "GND" V 7605 3772 50  0000 R CNN
+F 2 "" H 7600 3900 50  0001 C CNN
+F 3 "" H 7600 3900 50  0001 C CNN
+	1    7600 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR04
+U 1 1 5FA76BE2
+P 8025 3425
+F 0 "#PWR04" H 8025 3275 50  0001 C CNN
+F 1 "+3.3V" V 8040 3553 50  0000 L CNN
+F 2 "" H 8025 3425 50  0001 C CNN
+F 3 "" H 8025 3425 50  0001 C CNN
+	1    8025 3425
+	0    1    1    0   
+$EndComp
+$Comp
+L RS485~circuit:0.1uF C1
+U 1 1 5FA7C108
+P 7600 3150
+F 0 "C1" H 7692 3196 50  0000 L CNN
+F 1 "0.1uF" H 7692 3105 50  0000 L CNN
+F 2 "RS485:C_0402_1005Metric" H 7600 3150 50  0001 C CNN
+F 3 "~" H 7600 3150 50  0001 C CNN
+	1    7600 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 3250 7600 3425
+Connection ~ 7600 3425
+Wire Wire Line
+	7600 3425 7600 3600
+$Comp
+L power:GND #PWR01
+U 1 1 5FA7D046
+P 7600 3050
+F 0 "#PWR01" H 7600 2800 50  0001 C CNN
+F 1 "GND" V 7605 2922 50  0000 R CNN
+F 2 "" H 7600 3050 50  0001 C CNN
+F 3 "" H 7600 3050 50  0001 C CNN
+	1    7600 3050
+	-1   0    0    1   
+$EndComp
+Text GLabel 6000 3600 0    50   Input ~ 0
+RX
+Text GLabel 6000 3900 0    50   Input ~ 0
+TX
+Text GLabel 6000 3700 0    50   Input ~ 0
+*RX_Enable
+Text GLabel 6000 3800 0    50   Input ~ 0
+TX_Enable
+$Comp
+L RS485~circuit:MM3Z3V6T1G D1
+U 1 1 5FA7F66C
+P 8025 3150
+F 0 "D1" V 8071 3070 50  0000 R CNN
+F 1 "MM3Z3V6T1G" V 7980 3070 50  0000 R CNN
+F 2 "RS485:D_SOD-323" H 8025 2975 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1876691.pdf" H 8025 3150 50  0001 C CNN
+	1    8025 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7600 3425 8025 3425
+Wire Wire Line
+	8025 3425 8025 3300
+Connection ~ 8025 3425
+$Comp
+L power:GND #PWR03
+U 1 1 5FA81221
+P 8025 3000
+F 0 "#PWR03" H 8025 2750 50  0001 C CNN
+F 1 "GND" V 8030 2872 50  0000 R CNN
+F 2 "" H 8025 3000 50  0001 C CNN
+F 3 "" H 8025 3000 50  0001 C CNN
+	1    8025 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L RS485~circuit:Conn_01x06_Female J1
+U 1 1 5FA8A498
+P 4500 2550
+F 0 "J1" H 4528 2526 50  0000 L CNN
+F 1 "Conn_01x06_Female" H 4528 2435 50  0000 L CNN
+F 2 "RS485:PinSocket_1x06_P1.00mm_Vertical" H 4500 2550 50  0001 C CNN
+F 3 "~" H 4500 2550 50  0001 C CNN
+	1    4500 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5FA8BF86
+P 4700 2250
+F 0 "#PWR05" H 4700 2000 50  0001 C CNN
+F 1 "GND" V 4705 2122 50  0000 R CNN
+F 2 "" H 4700 2250 50  0001 C CNN
+F 3 "" H 4700 2250 50  0001 C CNN
+	1    4700 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR06
+U 1 1 5FA8DCE4
+P 4700 2750
+F 0 "#PWR06" H 4700 2600 50  0001 C CNN
+F 1 "+3.3V" V 4715 2878 50  0000 L CNN
+F 2 "" H 4700 2750 50  0001 C CNN
+F 3 "" H 4700 2750 50  0001 C CNN
+	1    4700 2750
+	0    1    1    0   
+$EndComp
+Text GLabel 4700 2650 2    50   Input ~ 0
+RX
+Text GLabel 4700 2350 2    50   Input ~ 0
+TX
+Text GLabel 4700 2550 2    50   Input ~ 0
+*RX_Enable
+Text GLabel 4700 2450 2    50   Input ~ 0
+TX_Enable
+$Comp
+L RS485~circuit:Conn_01x02_Female J2
+U 1 1 5FA958B2
+P 9125 3700
+F 0 "J2" H 9017 3375 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 9017 3466 50  0000 C CNN
+F 2 "RS485:PinSocket_1x02_P1.00mm_Vertical" H 9125 3700 50  0001 C CNN
+F 3 "~" H 9125 3700 50  0001 C CNN
+	1    9125 3700
+	1    0    0    -1  
+$EndComp
+Connection ~ 8150 3850
+Wire Wire Line
+	8150 3650 8925 3650
+Connection ~ 8150 3650
+Wire Wire Line
+	8150 3850 8925 3850
+Wire Wire Line
+	8925 3850 8925 3800
+Wire Wire Line
+	8925 3700 8925 3650
+Text Label 8825 3850 0    50   ~ 0
+A
+Text Label 8825 3650 0    50   ~ 0
+B
+$EndSCHEMATC
