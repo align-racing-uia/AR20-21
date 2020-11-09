@@ -6,16 +6,40 @@ K capacitor cap
 F ~
 $ENDCMP
 #
+$CMP BZX384-C13
+D 300mW Zener Diode, SOD-323
+K zener diode
+F https://assets.nexperia.com/documents/data-sheet/BZX384_SERIES.pdf
+$ENDCMP
+#
+$CMP Conn_01x02_Female
+D Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP Conn_01x06_Female
+D Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
 $CMP MM3Z3V6T1G
 D 300mW Zener Diode, SOD-123F
 K zener diode
 F http://www.farnell.com/datasheets/1876691.pdf
 $ENDCMP
 #
-$CMP MM3Zxx
-D 300mW Zener Diode, SOD-123F
-K zener diode
-F https://diotec.com/tl_files/diotec/files/pdf/datasheets/mm3z2v4.pdf
+$CMP PMOS_SQ2309ES-T1_GE3
+D P-MOSFET transistor, gate/source/drain
+K transistor PMOS P-MOS P-MOSFET
+F ~
+$ENDCMP
+#
+$CMP R10kΩ
+D Resistor, small symbol
+K R resistor
+F ~
 $ENDCMP
 #
 $CMP R120Ω

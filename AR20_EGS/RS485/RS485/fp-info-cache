@@ -1,4 +1,4 @@
-18636477584311534
+18638082523300392
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -73555,6 +73555,13 @@ MAX3362EKA+T
 0
 8
 8
+RS485
+PMOS_SQ2309ES
+SOT-23, Standard
+PMOS_SQ2309ES
+0
+3
+3
 RS485
 PinSocket_1x02_P1.00mm_Vertical
 Through hole straight socket strip, 1x02, 1.00mm pitch, single row (https://gct.co/files/drawings/bc065.pdf), script generated

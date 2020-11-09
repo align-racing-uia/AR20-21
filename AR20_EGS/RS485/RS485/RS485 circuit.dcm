@@ -6,6 +6,30 @@ K capacitor cap
 F ~
 $ENDCMP
 #
+$CMP BAT42W-V
+D 30V 0.2A Small Signal Schottky diode, SOD-123
+K diode Schottky
+F http://www.vishay.com/docs/85660/bat42.pdf
+$ENDCMP
+#
+$CMP BAT43W-V
+D 30V 0.2A Small Signal Schottky diode, SOD-123
+K diode Schottky
+F http://www.vishay.com/docs/85660/bat42.pdf
+$ENDCMP
+#
+$CMP BAT48ZFILM
+D 40V 0.35A Small Signal Schottky Diode, SOD-123
+K diode Schottky
+F www.st.com/resource/en/datasheet/bat48.pdf
+$ENDCMP
+#
+$CMP BZX384-C13
+D 300mW Zener Diode, SOD-323
+K zener diode
+F https://assets.nexperia.com/documents/data-sheet/BZX384_SERIES.pdf
+$ENDCMP
+#
 $CMP Conn_01x02_Female
 D Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
@@ -18,10 +42,70 @@ K connector
 F ~
 $ENDCMP
 #
+$CMP MBR0520
+D 20V 0.5A Schottky Power Rectifier Diode, SOD-123
+K diode Schottky
+F http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf
+$ENDCMP
+#
+$CMP MBR0520LT
+D 20V 0.5A Schottky Power Rectifier Diode, SOD-123
+K diode Schottky
+F http://www.onsemi.com/pub_link/Collateral/MBR0520LT1-D.PDF
+$ENDCMP
+#
+$CMP MBR0530
+D 30V 0.5A Schottky Power Rectifier Diode, SOD-123
+K diode Schottky
+F http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf
+$ENDCMP
+#
+$CMP MBR0540
+D 40V 0.5A Schottky Power Rectifier Diode, SOD-123
+K diode Schottky
+F http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf
+$ENDCMP
+#
+$CMP MBR0550
+D 50V 0.5A Schottky Power Rectifier Diode, SOD-123
+K diode Schottky
+F http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf
+$ENDCMP
+#
+$CMP MBR0560
+D 60V 0.5A Schottky Power Rectifier Diode, SOD-123
+K diode Schottky
+F http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf
+$ENDCMP
+#
+$CMP MBR0570
+D 70V 0.5A Schottky Power Rectifier Diode, SOD-123
+K diode Schottky
+F http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf
+$ENDCMP
+#
+$CMP MBR0580
+D 80V 0.5A Schottky Power Rectifier Diode, SOD-123
+K diode Schottky
+F http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf
+$ENDCMP
+#
 $CMP MM3Z3V6T1G
 D 300mW Zener Diode, SOD-123F
 K zener diode
 F http://www.farnell.com/datasheets/1876691.pdf
+$ENDCMP
+#
+$CMP PMOS_SQ2309ES-T1_GE3
+D P-MOSFET transistor, gate/source/drain
+K transistor PMOS P-MOS P-MOSFET
+F ~
+$ENDCMP
+#
+$CMP R10kΩ
+D Resistor, small symbol
+K R resistor
+F ~
 $ENDCMP
 #
 $CMP R120Ω
