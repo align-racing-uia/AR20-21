@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 5 5
 Title ""
 Date ""
 Rev ""
@@ -13,79 +13,79 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 6800 4250 0    50   Input ~ 0
+Text GLabel 6850 3700 0    50   Input ~ 0
 Ground
-Text GLabel 9150 2850 2    50   Input ~ 0
+Text GLabel 9200 2300 2    50   Input ~ 0
 Ground
-Text GLabel 9150 3250 2    50   Input ~ 0
+Text GLabel 9200 2700 2    50   Input ~ 0
 Out3
-Text GLabel 9150 3150 2    50   Input ~ 0
+Text GLabel 9200 2600 2    50   Input ~ 0
 Out1
-Text GLabel 9150 3050 2    50   Input ~ 0
+Text GLabel 9200 2500 2    50   Input ~ 0
 Out2
-Text GLabel 9150 3350 2    50   Input ~ 0
+Text GLabel 9200 2800 2    50   Input ~ 0
 Out4
-Text GLabel 6800 4550 0    50   Input ~ 0
+Text GLabel 6850 4000 0    50   Input ~ 0
 26_A12
-Text GLabel 9150 4550 2    50   Input ~ 0
+Text GLabel 9200 4000 2    50   Input ~ 0
 24_TX6_A10
-Text GLabel 9750 4150 2    50   Input ~ 0
+Text GLabel 9800 3600 2    50   Input ~ 0
 3V3
-Text GLabel 9150 2950 2    50   Input ~ 0
+Text GLabel 9200 2400 2    50   Input ~ 0
 3.3V
-Text GLabel 9150 2750 2    50   Input ~ 0
+Text GLabel 9200 2200 2    50   Input ~ 0
 Vinn_5V
-Text GLabel 9150 3850 2    50   Input ~ 0
+Text GLabel 9200 3300 2    50   Input ~ 0
 21_RX3
-Text GLabel 9150 3950 2    50   Input ~ 0
+Text GLabel 9200 3400 2    50   Input ~ 0
 20_TX3
-Text GLabel 9150 4450 2    50   Input ~ 0
+Text GLabel 9200 3900 2    50   Input ~ 0
 28_RX7
-Text GLabel 6800 4450 0    50   Input ~ 0
+Text GLabel 6850 3900 0    50   Input ~ 0
 30_CRX3
-Text GLabel 9150 4350 2    50   Input ~ 0
+Text GLabel 9200 3800 2    50   Input ~ 0
 32_OUT1B
-Text GLabel 6800 3950 0    50   Input ~ 0
+Text GLabel 6850 3400 0    50   Input ~ 0
 11_MOSI
-Text GLabel 6800 3850 0    50   Input ~ 0
+Text GLabel 6850 3300 0    50   Input ~ 0
 10_CS
-Text GLabel 6800 4650 0    50   Input ~ 0
+Text GLabel 6850 4100 0    50   Input ~ 0
 33_MCLK2
-Text GLabel 9150 4650 2    50   Input ~ 0
+Text GLabel 9200 4100 2    50   Input ~ 0
 31_CTX3
-Text GLabel 6800 4750 0    50   Input ~ 0
+Text GLabel 6850 4200 0    50   Input ~ 0
 29_TX7
-Text GLabel 9150 4750 2    50   Input ~ 0
+Text GLabel 9200 4200 2    50   Input ~ 0
 27_A13
-Text GLabel 6800 4850 0    50   Input ~ 0
+Text GLabel 6850 4300 0    50   Input ~ 0
 25_RX6_A11
-Text GLabel 6800 3750 0    50   Input ~ 0
+Text GLabel 6850 3200 0    50   Input ~ 0
 9_OUT1C
-Text GLabel 6800 3650 0    50   Input ~ 0
+Text GLabel 6850 3100 0    50   Input ~ 0
 8_TX2_IN1
-Text GLabel 6800 3550 0    50   Input ~ 0
+Text GLabel 6850 3000 0    50   Input ~ 0
 7_RX2_OUT1A
-Text GLabel 6800 3450 0    50   Input ~ 0
+Text GLabel 6850 2900 0    50   Input ~ 0
 6_OUT1D
-Text GLabel 6800 3350 0    50   Input ~ 0
+Text GLabel 6850 2800 0    50   Input ~ 0
 5_IN2
-Text GLabel 6800 3250 0    50   Input ~ 0
+Text GLabel 6850 2700 0    50   Input ~ 0
 4_BCLK2
-Text GLabel 6800 3150 0    50   Input ~ 0
+Text GLabel 6850 2600 0    50   Input ~ 0
 3_LRCLK2
-Text GLabel 6800 3050 0    50   Input ~ 0
+Text GLabel 6850 2500 0    50   Input ~ 0
 2_OUT2
-Text GLabel 6800 2950 0    50   Input ~ 0
+Text GLabel 6850 2400 0    50   Input ~ 0
 1_TX1
-Text GLabel 6800 2850 0    50   Input ~ 0
+Text GLabel 6850 2300 0    50   Input ~ 0
 0_RX1
-Text GLabel 6800 4050 0    50   Input ~ 0
+Text GLabel 6850 3500 0    50   Input ~ 0
 12_MISO
-Text GLabel 6800 4150 0    50   Input ~ 0
+Text GLabel 6850 3600 0    50   Input ~ 0
 VBAT
-Text GLabel 6800 4350 0    50   Input ~ 0
+Text GLabel 6850 3800 0    50   Input ~ 0
 ON_OFF
-Text GLabel 6800 2750 0    50   Input ~ 0
+Text GLabel 6850 2200 0    50   Input ~ 0
 Ground
 Text GLabel 5800 1000 3    50   Input ~ 0
 Ground
@@ -94,7 +94,7 @@ ON_OFF
 Text GLabel 7900 1000 1    50   Input ~ 0
 VBAT
 $Bitmap
-Pos 1600 1500
+Pos 1550 1700
 Scale 1.000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 02 B6 00 00 02 78 08 02 00 00 00 1F 83 37 
@@ -9324,13 +9324,13 @@ Text GLabel 4000 5900 0    50   Input ~ 0
 Sensor_Input_6
 Text GLabel 4000 5800 0    50   Input ~ 0
 Sensor_Input_5
-Text GLabel 9150 3750 2    50   Input ~ 0
+Text GLabel 9200 3200 2    50   Input ~ 0
 Out7
-Text GLabel 9150 3550 2    50   Input ~ 0
+Text GLabel 9200 3000 2    50   Input ~ 0
 Out5
-Text GLabel 9150 3450 2    50   Input ~ 0
+Text GLabel 9200 2900 2    50   Input ~ 0
 Out6
-Text GLabel 9150 3650 2    50   Input ~ 0
+Text GLabel 9200 3100 2    50   Input ~ 0
 Out8
 Text GLabel 4000 5100 0    50   Input ~ 0
 Ground
@@ -9381,100 +9381,100 @@ $EndComp
 $Comp
 L teensy4_header_breakout-cache:Teensy_pins T4
 U 1 1 5E646C7B
-P 7400 3450
-F 0 "T4" H 7975 4375 50  0000 C CNN
-F 1 "BreakoutBoardTeensy_Teensy_pins" H 7975 4284 50  0000 C CNN
-F 2 "Teensy_Footprint_Library:Teensy_40_footprint" H 8700 3450 50  0001 C CNN
-F 3 "" H 8700 3450 50  0001 C CNN
-	1    7400 3450
+P 7450 2900
+F 0 "T4" H 8025 3825 50  0000 C CNN
+F 1 "BreakoutBoardTeensy_Teensy_pins" H 8025 3734 50  0000 C CNN
+F 2 "Teensy_Footprint_Library:Teensy_40_footprint" H 8750 2900 50  0001 C CNN
+F 3 "" H 8750 2900 50  0001 C CNN
+	1    7450 2900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6950 2750 6800 2750
+	7000 2200 6850 2200
 Wire Wire Line
-	6950 4850 6800 4850
+	7000 4300 6850 4300
 Wire Wire Line
-	6950 4750 6800 4750
+	7000 4200 6850 4200
 Wire Wire Line
-	6950 4650 6800 4650
+	7000 4100 6850 4100
 Wire Wire Line
-	6950 4550 6800 4550
+	7000 4000 6850 4000
 Wire Wire Line
-	6950 4450 6800 4450
+	7000 3900 6850 3900
 Wire Wire Line
-	6950 4350 6800 4350
+	7000 3800 6850 3800
 Wire Wire Line
-	6950 4250 6800 4250
+	7000 3700 6850 3700
 Wire Wire Line
-	6950 4150 6800 4150
+	7000 3600 6850 3600
 Wire Wire Line
-	6950 4050 6800 4050
+	7000 3500 6850 3500
 Wire Wire Line
-	6950 3950 6800 3950
+	7000 3400 6850 3400
 Wire Wire Line
-	6950 3850 6800 3850
+	7000 3300 6850 3300
 Wire Wire Line
-	6950 3750 6800 3750
+	7000 3200 6850 3200
 Wire Wire Line
-	6950 3650 6800 3650
+	7000 3100 6850 3100
 Wire Wire Line
-	6950 3550 6800 3550
+	7000 3000 6850 3000
 Wire Wire Line
-	6950 3450 6800 3450
+	7000 2900 6850 2900
 Wire Wire Line
-	6950 3350 6800 3350
+	7000 2800 6850 2800
 Wire Wire Line
-	6950 3250 6800 3250
+	7000 2700 6850 2700
 Wire Wire Line
-	6950 3150 6800 3150
+	7000 2600 6850 2600
 Wire Wire Line
-	6950 3050 6800 3050
+	7000 2500 6850 2500
 Wire Wire Line
-	6950 2950 6800 2950
+	7000 2400 6850 2400
 Wire Wire Line
-	6950 2850 6800 2850
+	7000 2300 6850 2300
 Wire Wire Line
-	9000 2750 9150 2750
+	9050 2200 9200 2200
 Wire Wire Line
-	9000 2850 9150 2850
+	9050 2300 9200 2300
 Wire Wire Line
-	9000 2950 9150 2950
+	9050 2400 9200 2400
 Wire Wire Line
-	9000 3050 9150 3050
+	9050 2500 9200 2500
 Wire Wire Line
-	9000 3150 9150 3150
+	9050 2600 9200 2600
 Wire Wire Line
-	9000 3250 9150 3250
+	9050 2700 9200 2700
 Wire Wire Line
-	9000 3350 9150 3350
+	9050 2800 9200 2800
 Wire Wire Line
-	9000 3450 9150 3450
+	9050 2900 9200 2900
 Wire Wire Line
-	9000 3550 9150 3550
+	9050 3000 9200 3000
 Wire Wire Line
-	9000 3650 9150 3650
+	9050 3100 9200 3100
 Wire Wire Line
-	9000 3750 9150 3750
+	9050 3200 9200 3200
 Wire Wire Line
-	9000 3850 9150 3850
+	9050 3300 9200 3300
 Wire Wire Line
-	9000 3950 9150 3950
+	9050 3400 9200 3400
 Wire Wire Line
-	9000 4050 9150 4050
+	9050 3500 9200 3500
 Wire Wire Line
-	9000 4150 9750 4150
+	9050 3600 9800 3600
 Wire Wire Line
-	9000 4250 9150 4250
+	9050 3700 9200 3700
 Wire Wire Line
-	9000 4350 9150 4350
+	9050 3800 9200 3800
 Wire Wire Line
-	9000 4450 9150 4450
+	9050 3900 9200 3900
 Wire Wire Line
-	9000 4550 9150 4550
+	9050 4000 9200 4000
 Wire Wire Line
-	9000 4650 9150 4650
+	9050 4100 9200 4100
 Wire Wire Line
-	9000 4750 9150 4750
+	9050 4200 9200 4200
 Wire Wire Line
 	4200 2600 4100 2600
 Wire Wire Line
@@ -9612,7 +9612,7 @@ Wire Wire Line
 	4000 1000 4200 1000
 Wire Wire Line
 	3600 1000 3400 1000
-Text GLabel 9150 4250 2    50   Input ~ 0
+Text GLabel 9200 3700 2    50   Input ~ 0
 Program
 Text GLabel 3400 1000 1    50   Input ~ 0
 Program
@@ -9633,7 +9633,7 @@ Text GLabel 3300 2650 0    50   Input ~ 0
 Vinn_5V
 Wire Wire Line
 	3300 2500 3300 2650
-NoConn ~ 9150 4050
+NoConn ~ 9200 3500
 NoConn ~ 8500 5500
 Text GLabel 4000 3800 0    50   Input ~ 0
 Ground

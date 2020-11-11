@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 5027740891
+D CONN MICRO SD CARD PUSH-PUSH R/A
+K
+F https://www.molex.com/webdocs/datasheets/pdf/en-us/5027740891_MEMORY_CARD_SOCKET.pdf
+$ENDCMP
+#
+#End Doc Library

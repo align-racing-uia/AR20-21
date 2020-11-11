@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP D_RPP_Input_PMEG4010EGWX
+D Schottky diode
+K diode Schottky
+F ~
+$ENDCMP
+#
 $CMP LM324DRG3
 F http://www.ti.com/lit/gpn/lm324
 $ENDCMP
@@ -10,6 +16,11 @@ $ENDCMP
 #
 $CMP S8211-46R
 F https://cdn.harwin.com/pdfs/S8211R.pdf
+$ENDCMP
+#
+$CMP TEL_5-1211
+D TEL5 DC-DC converter,9-18Vin 5V 5W TRACOPOWER Isolated DC-DC Converter, Vin 9  18 V dc, Vout 5V dc, I/O isolation 1500V dc
+F https://www.tracopower.com/products/tel5.pdf
 $ENDCMP
 #
 #End Doc Library

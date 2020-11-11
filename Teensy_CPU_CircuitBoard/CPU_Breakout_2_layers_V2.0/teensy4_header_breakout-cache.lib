@@ -118,29 +118,6 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_L
-#
-DEF Device_L L 0 40 N N 1 F N
-F0 "L" -50 0 50 V V C CNN
-F1 "Device_L" 75 0 50 V V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Choke_*
- *Coil*
- Inductor_*
- L_*
-$ENDFPLIST
-DRAW
-A 0 -75 25 -899 899 0 1 0 N 0 -100 0 -50
-A 0 -25 25 -899 899 0 1 0 N 0 -50 0 0
-A 0 25 25 -899 899 0 1 0 N 0 0 0 50
-A 0 75 25 -899 899 0 1 0 N 0 50 0 100
-X 1 1 0 150 50 D 50 50 1 1 P
-X 2 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Device_R
 #
 DEF Device_R R 0 0 N Y 1 F N
@@ -218,35 +195,6 @@ C 0 0 50 0 1 50 N
 ENDDRAW
 ENDDEF
 #
-# NCV890430MW50TXG_NCV890430MW50TXG
-#
-DEF NCV890430MW50TXG_NCV890430MW50TXG IC 0 30 Y Y 1 F N
-F0 "IC" 1050 300 50 H V L CNN
-F1 "NCV890430MW50TXG_NCV890430MW50TXG" 1050 200 50 H V L CNN
-F2 "SON65P300X300X100-9N" 1050 100 50 H I L CNN
-F3 "https://www.onsemi.com/pub/Collateral/NCV890430-D.PDF" 1050 0 50 H I L CNN
-F4 "ON Semiconductor, NCV890430MW50TXG Step-Down Switching Regulator, 1-Channel 600mA 8-Pin, DFN" 1050 -100 50 H I L CNN "Description"
-F5 "1" 1050 -200 50 H I L CNN "Height"
-F6 "ON Semiconductor" 1050 -300 50 H I L CNN "Manufacturer_Name"
-F7 "NCV890430MW50TXG" 1050 -400 50 H I L CNN "Manufacturer_Part_Number"
-F8 "863-NCV890430MW50TXG" 1050 -500 50 H I L CNN "Mouser Part Number"
-F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=863-NCV890430MW50TXG" 1050 -600 50 H I L CNN "Mouser Price/Stock"
-F10 "1263468P" 1050 -700 50 H I L CNN "RS Part Number"
-F11 "http://uk.rs-online.com/web/p/products/1263468P" 1050 -800 50 H I L CNN "RS Price/Stock"
-DRAW
-P 5 0 1 6 200 100 1000 100 1000 -600 200 -600 200 100 N
-X VIN 1 0 0 200 R 50 50 0 0 B
-X RSTB 2 0 -100 200 R 50 50 0 0 B
-X GND 3 0 -200 200 R 50 50 0 0 B
-X EN 4 0 -300 200 R 50 50 0 0 B
-X VOUT 5 1200 -300 200 L 50 50 0 0 B
-X SYNC 6 1200 -200 200 L 50 50 0 0 B
-X PGND 7 1200 -100 200 L 50 50 0 0 B
-X SW 8 1200 0 200 L 50 50 0 0 B
-X EP 9 600 -800 200 U 50 50 0 0 B
-ENDDRAW
-ENDDEF
-#
 # Switch_SW_Push
 #
 DEF Switch_SW_Push SW 0 40 N N 1 F N
@@ -274,6 +222,28 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
 X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# teensy4_header_breakout-cache_D_RPP_Input_PMEG4010EGWX
+#
+DEF teensy4_header_breakout-cache_D_RPP_Input_PMEG4010EGWX D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "teensy4_header_breakout-cache_D_RPP_Input_PMEG4010EGWX" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
+P 6 0 1 10 -75 25 -75 50 -50 50 -50 -50 -25 -50 -25 -25 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -381,6 +351,31 @@ P 5 0 1 6 200 100 1500 100 1500 -300 200 -300 200 100 N
 X 1 1 0 0 200 R 50 50 0 0 U
 X 2 2 0 -200 200 R 50 50 0 0 U
 X NEGATIVE_CONTACT_PAD 3 0 -100 200 R 50 50 0 0 U
+ENDDRAW
+ENDDEF
+#
+# teensy4_header_breakout-cache_TEL_5-1211
+#
+DEF teensy4_header_breakout-cache_TEL_5-1211 PS 0 30 Y Y 1 F N
+F0 "PS" 1750 300 50 H V L CNN
+F1 "teensy4_header_breakout-cache_TEL_5-1211" 1750 200 50 H V L CNN
+F2 "TEL51211" 1750 100 50 H I L CNN
+F3 "https://www.tracopower.com/products/tel5.pdf" 1750 0 50 H I L CNN
+F4 "TEL5 DC-DC converter,9-18Vin 5V 5W TRACOPOWER Isolated DC-DC Converter, Vin 9  18 V dc, Vout 5V dc, I/O isolation 1500V dc" 1750 -100 50 H I L CNN "Description"
+F5 "10.45" 1750 -200 50 H I L CNN "Height"
+F6 "Traco Power" 1750 -300 50 H I L CNN "Manufacturer_Name"
+F7 "TEL 5-1211" 1750 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "495-TEL-5-1211" 1750 -700 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/TRACO-Power/TEL-5-1211?qs=ckJk83FOD0WBOuRLitdGqQ%3D%3D" 1750 -800 50 H I L CNN "Mouser Price/Stock"
+DRAW
+P 5 0 1 6 200 100 1700 100 1700 -400 200 -400 200 100 N
+X NO_CON. 11 0 -200 200 R 50 50 0 0 P
+X +VOUT 14 1900 -300 200 L 50 50 0 0 P
+X -VOUT 16 1900 -200 200 L 50 50 0 0 P
+X -VIN_(GND)_1 2 0 0 200 R 50 50 0 0 P
+X +VIN_(VCC)_1 22 1900 -100 200 L 50 50 0 0 P
+X +VIN_(VCC)_2 23 1900 0 200 L 50 50 0 0 P
+X -VIN_(GND)_2 3 0 -100 200 R 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
