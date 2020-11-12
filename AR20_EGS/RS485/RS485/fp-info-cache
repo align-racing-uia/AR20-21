@@ -1,4 +1,4 @@
-18638082523300392
+18639687730543255
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -73527,6 +73527,13 @@ WiFi IEEE802.11 b/g/n
 0
 44
 44
+RS485
+AlignLogo
+
+
+0
+0
+0
 RS485
 C_0402_1005Metric
 Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
