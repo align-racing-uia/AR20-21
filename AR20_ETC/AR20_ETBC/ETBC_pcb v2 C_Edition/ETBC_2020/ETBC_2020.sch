@@ -16,12 +16,12 @@ $EndDescr
 $Comp
 L ACM_2020_Symbol:ACM_2020 U1
 U 1 1 5E29AD50
-P 9775 3150
-F 0 "U1" H 9800 5715 50  0000 C CNN
-F 1 "ACM_2020" H 9800 5624 50  0000 C CNN
-F 2 "ETBC_2020:ACM_2020_Footprint_wo_silk" H 9775 3150 50  0001 C CNN
-F 3 "" H 9775 3150 50  0001 C CNN
-	1    9775 3150
+P 9900 3675
+F 0 "U1" H 9925 6240 50  0000 C CNN
+F 1 "ACM_2020" H 9925 6149 50  0000 C CNN
+F 2 "ETBC_2020:ACM_2020_Footprint_wo_silk" H 9900 3675 50  0001 C CNN
+F 3 "" H 9900 3675 50  0001 C CNN
+	1    9900 3675
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -489,138 +489,138 @@ PWM_10
 Text GLabel 6475 2775 2    50   Input ~ 0
 PWM_3
 Wire Wire Line
-	10575 2950 10800 2950
+	10700 3475 10925 3475
 $Comp
 L power:GND #PWR0112
 U 1 1 5E378ECF
-P 10575 1600
-F 0 "#PWR0112" H 10575 1350 50  0001 C CNN
-F 1 "GND" V 10575 1400 50  0000 C CNN
-F 2 "" H 10575 1600 50  0001 C CNN
-F 3 "" H 10575 1600 50  0001 C CNN
-	1    10575 1600
+P 10700 2125
+F 0 "#PWR0112" H 10700 1875 50  0001 C CNN
+F 1 "GND" V 10700 1925 50  0000 C CNN
+F 2 "" H 10700 2125 50  0001 C CNN
+F 3 "" H 10700 2125 50  0001 C CNN
+	1    10700 2125
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0113
 U 1 1 5E37B7F5
-P 10575 1300
-F 0 "#PWR0113" H 10575 1050 50  0001 C CNN
-F 1 "GND" V 10575 1100 50  0000 C CNN
-F 2 "" H 10575 1300 50  0001 C CNN
-F 3 "" H 10575 1300 50  0001 C CNN
-	1    10575 1300
+P 10700 1825
+F 0 "#PWR0113" H 10700 1575 50  0001 C CNN
+F 1 "GND" V 10700 1625 50  0000 C CNN
+F 2 "" H 10700 1825 50  0001 C CNN
+F 3 "" H 10700 1825 50  0001 C CNN
+	1    10700 1825
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0114
 U 1 1 5E37BC98
-P 10575 1150
-F 0 "#PWR0114" H 10575 900 50  0001 C CNN
-F 1 "GND" V 10575 950 50  0000 C CNN
-F 2 "" H 10575 1150 50  0001 C CNN
-F 3 "" H 10575 1150 50  0001 C CNN
-	1    10575 1150
+P 10700 1675
+F 0 "#PWR0114" H 10700 1425 50  0001 C CNN
+F 1 "GND" V 10700 1475 50  0000 C CNN
+F 2 "" H 10700 1675 50  0001 C CNN
+F 3 "" H 10700 1675 50  0001 C CNN
+	1    10700 1675
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0115
 U 1 1 5E37BF51
-P 10575 850
-F 0 "#PWR0115" H 10575 600 50  0001 C CNN
-F 1 "GND" V 10575 650 50  0000 C CNN
-F 2 "" H 10575 850 50  0001 C CNN
-F 3 "" H 10575 850 50  0001 C CNN
-	1    10575 850 
+P 10700 1375
+F 0 "#PWR0115" H 10700 1125 50  0001 C CNN
+F 1 "GND" V 10700 1175 50  0000 C CNN
+F 2 "" H 10700 1375 50  0001 C CNN
+F 3 "" H 10700 1375 50  0001 C CNN
+	1    10700 1375
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0116
 U 1 1 5E37C271
-P 9025 2050
-F 0 "#PWR0116" H 9025 1800 50  0001 C CNN
-F 1 "GND" V 9025 1850 50  0000 C CNN
-F 2 "" H 9025 2050 50  0001 C CNN
-F 3 "" H 9025 2050 50  0001 C CNN
-	1    9025 2050
+P 9150 2575
+F 0 "#PWR0116" H 9150 2325 50  0001 C CNN
+F 1 "GND" V 9150 2375 50  0000 C CNN
+F 2 "" H 9150 2575 50  0001 C CNN
+F 3 "" H 9150 2575 50  0001 C CNN
+	1    9150 2575
 	0    1    1    0   
 $EndComp
 $Comp
 L power:+5V #PWR0117
 U 1 1 5E37D745
-P 10575 2650
-F 0 "#PWR0117" H 10575 2500 50  0001 C CNN
-F 1 "+5V" V 10575 2825 50  0000 C CNN
-F 2 "" H 10575 2650 50  0001 C CNN
-F 3 "" H 10575 2650 50  0001 C CNN
-	1    10575 2650
+P 10700 3175
+F 0 "#PWR0117" H 10700 3025 50  0001 C CNN
+F 1 "+5V" V 10700 3350 50  0000 C CNN
+F 2 "" H 10700 3175 50  0001 C CNN
+F 3 "" H 10700 3175 50  0001 C CNN
+	1    10700 3175
 	0    1    1    0   
 $EndComp
 $Comp
 L power:+5V #PWR0118
 U 1 1 5E3802AB
-P 10575 2350
-F 0 "#PWR0118" H 10575 2200 50  0001 C CNN
-F 1 "+5V" V 10575 2525 50  0000 C CNN
-F 2 "" H 10575 2350 50  0001 C CNN
-F 3 "" H 10575 2350 50  0001 C CNN
-	1    10575 2350
+P 10700 2875
+F 0 "#PWR0118" H 10700 2725 50  0001 C CNN
+F 1 "+5V" V 10700 3050 50  0000 C CNN
+F 2 "" H 10700 2875 50  0001 C CNN
+F 3 "" H 10700 2875 50  0001 C CNN
+	1    10700 2875
 	0    1    1    0   
 $EndComp
 $Comp
 L power:+5V #PWR0119
 U 1 1 5E3808C2
-P 10575 2050
-F 0 "#PWR0119" H 10575 1900 50  0001 C CNN
-F 1 "+5V" V 10575 2225 50  0000 C CNN
-F 2 "" H 10575 2050 50  0001 C CNN
-F 3 "" H 10575 2050 50  0001 C CNN
-	1    10575 2050
+P 10700 2575
+F 0 "#PWR0119" H 10700 2425 50  0001 C CNN
+F 1 "+5V" V 10700 2750 50  0000 C CNN
+F 2 "" H 10700 2575 50  0001 C CNN
+F 3 "" H 10700 2575 50  0001 C CNN
+	1    10700 2575
 	0    1    1    0   
 $EndComp
-Text GLabel 9025 1300 0    50   Input ~ 0
+Text GLabel 9150 1825 0    50   Input ~ 0
 TPS1_Filtered
-Text GLabel 9025 1000 0    50   Input ~ 0
+Text GLabel 9150 1525 0    50   Input ~ 0
 TPS2_Filtered
 Text GLabel 2950 5525 2    50   Input ~ 0
 TPS1_Filtered
-Text GLabel 3000 6650 2    50   Input ~ 0
+Text GLabel 2950 6500 2    50   Input ~ 0
 TPS2_Filtered
 Wire Notes Line
 	1550 5325 1550 6100
 Text Notes 1575 5300 0    50   ~ 0
 TPS1 input filtering, and pull down
 Wire Notes Line
-	1575 6450 1575 7225
-Text Notes 1600 6425 0    50   ~ 0
+	1525 6300 1525 7075
+Text Notes 1550 6275 0    50   ~ 0
 TPS1 input filtering, and pull down
 Text GLabel 1800 5525 0    50   Input ~ 0
 TPS1
-Text GLabel 1825 6650 0    50   Input ~ 0
+Text GLabel 1775 6500 0    50   Input ~ 0
 TPS2
 $Comp
 L Device:R_Small R2
 U 1 1 5E38E865
-P 2050 6650
-F 0 "R2" V 2125 6625 50  0000 L CNN
-F 1 "8K2" V 1950 6525 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2050 6650 50  0001 C CNN
-F 3 "~" H 2050 6650 50  0001 C CNN
-F 4 "AR20_ETC_011" H 2050 6650 50  0001 C CNN "AR-ID"
-	1    2050 6650
+P 2000 6500
+F 0 "R2" V 2075 6475 50  0000 L CNN
+F 1 "8K2" V 1900 6375 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2000 6500 50  0001 C CNN
+F 3 "~" H 2000 6500 50  0001 C CNN
+F 4 "AR20_ETC_011" H 2000 6500 50  0001 C CNN "AR-ID"
+	1    2000 6500
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:C_Small C2
 U 1 1 5E38E86B
-P 2275 6925
-F 0 "C2" H 2367 6971 50  0000 L CNN
-F 1 "0.1uF" H 2367 6880 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2275 6925 50  0001 C CNN
-F 3 "~" H 2275 6925 50  0001 C CNN
-F 4 "TPS1 and TPS2 Filtering capacitors" H 2275 6925 50  0001 C CNN "Description"
-F 5 "AR20_ETC_012" H 2275 6925 50  0001 C CNN "AR-ID"
-	1    2275 6925
+P 2225 6775
+F 0 "C2" H 2317 6821 50  0000 L CNN
+F 1 "0.1uF" H 2317 6730 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2225 6775 50  0001 C CNN
+F 3 "~" H 2225 6775 50  0001 C CNN
+F 4 "TPS1 and TPS2 Filtering capacitors" H 2225 6775 50  0001 C CNN "Description"
+F 5 "AR20_ETC_012" H 2225 6775 50  0001 C CNN "AR-ID"
+	1    2225 6775
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -630,27 +630,27 @@ Wire Notes Line
 Wire Notes Line
 	1550 5325 3675 5325
 Wire Notes Line
-	3800 7225 3800 6450
+	3750 7075 3750 6300
 Wire Notes Line
-	1575 7225 3800 7225
+	1525 7075 3750 7075
 Wire Notes Line
-	1575 6450 3800 6450
+	1525 6300 3750 6300
 Wire Wire Line
-	1825 6650 1950 6650
+	1775 6500 1900 6500
 Wire Wire Line
-	2150 6650 2275 6650
+	2100 6500 2225 6500
 Wire Wire Line
-	2275 6650 2275 6825
-Connection ~ 2275 6650
+	2225 6500 2225 6675
+Connection ~ 2225 6500
 $Comp
 L power:GND #PWR0121
 U 1 1 5E39B18A
-P 2275 7025
-F 0 "#PWR0121" H 2275 6775 50  0001 C CNN
-F 1 "GND" H 2280 6852 50  0000 C CNN
-F 2 "" H 2275 7025 50  0001 C CNN
-F 3 "" H 2275 7025 50  0001 C CNN
-	1    2275 7025
+P 2225 6875
+F 0 "#PWR0121" H 2225 6625 50  0001 C CNN
+F 1 "GND" H 2230 6702 50  0000 C CNN
+F 2 "" H 2225 6875 50  0001 C CNN
+F 3 "" H 2225 6875 50  0001 C CNN
+	1    2225 6875
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -711,35 +711,13 @@ F 3 "" H 1725 2475 50  0001 C CNN
 	1    1725 2475
 	0    1    1    0   
 $EndComp
-$Comp
-L power:GND #PWR0125
-U 1 1 5E3A9F0C
-P 1925 3075
-F 0 "#PWR0125" H 1925 2825 50  0001 C CNN
-F 1 "GND" H 1930 2902 50  0000 C CNN
-F 2 "" H 1925 3075 50  0001 C CNN
-F 3 "" H 1925 3075 50  0001 C CNN
-	1    1925 3075
-	1    0    0    -1  
-$EndComp
 Text GLabel 1225 1875 0    50   Input ~ 0
 TPS1
 Text GLabel 1225 1975 0    50   Input ~ 0
 TPS2
-$Comp
-L power:GND #PWR0126
-U 1 1 5E3AA8D4
-P 1525 3075
-F 0 "#PWR0126" H 1525 2825 50  0001 C CNN
-F 1 "GND" H 1530 2902 50  0000 C CNN
-F 2 "" H 1525 3075 50  0001 C CNN
-F 3 "" H 1525 3075 50  0001 C CNN
-	1    1525 3075
-	1    0    0    -1  
-$EndComp
-Text GLabel 10575 2500 2    50   Input ~ 0
+Text GLabel 10700 3025 2    50   Input ~ 0
 CANH
-Text GLabel 10575 2800 2    50   Input ~ 0
+Text GLabel 10700 3325 2    50   Input ~ 0
 CANL
 Text GLabel 1725 1975 2    50   Input ~ 0
 CANL
@@ -755,11 +733,11 @@ F 4 "AR20_ETC_002" H 1425 2275 50  0001 C CNN "AR-ID"
 	1    1425 2275
 	1    0    0    -1  
 $EndComp
-Text GLabel 9025 2650 0    50   Input ~ 0
+Text GLabel 9150 3175 0    50   Input ~ 0
 D1
-Text GLabel 9025 2950 0    50   Input ~ 0
+Text GLabel 9150 3475 0    50   Input ~ 0
 EN_D2
-Text GLabel 9025 1900 0    50   Input ~ 0
+Text GLabel 9150 2425 0    50   Input ~ 0
 Feedback
 Text Notes 3625 2950 2    50   ~ 0
 Resistor as close as\npossible to ACM Pin
@@ -836,14 +814,6 @@ Text GLabel 1225 2175 0    50   Input ~ 0
 OUT2
 Text Notes 4375 2000 0    50   ~ 0
 Connected to PGND\nLow impedance\n(<10 mΩ, 0Hz to 20kHz)
-Text Notes 4075 3275 0    50   ~ 0
-One wide trace
-Text Notes 7250 3150 0    50   ~ 0
-One wide trace
-Text Notes 5225 4050 3    50   ~ 0
-One wide trace
-Text Notes 6375 4050 3    50   ~ 0
-One wide trace
 Text Notes 5500 1150 0    50   ~ 0
 Need to change this and connect it directly to the MCU.\nSF can handle current up to < 0.5mA
 Wire Wire Line
@@ -851,7 +821,7 @@ Wire Wire Line
 Connection ~ 6625 2475
 Text GLabel 7475 2475 2    50   Input ~ 0
 SFlag
-Text GLabel 9025 1600 0    50   Input ~ 0
+Text GLabel 9150 2125 0    50   Input ~ 0
 SFlag
 $Comp
 L power:GND #PWR0108
@@ -875,10 +845,6 @@ F 3 "" H 7000 1425 50  0001 C CNN
 	1    7000 1425
 	1    0    0    -1  
 $EndComp
-Text Notes 6850 4050 1    50   ~ 0
-One wide trace
-Text Notes 4925 4100 1    50   ~ 0
-One wide trace
 Text GLabel 1725 1875 2    50   Input ~ 0
 CANH
 $Comp
@@ -964,9 +930,9 @@ Wire Wire Line
 Connection ~ 4550 2250
 Text GLabel 1225 2675 0    50   Input ~ 0
 12V
-Text GLabel 10575 1450 2    50   Input ~ 0
+Text GLabel 10700 1975 2    50   Input ~ 0
 PWM_3
-Text GLabel 10575 1000 2    50   Input ~ 0
+Text GLabel 10700 1525 2    50   Input ~ 0
 PWM_10
 $Comp
 L power:GND #PWR0127
@@ -1090,7 +1056,7 @@ F 3 "" H 8775 5350 50  0001 C CNN
 	1    8775 5350
 	1    0    0    -1  
 $EndComp
-Text Notes -3700 4000 0    50   ~ 0
+Text Notes 1275 3375 0    50   ~ 0
 Test Points
 $Comp
 L Jumper:Jumper_2_Bridged JP1
@@ -1154,35 +1120,35 @@ F 3 "" H 9200 5350 50  0001 C CNN
 	1    9200 5350
 	1    0    0    -1  
 $EndComp
-Text GLabel 1950 4600 2    50   Input ~ 0
+Text GLabel 1750 4125 2    50   Input ~ 0
 OUT2
-Text GLabel 1450 4600 0    50   Input ~ 0
+Text GLabel 1250 4125 0    50   Input ~ 0
 OUT1
-Text GLabel 1950 4300 2    50   Input ~ 0
+Text GLabel 1750 3825 2    50   Input ~ 0
 TPS2_Filtered
-Text GLabel 1950 4200 2    50   Input ~ 0
+Text GLabel 1750 3725 2    50   Input ~ 0
 TPS1_Filtered
-Text GLabel 1950 4500 2    50   Input ~ 0
+Text GLabel 1750 4025 2    50   Input ~ 0
 SFlag
-Text GLabel 1950 4400 2    50   Input ~ 0
+Text GLabel 1750 3925 2    50   Input ~ 0
 Feedback
-Text GLabel 1450 4200 0    50   Input ~ 0
+Text GLabel 1250 3725 0    50   Input ~ 0
 D1
-Text GLabel 1450 4300 0    50   Input ~ 0
+Text GLabel 1250 3825 0    50   Input ~ 0
 EN_D2
-Text GLabel 1450 4400 0    50   Input ~ 0
+Text GLabel 1250 3925 0    50   Input ~ 0
 PWM_10
-Text GLabel 1450 4500 0    50   Input ~ 0
+Text GLabel 1250 4025 0    50   Input ~ 0
 PWM_3
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J2
 U 1 1 5F9240DB
-P 1650 4400
-F 0 "J2" H 1700 4817 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 1700 4726 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 1650 4400 50  0001 C CNN
-F 3 "~" H 1650 4400 50  0001 C CNN
-	1    1650 4400
+P 1450 3925
+F 0 "J2" H 1500 4342 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 1500 4251 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 1450 3925 50  0001 C CNN
+F 3 "~" H 1450 3925 50  0001 C CNN
+	1    1450 3925
 	1    0    0    -1  
 $EndComp
 Text GLabel 8300 3175 2    50   Input ~ 0
@@ -1194,8 +1160,8 @@ Text GLabel 7650 2875 2    50   Input ~ 0
 Wire Wire Line
 	2250 5525 2950 5525
 Wire Wire Line
-	2275 6650 3000 6650
-Text GLabel 10800 2950 2    50   Input ~ 0
+	2225 6500 2950 6500
+Text GLabel 10925 3475 2    50   Input ~ 0
 12V
 $Comp
 L power:GND #PWR?
@@ -1208,4 +1174,6 @@ F 3 "" H 1725 2075 50  0001 C CNN
 	1    1725 2075
 	0    -1   -1   0   
 $EndComp
+Text Notes 9150 1000 0    50   ~ 0
+ACM 2020 Microcontroller Module Connector
 $EndSCHEMATC
