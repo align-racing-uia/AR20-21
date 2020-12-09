@@ -90,10 +90,10 @@ K diode Schottky
 F http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf
 $ENDCMP
 #
-$CMP MM3Z3V6T1G
+$CMP PDZ5.1B,115
 D 300mW Zener Diode, SOD-123F
 K zener diode
-F http://www.farnell.com/datasheets/1876691.pdf
+F http://www.farnell.com/datasheets/2856375.pdf
 $ENDCMP
 #
 $CMP PMOS_SQ2309ES-T1_GE3
