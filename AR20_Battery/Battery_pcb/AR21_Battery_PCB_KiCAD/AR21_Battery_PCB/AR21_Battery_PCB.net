@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\Nylund\Documents\Gitkraken\AR20-21\AR20_Battery\Battery_pcb\AR21_Battery_PCB_KiCAD\AR21_Battery_PCB\AR21_Battery_PCB.sch)
-    (date "13/12/2020 19:46:44")
+    (date "13/12/2020 21:12:01")
     (tool "Eeschema (5.1.6)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -42,7 +42,21 @@
       (datasheet ~)
       (libsource (lib Connector) (part Conn_01x01_Female) (description "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /) (tstamps /))
-      (tstamp 5FD645C9)))
+      (tstamp 5FD645C9))
+    (comp (ref H1)
+      (value MountingHole)
+      (footprint "AR21_Battery_lib:M3 hole")
+      (datasheet ~)
+      (libsource (lib Mechanical) (part MountingHole) (description "Mounting Hole without connection"))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5FD6F3F5))
+    (comp (ref H2)
+      (value MountingHole)
+      (footprint "AR21_Battery_lib:M3 hole")
+      (datasheet ~)
+      (libsource (lib Mechanical) (part MountingHole) (description "Mounting Hole without connection"))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5FD6FC07)))
   (libparts
     (libpart (lib Connector) (part Conn_01x01_Female)
       (description "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)")
@@ -63,10 +77,20 @@
         (field (name Reference) J)
         (field (name Value) Conn_01x01_Male))
       (pins
-        (pin (num 1) (name Pin_1) (type passive)))))
+        (pin (num 1) (name Pin_1) (type passive))))
+    (libpart (lib Mechanical) (part MountingHole)
+      (description "Mounting Hole without connection")
+      (docs ~)
+      (footprints
+        (fp MountingHole*))
+      (fields
+        (field (name Reference) H)
+        (field (name Value) MountingHole))))
   (libraries
     (library (logical Connector)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Connector.lib")))
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Connector.lib"))
+    (library (logical Mechanical)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Mechanical.lib")))
   (nets
     (net (code 1) (name Positive)
       (node (ref J2) (pin 1))

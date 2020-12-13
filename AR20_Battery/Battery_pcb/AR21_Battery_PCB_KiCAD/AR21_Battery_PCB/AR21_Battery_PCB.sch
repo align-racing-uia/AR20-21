@@ -65,4 +65,26 @@ Text GLabel 3000 3150 0    50   Input ~ 0
 Positive
 Text GLabel 3550 3150 0    50   Input ~ 0
 Negative
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5FD6F3F5
+P 2350 3900
+F 0 "H1" H 2450 3946 50  0000 L CNN
+F 1 "MountingHole" H 2450 3855 50  0000 L CNN
+F 2 "AR21_Battery_lib:M3 hole" H 2350 3900 50  0001 C CNN
+F 3 "~" H 2350 3900 50  0001 C CNN
+	1    2350 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5FD6FC07
+P 2350 4250
+F 0 "H2" H 2450 4296 50  0000 L CNN
+F 1 "MountingHole" H 2450 4205 50  0000 L CNN
+F 2 "AR21_Battery_lib:M3 hole" H 2350 4250 50  0001 C CNN
+F 3 "~" H 2350 4250 50  0001 C CNN
+	1    2350 4250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
