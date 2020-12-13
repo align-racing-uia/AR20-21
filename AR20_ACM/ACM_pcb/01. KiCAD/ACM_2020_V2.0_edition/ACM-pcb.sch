@@ -306,24 +306,24 @@ Wire Wire Line
 $Comp
 L ACM-pcb-rescue:+12V-power-ACM_Y2020V0.1-rescue #PWR017
 U 1 1 5D442037
-P 5800 3375
-F 0 "#PWR017" H 5800 3225 50  0001 C CNN
-F 1 "+12V" H 5815 3548 50  0000 C CNN
-F 2 "" H 5800 3375 50  0001 C CNN
-F 3 "" H 5800 3375 50  0001 C CNN
-	1    5800 3375
+P 5800 3175
+F 0 "#PWR017" H 5800 3025 50  0001 C CNN
+F 1 "+12V" H 5815 3348 50  0000 C CNN
+F 2 "" H 5800 3175 50  0001 C CNN
+F 3 "" H 5800 3175 50  0001 C CNN
+	1    5800 3175
 	1    0    0    -1  
 $EndComp
 $Comp
 L ACM-pcb-rescue:Polyfuse_Small-Device-ACM_Y2020V0.1-rescue F1
 U 1 1 5D45109C
-P 5800 3850
-F 0 "F1" H 5925 3800 50  0000 R CNN
-F 1 "250mA" H 6125 3875 50  0000 R CNN
-F 2 "Fuse:Fuse_0603_1608Metric" H 5850 3650 50  0001 L CNN
-F 3 "http://www.farnell.com/datasheets/2571643.pdf?_ga=2.98152344.620744209.1564174328-1415930916.1560114588&_gac=1.180027990.1564075292.CjwKCAjwpuXpBRAAEiwAyRRPgXwHZ1wF4xXBoNI_FJEvoVORJn7NbJB9jjbidsg8_qDnlLi_44u6wRoCV2MQAvD_BwE" H 5800 3850 50  0001 C CNN
-F 4 "https://no.farnell.com/bel-fuse-circuit-protection/0zcm0010ff2g/fuse-resettable-ptc-15vdc-0-1a/dp/2834930" H 5800 3850 50  0001 C CNN "Farnell"
-	1    5800 3850
+P 5800 3275
+F 0 "F1" H 5925 3225 50  0000 R CNN
+F 1 "250mA" H 6125 3300 50  0000 R CNN
+F 2 "Fuse:Fuse_0603_1608Metric" H 5850 3075 50  0001 L CNN
+F 3 "http://www.farnell.com/datasheets/2571643.pdf?_ga=2.98152344.620744209.1564174328-1415930916.1560114588&_gac=1.180027990.1564075292.CjwKCAjwpuXpBRAAEiwAyRRPgXwHZ1wF4xXBoNI_FJEvoVORJn7NbJB9jjbidsg8_qDnlLi_44u6wRoCV2MQAvD_BwE" H 5800 3275 50  0001 C CNN
+F 4 "https://no.farnell.com/bel-fuse-circuit-protection/0zcm0010ff2g/fuse-resettable-ptc-15vdc-0-1a/dp/2834930" H 5800 3275 50  0001 C CNN "Farnell"
+	1    5800 3275
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -386,8 +386,6 @@ F 3 "" H 9950 4800 50  0001 C CNN
 $EndComp
 Text Notes 950  4075 0    50   ~ 0
 Trenger flere Decupling Caps?
-Wire Wire Line
-	5800 3675 5800 3750
 Wire Wire Line
 	5675 4150 5800 4150
 Connection ~ 5800 4150
@@ -676,17 +674,15 @@ Wire Wire Line
 Wire Wire Line
 	7600 6075 7600 5800
 Connection ~ 7225 5800
-Wire Wire Line
-	7700 5800 7700 5700
 $Comp
 L ACM-pcb-rescue:+5V-power-ACM_Y2020V0.1-rescue #PWR022
 U 1 1 5D4DE85A
-P 7700 5700
-F 0 "#PWR022" H 7700 5550 50  0001 C CNN
-F 1 "+5V" H 7715 5873 50  0000 C CNN
-F 2 "" H 7700 5700 50  0001 C CNN
-F 3 "" H 7700 5700 50  0001 C CNN
-	1    7700 5700
+P 7700 5550
+F 0 "#PWR022" H 7700 5400 50  0001 C CNN
+F 1 "+5V" H 7715 5723 50  0000 C CNN
+F 2 "" H 7700 5550 50  0001 C CNN
+F 3 "" H 7700 5550 50  0001 C CNN
+	1    7700 5550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1179,12 +1175,12 @@ $EndComp
 $Comp
 L ACM-pcb-rescue:D_Schottky_MBR0520LT1G D4
 U 1 1 5F71C208
-P 5800 3525
-F 0 "D4" H 5800 3742 50  0000 C CNN
-F 1 "D_Schottky_MBR0520LT1G" H 5800 3651 50  0000 C CNN
-F 2 "ACM_2020_V2:D_schotky_MBR0520LT1G" H 5800 3525 50  0001 C CNN
-F 3 "~" H 5800 3525 50  0001 C CNN
-	1    5800 3525
+P 5800 3800
+F 0 "D4" H 5925 3675 50  0000 C CNN
+F 1 "D_Schottky_MBR0520LT1G" H 5750 3575 50  0000 C CNN
+F 2 "ACM_2020_V2:D_schotky_MBR0520LT1G" H 5800 3800 50  0001 C CNN
+F 3 "~" H 5800 3800 50  0001 C CNN
+	1    5800 3800
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -1193,8 +1189,6 @@ Text GLabel 5800 4525 3    50   Input ~ 0
 +12V_Safe
 Wire Wire Line
 	5800 4150 5800 4525
-Text GLabel 3925 1750 3    50   Input ~ 0
-+12V_Safe
 $Comp
 L ACM-pcb-rescue:R-Device-ACM_Y2020V0.1-rescue R2
 U 1 1 5F78E3CB
@@ -1224,25 +1218,6 @@ Wire Wire Line
 	3925 1550 3925 1750
 Wire Wire Line
 	2975 1125 3725 1125
-$Comp
-L ASMB-TTF0-0A20B:ASMB-TTF0-0A20B LED1
-U 1 1 5F81B4A2
-P 8775 1300
-F 0 "LED1" H 9725 1565 50  0000 C CNN
-F 1 "ASMB-TTF0-0A20B" H 9725 1474 50  0000 C CNN
-F 2 "ASMB-TTF0-0A20B:ASMBTTF00A20B" H 10525 1400 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/ASMB-TTF0-0A20B.pdf" H 10525 1300 50  0001 L CNN
-F 4 "BROADCOM LIMITED - ASMB-TTF0-0A20B - LED, RGB, 710/1840/410MCD, PLCC-6" H 10525 1200 50  0001 L CNN "Description"
-F 5 "2" H 10525 1100 50  0001 L CNN "Height"
-F 6 "Avago Technologies" H 10525 1000 50  0001 L CNN "Manufacturer_Name"
-F 7 "ASMB-TTF0-0A20B" H 10525 900 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "ASMB-TTF0-0A20B" H 10525 800 50  0001 L CNN "Arrow Part Number"
-F 9 "" H 10525 700 50  0001 L CNN "Arrow Price/Stock"
-F 10 "630-ASMB-TTF0-0A20B" H 10525 600 50  0001 L CNN "Mouser Part Number"
-F 11 "https://www.mouser.co.uk/ProductDetail/Broadcom-Avago/ASMB-TTF0-0A20B?qs=j%252B1pi9TdxUbzVLPA%2F5LflQ%3D%3D" H 10525 500 50  0001 L CNN "Mouser Price/Stock"
-	1    8775 1300
-	1    0    0    -1  
-$EndComp
 $Comp
 L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR0103
 U 1 1 5F82C62E
@@ -1276,4 +1251,65 @@ F 3 "" H 10675 1500 50  0001 C CNN
 	1    10675 1500
 	0    -1   -1   0   
 $EndComp
+$Comp
+L ACM-pcb-rescue:ASMB-TTF0-0A20B-ASMB-TTF0-0A20B LED1
+U 1 1 5F81B4A2
+P 8775 1300
+F 0 "LED1" H 9725 1565 50  0000 C CNN
+F 1 "ASMB-TTF0-0A20B" H 9725 1474 50  0000 C CNN
+F 2 "ASMB-TTF0-0A20B:ASMBTTF00A20B" H 10525 1400 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/ASMB-TTF0-0A20B.pdf" H 10525 1300 50  0001 L CNN
+F 4 "BROADCOM LIMITED - ASMB-TTF0-0A20B - LED, RGB, 710/1840/410MCD, PLCC-6" H 10525 1200 50  0001 L CNN "Description"
+F 5 "2" H 10525 1100 50  0001 L CNN "Height"
+F 6 "Avago Technologies" H 10525 1000 50  0001 L CNN "Manufacturer_Name"
+F 7 "ASMB-TTF0-0A20B" H 10525 900 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "ASMB-TTF0-0A20B" H 10525 800 50  0001 L CNN "Arrow Part Number"
+F 9 "" H 10525 700 50  0001 L CNN "Arrow Price/Stock"
+F 10 "630-ASMB-TTF0-0A20B" H 10525 600 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Broadcom-Avago/ASMB-TTF0-0A20B?qs=j%252B1pi9TdxUbzVLPA%2F5LflQ%3D%3D" H 10525 500 50  0001 L CNN "Mouser Price/Stock"
+	1    8775 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3375 5800 3525
+Text GLabel 5725 3525 0    50   Input ~ 0
+12V_fused
+Wire Wire Line
+	5725 3525 5800 3525
+Connection ~ 5800 3525
+Wire Wire Line
+	5800 3525 5800 3650
+Text GLabel 3925 1750 3    50   Input ~ 0
+12V_fused
+Wire Wire Line
+	7700 5550 7700 5650
+$Comp
+L ACM-pcb-rescue:D_Zener_KDZVTR5.6B D2
+U 1 1 5FDA52F7
+P 7850 5650
+F 0 "D2" H 7850 5857 50  0000 C CNN
+F 1 "D_Zener_KDZVTR5.6B" V 8025 6225 50  0000 C CNN
+F 2 "ACM_2020_V2:D_Zener_KDZV5.6B_SOD-123" V 7850 5650 50  0001 C CNN
+F 3 "" V 7850 5650 50  0001 C CNN
+	1    7850 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 5650 7700 5650
+Connection ~ 7700 5650
+Wire Wire Line
+	7700 5650 7700 5800
+$Comp
+L ACM-pcb-rescue:GND-power-ACM_Y2020V0.1-rescue #PWR0113
+U 1 1 5FDC3787
+P 7950 5700
+F 0 "#PWR0113" H 7950 5450 50  0001 C CNN
+F 1 "GND" H 7955 5527 50  0000 C CNN
+F 2 "" H 7950 5700 50  0001 C CNN
+F 3 "" H 7950 5700 50  0001 C CNN
+	1    7950 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 5700 7950 5650
 $EndSCHEMATC
