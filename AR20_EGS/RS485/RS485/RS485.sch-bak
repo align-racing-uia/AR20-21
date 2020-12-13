@@ -255,4 +255,14 @@ $EndComp
 Connection ~ 9600 1925
 Wire Wire Line
 	9600 1925 9600 2175
+Text Notes 9075 825  0    50   ~ 0
+Reverse polarity protection\n
+Wire Notes Line
+	8550 2675 8550 950 
+Wire Notes Line
+	8550 950  10925 950 
+Wire Notes Line
+	10925 950  10925 2675
+Wire Notes Line
+	8550 2675 10925 2675
 $EndSCHEMATC

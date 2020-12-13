@@ -229,7 +229,6 @@ Text GLabel 9725 2175 2    50   Input ~ 0
 3.3_filtered
 Wire Wire Line
 	9600 2175 9725 2175
-Connection ~ 9600 2175
 Text GLabel 7750 3425 2    50   Input ~ 0
 3.3_filtered
 Wire Wire Line
