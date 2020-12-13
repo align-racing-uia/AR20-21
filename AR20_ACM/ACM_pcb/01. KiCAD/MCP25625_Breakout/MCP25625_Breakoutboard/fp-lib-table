@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name MCP25625_Breakoutboard)(type KiCad)(uri ${KIPRJMOD}/Library/MCP25625_Breakoutboard.pretty)(options "")(descr ""))
-)
