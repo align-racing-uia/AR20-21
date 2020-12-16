@@ -1,4 +1,4 @@
-18647681926573817
+18647682016830466
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -76853,6 +76853,13 @@ Housing_3pins
 6
 6
 Teensy_Footprint_Library
+MODULE_NUCLEO-F429ZI
+
+
+0
+248
+245
+Teensy_Footprint_Library
 Molex_502774-0891
 
 Connector
@@ -76866,13 +76873,6 @@ Integrated Circuit
 0
 8
 8
-Teensy_Footprint_Library
-NUCLEO-H745ZI-Q
-
-
-0
-0
-0
 Teensy_Footprint_Library
 PINS_IO_TEENSY
 
