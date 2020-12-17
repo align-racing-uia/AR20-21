@@ -1,4 +1,4 @@
-18647682016830466
+18646147258860354
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -76874,13 +76874,6 @@ Integrated Circuit
 8
 8
 Teensy_Footprint_Library
-PINS_IO_TEENSY
-
-
-0
-33
-33
-Teensy_Footprint_Library
 S8211-46R
 S8211-46R
 Undefined or Miscellaneous
@@ -76894,6 +76887,13 @@ SC−70_NCV20091SQ3T2G
 0
 5
 5
+Teensy_Footprint_Library
+SOIC127P600X175-8N
+MCP2542WFDT-E/SN
+Integrated Circuit
+0
+8
+8
 Teensy_Footprint_Library
 SOIC127P600X175-14N
 soic-14-
@@ -76915,13 +76915,6 @@ Power Supply
 0
 7
 7
-Teensy_Footprint_Library
-Teensy_40_footprint
-
-
-0
-43
-43
 TerminalBlock
 TerminalBlock_Altech_AK300-2_P5.00mm
 Altech AK300 terminal block, pitch 5.0mm, 45 degree angled, see http://www.mouser.com/ds/2/16/PCBMETRC-24178.pdf

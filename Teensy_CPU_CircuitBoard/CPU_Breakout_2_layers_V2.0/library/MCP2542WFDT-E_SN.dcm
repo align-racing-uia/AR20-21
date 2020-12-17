@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MCP2542WFDT-E_SN
+D CAN Interface IC CAN FD Transceiver
+K
+F http://ww1.microchip.com/downloads/en/devicedoc/20005514a.pdf
+$ENDCMP
+#
+#End Doc Library
