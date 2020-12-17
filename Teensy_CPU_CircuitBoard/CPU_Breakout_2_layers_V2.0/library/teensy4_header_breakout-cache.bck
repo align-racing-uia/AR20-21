@@ -6,12 +6,6 @@ K diode Schottky
 F ~
 $ENDCMP
 #
-$CMP D_ReversePolarity_Input
-D Schottky diode
-K diode Schottky
-F ~
-$ENDCMP
-#
 $CMP LM324DRG3
 F http://www.ti.com/lit/gpn/lm324
 $ENDCMP

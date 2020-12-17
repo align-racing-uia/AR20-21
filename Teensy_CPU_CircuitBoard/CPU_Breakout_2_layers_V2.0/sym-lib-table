@@ -2,4 +2,6 @@
   (lib (name BreakoutBoardTeensy)(type Legacy)(uri ${KIPRJMOD}/library/BreakoutBoardTeensy.lib)(options "")(descr ""))
   (lib (name teensy4_header_breakout-cache)(type Legacy)(uri ${KIPRJMOD}/library/teensy4_header_breakout-cache.lib)(options "")(descr ""))
   (lib (name NCV890430MW50TXG)(type Legacy)(uri ${KIPRJMOD}/library/NCV890430MW50TXG.lib)(options "")(descr ""))
+  (lib (name MCP25625T-E_ML)(type Legacy)(uri "C:/Users/andre/OneDrive - Universitetet i Agder/Desktop/AR20_ACM/ACM_pcb/01. KiCAD/ACM_2020_V3.0_FD_edition/Lib/MCP25625T-E_ML/MCP25625T-E_ML.lib")(options "")(descr ""))
+  (lib (name teensy4_header_breakout-rescue)(type Legacy)(uri ${KIPRJMOD}/teensy4_header_breakout-rescue.lib)(options "")(descr ""))
 )
