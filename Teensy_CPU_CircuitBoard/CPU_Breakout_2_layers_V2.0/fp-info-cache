@@ -1,4 +1,4 @@
-18646147258860354
+18647755583046703
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -76838,6 +76838,13 @@ Connector_MX34_36pins
 0
 42
 42
+Teensy_Footprint_Library
+D_0603_MM3Z3V6T1G
+Diode SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+diode handsolder
+0
+2
+2
 Teensy_Footprint_Library
 D_RPP_PMEG4010EGWX
 SOD-123
