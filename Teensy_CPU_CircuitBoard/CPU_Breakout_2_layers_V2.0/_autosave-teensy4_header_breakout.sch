@@ -727,4 +727,15 @@ F 3 "" H 4750 1100 50  0001 C CNN
 	1    4750 1100
 	0    -1   -1   0   
 $EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6004A5C6
+P 6800 3850
+F 0 "#PWR?" H 6800 3700 50  0001 C CNN
+F 1 "+3.3V" V 6815 3978 50  0000 L CNN
+F 2 "" H 6800 3850 50  0001 C CNN
+F 3 "" H 6800 3850 50  0001 C CNN
+	1    6800 3850
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

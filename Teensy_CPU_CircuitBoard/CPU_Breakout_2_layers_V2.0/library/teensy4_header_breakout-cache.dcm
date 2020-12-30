@@ -1,6 +1,17 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 1SMB5930BT3G
+D ON SEMICONDUCTOR - 1SMB5930BT3G - DIODE, ZENER, 16V, 3W, SMB, FULL REEL
+F http://www.onsemi.com/pub/Collateral/1SMB5913BT3-D.PDF
+$ENDCMP
+#
 $CMP D_RPP_Input_PMEG4010EGWX
+D Schottky diode
+K diode Schottky
+F ~
+$ENDCMP
+#
+$CMP D_Schottky_MBR0520LT1G
 D Schottky diode
 K diode Schottky
 F ~

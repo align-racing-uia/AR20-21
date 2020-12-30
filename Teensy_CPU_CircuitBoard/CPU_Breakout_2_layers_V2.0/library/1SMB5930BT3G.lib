@@ -1,0 +1,30 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model 1SMB5930BT3G
+#/278932/310146/2.47/2/4/Zener Diode
+DEF 1SMB5930BT3G Z 0 30 Y Y 1 F N
+F0 "Z" 400 350 50 H V L CNN
+F1 "1SMB5930BT3G" 400 250 50 H V L CNN
+F2 "DIOM5436X247N" 400 150 50 H I L CNN
+F3 "http://www.onsemi.com/pub/Collateral/1SMB5913BT3-D.PDF" 400 50 50 H I L CNN
+F4 "ON SEMICONDUCTOR - 1SMB5930BT3G - DIODE, ZENER, 16V, 3W, SMB, FULL REEL" 400 -50 50 H I L CNN "Description"
+F5 "2.47" 400 -150 50 H I L CNN "Height"
+F6 "ON Semiconductor" 400 -250 50 H I L CNN "Manufacturer_Name"
+F7 "1SMB5930BT3G" 400 -350 50 H I L CNN "Manufacturer_Part_Number"
+F8 "863-1SMB5930BT3G" 400 -450 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor/1SMB5930BT3G?qs=vLkC5FC1VN9tYP0%2F9nIg5g%3D%3D" 400 -550 50 H I L CNN "Mouser Price/Stock"
+F10 "1SMB5930BT3G" 400 -650 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/1smb5930bt3g/on-semiconductor" 400 -750 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X ~ 1 0 0 100 R 50 50 0 0 P
+X ~ 2 600 0 100 L 50 50 0 0 P
+P 2 0 1 6 200 80 200 -80 N
+P 2 0 1 6 200 80 240 100 N
+P 2 0 1 6 160 -100 200 -80 N
+P 2 0 1 6 100 0 200 0 N
+P 2 0 1 6 500 0 400 0 N
+P 4 0 1 10 200 0 400 100 400 -100 200 0 F
+ENDDRAW
+ENDDEF
+#
+#End Library
