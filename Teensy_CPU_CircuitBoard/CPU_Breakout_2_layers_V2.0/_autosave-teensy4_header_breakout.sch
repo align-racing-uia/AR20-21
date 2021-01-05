@@ -760,4 +760,20 @@ Wire Wire Line
 	1750 3800 1950 3800
 Wire Wire Line
 	2650 2150 2650 2250
+$Comp
+L teensy4_header_breakout-cache:S8211-46R U?
+U 1 1 60084389
+P 4650 5900
+F 0 "U?" H 5392 6165 50  0000 C CNN
+F 1 "S8211-46R" H 5392 6074 50  0000 C CNN
+F 2 "S8211-46R" H 6200 6000 50  0001 L CNN
+F 3 "https://cdn.harwin.com/pdfs/S8211R.pdf" H 6200 5900 50  0001 L CNN
+F 4 "HARWIN - S8211-46R - HOLDER, EZ-COIN, CR/BR2032 CELLS" H 6200 5800 50  0001 L CNN "Description"
+F 5 "HARWIN" H 6200 5600 50  0001 L CNN "Manufacturer_Name"
+F 6 "S8211-46R" H 6200 5500 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "855-S8211-46R" H 6200 5400 50  0001 L CNN "Mouser Part Number"
+F 8 "https://www.mouser.com/Search/Refine.aspx?Keyword=855-S8211-46R" H 6200 5300 50  0001 L CNN "Mouser Price/Stock"
+	1    4650 5900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

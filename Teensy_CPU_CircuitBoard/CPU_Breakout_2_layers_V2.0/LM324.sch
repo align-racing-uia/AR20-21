@@ -289,10 +289,10 @@ Wire Wire Line
 Wire Wire Line
 	6450 2700 6450 2750
 $Comp
-L teensy4_header_breakout-cache:D_Zener_MM3Z3V6T1G D?
+L teensy4_header_breakout-cache:D_Zener_MM3Z3V6T1G D2
 U 1 1 5FE744BC
 P 3050 3100
-F 0 "D?" V 3004 3180 50  0000 L CNN
+F 0 "D2" V 3004 3180 50  0000 L CNN
 F 1 "D_Zener_MM3Z3V6T1G" V 3095 3180 50  0000 L CNN
 F 2 "Teensy_Footprint_Library:D_0603_MM3Z3V6T1G" H 3050 3100 50  0001 C CNN
 F 3 "~" H 3050 3100 50  0001 C CNN
@@ -300,10 +300,10 @@ F 3 "~" H 3050 3100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L teensy4_header_breakout-cache:D_Zener_MM3Z3V6T1G D?
+L teensy4_header_breakout-cache:D_Zener_MM3Z3V6T1G D3
 U 1 1 5FE76A9F
 P 6450 1600
-F 0 "D?" V 6404 1680 50  0000 L CNN
+F 0 "D3" V 6404 1680 50  0000 L CNN
 F 1 "D_Zener_MM3Z3V6T1G" V 6495 1680 50  0000 L CNN
 F 2 "Teensy_Footprint_Library:D_0603_MM3Z3V6T1G" H 6450 1600 50  0001 C CNN
 F 3 "~" H 6450 1600 50  0001 C CNN
@@ -311,10 +311,10 @@ F 3 "~" H 6450 1600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L teensy4_header_breakout-cache:D_Zener_MM3Z3V6T1G D?
+L teensy4_header_breakout-cache:D_Zener_MM3Z3V6T1G D4
 U 1 1 5FE7712F
 P 6450 2900
-F 0 "D?" V 6404 2980 50  0000 L CNN
+F 0 "D4" V 6404 2980 50  0000 L CNN
 F 1 "D_Zener_MM3Z3V6T1G" V 6495 2980 50  0000 L CNN
 F 2 "Teensy_Footprint_Library:D_0603_MM3Z3V6T1G" H 6450 2900 50  0001 C CNN
 F 3 "~" H 6450 2900 50  0001 C CNN
@@ -322,10 +322,10 @@ F 3 "~" H 6450 2900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L teensy4_header_breakout-cache:D_Zener_MM3Z3V6T1G D?
+L teensy4_header_breakout-cache:D_Zener_MM3Z3V6T1G D6
 U 1 1 5FE778C8
 P 9200 2900
-F 0 "D?" V 9154 2980 50  0000 L CNN
+F 0 "D6" V 9154 2980 50  0000 L CNN
 F 1 "D_Zener_MM3Z3V6T1G" V 9245 2980 50  0000 L CNN
 F 2 "Teensy_Footprint_Library:D_0603_MM3Z3V6T1G" H 9200 2900 50  0001 C CNN
 F 3 "~" H 9200 2900 50  0001 C CNN
@@ -333,10 +333,10 @@ F 3 "~" H 9200 2900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L teensy4_header_breakout-cache:D_Zener_MM3Z3V6T1G D?
+L teensy4_header_breakout-cache:D_Zener_MM3Z3V6T1G D5
 U 1 1 5FE77F85
 P 9200 1600
-F 0 "D?" V 9154 1680 50  0000 L CNN
+F 0 "D5" V 9154 1680 50  0000 L CNN
 F 1 "D_Zener_MM3Z3V6T1G" V 9245 1680 50  0000 L CNN
 F 2 "Teensy_Footprint_Library:D_0603_MM3Z3V6T1G" H 9200 1600 50  0001 C CNN
 F 3 "~" H 9200 1600 50  0001 C CNN
