@@ -170,7 +170,7 @@ Wire Wire Line
 	1750 7100 1950 7100
 Wire Wire Line
 	1750 7200 1950 7200
-Text GLabel 1750 3700 0    50   Input ~ 0
+Text GLabel 1750 7200 0    50   Input ~ 0
 12V_IN
 $Sheet
 S 800  800  950  1150
@@ -184,14 +184,6 @@ Wire Wire Line
 	1750 5300 1950 5300
 Wire Wire Line
 	1750 5200 1950 5200
-Text GLabel 1750 6700 0    50   Input ~ 0
-SusDips-RR
-Text GLabel 1750 4100 0    50   Input ~ 0
-SusDips-RL
-Text GLabel 1750 6600 0    50   Input ~ 0
-SusDips-FL
-Text GLabel 1750 4300 0    50   Input ~ 0
-SusDips-FR
 $Comp
 L teensy4_header_breakout-cache:MX34_36_pins MX?
 U 1 1 5FDDB1C5
@@ -237,8 +229,6 @@ Wire Wire Line
 	1750 6500 1950 6500
 Wire Wire Line
 	1750 6400 1950 6400
-Text GLabel 1750 4200 0    50   Input ~ 0
-ClutchPS
 Text GLabel 10900 5750 3    50   Input ~ 0
 CAN2.0-CANL
 $Comp
@@ -464,34 +454,12 @@ F 11 "https://www.arrow.com/en/products/1smb5930bt3g/on-semiconductor" H 2650 18
 $EndComp
 Wire Wire Line
 	2250 2550 2650 2550
-$Comp
-L power:GND #PWR0107
-U 1 1 5FED65D8
-P 1650 2550
-F 0 "#PWR0107" H 1650 2300 50  0001 C CNN
-F 1 "GND" V 1655 2422 50  0000 R CNN
-F 2 "" H 1650 2550 50  0001 C CNN
-F 3 "" H 1650 2550 50  0001 C CNN
-	1    1650 2550
-	0    1    1    0   
-$EndComp
 Text GLabel 2650 1950 1    50   Input ~ 0
 12V_IN
 Text GLabel 2650 2550 3    50   Input ~ 0
 12V_safe
 Text GLabel 4950 900  2    50   Input ~ 0
 12V_safe
-$Comp
-L power:+5V #PWR0108
-U 1 1 5FEE7C73
-P 4750 1200
-F 0 "#PWR0108" H 4750 1050 50  0001 C CNN
-F 1 "+5V" V 4765 1328 50  0000 L CNN
-F 2 "" H 4750 1200 50  0001 C CNN
-F 3 "" H 4750 1200 50  0001 C CNN
-	1    4750 1200
-	0    1    1    0   
-$EndComp
 $Comp
 L Connector:Micro_SD_Card SDcard1
 U 1 1 5FE5A448
@@ -506,22 +474,6 @@ F 3 "" H 10150 2500 50  0001 C CNN
 	1    10150 2500
 	1    0    0    -1  
 $EndComp
-Text GLabel 1750 6900 0    50   Input ~ 0
-WSHE-FR
-Text GLabel 1750 6800 0    50   Input ~ 0
-WSHE-FL
-Text GLabel 1750 7100 0    50   Input ~ 0
-WSHE-RR
-Text GLabel 1750 5200 0    50   Input ~ 0
-WSHE-RL
-Text GLabel 1750 4400 0    50   Input ~ 0
-4G-TX
-Text GLabel 1750 4700 0    50   Input ~ 0
-4G-RX
-Text GLabel 1750 4500 0    50   Input ~ 0
-VN-TX
-Text GLabel 1750 4600 0    50   Input ~ 0
-VN-RX
 Text GLabel 7400 5400 0    50   Input ~ 0
 CANFD-TX
 Text GLabel 5000 3950 0    50   Input ~ 0
@@ -536,24 +488,6 @@ Text GLabel 6800 2850 2    50   Input ~ 0
 CAN2.0-TX
 Text GLabel 6800 2750 2    50   Input ~ 0
 CAN2.0-RX
-Text GLabel 1750 6300 0    50   Input ~ 0
-GearPS-SCK
-Text GLabel 1750 5700 0    50   Input ~ 0
-GearPS-MOSI
-Text GLabel 1750 5800 0    50   Input ~ 0
-GearPS-MISO
-Text GLabel 1750 6000 0    50   Input ~ 0
-GearPS-CS
-Text GLabel 1750 5500 0    50   Input ~ 0
-CANFD-CANH
-Text GLabel 1750 5600 0    50   Input ~ 0
-CANFD-CANL
-Text GLabel 1750 6100 0    50   Input ~ 0
-CAN2.0-CANH
-Text GLabel 1750 6200 0    50   Input ~ 0
-CAN2.0-CANL
-Text GLabel 1750 7000 0    50   Input ~ 0
-StearingAS
 Text GLabel 9050 2600 0    50   Input ~ 0
 SD-SCK
 Text GLabel 9050 2400 0    50   Input ~ 0
@@ -588,22 +522,16 @@ Hvor mange jord trenger vi?\n
 $Comp
 L power:GND #PWR0111
 U 1 1 5FF71369
-P 1750 3900
-F 0 "#PWR0111" H 1750 3650 50  0001 C CNN
-F 1 "GND" V 1755 3772 50  0000 R CNN
-F 2 "" H 1750 3900 50  0001 C CNN
-F 3 "" H 1750 3900 50  0001 C CNN
-	1    1750 3900
+P 1750 4100
+F 0 "#PWR0111" H 1750 3850 50  0001 C CNN
+F 1 "GND" V 1755 3972 50  0000 R CNN
+F 2 "" H 1750 4100 50  0001 C CNN
+F 3 "" H 1750 4100 50  0001 C CNN
+	1    1750 4100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	1750 3900 1950 3900
-Text GLabel 1750 5100 0    50   Input ~ 0
-Servo-TX
-Text GLabel 1750 5000 0    50   Input ~ 0
-Servo-RX
-Text GLabel 1750 5300 0    50   Input ~ 0
-Servo-IO
 Wire Wire Line
 	1750 4000 1950 4000
 Text GLabel 5000 3150 0    50   Input ~ 0
@@ -675,17 +603,6 @@ F 3 "" H 5850 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0113
-U 1 1 6004682C
-P 4750 1100
-F 0 "#PWR0113" H 4750 850 50  0001 C CNN
-F 1 "GND" V 4755 972 50  0000 R CNN
-F 2 "" H 4750 1100 50  0001 C CNN
-F 3 "" H 4750 1100 50  0001 C CNN
-	1    4750 1100
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:+3.3V #PWR0114
 U 1 1 6004A5C6
 P 6800 3850
@@ -745,7 +662,7 @@ Text GLabel 2850 900  0    50   Input ~ 0
 Wire Wire Line
 	1750 3700 1950 3700
 Text GLabel 4850 500  1    50   Input ~ 0
-12V_Ground
+12V_GND
 Wire Wire Line
 	4950 900  4850 900 
 Connection ~ 4750 900 
@@ -754,7 +671,7 @@ Wire Wire Line
 Connection ~ 4850 900 
 Wire Wire Line
 	4850 900  4750 900 
-Text GLabel 1750 3800 0    50   Input ~ 0
+Text GLabel 1750 7100 0    50   Input ~ 0
 12V_GND
 $Comp
 L power:GND #PWR0117
@@ -832,10 +749,10 @@ F 3 "" H 8150 2500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C6
 U 1 1 5FFF97B6
 P 8250 2350
-F 0 "C?" V 8502 2350 50  0000 C CNN
+F 0 "C6" V 8502 2350 50  0000 C CNN
 F 1 "10uF" V 8411 2350 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8288 2200 50  0001 C CNN
 F 3 "~" H 8250 2350 50  0001 C CNN
@@ -843,10 +760,10 @@ F 3 "~" H 8250 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR01
 U 1 1 5FFF97BC
 P 8250 2200
-F 0 "#PWR?" H 8250 1950 50  0001 C CNN
+F 0 "#PWR01" H 8250 1950 50  0001 C CNN
 F 1 "GND" H 8255 2027 50  0000 C CNN
 F 2 "" H 8250 2200 50  0001 C CNN
 F 3 "" H 8250 2200 50  0001 C CNN
@@ -858,4 +775,113 @@ Wire Wire Line
 Wire Wire Line
 	8250 2500 8150 2500
 Connection ~ 8250 2500
+Text GLabel 1750 3800 0    50   Input ~ 0
+VN-RX
+Text GLabel 1750 3900 0    50   Input ~ 0
+VN-TX
+Text GLabel 1750 3700 0    50   Input ~ 0
+4G-RX
+Text GLabel 1750 4000 0    50   Input ~ 0
+4G-TX
+Text GLabel 1750 5700 0    50   Input ~ 0
+ClutchPS
+Text GLabel 1750 5900 0    50   Input ~ 0
+SusDips-FR
+Text GLabel 1750 5800 0    50   Input ~ 0
+SusDips-RL
+Text GLabel 1750 4600 0    50   Input ~ 0
+Servo-IO
+Text GLabel 1750 4200 0    50   Input ~ 0
+Servo-RX
+Text GLabel 1750 4300 0    50   Input ~ 0
+Servo-TX
+Text GLabel 1750 4800 0    50   Input ~ 0
+WSHE-RL
+Text GLabel 1750 5000 0    50   Input ~ 0
+CANFD-CANL
+Text GLabel 1750 4900 0    50   Input ~ 0
+CANFD-CANH
+Text GLabel 1750 4700 0    50   Input ~ 0
+GearPS-MISO
+Text GLabel 1750 4500 0    50   Input ~ 0
+GearPS-MOSI
+Text GLabel 1750 6900 0    50   Input ~ 0
+CAN2.0-CANL
+Text GLabel 1750 7000 0    50   Input ~ 0
+CAN2.0-CANH
+Text GLabel 1750 6700 0    50   Input ~ 0
+GearPS-CS
+Text GLabel 1750 6000 0    50   Input ~ 0
+GearPS-SCK
+Text GLabel 1750 6600 0    50   Input ~ 0
+StearingAS
+Text GLabel 1750 6800 0    50   Input ~ 0
+WSHE-RR
+Text GLabel 1750 6400 0    50   Input ~ 0
+WSHE-FL
+Text GLabel 1750 6500 0    50   Input ~ 0
+WSHE-FR
+Text GLabel 1750 6100 0    50   Input ~ 0
+SusDips-FL
+Text GLabel 1750 6200 0    50   Input ~ 0
+SusDips-RR
+Text GLabel 1650 2550 0    50   Input ~ 0
+12V_GND
+$Comp
+L power:+3.3V #PWR0107
+U 1 1 5FFC05F2
+P 1750 4400
+F 0 "#PWR0107" H 1750 4250 50  0001 C CNN
+F 1 "+3.3V" V 1765 4528 50  0000 L CNN
+F 2 "" H 1750 4400 50  0001 C CNN
+F 3 "" H 1750 4400 50  0001 C CNN
+	1    1750 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5FFB28A7
+P 6850 4150
+F 0 "#PWR0118" H 6850 3900 50  0001 C CNN
+F 1 "GND" V 6855 4022 50  0000 R CNN
+F 2 "" H 6850 4150 50  0001 C CNN
+F 3 "" H 6850 4150 50  0001 C CNN
+	1    6850 4150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6800 4150 6850 4150
+$Comp
+L power:GND #PWR0113
+U 1 1 6004682C
+P 4750 1100
+F 0 "#PWR0113" H 4750 850 50  0001 C CNN
+F 1 "GND" V 4755 972 50  0000 R CNN
+F 2 "" H 4750 1100 50  0001 C CNN
+F 3 "" H 4750 1100 50  0001 C CNN
+	1    4750 1100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0108
+U 1 1 5FEE7C73
+P 4750 1200
+F 0 "#PWR0108" H 4750 1050 50  0001 C CNN
+F 1 "+5V" V 4765 1328 50  0000 L CNN
+F 2 "" H 4750 1200 50  0001 C CNN
+F 3 "" H 4750 1200 50  0001 C CNN
+	1    4750 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0119
+U 1 1 5FFFF37B
+P 1750 6300
+F 0 "#PWR0119" H 1750 6150 50  0001 C CNN
+F 1 "+5V" V 1765 6428 50  0000 L CNN
+F 2 "" H 1750 6300 50  0001 C CNN
+F 3 "" H 1750 6300 50  0001 C CNN
+	1    1750 6300
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
