@@ -592,37 +592,15 @@ GearPS-CS
 Text GLabel 5000 4150 0    50   Input ~ 0
 CANFD-RX
 $Comp
-L teensy4_header_breakout-cache:NUCLEO-H745ZI-Q U2
-U 1 1 5FF9575F
-P 5900 3500
-F 0 "U2" H 5633 4715 50  0000 C CNN
-F 1 "NUCLEO-H745ZI-Q" H 5633 4624 50  0000 C CNN
-F 2 "Teensy_Footprint_Library:MODULE_NUCLEO-F429ZI" H 5800 2450 50  0001 C CNN
-F 3 "" H 5850 4750 50  0001 C CNN
-	1    5900 3500
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3.3V #PWR0114
 U 1 1 6004A5C6
-P 6800 3850
-F 0 "#PWR0114" H 6800 3700 50  0001 C CNN
-F 1 "+3.3V" V 6815 3978 50  0000 L CNN
-F 2 "" H 6800 3850 50  0001 C CNN
-F 3 "" H 6800 3850 50  0001 C CNN
-	1    6800 3850
+P 6800 3750
+F 0 "#PWR0114" H 6800 3600 50  0001 C CNN
+F 1 "+3.3V" V 6815 3878 50  0000 L CNN
+F 2 "" H 6800 3750 50  0001 C CNN
+F 3 "" H 6800 3750 50  0001 C CNN
+	1    6800 3750
 	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0115
-U 1 1 5FFDED90
-P 6850 3700
-F 0 "#PWR0115" H 6850 3450 50  0001 C CNN
-F 1 "GND" V 6855 3572 50  0000 R CNN
-F 2 "" H 6850 3700 50  0001 C CNN
-F 3 "" H 6850 3700 50  0001 C CNN
-	1    6850 3700
-	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0116
@@ -635,8 +613,6 @@ F 3 "" H 11050 3100 50  0001 C CNN
 	1    11050 3100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6800 3700 6850 3700
 Wire Wire Line
 	1750 3800 1950 3800
 Wire Wire Line
@@ -686,12 +662,6 @@ F 3 "" H 5050 5450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5050 5350 5050 5000
-Wire Wire Line
-	5050 5000 6950 5000
-Wire Wire Line
-	6950 5000 6950 4300
-Wire Wire Line
-	6950 4300 6800 4300
 NoConn ~ 5050 5550
 $Comp
 L Mechanical:MountingHole H1
@@ -783,11 +753,11 @@ Text GLabel 1750 3700 0    50   Input ~ 0
 4G-RX
 Text GLabel 1750 4000 0    50   Input ~ 0
 4G-TX
-Text GLabel 1750 5700 0    50   Input ~ 0
+Text GLabel 1750 5200 0    50   Input ~ 0
 ClutchPS
-Text GLabel 1750 5900 0    50   Input ~ 0
+Text GLabel 1750 5400 0    50   Input ~ 0
 SusDips-FR
-Text GLabel 1750 5800 0    50   Input ~ 0
+Text GLabel 1750 5300 0    50   Input ~ 0
 SusDips-RL
 Text GLabel 1750 4600 0    50   Input ~ 0
 Servo-IO
@@ -805,25 +775,25 @@ Text GLabel 1750 4700 0    50   Input ~ 0
 GearPS-MISO
 Text GLabel 1750 4500 0    50   Input ~ 0
 GearPS-MOSI
-Text GLabel 1750 6900 0    50   Input ~ 0
-CAN2.0-CANL
-Text GLabel 1750 7000 0    50   Input ~ 0
-CAN2.0-CANH
-Text GLabel 1750 6700 0    50   Input ~ 0
-GearPS-CS
-Text GLabel 1750 6000 0    50   Input ~ 0
-GearPS-SCK
-Text GLabel 1750 6600 0    50   Input ~ 0
-StearingAS
 Text GLabel 1750 6800 0    50   Input ~ 0
-WSHE-RR
-Text GLabel 1750 6400 0    50   Input ~ 0
-WSHE-FL
-Text GLabel 1750 6500 0    50   Input ~ 0
-WSHE-FR
-Text GLabel 1750 6100 0    50   Input ~ 0
-SusDips-FL
+CAN2.0-CANL
+Text GLabel 1750 6900 0    50   Input ~ 0
+CAN2.0-CANH
 Text GLabel 1750 6200 0    50   Input ~ 0
+GearPS-CS
+Text GLabel 1750 5500 0    50   Input ~ 0
+GearPS-SCK
+Text GLabel 1750 6100 0    50   Input ~ 0
+StearingAS
+Text GLabel 1750 6300 0    50   Input ~ 0
+WSHE-RR
+Text GLabel 1750 5900 0    50   Input ~ 0
+WSHE-FL
+Text GLabel 1750 6000 0    50   Input ~ 0
+WSHE-FR
+Text GLabel 1750 5600 0    50   Input ~ 0
+SusDips-FL
+Text GLabel 1750 5700 0    50   Input ~ 0
 SusDips-RR
 Text GLabel 1650 2550 0    50   Input ~ 0
 12V_GND
@@ -841,16 +811,16 @@ $EndComp
 $Comp
 L power:GND #PWR0118
 U 1 1 5FFB28A7
-P 6850 4150
-F 0 "#PWR0118" H 6850 3900 50  0001 C CNN
-F 1 "GND" V 6855 4022 50  0000 R CNN
-F 2 "" H 6850 4150 50  0001 C CNN
-F 3 "" H 6850 4150 50  0001 C CNN
-	1    6850 4150
+P 6850 3850
+F 0 "#PWR0118" H 6850 3600 50  0001 C CNN
+F 1 "GND" V 6855 3722 50  0000 R CNN
+F 2 "" H 6850 3850 50  0001 C CNN
+F 3 "" H 6850 3850 50  0001 C CNN
+	1    6850 3850
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6800 4150 6850 4150
+	6800 3850 6850 3850
 $Comp
 L power:GND #PWR0113
 U 1 1 6004682C
@@ -876,19 +846,83 @@ $EndComp
 $Comp
 L power:+5V #PWR0119
 U 1 1 5FFFF37B
-P 1750 6300
-F 0 "#PWR0119" H 1750 6150 50  0001 C CNN
-F 1 "+5V" V 1765 6428 50  0000 L CNN
-F 2 "" H 1750 6300 50  0001 C CNN
-F 3 "" H 1750 6300 50  0001 C CNN
-	1    1750 6300
+P 1750 5800
+F 0 "#PWR0119" H 1750 5650 50  0001 C CNN
+F 1 "+5V" V 1765 5928 50  0000 L CNN
+F 2 "" H 1750 5800 50  0001 C CNN
+F 3 "" H 1750 5800 50  0001 C CNN
+	1    1750 5800
 	0    -1   -1   0   
 $EndComp
-NoConn ~ 6800 4000
-NoConn ~ 1750 5100
-NoConn ~ 1750 5200
-NoConn ~ 1750 5300
-NoConn ~ 1750 5400
-NoConn ~ 1750 5500
-NoConn ~ 1750 5600
+$Comp
+L teensy4_header_breakout-cache:NUCLEO-H745ZI-Q U2
+U 1 1 5FF9575F
+P 5900 3500
+F 0 "U2" H 5633 4715 50  0000 C CNN
+F 1 "NUCLEO-H745ZI-Q" H 5633 4624 50  0000 C CNN
+F 2 "Teensy_Footprint_Library:MODULE_NUCLEO-F429ZI" H 5800 2450 50  0001 C CNN
+F 3 "" H 5850 4750 50  0001 C CNN
+	1    5900 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3650 6850 3650
+$Comp
+L power:GND #PWR0115
+U 1 1 5FFDED90
+P 6850 3650
+F 0 "#PWR0115" H 6850 3400 50  0001 C CNN
+F 1 "GND" V 6855 3522 50  0000 R CNN
+F 2 "" H 6850 3650 50  0001 C CNN
+F 3 "" H 6850 3650 50  0001 C CNN
+	1    6850 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5050 5000 7250 5000
+$Comp
+L power:GND #PWR0120
+U 1 1 5FFE985E
+P 6850 3950
+F 0 "#PWR0120" H 6850 3700 50  0001 C CNN
+F 1 "GND" V 6855 3822 50  0000 R CNN
+F 2 "" H 6850 3950 50  0001 C CNN
+F 3 "" H 6850 3950 50  0001 C CNN
+	1    6850 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6800 3950 6850 3950
+Text GLabel 6800 4350 2    50   Input ~ 0
+GPIO-digital1
+Text GLabel 6800 4450 2    50   Input ~ 0
+GPIO-digital2
+Wire Wire Line
+	7250 5000 7250 4700
+Wire Wire Line
+	7250 4700 7400 4700
+Wire Wire Line
+	7400 4700 7400 4050
+Wire Wire Line
+	7400 4050 6800 4050
+Text GLabel 6800 4550 2    50   Input ~ 0
+GPIO-analog-ut1
+Text GLabel 6800 4650 2    50   Input ~ 0
+GPIO-analog-ut2
+Text GLabel 6800 4150 2    50   Input ~ 0
+I2C1-SDA
+Text GLabel 6800 4250 2    50   Input ~ 0
+I2C1-SCL
+Text GLabel 1750 6400 0    50   Input ~ 0
+GPIO-digital2
+Text GLabel 1750 6700 0    50   Input ~ 0
+GPIO-digital1
+Text GLabel 1750 6500 0    50   Input ~ 0
+GPIO-analog-ut2
+Text GLabel 1750 6600 0    50   Input ~ 0
+GPIO-analog-ut1
+Text GLabel 1750 5100 0    50   Input ~ 0
+I2C1-SDA
+Text GLabel 1750 7000 0    50   Input ~ 0
+I2C1-SCL
 $EndSCHEMATC
