@@ -666,12 +666,12 @@ NoConn ~ 5050 5550
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5FFA8781
-P 4800 6350
-F 0 "H1" H 4900 6396 50  0000 L CNN
-F 1 "MountingHole" H 4900 6305 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad_TopBottom" H 4800 6350 50  0001 C CNN
-F 3 "~" H 4800 6350 50  0001 C CNN
-	1    4800 6350
+P 4100 6375
+F 0 "H1" H 4200 6421 50  0000 L CNN
+F 1 "MountingHole" H 4200 6330 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad_TopBottom" H 4100 6375 50  0001 C CNN
+F 3 "~" H 4100 6375 50  0001 C CNN
+	1    4100 6375
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -688,23 +688,23 @@ $EndComp
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 5FFACC93
-P 4850 6600
-F 0 "H2" H 4950 6646 50  0000 L CNN
-F 1 "MountingHole" H 4950 6555 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad_TopBottom" H 4850 6600 50  0001 C CNN
-F 3 "~" H 4850 6600 50  0001 C CNN
-	1    4850 6600
+P 4100 6600
+F 0 "H2" H 4200 6646 50  0000 L CNN
+F 1 "MountingHole" H 4200 6555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad_TopBottom" H 4100 6600 50  0001 C CNN
+F 3 "~" H 4100 6600 50  0001 C CNN
+	1    4100 6600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 5FFAE6AE
-P 5650 6600
-F 0 "H4" H 5750 6646 50  0000 L CNN
-F 1 "MountingHole" H 5750 6555 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad_TopBottom" H 5650 6600 50  0001 C CNN
-F 3 "~" H 5650 6600 50  0001 C CNN
-	1    5650 6600
+P 5600 6575
+F 0 "H4" H 5700 6621 50  0000 L CNN
+F 1 "MountingHole" H 5700 6530 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO14580_Pad_TopBottom" H 5600 6575 50  0001 C CNN
+F 3 "~" H 5600 6575 50  0001 C CNN
+	1    5600 6575
 	1    0    0    -1  
 $EndComp
 $Comp

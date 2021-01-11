@@ -753,11 +753,11 @@ Text GLabel 1750 3700 0    50   Input ~ 0
 4G-RX
 Text GLabel 1750 4000 0    50   Input ~ 0
 4G-TX
-Text GLabel 1750 5700 0    50   Input ~ 0
+Text GLabel 1750 5200 0    50   Input ~ 0
 ClutchPS
-Text GLabel 1750 5900 0    50   Input ~ 0
+Text GLabel 1750 5400 0    50   Input ~ 0
 SusDips-FR
-Text GLabel 1750 5800 0    50   Input ~ 0
+Text GLabel 1750 5300 0    50   Input ~ 0
 SusDips-RL
 Text GLabel 1750 4600 0    50   Input ~ 0
 Servo-IO
@@ -775,25 +775,25 @@ Text GLabel 1750 4700 0    50   Input ~ 0
 GearPS-MISO
 Text GLabel 1750 4500 0    50   Input ~ 0
 GearPS-MOSI
-Text GLabel 1750 6900 0    50   Input ~ 0
-CAN2.0-CANL
-Text GLabel 1750 7000 0    50   Input ~ 0
-CAN2.0-CANH
-Text GLabel 1750 6700 0    50   Input ~ 0
-GearPS-CS
-Text GLabel 1750 6000 0    50   Input ~ 0
-GearPS-SCK
-Text GLabel 1750 6600 0    50   Input ~ 0
-StearingAS
 Text GLabel 1750 6800 0    50   Input ~ 0
-WSHE-RR
-Text GLabel 1750 6400 0    50   Input ~ 0
-WSHE-FL
-Text GLabel 1750 6500 0    50   Input ~ 0
-WSHE-FR
-Text GLabel 1750 6100 0    50   Input ~ 0
-SusDips-FL
+CAN2.0-CANL
+Text GLabel 1750 6900 0    50   Input ~ 0
+CAN2.0-CANH
 Text GLabel 1750 6200 0    50   Input ~ 0
+GearPS-CS
+Text GLabel 1750 5500 0    50   Input ~ 0
+GearPS-SCK
+Text GLabel 1750 6100 0    50   Input ~ 0
+StearingAS
+Text GLabel 1750 6300 0    50   Input ~ 0
+WSHE-RR
+Text GLabel 1750 5900 0    50   Input ~ 0
+WSHE-FL
+Text GLabel 1750 6000 0    50   Input ~ 0
+WSHE-FR
+Text GLabel 1750 5600 0    50   Input ~ 0
+SusDips-FL
+Text GLabel 1750 5700 0    50   Input ~ 0
 SusDips-RR
 Text GLabel 1650 2550 0    50   Input ~ 0
 12V_GND
@@ -846,12 +846,12 @@ $EndComp
 $Comp
 L power:+5V #PWR0119
 U 1 1 5FFFF37B
-P 1750 6300
-F 0 "#PWR0119" H 1750 6150 50  0001 C CNN
-F 1 "+5V" V 1765 6428 50  0000 L CNN
-F 2 "" H 1750 6300 50  0001 C CNN
-F 3 "" H 1750 6300 50  0001 C CNN
-	1    1750 6300
+P 1750 5800
+F 0 "#PWR0119" H 1750 5650 50  0001 C CNN
+F 1 "+5V" V 1765 5928 50  0000 L CNN
+F 2 "" H 1750 5800 50  0001 C CNN
+F 3 "" H 1750 5800 50  0001 C CNN
+	1    1750 5800
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -913,16 +913,16 @@ Text GLabel 6800 4150 2    50   Input ~ 0
 I2C1-SDA
 Text GLabel 6800 4250 2    50   Input ~ 0
 I2C1-SCL
-Text GLabel 1750 5400 0    50   Input ~ 0
+Text GLabel 1750 6400 0    50   Input ~ 0
 GPIO-digital2
-Text GLabel 1750 5300 0    50   Input ~ 0
+Text GLabel 1750 6700 0    50   Input ~ 0
 GPIO-digital1
-Text GLabel 1750 5200 0    50   Input ~ 0
+Text GLabel 1750 6500 0    50   Input ~ 0
 GPIO-analog-ut2
-Text GLabel 1750 5100 0    50   Input ~ 0
+Text GLabel 1750 6600 0    50   Input ~ 0
 GPIO-analog-ut1
-Text GLabel 1750 5600 0    50   Input ~ 0
+Text GLabel 1750 5100 0    50   Input ~ 0
 I2C1-SDA
-Text GLabel 1750 5500 0    50   Input ~ 0
+Text GLabel 1750 7000 0    50   Input ~ 0
 I2C1-SCL
 $EndSCHEMATC
