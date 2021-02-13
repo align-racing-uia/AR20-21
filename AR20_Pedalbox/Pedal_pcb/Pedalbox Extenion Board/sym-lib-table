@@ -2,4 +2,5 @@
   (lib (name ACM_2020_Symbol)(type Legacy)(uri ${KIPRJMOD}/Library/ACM_2020_Symbol.lib)(options "")(descr ""))
   (lib (name Pedalbox_Extenion_Board)(type Legacy)(uri "${KIPRJMOD}/Pedalbox Extenion Board.lib")(options "")(descr ""))
   (lib (name MX23A18NF1)(type Legacy)(uri ${KIPRJMOD}/Library/MX23A18NF1/MX23A18NF1.lib)(options "")(descr ""))
+  (lib (name Pedalbox-Extenion-Board-rescue)(type Legacy)(uri "${KIPRJMOD}/Pedalbox Extenion Board-rescue.lib")(options "")(descr ""))
 )

@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:Pedalbox Extenion Board-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -26,7 +25,7 @@ F 3 "" H 9225 6200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0101
+L Pedalbox-Extenion-Board-rescue:GND-power #PWR0101
 U 1 1 5E288B46
 P 10025 3900
 F 0 "#PWR0101" H 10025 3650 50  0001 C CNN
@@ -37,7 +36,7 @@ F 3 "" H 10025 3900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0102
+L Pedalbox-Extenion-Board-rescue:GND-power #PWR0102
 U 1 1 5E289D7E
 P 10025 4200
 F 0 "#PWR0102" H 10025 3950 50  0001 C CNN
@@ -48,7 +47,7 @@ F 3 "" H 10025 4200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0103
+L Pedalbox-Extenion-Board-rescue:GND-power #PWR0103
 U 1 1 5E28A22E
 P 10025 4350
 F 0 "#PWR0103" H 10025 4100 50  0001 C CNN
@@ -59,7 +58,7 @@ F 3 "" H 10025 4350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0104
+L Pedalbox-Extenion-Board-rescue:GND-power #PWR0104
 U 1 1 5E28A518
 P 10025 4650
 F 0 "#PWR0104" H 10025 4400 50  0001 C CNN
@@ -70,7 +69,7 @@ F 3 "" H 10025 4650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+12V #PWR0105
+L Pedalbox-Extenion-Board-rescue:+12V-power #PWR0105
 U 1 1 5E28AA01
 P 10325 5950
 F 0 "#PWR0105" H 10325 5800 50  0001 C CNN
@@ -85,7 +84,7 @@ Wire Wire Line
 Wire Wire Line
 	10325 6000 10325 5950
 $Comp
-L power:GND #PWR0106
+L Pedalbox-Extenion-Board-rescue:GND-power #PWR0106
 U 1 1 5E28BEB2
 P 8475 5100
 F 0 "#PWR0106" H 8475 4850 50  0001 C CNN
@@ -96,7 +95,7 @@ F 3 "" H 8475 5100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+5V #PWR0107
+L Pedalbox-Extenion-Board-rescue:+5V-power #PWR0107
 U 1 1 5E28C9C6
 P 10450 5075
 F 0 "#PWR0107" H 10450 4925 50  0001 C CNN
@@ -117,7 +116,7 @@ What need to be implemented:\n- Redundant APPS out with redundant LDO\n- Pull do
 Text Notes 650  3150 0    50   ~ 0
 What need to be implemented:\n- Redundant APPS out with redundant LDO\n- Pull down resistors for sensor inputs\n- 
 $Comp
-L Regulator_Linear:L78L05_SO8 U2
+L Pedalbox-Extenion-Board-rescue:L78L05_SO8-Regulator_Linear U2
 U 1 1 5E28F187
 P 1750 1775
 F 0 "U2" H 1750 2017 50  0000 C CNN
@@ -128,7 +127,7 @@ F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Linear:L78L05_SO8 U3
+L Pedalbox-Extenion-Board-rescue:L78L05_SO8-Regulator_Linear U3
 U 1 1 5E290B0E
 P 3700 1775
 F 0 "U3" H 3700 2017 50  0000 C CNN
@@ -139,7 +138,7 @@ F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C3
+L Pedalbox-Extenion-Board-rescue:C_Small-Device C3
 U 1 1 5E29DD14
 P 3300 2000
 F 0 "C3" H 3050 2050 50  0000 L CNN
@@ -150,7 +149,7 @@ F 3 "~" H 3300 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C4
+L Pedalbox-Extenion-Board-rescue:C_Small-Device C4
 U 1 1 5E2A8BE8
 P 4075 2000
 F 0 "C4" H 4167 2046 50  0000 L CNN
@@ -172,7 +171,7 @@ F 3 "" H 3525 3675 50  0001 L BNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C1
+L Pedalbox-Extenion-Board-rescue:C_Small-Device C1
 U 1 1 5E2B118B
 P 1325 2025
 F 0 "C1" H 975 2050 50  0000 L CNN
@@ -183,7 +182,7 @@ F 3 "~" H 1325 2025 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C2
+L Pedalbox-Extenion-Board-rescue:C_Small-Device C2
 U 1 1 5E2B1B66
 P 2100 2075
 F 0 "C2" H 2192 2121 50  0000 L CNN
@@ -194,7 +193,7 @@ F 3 "~" H 2100 2075 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0108
+L Pedalbox-Extenion-Board-rescue:GND-power #PWR0108
 U 1 1 5E2B26A0
 P 3700 2075
 F 0 "#PWR0108" H 3700 1825 50  0001 C CNN
@@ -205,7 +204,7 @@ F 3 "" H 3700 2075 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0109
+L Pedalbox-Extenion-Board-rescue:GND-power #PWR0109
 U 1 1 5E2B36B2
 P 1750 2075
 F 0 "#PWR0109" H 1750 1825 50  0001 C CNN
@@ -216,7 +215,7 @@ F 3 "" H 1750 2075 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0110
+L Pedalbox-Extenion-Board-rescue:GND-power #PWR0110
 U 1 1 5E2B3EFC
 P 2100 2175
 F 0 "#PWR0110" H 2100 1925 50  0001 C CNN
@@ -227,7 +226,7 @@ F 3 "" H 2100 2175 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0111
+L Pedalbox-Extenion-Board-rescue:GND-power #PWR0111
 U 1 1 5E2B436A
 P 1325 2125
 F 0 "#PWR0111" H 1325 1875 50  0001 C CNN
@@ -238,7 +237,7 @@ F 3 "" H 1325 2125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0112
+L Pedalbox-Extenion-Board-rescue:GND-power #PWR0112
 U 1 1 5E2B4912
 P 3300 2100
 F 0 "#PWR0112" H 3300 1850 50  0001 C CNN
@@ -249,7 +248,7 @@ F 3 "" H 3300 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0113
+L Pedalbox-Extenion-Board-rescue:GND-power #PWR0113
 U 1 1 5E2B4D8C
 P 4075 2100
 F 0 "#PWR0113" H 4075 1850 50  0001 C CNN
@@ -260,7 +259,7 @@ F 3 "" H 4075 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR0114
+L Pedalbox-Extenion-Board-rescue:+12V-power #PWR0114
 U 1 1 5E2B8DAF
 P 2825 3575
 F 0 "#PWR0114" H 2825 3425 50  0001 C CNN
@@ -275,7 +274,7 @@ CANH
 Text GLabel 3175 3475 0    50   Input ~ 0
 CANL
 $Comp
-L power:+12V #PWR0116
+L Pedalbox-Extenion-Board-rescue:+12V-power #PWR0116
 U 1 1 5E2BCE59
 P 1325 1675
 F 0 "#PWR0116" H 1325 1525 50  0001 C CNN
@@ -286,7 +285,7 @@ F 3 "" H 1325 1675 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR0117
+L Pedalbox-Extenion-Board-rescue:+12V-power #PWR0117
 U 1 1 5E2BD83E
 P 3300 1600
 F 0 "#PWR0117" H 3300 1450 50  0001 C CNN
@@ -333,7 +332,7 @@ CANH
 Text GLabel 10025 5850 2    50   Input ~ 0
 CANL
 $Comp
-L power:+5V #PWR0118
+L Pedalbox-Extenion-Board-rescue:+5V-power #PWR0118
 U 1 1 5E2CD018
 P 10450 5675
 F 0 "#PWR0118" H 10450 5525 50  0001 C CNN
@@ -348,7 +347,7 @@ Wire Wire Line
 Wire Wire Line
 	10450 5700 10450 5675
 $Comp
-L power:+5V #PWR0119
+L Pedalbox-Extenion-Board-rescue:+5V-power #PWR0119
 U 1 1 5E2CD86D
 P 10450 5375
 F 0 "#PWR0119" H 10450 5225 50  0001 C CNN
@@ -381,7 +380,7 @@ BPS1_Signal
 Text GLabel 3175 3675 0    50   Input ~ 0
 BPS2_Signal
 $Comp
-L power:+5V #PWR0120
+L Pedalbox-Extenion-Board-rescue:+5V-power #PWR0120
 U 1 1 5E2D4FDA
 P 4625 3450
 F 0 "#PWR0120" H 4625 3300 50  0001 C CNN
@@ -396,7 +395,7 @@ Wire Wire Line
 Wire Wire Line
 	4625 3475 3975 3475
 $Comp
-L power:GND #PWR0123
+L Pedalbox-Extenion-Board-rescue:GND-power #PWR0123
 U 1 1 5E2DE5D8
 P 4100 3925
 F 0 "#PWR0123" H 4100 3675 50  0001 C CNN
@@ -411,10 +410,10 @@ Low pass filter for APPS1
 Text GLabel 1300 4700 0    50   Input ~ 0
 APPS1_Signal
 $Comp
-L Device:R_Small R1
+L Pedalbox-Extenion-Board-rescue:R_Small-Device 15K
 U 1 1 5E33B337
 P 1650 4700
-F 0 "R1" V 1454 4700 50  0000 C CNN
+F 0 "15K" V 1454 4700 50  0000 C CNN
 F 1 "R_Small" V 1545 4700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1650 4700 50  0001 C CNN
 F 3 "~" H 1650 4700 50  0001 C CNN
@@ -422,11 +421,11 @@ F 3 "~" H 1650 4700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C5
+L Pedalbox-Extenion-Board-rescue:C_Small-Device C5
 U 1 1 5E33C741
 P 1900 5000
 F 0 "C5" H 1675 5025 50  0000 L CNN
-F 1 "C_Small" H 1475 4925 50  0000 L CNN
+F 1 "0,1uF" H 1475 4925 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1900 5000 50  0001 C CNN
 F 3 "~" H 1900 5000 50  0001 C CNN
 	1    1900 5000
@@ -439,7 +438,7 @@ Wire Wire Line
 Wire Wire Line
 	1900 4700 1900 4900
 $Comp
-L power:GND #PWR0125
+L Pedalbox-Extenion-Board-rescue:GND-power #PWR0125
 U 1 1 5E33EE5F
 P 1900 5100
 F 0 "#PWR0125" H 1900 4850 50  0001 C CNN
@@ -467,22 +466,22 @@ Low pass filter for APPS2
 Text GLabel 4125 4700 0    50   Input ~ 0
 APPS2_Signal
 $Comp
-L Device:R_Small R4
+L Pedalbox-Extenion-Board-rescue:R_Small-Device R4
 U 1 1 5E347142
 P 4475 4700
 F 0 "R4" V 4279 4700 50  0000 C CNN
-F 1 "R_Small" V 4370 4700 50  0000 C CNN
+F 1 "15K" V 4370 4700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4475 4700 50  0001 C CNN
 F 3 "~" H 4475 4700 50  0001 C CNN
 	1    4475 4700
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C8
+L Pedalbox-Extenion-Board-rescue:C_Small-Device C8
 U 1 1 5E347148
 P 4725 5000
 F 0 "C8" H 4375 5000 50  0000 L CNN
-F 1 "C_Small" H 4350 4925 50  0000 L CNN
+F 1 "0,1uF" H 4350 4925 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4725 5000 50  0001 C CNN
 F 3 "~" H 4725 5000 50  0001 C CNN
 	1    4725 5000
@@ -495,7 +494,7 @@ Wire Wire Line
 Wire Wire Line
 	4725 4700 4725 4900
 $Comp
-L power:GND #PWR0126
+L Pedalbox-Extenion-Board-rescue:GND-power #PWR0126
 U 1 1 5E347151
 P 4725 5100
 F 0 "#PWR0126" H 4725 4850 50  0001 C CNN
@@ -523,22 +522,22 @@ Cutoff [Hz]:\nTime Constant:\n
 Text Notes 1425 5575 0    50   ~ 0
 Low pass filter for BPS1
 $Comp
-L Device:R_Small R2
+L Pedalbox-Extenion-Board-rescue:R_Small-Device R2
 U 1 1 5E352686
 P 1675 5875
 F 0 "R2" V 1479 5875 50  0000 C CNN
-F 1 "R_Small" V 1570 5875 50  0000 C CNN
+F 1 "7,5K" V 1570 5875 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1675 5875 50  0001 C CNN
 F 3 "~" H 1675 5875 50  0001 C CNN
 	1    1675 5875
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C6
+L Pedalbox-Extenion-Board-rescue:C_Small-Device C6
 U 1 1 5E35268C
 P 1925 6175
 F 0 "C6" H 1675 6200 50  0000 L CNN
-F 1 "C_Small" H 1575 6125 50  0000 L CNN
+F 1 "0,1uF" H 1575 6125 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1925 6175 50  0001 C CNN
 F 3 "~" H 1925 6175 50  0001 C CNN
 	1    1925 6175
@@ -551,7 +550,7 @@ Wire Wire Line
 Wire Wire Line
 	1925 5875 1925 6075
 $Comp
-L power:GND #PWR0127
+L Pedalbox-Extenion-Board-rescue:GND-power #PWR0127
 U 1 1 5E352695
 P 1925 6275
 F 0 "#PWR0127" H 1925 6025 50  0001 C CNN
@@ -575,22 +574,22 @@ Wire Notes Line
 Text Notes 4250 5575 0    50   ~ 0
 Low pass filter for BPS2
 $Comp
-L Device:R_Small R5
+L Pedalbox-Extenion-Board-rescue:R_Small-Device R5
 U 1 1 5E3526A4
 P 4500 5875
 F 0 "R5" V 4304 5875 50  0000 C CNN
-F 1 "R_Small" V 4395 5875 50  0000 C CNN
+F 1 "7,5K" V 4395 5875 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4500 5875 50  0001 C CNN
 F 3 "~" H 4500 5875 50  0001 C CNN
 	1    4500 5875
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C9
+L Pedalbox-Extenion-Board-rescue:C_Small-Device C9
 U 1 1 5E3526AA
 P 4750 6175
 F 0 "C9" H 4550 6200 50  0000 L CNN
-F 1 "C_Small" H 4425 6125 50  0000 L CNN
+F 1 "0,1uF" H 4425 6125 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4750 6175 50  0001 C CNN
 F 3 "~" H 4750 6175 50  0001 C CNN
 	1    4750 6175
@@ -603,7 +602,7 @@ Wire Wire Line
 Wire Wire Line
 	4750 5875 4750 6075
 $Comp
-L power:GND #PWR0128
+L Pedalbox-Extenion-Board-rescue:GND-power #PWR0128
 U 1 1 5E3526B3
 P 4750 6275
 F 0 "#PWR0128" H 4750 6025 50  0001 C CNN
@@ -633,7 +632,7 @@ Steering_Angle_Sensor_Signal
 Text Notes 2250 6750 0    50   ~ 0
 Low pass filter for SAS
 $Comp
-L Device:R_Small R3
+L Pedalbox-Extenion-Board-rescue:R_Small-Device R3
 U 1 1 5E35DDAD
 P 2375 7025
 F 0 "R3" V 2179 7025 50  0000 C CNN
@@ -644,7 +643,7 @@ F 3 "~" H 2375 7025 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C7
+L Pedalbox-Extenion-Board-rescue:C_Small-Device C7
 U 1 1 5E35DDB3
 P 2625 7325
 F 0 "C7" H 2375 7400 50  0000 L CNN
@@ -661,7 +660,7 @@ Wire Wire Line
 Wire Wire Line
 	2625 7025 2625 7225
 $Comp
-L power:GND #PWR0129
+L Pedalbox-Extenion-Board-rescue:GND-power #PWR0129
 U 1 1 5E35DDBC
 P 2625 7425
 F 0 "#PWR0129" H 2625 7175 50  0001 C CNN
@@ -703,7 +702,7 @@ BPS2_Signal_Filtered
 Text GLabel 8475 4350 0    50   Input ~ 0
 BPS1_Signal_Filtered
 $Comp
-L Device:R_Small R9
+L Pedalbox-Extenion-Board-rescue:R_Small-Device R9
 U 1 1 5E36DE4D
 P 4950 4875
 F 0 "R9" H 5009 4921 50  0000 L CNN
@@ -714,7 +713,7 @@ F 3 "~" H 4950 4875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR04
+L Pedalbox-Extenion-Board-rescue:GND-power #PWR04
 U 1 1 5E36F8A4
 P 4950 4975
 F 0 "#PWR04" H 4950 4725 50  0001 C CNN
@@ -725,7 +724,7 @@ F 3 "" H 4950 4975 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R7
+L Pedalbox-Extenion-Board-rescue:R_Small-Device R7
 U 1 1 5E372C45
 P 2150 4850
 F 0 "R7" H 2209 4896 50  0000 L CNN
@@ -736,7 +735,7 @@ F 3 "~" H 2150 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR02
+L Pedalbox-Extenion-Board-rescue:GND-power #PWR02
 U 1 1 5E372C4B
 P 2150 4950
 F 0 "#PWR02" H 2150 4700 50  0001 C CNN
@@ -747,7 +746,7 @@ F 3 "" H 2150 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R6
+L Pedalbox-Extenion-Board-rescue:R_Small-Device R6
 U 1 1 5E374451
 P 2125 6025
 F 0 "R6" H 2184 6071 50  0000 L CNN
@@ -758,7 +757,7 @@ F 3 "~" H 2125 6025 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR01
+L Pedalbox-Extenion-Board-rescue:GND-power #PWR01
 U 1 1 5E374457
 P 2125 6125
 F 0 "#PWR01" H 2125 5875 50  0001 C CNN
@@ -769,7 +768,7 @@ F 3 "" H 2125 6125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R10
+L Pedalbox-Extenion-Board-rescue:R_Small-Device R10
 U 1 1 5E376179
 P 4975 6025
 F 0 "R10" H 5034 6071 50  0000 L CNN
@@ -780,7 +779,7 @@ F 3 "~" H 4975 6025 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR05
+L Pedalbox-Extenion-Board-rescue:GND-power #PWR05
 U 1 1 5E37617F
 P 4975 6125
 F 0 "#PWR05" H 4975 5875 50  0001 C CNN
@@ -791,7 +790,7 @@ F 3 "" H 4975 6125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R8
+L Pedalbox-Extenion-Board-rescue:R_Small-Device R8
 U 1 1 5E3783E9
 P 2875 7200
 F 0 "R8" H 2934 7246 50  0000 L CNN
@@ -802,7 +801,7 @@ F 3 "~" H 2875 7200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR03
+L Pedalbox-Extenion-Board-rescue:GND-power #PWR03
 U 1 1 5E3783EF
 P 2875 7300
 F 0 "#PWR03" H 2875 7050 50  0001 C CNN
@@ -857,7 +856,7 @@ Wire Wire Line
 Connection ~ 3975 3775
 Connection ~ 3975 3875
 $Comp
-L power:GND #PWR0130
+L Pedalbox-Extenion-Board-rescue:GND-power #PWR0130
 U 1 1 5E43BCCD
 P 4225 3250
 F 0 "#PWR0130" H 4225 3000 50  0001 C CNN
@@ -882,7 +881,7 @@ Wire Wire Line
 	3975 3375 3975 3475
 Connection ~ 3975 3475
 $Comp
-L Mechanical:MountingHole H1
+L Pedalbox-Extenion-Board-rescue:MountingHole-Mechanical H1
 U 1 1 5E460860
 P 5700 7075
 F 0 "H1" H 5800 7121 50  0000 L CNN

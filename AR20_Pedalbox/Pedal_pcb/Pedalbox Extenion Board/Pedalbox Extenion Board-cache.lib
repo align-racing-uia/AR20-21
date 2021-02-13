@@ -94,11 +94,41 @@ X 18 18 400 -550 200 L 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_C_Small
+# Pedalbox-Extenion-Board-rescue_+12V-power
 #
-DEF Device_C_Small C 0 10 N N 1 F N
+DEF Pedalbox-Extenion-Board-rescue_+12V-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "Pedalbox-Extenion-Board-rescue_+12V-power" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +12V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# Pedalbox-Extenion-Board-rescue_+5V-power
+#
+DEF Pedalbox-Extenion-Board-rescue_+5V-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "Pedalbox-Extenion-Board-rescue_+5V-power" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# Pedalbox-Extenion-Board-rescue_C_Small-Device
+#
+DEF Pedalbox-Extenion-Board-rescue_C_Small-Device C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "Device_C_Small" 10 -80 50 H V L CNN
+F1 "Pedalbox-Extenion-Board-rescue_C_Small-Device" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -112,46 +142,26 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_R_Small
+# Pedalbox-Extenion-Board-rescue_GND-power
 #
-DEF Device_R_Small R 0 10 N N 1 F N
-F0 "R" 30 20 50 H V L CNN
-F1 "Device_R_Small" 30 -40 50 H V L CNN
+DEF Pedalbox-Extenion-Board-rescue_GND-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "Pedalbox-Extenion-Board-rescue_GND-power" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-$FPLIST
- R_*
-$ENDFPLIST
 DRAW
-S -30 70 30 -70 0 1 8 N
-X ~ 1 0 100 30 D 50 50 1 1 P
-X ~ 2 0 -100 30 U 50 50 1 1 P
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# Mechanical_MountingHole
+# Pedalbox-Extenion-Board-rescue_L78L05_SO8-Regulator_Linear
 #
-DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
-F0 "H" 0 200 50 H V C CNN
-F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- MountingHole*
-$ENDFPLIST
-DRAW
-C 0 0 50 0 1 50 N
-ENDDRAW
-ENDDEF
-#
-# Regulator_Linear_L78L05_SO8
-#
-DEF Regulator_Linear_L78L05_SO8 U 0 10 Y Y 1 F N
+DEF Pedalbox-Extenion-Board-rescue_L78L05_SO8-Regulator_Linear U 0 10 Y Y 1 F N
 F0 "U" -150 125 50 H V C CNN
-F1 "Regulator_Linear_L78L05_SO8" 0 125 50 H V L CNN
+F1 "Pedalbox-Extenion-Board-rescue_L78L05_SO8-Regulator_Linear" 0 125 50 H V L CNN
 F2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" 100 200 50 H I C CIN
 F3 "" 200 0 50 H I C CNN
-ALIAS MC78L08_SO8 MC78L06_SO8 MC78L12_SO8 MC78L15_SO8 MC78L18_SO8 MC78L24_SO8 LM78L05_SO8 LM78L12_SO8 LM2931-5.0_SO8 L78L33_SO8 L78L05_SO8 L78L06_SO8 L78L08_SO8 L78L09_SO8 L78L10_SO8 L78L12_SO8 L78L15_SO8 L78L18_SO8 L78L24_SO8
 $FPLIST
  SOIC*3.9x4.9mm*P1.27mm*
 $ENDFPLIST
@@ -168,46 +178,35 @@ X IN 8 -300 0 100 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# power_+12V
+# Pedalbox-Extenion-Board-rescue_MountingHole-Mechanical
 #
-DEF power_+12V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+12V" 0 140 50 H V C CNN
+DEF Pedalbox-Extenion-Board-rescue_MountingHole-Mechanical H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Pedalbox-Extenion-Board-rescue_MountingHole-Mechanical" 0 125 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
 DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +12V 1 0 0 0 U 50 50 1 1 W N
+C 0 0 50 0 1 50 N
 ENDDRAW
 ENDDEF
 #
-# power_+5V
+# Pedalbox-Extenion-Board-rescue_R_Small-Device
 #
-DEF power_+5V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+5V" 0 140 50 H V C CNN
+DEF Pedalbox-Extenion-Board-rescue_R_Small-Device R 0 10 N N 1 F N
+F0 "R" 30 20 50 H V L CNN
+F1 "Pedalbox-Extenion-Board-rescue_R_Small-Device" 30 -40 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
 DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +5V 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_GND
-#
-DEF power_GND #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GND" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GND 1 0 0 0 D 50 50 1 1 W N
+S -30 70 30 -70 0 1 8 N
+X ~ 1 0 100 30 D 50 50 1 1 P
+X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
