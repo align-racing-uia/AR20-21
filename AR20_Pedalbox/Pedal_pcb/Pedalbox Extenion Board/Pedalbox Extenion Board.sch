@@ -410,10 +410,10 @@ Low pass filter for APPS1
 Text GLabel 1300 4700 0    50   Input ~ 0
 APPS1_Signal
 $Comp
-L Pedalbox-Extenion-Board-rescue:R_Small-Device 15K
+L Pedalbox-Extenion-Board-rescue:R_Small-Device 15K1
 U 1 1 5E33B337
 P 1650 4700
-F 0 "15K" V 1454 4700 50  0000 C CNN
+F 0 "15K1" V 1454 4700 50  0000 C CNN
 F 1 "R_Small" V 1545 4700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1650 4700 50  0001 C CNN
 F 3 "~" H 1650 4700 50  0001 C CNN
