@@ -112,7 +112,7 @@ Text HLabel 3450 6075 2    50   Input ~ 0
 Reset
 Text HLabel 2775 6975 2    50   Input ~ 0
 CAN_CS
-Text HLabel 9200 3750 0    50   Input ~ 0
+Text HLabel 8625 3650 0    50   Input ~ 0
 CAN_CS
 Text HLabel 9200 3550 0    50   Input ~ 0
 MOSI
@@ -930,7 +930,7 @@ Wire Wire Line
 Wire Wire Line
 	2975 1125 3725 1125
 $Comp
-L ASMB-TTF0-0A20B:ASMB-TTF0-0A20B LED1
+L ACM-pcb-rescue:ASMB-TTF0-0A20B-ASMB-TTF0-0A20B LED1
 U 1 1 5F81B4A2
 P 8775 1300
 F 0 "LED1" H 9725 1565 50  0000 C CNN
@@ -985,8 +985,8 @@ $Comp
 L ACM-pcb-rescue:MCP2517FD-xSL U4
 U 1 1 5F756410
 P 9800 3850
-F 0 "U4" H 10350 4625 50  0000 C CNN
-F 1 "MCP2517FD-xSL" H 10325 4475 50  0000 C CNN
+F 0 "U4" H 10425 4625 50  0000 C CNN
+F 1 "MCP2517FD-xSL" H 10450 4525 50  0000 C CNN
 F 2 "ACM_2020_V2:Can_MCP2517FD_SOIC" H 9800 2850 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP2517FD-External-CAN-FD-Controller-with-SPI-Interface-20005688B.pdf" H 9800 4100 50  0001 C CNN
 	1    9800 3850
@@ -1223,4 +1223,39 @@ Text GLabel 3925 1750 3    50   Input ~ 0
 Wire Wire Line
 	5725 3650 5800 3650
 Connection ~ 5800 3650
+$Comp
+L ACM-pcb-rescue:+5V-power-ACM_Y2020V0.1-rescue #PWR025
+U 1 1 6050BCFD
+P 8750 3300
+F 0 "#PWR025" H 8750 3150 50  0001 C CNN
+F 1 "+5V" H 8765 3473 50  0000 C CNN
+F 2 "" H 8750 3300 50  0001 C CNN
+F 3 "" H 8750 3300 50  0001 C CNN
+	1    8750 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8625 3650 8750 3650
+Wire Wire Line
+	8750 3650 8750 3600
+Wire Wire Line
+	8750 3650 8850 3650
+Wire Wire Line
+	8850 3650 8850 3750
+Wire Wire Line
+	8850 3750 9200 3750
+Connection ~ 8750 3650
+$Comp
+L ACM-pcb-rescue:R-Device-ACM_Y2020V0.1-rescue R6
+U 1 1 60514915
+P 8750 3450
+F 0 "R6" V 8543 3450 50  0000 C CNN
+F 1 "10K Ohm" V 8634 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8680 3450 50  0001 C CNN
+F 3 "~" H 8750 3450 50  0001 C CNN
+	1    8750 3450
+	1    0    0    -1  
+$EndComp
+Text Notes 7975 3050 0    50   ~ 0
+10k as requested by the library
 $EndSCHEMATC

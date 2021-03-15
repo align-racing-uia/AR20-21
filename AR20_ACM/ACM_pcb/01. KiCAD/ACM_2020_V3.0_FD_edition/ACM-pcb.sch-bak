@@ -1216,15 +1216,11 @@ Wire Wire Line
 	8450 4100 8550 4100
 Wire Wire Line
 	8850 4000 8850 4050
-$Comp
-L ACM-pcb-rescue:+12V-power-ACM_Y2020V0.1-rescue #PWR?
-U 1 1 5F91EA0D
-P 3925 1750
-F 0 "#PWR?" H 3925 1600 50  0001 C CNN
-F 1 "+12V" H 3940 1923 50  0000 C CNN
-F 2 "" H 3925 1750 50  0001 C CNN
-F 3 "" H 3925 1750 50  0001 C CNN
-	1    3925 1750
-	-1   0    0    1   
-$EndComp
+Text GLabel 5725 3650 0    50   Input ~ 0
+12V_fused
+Text GLabel 3925 1750 3    50   Input ~ 0
+12V_fused
+Wire Wire Line
+	5725 3650 5800 3650
+Connection ~ 5800 3650
 $EndSCHEMATC
