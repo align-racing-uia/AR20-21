@@ -54,6 +54,7 @@ GearSensor::GearSensor()
   //start SPI bus
   SPI.begin();
 }
+
 int lastValue = 0;
 //create a 16 bit variable to hold the encoders position
 uint16_t encoderPosition;
@@ -86,7 +87,7 @@ int GearSensor::getPosition()
   if (encoderPosition == 0xFFFF) //position is bad, let the user know how many times we tried
   {
     //ERROR
-    return 0;
+    return 0; // Andreas - Hva med å endre til -1? For nå returnerer vi 0 to steder
   }
   else //position was good, print to serial stream
   {
