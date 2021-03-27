@@ -7,7 +7,7 @@
 
 class CANbus {
     public:
-        CANbus(); // Betyr dette at jeg oppretter et objekt? (ikke en instans altså)
+        CANbus; // Betyr dette at jeg oppretter et objekt? (ikke en instans altså)
 
 };
 

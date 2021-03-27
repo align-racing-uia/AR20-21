@@ -6,7 +6,7 @@
 
 ClutchSensor clutchSensor(14); // Set to pin A0
 GearSensor gearSensor;
-CANbus CANbus(); // Hva gjør jeg galt her?
+CANbus CANbus; // Hva gjør jeg galt her?
 
 int lastGear;
 int lastPressure;
