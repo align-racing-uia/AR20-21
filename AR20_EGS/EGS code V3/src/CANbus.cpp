@@ -6,6 +6,24 @@ static const byte MCP2517_INT =  2 ; // INT output of MCP2517 // Hva skal denne 
 ACAN2517FD can (MCP2517_CS, SPI, MCP2517_INT) ;
 CANFDMessage frame_FD, frame;
 
+//——————————————————————————————————————————————————————————————————————————————
+//   RECEIVE FUNCTION
+//——————————————————————————————————————————————————————————————————————————————
+
+void receiveFromFilter0 (const CANFDMessage & inMessage) {
+  Serial.println ("Match filter 0") ;
+}
+//——————————————————————————————————————————————————————————————————————————————
+
+void receiveFromFilter1 (const CANFDMessage & inMessage) {
+  Serial.println ("Match filter 1") ;
+}
+
+//——————————————————————————————————————————————————————————————————————————————
+
+void receiveFromFilter2 (const CANFDMessage & inMessage) {
+  Serial.println ("Match filter 2") ;
+}
 
 unsigned long last_t = millis();
 const uint16_t ref = 500;
@@ -19,11 +37,26 @@ CANbus::CANbus() {
     settings.mDriverTransmitFIFOSize = 1;
     settings.mDriverReceiveFIFOSize = 1;
 
+    ACAN2517FDFilters filters ;
+    filters.appendFrameFilter (kStandard, 0x123, receiveFromFilter0) ; // Filter #0: receive standard frame with identifier 0x123
+    filters.appendFrameFilter (kExtended, 0x12345678, receiveFromFilter1) ; // Filter #1: receive extended frame with identifier 0x12345678
+    filters.appendFilter (kStandard, 0x70F, 0x304, receiveFromFilter2) ; // Filter #2: receive standard frame with identifier 0x3n4
+    //----------------------------------- Filters ok ?
+    if (filters.filterStatus () != ACAN2517FDFilters::kFiltersOk) {
+        Serial.print ("Error filter ") ;
+        Serial.print (filters.filterErrorIndex ()) ;
+        Serial.print (": ") ;
+        Serial.println (filters.filterStatus ()) ;
+    }
+    //----------------------------------- Enter configuration
+    const uint32_t errorCode = can.begin (settings, [] { can.isr () ; }, filters) ;
+
+
     Serial.print ("MCP2517FD RAM Usage: ");
     Serial.print (settings.ramUsage());
     Serial.println (" bytes");
 
-    const uint32_t errorCode = can.begin(settings, []{can.isr();}) ;
+    //const uint32_t errorCode = can.begin(settings, []{can.isr();}) ;
 
     if (errorCode != 0) {
         Serial.print ("Configuration error 0x");
@@ -49,18 +82,10 @@ CANbus::CANbus() {
     frame.id = 0x500;
     frame_FD.id = 0x501;
 
-    
-    /*
-	
-	if (millis() - last_t > ref){
-		can.tryToSend(frame);
-		can.tryToSend(frame_FD);
-		last_t = millis();
-	}
-	
-	*/
-  
-  
+
+}
+
+void CANbus::receiveData() {
 	if (can.available ()) {
 	    can.receive (frame) ;
 		Serial.print ("Received: ") ;
@@ -74,4 +99,15 @@ CANbus::CANbus() {
 		}
 		
 	}
+
+}
+
+void CANbus::sendData() {
+
+	if (millis() - last_t > ref){
+		can.tryToSend(frame);
+		can.tryToSend(frame_FD);
+		last_t = millis();
+	}
+
 }

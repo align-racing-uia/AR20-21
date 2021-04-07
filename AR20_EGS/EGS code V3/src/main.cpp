@@ -1,12 +1,12 @@
-#include <Arduino.h>
-#include <clutchSensor.h>
-#include <gearSensor.h>
-#include <ACAN2517FD.h>
-#include <CANbus.h>
+#include "clutchSensor.h"
+#include "gearSensor.h"
+//#include "ACAN2517FDFilters.h"
+#include "CANbus.h"
+#include <SPI.h>
 
 ClutchSensor clutchSensor(14); // Set to pin A0
 GearSensor gearSensor;
-CANbus CANbus; // Hva gjør jeg galt her?
+CANbus CAN;
 
 int lastGear;
 int lastPressure;
@@ -38,4 +38,7 @@ void loop()
     Serial.print("Gear: ");
     Serial.println(gear);
   }
+
+  CAN.receiveData();
+  
 }
