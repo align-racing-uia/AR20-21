@@ -1,6 +1,5 @@
 #include "clutchSensor.h"
 #include "gearSensor.h"
-#include "ACAN2517FDFilters.h"
 #include <Arduino.h>
 #include <ACAN2517FD.h>
 #include <SPI.h>
@@ -27,6 +26,10 @@ void receiveFDData(CANFDMessage FDmessage);
 
 ClutchSensor clutchSensor(14); // Set to pin A0
 GearSensor gearSensor;
+
+
+ unsigned long last_t = millis();
+ const uint16_t ref = 500;
 
 void receiveFromFilter (const CANFDMessage & inMessage) {
 }
@@ -73,6 +76,8 @@ void setup()
         delay(1000);
         digitalWrite(5, LOW);
   }
+
+
   //----------------------------------- Enter configuration
   const uint32_t errorCode = can.begin(settings, [] { can.isr () ; }, filters) ;
   //const uint32_t errorCode = can.begin(settings, [] { can.isr () ; }) ;
@@ -103,12 +108,12 @@ void setup()
   FDsendCurrentGear.type = CANFDMessage::CANFD_WITH_BIT_RATE_SWITCH;
 
   // Test data
-  for(int ii = 0; ii < 64; ii++) {
+ /* for(int ii = 0; ii < 64; ii++) {
 	  FDsendGearUPDOWN.data[ii] = ii;
     FDsendCut.data[ii] = ii;
     FDsendBlip.data[ii] = ii;
     FDsendCurrentGear.data[ii] = ii;
-  }
+  }*/
   FDsendGearUPDOWN.data[0] = 1;
   FDsendCut.data[0] = 2;
   FDsendBlip.data[0] = 3;
@@ -134,7 +139,7 @@ void setup()
 }
 
 void loop()
-{
+{/*
   int pressure = clutchSensor.getClutchPressure();
   pressure = (pressure > 0 ? pressure : 0);
   if (lastPressure != pressure)
@@ -148,16 +153,23 @@ void loop()
   {
     lastGear = gear;
 
-  }
+  }*/
 
-  sendFDData(FDsendBlip);
-  sendFDData(FDsendCurrentGear);
+
   
-  delay(500);
+  if (millis() - last_t > ref){
+
+    FDsendBlip.data[0]++;
+    sendFDData(FDsendBlip);
+    //sendFDData(FDsendCurrentGear);
+		last_t = millis();
+	}
   
-  receiveFDData(FDreceiveRMP);
-  receiveFDData(FDreceiveClutchpressure);
-  receiveFDData(FDreceiveGear);
+  //delay(500);
+  
+  //receiveFDData(FDreceiveRMP);
+  //receiveFDData(FDreceiveClutchpressure);
+  //receiveFDData(FDreceiveGear);
 }
 
 void sendFDData(CANFDMessage FDmessage) {

@@ -1,7 +1,7 @@
 #ifndef GearSensor_h
 #define GearSensor_h
 
-#include "Arduino.h"
+#include <Arduino.h>
 
 class GearSensor
 {

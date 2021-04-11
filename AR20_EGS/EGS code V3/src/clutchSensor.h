@@ -1,7 +1,7 @@
 #ifndef ClutchSensor_h
 #define ClutchSensor_h
 
-//#include <Arduino.h>
+#include <Arduino.h>
 
 class ClutchSensor
 {
