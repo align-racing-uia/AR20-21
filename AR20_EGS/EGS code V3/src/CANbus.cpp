@@ -1,4 +1,5 @@
-#include "CANbus.h"
+/*#include "CANbus.h"
+
 
 static const byte MCP2517_CS  = 7 ; // CS input of MCP2517 // Hva skal denne egentlig være tro? Er dette chipselect-pinnen sitt nummer?
 static const byte MCP2517_INT =  2 ; // INT output of MCP2517 // Hva skal denne egentlig være tro? Er dette TX/RX-pinnen sitt nummer?
@@ -11,18 +12,18 @@ CANFDMessage frame_FD, frame;
 //——————————————————————————————————————————————————————————————————————————————
 
 void receiveFromFilter0 (const CANFDMessage & inMessage) {
-  Serial.println ("Match filter 0") ;
+  //Serial.println ("Match filter 0") ;
 }
 //——————————————————————————————————————————————————————————————————————————————
 
 void receiveFromFilter1 (const CANFDMessage & inMessage) {
-  Serial.println ("Match filter 1") ;
+  //Serial.println ("Match filter 1") ;
 }
 
 //——————————————————————————————————————————————————————————————————————————————
 
 void receiveFromFilter2 (const CANFDMessage & inMessage) {
-  Serial.println ("Match filter 2") ;
+  //Serial.println ("Match filter 2") ;
 }
 
 unsigned long last_t = millis();
@@ -37,7 +38,7 @@ CANbus::CANbus() {
     settings.mDriverTransmitFIFOSize = 1;
     settings.mDriverReceiveFIFOSize = 1;
 
-    ACAN2517FDFilters filters ;
+    /*ACAN2517FDFilters filters ;
     filters.appendFrameFilter (kStandard, 0x123, receiveFromFilter0) ; // Filter #0: receive standard frame with identifier 0x123
     filters.appendFrameFilter (kExtended, 0x12345678, receiveFromFilter1) ; // Filter #1: receive extended frame with identifier 0x12345678
     filters.appendFilter (kStandard, 0x70F, 0x304, receiveFromFilter2) ; // Filter #2: receive standard frame with identifier 0x3n4
@@ -49,19 +50,20 @@ CANbus::CANbus() {
         Serial.println (filters.filterStatus ()) ;
     }
     //----------------------------------- Enter configuration
-    const uint32_t errorCode = can.begin (settings, [] { can.isr () ; }, filters) ;
+    //const uint32_t errorCode = can.begin (settings, [] { can.isr () ; }, filters) ;
 
+  // ___________________________ RAM USAGE ______________________________//
+   // Serial.print ("MCP2517FD RAM Usage: ");
+    //Serial.print (settings.ramUsage());
+   // Serial.println (" bytes");
 
-    Serial.print ("MCP2517FD RAM Usage: ");
-    Serial.print (settings.ramUsage());
-    Serial.println (" bytes");
-
-    //const uint32_t errorCode = can.begin(settings, []{can.isr();}) ;
-
+  // ___________________________ CAN BEGIN ______________________________//
+    const uint32_t errorCode = can.begin(settings, []{can.isr();}) ;
     if (errorCode != 0) {
-        Serial.print ("Configuration error 0x");
-        Serial.println (errorCode, HEX);
+        //Serial.print ("Configuration error 0x");
+        //Serial.println (errorCode, HEX);
     }
+
 
     // Test CANFD data
     for (int ii = 0; ii < 64; ii++) {
@@ -87,7 +89,7 @@ CANbus::CANbus() {
 
 void CANbus::receiveData() {
 	if (can.available ()) {
-	    can.receive (frame) ;
+	    can.receive (frame_FD) ;
 		Serial.print ("Received: ") ;
 		
 		if (frame.data[0] == 0x01) {
@@ -101,13 +103,12 @@ void CANbus::receiveData() {
 	}
 
 }
-
+/*
 void CANbus::sendData() {
 
 	if (millis() - last_t > ref){
-		can.tryToSend(frame);
+		//can.tryToSend(frame);
 		can.tryToSend(frame_FD);
 		last_t = millis();
-	}
-
-}
+  }
+*/

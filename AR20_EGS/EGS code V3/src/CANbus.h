@@ -1,8 +1,9 @@
-#ifndef CANbus_h
+/*#ifndef CANbus_h
 #define CANbus_h
 
 #include <Arduino.h>
 #include <ACAN2517FD.h>
+#include <SPI.h>
 
 
 class CANbus {
@@ -10,8 +11,11 @@ class CANbus {
         CANbus();
         void receiveData();
         void sendData();
+        CANFDMessage frame_FD, frame;
+        ACAN2517FD can();
+
 
 };
 
 
-#endif
+#endif*/
