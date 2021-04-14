@@ -1,4 +1,4 @@
-#include "clutchSensor.h"
+/*#include "clutchSensor.h"
 #include "gearSensor.h"
 #include <Arduino.h>
 #include <ACAN2517FD.h>
@@ -17,8 +17,8 @@ CANFDMessage FDsendGearUPDOWN,
 
 // Meldinger vi skal motta
 CANFDMessage FDreceiveClutchpressure,
-             FDreceiveGear,
-             FDreceiveRMP;
+             FDreceiveGear;
+CANMessage   FDreceiveRMP;
 
 // Forwarddeclaring funksjoner
 void sendFDData(CANFDMessage FDmessage);
@@ -32,10 +32,6 @@ GearSensor gearSensor;
  const uint16_t ref = 500;
 
 void receiveFromFilter (const CANFDMessage & inMessage) {
-  	pinMode(5, OUTPUT);
-    digitalWrite(5, HIGH);
-	  delay (300);
-	  digitalWrite(5, LOW);
 }
 
 int lastGear;
@@ -45,7 +41,7 @@ void setup()
   lastPressure = 0;
   lastGear = 0;
 
-// CANbus setup start ---------------------------------------------------------------------------
+  // CANbus setup start ---------------------------------------------------------------------------
   SPI.begin();
 
   ACAN2517FDSettings settings(ACAN2517FDSettings::OSC_20MHz, 500UL * 1000UL, DataBitRateFactor::x8);
@@ -65,7 +61,7 @@ void setup()
   * Tenningskutt (CANID: 0x052)
   * Blip         (CANID: 0x053)
   * Current gear (CANID: 0x100)
-  */
+  * 
 
 
   ACAN2517FDFilters filters;
@@ -75,14 +71,21 @@ void setup()
   //filters.appendFilter (kStandard, 0x70F, 0x123, receiveFromFilter);
   //----------------------------------- Filters ok ?
   if (filters.filterStatus() != ACAN2517FDFilters::kFiltersOk) {
-
+        pinMode(5, OUTPUT);
+        digitalWrite(5, HIGH);
+        delay(1000);
+        digitalWrite(5, LOW);
   }
+
+
+  //----------------------------------- Enter configuration
   const uint32_t errorCode = can.begin(settings, [] { can.isr () ; }, filters) ;
-// CANbus setup end ---------------------------------------------------------------------------
+  //const uint32_t errorCode = can.begin(settings, [] { can.isr () ; }) ;
 
 //----------------------------------------------------------------------------------------------------------------------
 //    Sending frames
 //----------------------------------------------------------------------------------------------------------------------
+
   // Gir opp/ned
   FDsendGearUPDOWN.id = 0x051;
   FDsendGearUPDOWN.len = 1; // Valid lengths are: 0, 1, ..., 8, 12, 16, 20, 24, 32, 48, 64
@@ -104,6 +107,13 @@ void setup()
   FDsendCurrentGear.len = 2; // Valid lengths are: 0, 1, ..., 8, 12, 16, 20, 24, 32, 48, 64
   FDsendCurrentGear.type = CANFDMessage::CANFD_WITH_BIT_RATE_SWITCH;
 
+  // Test data
+ /* for(int ii = 0; ii < 64; ii++) {
+	  FDsendGearUPDOWN.data[ii] = ii;
+    FDsendCut.data[ii] = ii;
+    FDsendBlip.data[ii] = ii;
+    FDsendCurrentGear.data[ii] = ii;
+  }*//*
   FDsendGearUPDOWN.data[0] = 1;
   FDsendCut.data[0] = 2;
   FDsendBlip.data[0] = 3;
@@ -118,14 +128,14 @@ void setup()
   FDreceiveClutchpressure.type = CANFDMessage::CANFD_WITH_BIT_RATE_SWITCH;
 
   // Gir opp/ned
-  FDreceiveGear.id = 0x50;
-  FDreceiveGear.len = 1; // Valid lengths are: 0, 1, ..., 8, 12, 16, 20, 24, 32, 48, 64
-  FDreceiveGear.type = CANFDMessage::CANFD_WITH_BIT_RATE_SWITCH;
+  FDreceiveClutchpressure.id = 0x50;
+  FDreceiveClutchpressure.len = 1; // Valid lengths are: 0, 1, ..., 8, 12, 16, 20, 24, 32, 48, 64
+  FDreceiveClutchpressure.type = CANFDMessage::CANFD_WITH_BIT_RATE_SWITCH;
 
   // RPM
-  FDreceiveRMP.id = 0x5E8;
-  FDreceiveRMP.len = 8; // Valid lengths are: 0, 1, ..., 8, 12, 16, 20, 24, 32, 48, 64
-  FDreceiveRMP.type = CANFDMessage::CAN_DATA;
+  FDreceiveClutchpressure.id = 0x5E8;
+  FDreceiveClutchpressure.len = 8; // Valid lengths are: 0, 1, ..., 8, 12, 16, 20, 24, 32, 48, 64
+  FDreceiveClutchpressure.type = CANFDMessage::CANFD_WITH_BIT_RATE_SWITCH;
 }
 
 void loop()
@@ -146,15 +156,20 @@ void loop()
   }
 
 
-    delay(300);
-    sendFDData(FDsendBlip);
-    delay(30);
-    sendFDData(FDsendCurrentGear);
-    delay(30);
-    sendFDData(FDsendCut);
-    delay(30);
-    sendFDData(FDsendGearUPDOWN);
+  
+  if (millis() - last_t > ref){
 
+    FDsendBlip.data[0]++;
+    sendFDData(FDsendBlip);
+    //sendFDData(FDsendCurrentGear);
+		last_t = millis();
+	}
+  
+  //delay(500);
+  
+  //receiveFDData(FDreceiveRMP);
+  //receiveFDData(FDreceiveClutchpressure);
+  //receiveFDData(FDreceiveGear);
 }
 
 void sendFDData(CANFDMessage FDmessage) {
@@ -164,7 +179,13 @@ void sendFDData(CANFDMessage FDmessage) {
 void receiveFDData(CANFDMessage FDmessage) {
     if(can.available()) {
       if(can.receive(FDmessage)) {
+        pinMode(5, OUTPUT);
+        digitalWrite(5, HIGH);
+        delay(500);
+        digitalWrite(5, LOW);
       }		
 	  }
-    can.dispatchReceivedMessage();
 }
+
+
+*/
