@@ -12,6 +12,8 @@ public:
     void engageClutch(int mAh);
     void disengageClutch();
     void changeCurrent(int mAh);
+    HardwareSerial DXL_SERIAL;
+    SoftwareSerial DEBUG_SERIAL;
 
 private:
 };

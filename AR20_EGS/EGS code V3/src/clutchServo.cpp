@@ -2,10 +2,10 @@
 #include <SoftwareSerial.h>
 #include <clutchServo.h>
 // Please modify it to suit your hardware.
-
 SoftwareSerial soft_serial(7, 8); // DYNAMIXELShield UART RX/TX
-#define DXL_SERIAL Serial
-#define DEBUG_SERIAL soft_serial
+HardwareSerial DXL_SERIAL = Serial;
+SoftwareSerial DEBUG_SERIAL = soft_serial;
+
 const uint8_t DXL_DIR_PIN = 2; // DYNAMIXEL Shield DIR PIN
 
 const uint8_t DXL_ID = 1;
@@ -18,9 +18,10 @@ using namespace ControlTableItem;
 
 ClutchServo::ClutchServo()
 {
+    // DXL_SERIAL = servoSerial;
+    // DEBUG_SERIAL = debugSerial;
     // Use UART port of DYNAMIXEL Shield to debug.
     DEBUG_SERIAL.begin(9600);
-
     // Set Port baudrate to 57600bps. This has to match with DYNAMIXEL baudrate.
     dxl.begin(57600);
     // Set Port Protocol Version. This has to match with DYNAMIXEL protocol version.
@@ -39,6 +40,7 @@ void ClutchServo::engageClutch(int mAh)
 {
     dxl.torqueOn(DXL_ID);
     dxl.setGoalCurrent(DXL_ID, mAh, UNIT_MILLI_AMPERE);
+    DEBUG_SERIAL.print("Engaged clutch");
 }
 /**
  * @brief Change the current target while the servo is running. 
@@ -47,6 +49,7 @@ void ClutchServo::engageClutch(int mAh)
  */
 void ClutchServo::changeCurrent(int mAh){
     dxl.setGoalCurrent(DXL_ID, mAh, UNIT_MILLI_AMPERE);
+    DEBUG_SERIAL.print("Updated clutch current");
 }
 void ClutchServo::disengageClutch() 
 {
@@ -54,4 +57,5 @@ void ClutchServo::disengageClutch()
     delay(100);
     dxl.setGoalCurrent(DXL_ID, 0, UNIT_MILLI_AMPERE);
     dxl.torqueOff(DXL_ID);
+    DEBUG_SERIAL.print("Disengaged clutch");
 }

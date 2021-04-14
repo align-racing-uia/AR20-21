@@ -2,10 +2,13 @@
 // Please modify it to suit your hardware.
 #include <SoftwareSerial.h>
 #include <clutchServo.h>
-int clutchPin = 3;
+
+// SoftwareSerial soft_serial(7, 8);
 ClutchServo clutch;
+int clutchPin = 3;
 void setup()
 {
+
   // attachInterrupt(digitalPinToInterrupt(clutchPin), clutchInterupt, CHANGE);
   // ! Beginning of code to actuate clutch
   // put your main code here, to run repeatedly:
@@ -18,6 +21,7 @@ void setup()
   //   disengageClutch();
   // }
   // delay(3000);
+  // pinMode(clutchPin, INPUT);
 }
 
 void loop()
@@ -32,6 +36,7 @@ void loop()
     clutch.disengageClutch();
   }
   delay(3000);
+
   // // Please refer to e-Manual(http://emanual.robotis.com/docs/en/parts/interface/dynamixel_shield/) for available range of value.
   // // Set Goal Current using RAW unit
   // // dxl.torqueOn(DXL_ID);
