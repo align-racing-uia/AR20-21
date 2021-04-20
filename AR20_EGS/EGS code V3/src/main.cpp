@@ -17,6 +17,179 @@ int lastPressure;
 int lastGear;
 
 
+void gearUp(int currentGear)
+{
+  /*
+    Gearing up
+    1. Start timer
+    2. nextGear=curretnGear+1
+    3. Cut throttle
+    4. Start actuating kliktronic for upshift
+    5. wait until gear hits right gear
+    6. stop kliktronic
+    7. Reingage throttle
+  */
+
+  uint16_t startMillis = millis();
+  uint16_t maxTime = 3000;
+
+
+  int nextGear = currentGear + 1;
+
+  
+
+  //---------------------------------
+
+  //Cut the throttle
+
+  //--------------------------------
+
+  //Kliktronic PULL!
+
+  //-------------------------------
+
+ 
+  while (currentGear < nextGear)
+  {
+    uint16_t currentMillis = millis();
+    if (currentMillis - startMillis >= maxTime)
+    {
+     //Display error message: "Error: reached maxtime"
+     break;
+    }
+
+    currentGear = gearSensor.getPosition();
+  
+  }
+
+  if (currentGear == nextGear)
+  {
+    //---------------------------------
+
+    //Kliktronic STOP PULLING
+
+    //---------------------------------
+
+    //Release the throttle
+
+    //--------------------------------
+
+    //Sucsessfully geared! wohoo
+  }
+  else
+  {
+    //Gearing failed, what do we do now chief?
+  }
+  
+  
+}
+
+
+void gearDown(int currentGear)
+{
+  /*
+    Gearing down:
+    1. Start timer
+    2. nextGear = currentGear-1
+    3. Cut throttle
+    4. Start actuating clutch
+    5. Wait until preassure reaches 14bar
+    5. Start actuating kliktronic for upshift
+    5. Wait until gear hits right gear
+    6. Stop kliktronic
+    7. Reingage throttle
+  */
+
+  uint16_t startMillis = millis();
+  uint16_t maxTime = 7000;
+
+  int nextGear = currentGear-1;
+
+  int clutchPressureDesired = 14;
+  int clutchPressureMaxEngaged = 3; //Clutchpressure limit before reingaging throttle
+  int clutchPressureMeasured = 0;
+
+
+  //---------------------------------
+
+  //CUT THE THROTTLE!
+
+  //-------------------------------
+
+  //ENGAGE CLUTCH!
+
+  //-------------------------------
+
+  //Wait until preassure reaches the desired value
+  while (clutchPressureMeasured < clutchPressureDesired)
+  {
+    uint16_t currentMillis = millis();
+    if (currentMillis - startMillis >= maxTime)
+    {
+     //Display error message: "Error: Reached maxtime while clutching"
+     break;
+    }
+
+    clutchPressureMeasured = clutchSensor.getClutchPressure();
+  }
+
+  if (clutchPressureMeasured >= clutchPressureDesired)
+  {
+
+      //--------------------------------
+
+      //Kliktronic PUSH!
+
+      //--------------------------------
+
+    while (currentGear > nextGear)
+    {
+
+      uint16_t currentMillis = millis();
+      if (currentMillis - startMillis >= maxTime)
+      {
+      //Display error message: "Error: Reached maxtime while actuating kliktronic"
+      break;
+      }
+
+      currentGear = gearSensor.getPosition();
+
+    }
+    
+  }
+
+  if (currentGear == nextGear)
+  {
+    //--------------------
+
+    //Kliktronic STOP PUSHING
+
+    //--------------------
+
+    //STOP CLUTCHING
+
+    //-------------------
+
+    while (clutchPressureMeasured >= clutchPressureMaxEngaged)
+    {
+      currentGear = gearSensor.getPosition();
+    }
+
+    //-------------------
+
+    //REINGAGE THROTTLE
+
+    //------------------
+    
+  }
+  
+  
+  
+
+
+}
+
+
 void setup()
 {
   // put your setup code here, to run once:
@@ -26,17 +199,21 @@ void setup()
   pinMode(LED_PIN, OUTPUT);
 }
 
+
+
+
 //let's also create a variable where we can count how many times we've tried to obtain the position in case there are errors
 void loop()
 {
-  int pressure = clutchSensor.getClutchPressure();
+
+  /*int pressure = clutchSensor.getClutchPressure();
   pressure = (pressure > 0 ? pressure : 0);
   if (lastPressure != pressure)
   {
     lastPressure = pressure;
     Serial.print("Pressure: ");
     Serial.println(pressure);
-  }
+  }*/
 
   int gear = gearSensor.getPosition();
 
@@ -48,78 +225,22 @@ void loop()
   }
 
 
-  bool gearUp = digitalRead(gearUpPin);
-  if(gearUp == HIGH && lastGear != 5)
+  bool gearUpSignal = digitalRead(gearUpPin);
+  if(gearUpSignal == HIGH && lastGear != 5)
   {
-    /*
-    Gearing up, setting up 2 methods, most likely using the desirable method:
-
-    Method 1(desirable):
-    1. Cut throttle
-    2. Actuate kliktronic until gear reaches lastGear+1
-    3. Reingage throttle
-
-    Method 2:
-    1. Cut throttle
-    2. Actuate clutch until preassure reaches 14bar.
-    3. Actuate kliktronic until gear reaches lastGear+1.
-    4. Release clutch.
-    5. Reingage trottle when pressure goes below 3bar?
-    */
+    //Gearing up
+    gearUp(lastGear);
+    Serial.println("Sucsessfully geared up");
   }
 
-  bool gearDown = digitalRead(gearDownPin);
+  bool gearDownSignal = digitalRead(gearDownPin);
 
-  if(gearDown == HIGH && gearUp != HIGH && lastGear != 1)
+  if(gearDownSignal == HIGH && gearUpSignal != HIGH && lastGear != 1)
   {
-    /*
-    Gearing down, setting up 2 methods, one is desirable, one is more likely:
+    //Gearing down
+    gearDown(lastGear);
 
-    Method 1(desirable):
-    1. Start matching RPM and actuating kliktronic.
-    3. Stop actuating kliktronic when gear reaches lastGear-1.
-    2. Release trottle
-  
-    Method 2(most likely):
-    1. Cut throttle
-    2. Start actuating clutch.
-    3. Start actuating kliktronic when preassure reaches 14bar.
-    4. Stop actuating kliktronic when gear reaches lastGear-1.
-    5. Release clutch.
-    5. Reingage trottle when pressure goes below 3bar?
-    */
-
-   //Method 1:
-
-   //Match throttle
-
-   int gear = lastGear;
-   int nextGear = lastGear-1;
-
-   while (gear > nextGear)
-   {
-     
-
-
-
-
-     gear = gearSensor.getPosition();
-
-      if (lastGear != gear)
-      {
-        lastGear = gear;
-        Serial.print("Gear: ");
-        Serial.println(gear);
-      }
-
-   }
-   
-
-
-
-
-
-
+    Serial.println("Sucsessfully geared down");
   }
 
 
