@@ -17,7 +17,7 @@ int lastPressure;
 int lastGear;
 
 
-void gearUp(int currentGear)
+void gearUp(int currentGear, bool &success)
 {
   /*
     Gearing up
@@ -30,11 +30,17 @@ void gearUp(int currentGear)
     7. Reingage throttle
   */
 
-  uint16_t startMillis = millis();
-  uint16_t maxTime = 3000;
+  unsigned long startMillis = millis();
+  unsigned long maxTime = 3000;
 
 
   int nextGear = currentGear + 1;
+
+  Serial.print("Gearing Up to ");
+  Serial.print(nextGear);
+  Serial.println(" gear.");
+
+  Serial.println("Cutting throttle and actuating kliktronic");
 
   
 
@@ -51,41 +57,56 @@ void gearUp(int currentGear)
  
   while (currentGear < nextGear)
   {
-    uint16_t currentMillis = millis();
+    unsigned long currentMillis = millis();
     if (currentMillis - startMillis >= maxTime)
     {
      //Display error message: "Error: reached maxtime"
+     Serial.println("Error: Reached maxtime while actuating kliktronic");
      break;
     }
 
     currentGear = gearSensor.getPosition();
+
+    //Simulating gearing
+    delay(500);
+    currentGear = nextGear;
   
   }
 
+  Serial.print("Reached ");
+  Serial.print(currentGear);
+  Serial.println(" gear, Stopping kliktronic, re-engaging throttle");
+
+  //---------------------------------
+
+  //Kliktronic STOP PULLING
+
+  //---------------------------------
+
+  //Re-engage the throttle
+
+  //--------------------------------
+
+
+  //currentGear = gearSensor.getPosition(); Commented out for simulation purposes
+
   if (currentGear == nextGear)
   {
-    //---------------------------------
-
-    //Kliktronic STOP PULLING
-
-    //---------------------------------
-
-    //Release the throttle
-
-    //--------------------------------
-
-    //Sucsessfully geared! wohoo
+    //Gearing successfull!
+    success = true;
   }
   else
   {
     //Gearing failed, what do we do now chief?
+    success = false;
   }
-  
   
 }
 
 
-void gearDown(int currentGear)
+
+
+void gearDown(int currentGear, bool &success)
 {
   /*
     Gearing down:
@@ -100,14 +121,22 @@ void gearDown(int currentGear)
     7. Reingage throttle
   */
 
-  uint16_t startMillis = millis();
-  uint16_t maxTime = 7000;
+  unsigned long startMillis = millis();
+  unsigned long maxTime = 7000;
 
   int nextGear = currentGear-1;
 
   int clutchPressureDesired = 14;
-  int clutchPressureMaxEngaged = 3; //Clutchpressure limit before reingaging throttle
+  int clutchPressureMaxEngaged = 2; //Clutchpressure limit before reingaging throttle
   int clutchPressureMeasured = 0;
+
+  success = false;
+
+  Serial.print("Gearing Down to ");
+  Serial.print(nextGear);
+  Serial.println(" gear.");
+
+  Serial.println("Cutting throttle and engaging clutch.");
 
 
   //---------------------------------
@@ -123,18 +152,26 @@ void gearDown(int currentGear)
   //Wait until preassure reaches the desired value
   while (clutchPressureMeasured < clutchPressureDesired)
   {
-    uint16_t currentMillis = millis();
+    unsigned long currentMillis = millis();
     if (currentMillis - startMillis >= maxTime)
     {
      //Display error message: "Error: Reached maxtime while clutching"
+     Serial.println("Error: Reached maxtime while actuating kliktronic");
      break;
     }
 
     clutchPressureMeasured = clutchSensor.getClutchPressure();
+
+    //Simulating clutch
+    delay(500);
+    clutchPressureMeasured = 14;
   }
 
   if (clutchPressureMeasured >= clutchPressureDesired)
   {
+    Serial.print("Reached ");
+    Serial.print(clutchPressureMeasured);
+    Serial.println("bar, actuating kliktronic.");
 
       //--------------------------------
 
@@ -145,48 +182,79 @@ void gearDown(int currentGear)
     while (currentGear > nextGear)
     {
 
-      uint16_t currentMillis = millis();
+      unsigned long currentMillis = millis();
       if (currentMillis - startMillis >= maxTime)
       {
-      //Display error message: "Error: Reached maxtime while actuating kliktronic"
+      Serial.println("Error: Reached maxtime while actuating kliktronic");
       break;
       }
 
       currentGear = gearSensor.getPosition();
 
+      //Simulating the gearing
+      delay(500);
+      currentGear = nextGear;
+
     }
     
   }
 
+  Serial.print("Reached ");
+  Serial.print(currentGear);
+  Serial.println(" gear, Stopping kliktronic, releasing clutch");
+
+  //--------------------
+
+  //Kliktronic STOP PUSHING
+
+  //--------------------
+
+  //STOP CLUTCHING
+
+  //-------------------
+
+  while (clutchPressureMeasured > clutchPressureMaxEngaged)
+  {
+
+    unsigned long currentMillis = millis();
+    if (currentMillis - startMillis >= maxTime)
+    {
+    Serial.println("Error: Reached maxtime while actuating kliktronic");
+    break;
+    }
+
+    clutchPressureMeasured = gearSensor.getPosition();
+
+    //Simulating pressure
+    delay(200);
+    clutchPressureMeasured = 2;
+  }
+
+  Serial.print("Clutchpressure is low enough: ");
+  Serial.print(clutchPressureMeasured);
+  Serial.println("bar, re-engaging throttle");
+
+  //-------------------
+
+  //RE-ENGAGE THROTTLE
+
+  //------------------
+
+  // currentGear = gearSensor.getPosition(); Commented out for simulation purposes
+    
   if (currentGear == nextGear)
   {
-    //--------------------
+  //Successfully geared!
 
-    //Kliktronic STOP PUSHING
+    success = true;
+  }
+  else
+  {
+    //Unsuccessfully geared!
 
-    //--------------------
-
-    //STOP CLUTCHING
-
-    //-------------------
-
-    while (clutchPressureMeasured >= clutchPressureMaxEngaged)
-    {
-      currentGear = gearSensor.getPosition();
-    }
-
-    //-------------------
-
-    //REINGAGE THROTTLE
-
-    //------------------
-    
+    success = false;
   }
   
-  
-  
-
-
 }
 
 
@@ -213,35 +281,99 @@ void loop()
     lastPressure = pressure;
     Serial.print("Pressure: ");
     Serial.println(pressure);
-  }*/
+  }
 
   int gear = gearSensor.getPosition();
 
   if (lastGear != gear)
   {
     lastGear = gear;
-    Serial.print("Gear: ");
-    Serial.println(gear);
-  }
+  }*/
+
+  
 
 
   bool gearUpSignal = digitalRead(gearUpPin);
-  if(gearUpSignal == HIGH && lastGear != 5)
+
+  if(gearUpSignal == HIGH && lastGear == 0)
+  {
+    //Gearing up from neutral to 1st(1st gear is down from neutral)
+    bool gearUpSuccessful = false;
+
+    gearUp(lastGear, gearUpSuccessful);
+
+    if (gearUpSuccessful == true)
+    {
+      Serial.println("Sucsessfully geared up!");
+      
+      lastGear = lastGear + 1; //Only doing this to simulate gearing, not using sensor
+    }
+    else
+    {
+      Serial.println("Gearing not succesful");
+    }
+
+  }
+  else if(gearUpSignal == HIGH && lastGear == 5)
+  {
+    //Cannot gear up
+    Serial.println("Warning: Already in 5th gear!");
+  }
+  else if(gearUpSignal == HIGH)
   {
     //Gearing up
-    gearUp(lastGear);
-    Serial.println("Sucsessfully geared up");
+    bool gearUpSuccessful = false;
+
+    gearUp(lastGear, gearUpSuccessful);
+
+    if (gearUpSuccessful == true)
+    {
+      Serial.println("Sucsessfully geared up!");
+
+      lastGear = lastGear + 1; //Only doing this to simulate gearing, not using sensor
+    }
+    else
+    {
+      Serial.println("Gearing not succesful");
+    }
   }
+
+
+
 
   bool gearDownSignal = digitalRead(gearDownPin);
 
-  if(gearDownSignal == HIGH && gearUpSignal != HIGH && lastGear != 1)
+  if (gearDownSignal == HIGH && lastGear == 0)
+  {
+    //Cannot gear down from neutral(even though 1st gear is below neutral)
+    Serial.println("Warning: Cannot gear down from neutral!");    
+  }
+  else if(gearDownSignal == HIGH && lastGear == 1)
+  {
+    //Cannot gear further down
+    Serial.println("Warning: Already in 1st gear!");
+  }
+  else if (gearDownSignal == HIGH)
   {
     //Gearing down
-    gearDown(lastGear);
+    bool gearDownSuccessful = false;
 
-    Serial.println("Sucsessfully geared down");
+    gearDown(lastGear,gearDownSuccessful);
+
+    if (gearDownSuccessful == true)
+    {
+      Serial.println("Sucsessfully geared down");
+
+      lastGear = lastGear - 1; //Only doing this to simulate gearing, not using sensor
+    }
+    else
+    {
+      Serial.println("Gearing not successful");
+    }
   }
+  
+
+  
 
 
 
