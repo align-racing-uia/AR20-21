@@ -54,7 +54,7 @@ void gearUp(int currentGear, bool &success)
 
   //-------------------------------
 
- 
+  //Checking sensor
   while (currentGear < nextGear)
   {
     unsigned long currentMillis = millis();
