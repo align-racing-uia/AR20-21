@@ -1,6 +1,5 @@
 #include <Dynamixel2Arduino.h>
 #include <SoftwareSerial.h>
-#include <clutchServo.h>
 
 #include "clutchSensor.h"
 #include "gearSensor.h"
@@ -22,21 +21,21 @@ const float DXL_PROTOCOL_VERSION = 2.0;
 Dynamixel2Arduino dxl(DXL_SERIAL, DXL_DIR_PIN);
 
 #define LED_PIN 5
-static const byte MCP2517_CS  = 7 ; // CS input of MCP2517
-static const byte MCP2517_INT =  2 ; // INT output of MCP2517
+static const byte MCP2517_CS = 7;  // CS input of MCP2517
+static const byte MCP2517_INT = 2; // INT output of MCP2517
 
 ACAN2517FD can(MCP2517_CS, SPI, MCP2517_INT);
 
 // Meldinger vi skal sende
-CANFDMessage FDsendGearUPDOWN,    
-             FDsendCut, 
-             FDsendBlip, 
-             FDsendCurrentGear;
+CANFDMessage FDsendGearUPDOWN,
+    FDsendCut,
+    FDsendBlip,
+    FDsendCurrentGear;
 
 // Meldinger vi skal motta
 CANFDMessage FDreceiveClutchpressure,
-             FDreceiveGear,
-             FDreceiveRMP;
+    FDreceiveGear,
+    FDreceiveRMP;
 
 // Forwarddeclaring funksjoner
 void sendFDData(CANFDMessage FDmessage);
@@ -46,15 +45,32 @@ ClutchSensor clutchSensor(14); // Set to pin A0
 GearSensor gearSensor;
 // CANbus CAN;
 
+unsigned long last_t = millis();
+const uint16_t ref = 500;
 
- unsigned long last_t = millis();
- const uint16_t ref = 500;
+void receiveFromFilter(const CANFDMessage &inMessage)
+{
+  pinMode(5, OUTPUT);
+  digitalWrite(5, HIGH);
+  delay(300);
+  digitalWrite(5, LOW);
+}
 
-void receiveFromFilter (const CANFDMessage & inMessage) {
-  	pinMode(5, OUTPUT);
-    digitalWrite(5, HIGH);
-	  delay (300);
-	  digitalWrite(5, LOW);
+void sendFDData(CANFDMessage FDmessage)
+{
+  can.tryToSend(FDmessage);
+}
+
+void receiveFDData(CANFDMessage FDmessage)
+{
+  if (can.available())
+  {
+    if (can.receive(FDmessage))
+    {
+      //! Ingen ting implementert
+    }
+  }
+  can.dispatchReceivedMessage();
 }
 
 int lastGear;
@@ -87,13 +103,15 @@ void engageClutch(int mAh)
  */
 void changeCurrent(int mAh)
 {
-  if(clutching == true){
-  dxl.setGoalCurrent(DXL_ID, mAh, UNIT_MILLI_AMPERE);
-  DEBUG_SERIAL.print("Updated clutch current");}
-  else{
+  if (clutching == true)
+  {
+    dxl.setGoalCurrent(DXL_ID, mAh, UNIT_MILLI_AMPERE);
+    DEBUG_SERIAL.print("Updated clutch current");
+  }
+  else
+  {
     DEBUG_SERIAL.print("Clutch not engaged.");
   }
-
 }
 void disengageClutch()
 {
@@ -124,6 +142,9 @@ void PANIC()
 /* -------------------------------------------------------------------------- */
 void setup()
 {
+
+/* ---------------------------------- Servo --------------------------------- */
+
   // Use UART port of DYNAMIXEL Shield to debug.
   DEBUG_SERIAL.begin(9600);
   DEBUG_SERIAL.print("Booted");
@@ -145,7 +166,7 @@ void setup()
   lastGear = 0;
   pinMode(LED_PIN, OUTPUT);
 
-    /* ----------------------------------- PID ---------------------------------- */
+  /* ----------------------------------- PID ---------------------------------- */
   Input = clutchSensor.getClutchPressure();
   //Set goal pressure for PID controller
   Setpoint = 14;
@@ -156,7 +177,8 @@ void setup()
   engageClutch(20);
   DEBUG_SERIAL.print("Setup ended");
 
-// CANbus setup start ---------------------------------------------------------------------------
+  /* --------------------------- CANbus setup start --------------------------- */
+
   SPI.begin();
 
   ACAN2517FDSettings settings(ACAN2517FDSettings::OSC_20MHz, 500UL * 1000UL, DataBitRateFactor::x8);
@@ -164,20 +186,19 @@ void setup()
   settings.mDriverTransmitFIFOSize = 1;
   settings.mDriverReceiveFIFOSize = 1;
 
-
-   /* Meldinger vi skal motta på CANbus: 
+  /* Meldinger vi skal motta på CANbus: 
   * Clutch trykk fra clutch-skruknott på ratt (CANID: 0x101)
   * Gir opp/ned fra ratt                      (CANID: 0x050)
   * RPM fra ECU (vanlig CAN)                  (CANID: 0x5e8)
   * */
 
- /* Meldinger vi skal sende på CANbus: 
+  /* Meldinger vi skal sende på CANbus: 
   * Gir opp/ned  (CANID: 0x051)
   * Tenningskutt (CANID: 0x052)
   * Blip         (CANID: 0x053)
   * Current gear (CANID: 0x100)
+  * Skru av bilen (!ikke kjent)
   */
-
 
   ACAN2517FDFilters filters;
   filters.appendFrameFilter(kStandard, 0x050, receiveFromFilter);
@@ -185,15 +206,18 @@ void setup()
   filters.appendFrameFilter(kStandard, 0x5e8, receiveFromFilter);
   //filters.appendFilter (kStandard, 0x70F, 0x123, receiveFromFilter);
   //----------------------------------- Filters ok ?
-  if (filters.filterStatus() != ACAN2517FDFilters::kFiltersOk) {
-
+  if (filters.filterStatus() != ACAN2517FDFilters::kFiltersOk)
+  {
   }
-  const uint32_t errorCode = can.begin(settings, [] { can.isr () ; }, filters) ;
-// CANbus setup end ---------------------------------------------------------------------------
+  const uint32_t errorCode = can.begin(
+      settings, [] { can.isr(); }, filters);
 
-//----------------------------------------------------------------------------------------------------------------------
-//    Sending frames
-//----------------------------------------------------------------------------------------------------------------------
+/* ---------------------------- CANbus setup end ---------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                               Sending frames                               */
+/* -------------------------------------------------------------------------- */
+ 
   // Gir opp/ned
   FDsendGearUPDOWN.id = 0x051;
   FDsendGearUPDOWN.len = 1; // Valid lengths are: 0, 1, ..., 8, 12, 16, 20, 24, 32, 48, 64
@@ -209,7 +233,6 @@ void setup()
   FDsendBlip.len = 1; // Valid lengths are: 0, 1, ..., 8, 12, 16, 20, 24, 32, 48, 64
   FDsendBlip.type = CANFDMessage::CANFD_WITH_BIT_RATE_SWITCH;
 
-
   // Nåværende gir
   FDsendCurrentGear.id = 0x100;
   FDsendCurrentGear.len = 2; // Valid lengths are: 0, 1, ..., 8, 12, 16, 20, 24, 32, 48, 64
@@ -220,9 +243,10 @@ void setup()
   FDsendBlip.data[0] = 3;
   FDsendCurrentGear.data[0] = 4;
 
-//----------------------------------------------------------------------------------------------------------------------
-//    Receiving frames
-//----------------------------------------------------------------------------------------------------------------------
+/* -------------------------------------------------------------------------- */
+/*                              Receiving frames                              */
+/* -------------------------------------------------------------------------- */
+
   // Clutch trykk
   FDreceiveClutchpressure.id = 0x101;
   FDreceiveClutchpressure.len = 1; // Valid lengths are: 0, 1, ..., 8, 12, 16, 20, 24, 32, 48, 64
@@ -244,16 +268,16 @@ void loop()
 {
   // DEBUG_SERIAL.print("Loop");
   // if(lastRun < millis() - 100){
-    //! Blocking code
+  //! Blocking code
   //Failsafe, in cacse of the servo overloading. Shutdown the car
   // if (isOverloaded())
   // {
   //   PANIC();
   // }
-  
+
   Input = clutchSensor.getClutchPressure();
   clutchPID.Compute();
- 
+
   lastRun = millis();
   // double clutchCurrent = map(Output, -255, 255, -2000, 2000);
   int multiplicate = (Output >= 0 ? -1 : 1);
@@ -273,29 +297,6 @@ void loop()
 
   DEBUG_SERIAL.println(current);
   delay(100);
-  // }
-  // int pressure = clutchSensor.getClutchPressure();
-  // pressure = (pressure > 0 ? pressure : 0);
-  // if (lastPressure != pressure)
-  // {
-  //   lastPressure = pressure;
-  //   Serial.print("Pressure: ");
-  //   Serial.println(pressure);
-  // }
-  if (lastGear != gear)
-  {
-    lastGear = gear;
-
-  }
-
-  // int gear = gearSensor.getPosition();
-
-  // if (lastGear != gear)
-  // {
-  //   lastGear = gear;
-  //   Serial.print("Gear: ");
-  //   Serial.println(gear);
-  // }
 
   // CAN.receiveData();
 
@@ -308,25 +309,12 @@ void loop()
   // // digitalWrite(LED_PIN, LOW);
   // // delay(1000);
 
-    delay(300);
-    sendFDData(FDsendBlip);
-    delay(30);
-    sendFDData(FDsendCurrentGear);
-    delay(30);
-    sendFDData(FDsendCut);
-    delay(30);
-    sendFDData(FDsendGearUPDOWN);
-
-}
-
-void sendFDData(CANFDMessage FDmessage) {
-  can.tryToSend(FDmessage);
-}
-
-void receiveFDData(CANFDMessage FDmessage) {
-    if(can.available()) {
-      if(can.receive(FDmessage)) {
-      }		
-	  }
-    can.dispatchReceivedMessage();
+  delay(300);
+  sendFDData(FDsendBlip);
+  delay(30);
+  sendFDData(FDsendCurrentGear);
+  delay(30);
+  sendFDData(FDsendCut);
+  delay(30);
+  sendFDData(FDsendGearUPDOWN);
 }
