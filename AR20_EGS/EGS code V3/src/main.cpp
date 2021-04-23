@@ -15,10 +15,12 @@ SoftwareSerial soft_serial(7, 8); // DYNAMIXELShield UART RX/TX
 
 const uint8_t DXL_DIR_PIN = 2; // DYNAMIXEL Shield DIR PIN
 
-const uint8_t DXL_ID = 1;
-const float DXL_PROTOCOL_VERSION = 2.0;
+ClutchSensor clutchSensor(14); // Set to pin A0
+GearSensor gearSensor;
+CANbus CAN;
 
-Dynamixel2Arduino dxl(DXL_SERIAL, DXL_DIR_PIN);
+int lastPressure;
+int lastGear;
 
 #define LED_PIN 5
 static const byte MCP2517_CS = 7;  // CS input of MCP2517
@@ -264,6 +266,7 @@ void setup()
 }
 unsigned long lastRun = 0;
 
+//let's also create a variable where we can count how many times we've tried to obtain the position in case there are errors
 void loop()
 {
   // DEBUG_SERIAL.print("Loop");
