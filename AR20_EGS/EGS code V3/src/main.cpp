@@ -126,7 +126,7 @@ void gearDown(int currentGear, bool &success)
 
   int nextGear = currentGear-1;
 
-  int clutchPressureDesired = 14;
+  int clutchPressureDesired = 14; //Clutchpressure where clutch is fully engaged
   int clutchPressureMaxEngaged = 2; //Clutchpressure limit before reingaging throttle
   int clutchPressureMeasured = 0;
 
