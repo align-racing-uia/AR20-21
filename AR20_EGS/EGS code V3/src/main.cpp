@@ -40,7 +40,8 @@ ACAN2517FD can(MCP2517_CS, SPI, MCP2517_INT);
 CANFDMessage FDsendGearUPDOWN,
     FDsendCut,
     FDsendBlip,
-    FDsendCurrentGear;
+    FDsendCurrentGear,
+    FDshutdown;
 
 // Meldinger vi skal motta
 CANFDMessage FDreceiveClutchpressure,
@@ -129,7 +130,30 @@ bool isOverloaded()
   int32_t result = dxl.readControlTableItem(HARDWARE_ERROR_STATUS, DXL_ID);
   return bitRead(result, 5);
 }
+unsigned long lastRunTime = 0;
+void updateClutchFromPID()
+{
 
+  Input = clutchSensor.getClutchPressure();
+  clutchPID.Compute();
+
+  lastRunTime = millis();
+  int multiplicate = (Output >= 0 ? -1 : 1);
+  int current = (2000 - abs(Output)) * multiplicate;
+  changeCurrent(current);
+  DEBUG_SERIAL.print(Input);
+  DEBUG_SERIAL.print(" - ");
+  int pressure = clutchSensor.getClutchPressure();
+  pressure = (pressure > 0 ? pressure : 0);
+  if (lastPressure != pressure)
+  {
+    lastPressure = pressure;
+  }
+
+  DEBUG_SERIAL.print(Output);
+  DEBUG_SERIAL.print(" - ");
+  DEBUG_SERIAL.println(current);
+}
 /* -------------------------------------------------------------------------- */
 /*                                  Shutdown                                  */
 /* -------------------------------------------------------------------------- */
@@ -138,6 +162,26 @@ void PANIC()
 {
   // Send can melding til å skru av bilen
   DEBUG_SERIAL.print("Car is to be shut down");
+  sendFDData(FDshutdown);
+}
+/* -------------------------------------------------------------------------- */
+/*                                 Kliktronic                                 */
+/* -------------------------------------------------------------------------- */
+
+void kliktronicPULL()
+{
+  FDsendGearUPDOWN.data[0] = 0x0F;
+  sendFDData(FDsendGearUPDOWN);
+}
+void kliktronicPUSH()
+{
+  FDsendGearUPDOWN.data[0] = 0xF0;
+  sendFDData(FDsendGearUPDOWN);
+}
+void kliktronicSTOP()
+{
+  FDsendGearUPDOWN.data[0] = 0x5A;
+  sendFDData(FDsendGearUPDOWN);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -174,7 +218,7 @@ void gearUp(int currentGear, bool &success)
   //--------------------------------
 
   //Kliktronic PULL!
-
+  kliktronicPULL();
   //-------------------------------
 
   //Checking sensor
@@ -202,7 +246,7 @@ void gearUp(int currentGear, bool &success)
   //---------------------------------
 
   //Kliktronic STOP PULLING
-
+  kliktronicSTOP();
   //---------------------------------
 
   //Re-engage the throttle
@@ -261,6 +305,7 @@ void gearDown(int currentGear, bool &success)
   //-------------------------------
 
   //ENGAGE CLUTCH!
+  engageClutch(2000);
 
   //-------------------------------
 
@@ -291,6 +336,7 @@ void gearDown(int currentGear, bool &success)
     //--------------------------------
 
     //Kliktronic PUSH!
+    kliktronicPUSH();
 
     //--------------------------------
 
@@ -305,7 +351,7 @@ void gearDown(int currentGear, bool &success)
       }
 
       currentGear = gearSensor.getPosition();
-
+      updateClutchFromPID();
       //Simulating the gearing
       delay(500);
       currentGear = nextGear;
@@ -319,11 +365,11 @@ void gearDown(int currentGear, bool &success)
   //--------------------
 
   //Kliktronic STOP PUSHING
-
+  kliktronicSTOP();
   //--------------------
 
   //STOP CLUTCHING
-
+  disengageClutch();
   //-------------------
 
   while (clutchPressureMeasured > clutchPressureMaxEngaged)
@@ -375,7 +421,7 @@ void gearDown(int currentGear, bool &success)
 void setup()
 {
 
-/* ---------------------------------- Servo --------------------------------- */
+  /* ---------------------------------- Servo --------------------------------- */
 
   // Use UART port of DYNAMIXEL Shield to debug.
   DEBUG_SERIAL.begin(9600);
@@ -406,7 +452,7 @@ void setup()
   clutchPID.SetOutputLimits(-2000, 2000);
   // clutchPID.SetOutputLimits(-255, 255);
   clutchPID.SetSampleTime(5);
-  engageClutch(20);
+  // engageClutch(20);
   DEBUG_SERIAL.print("Setup ended");
 
   /* --------------------------- CANbus setup start --------------------------- */
@@ -443,16 +489,17 @@ void setup()
   }
   const uint32_t errorCode = can.begin(
       settings, [] { can.isr(); }, filters);
-  if(errorCode == 0){
+  if (errorCode == 0)
+  {
     DEBUG_SERIAL.print("Can filter error: ");
     DEBUG_SERIAL.println(errorCode);
   }
-/* ---------------------------- CANbus setup end ---------------------------- */
+  /* ---------------------------- CANbus setup end ---------------------------- */
 
-/* -------------------------------------------------------------------------- */
-/*                               Sending frames                               */
-/* -------------------------------------------------------------------------- */
- 
+  /* -------------------------------------------------------------------------- */
+  /*                               Sending frames                               */
+  /* -------------------------------------------------------------------------- */
+
   // Gir opp/ned
   FDsendGearUPDOWN.id = 0x051;
   FDsendGearUPDOWN.len = 1; // Valid lengths are: 0, 1, ..., 8, 12, 16, 20, 24, 32, 48, 64
@@ -473,14 +520,20 @@ void setup()
   FDsendCurrentGear.len = 2; // Valid lengths are: 0, 1, ..., 8, 12, 16, 20, 24, 32, 48, 64
   FDsendCurrentGear.type = CANFDMessage::CANFD_WITH_BIT_RATE_SWITCH;
 
+  // Shutdown
+  FDshutdown.id = 0x010;
+  FDshutdown.len = 1;
+  FDshutdown.type = CANFDMessage::CANFD_WITH_BIT_RATE_SWITCH;
+
   FDsendGearUPDOWN.data[0] = 1;
   FDsendCut.data[0] = 2;
   FDsendBlip.data[0] = 3;
   FDsendCurrentGear.data[0] = 4;
+  FDshutdown.data[0] = 0x0F;
 
-/* -------------------------------------------------------------------------- */
-/*                              Receiving frames                              */
-/* -------------------------------------------------------------------------- */
+  /* -------------------------------------------------------------------------- */
+  /*                              Receiving frames                              */
+  /* -------------------------------------------------------------------------- */
 
   // Clutch trykk
   FDreceiveClutchpressure.id = 0x101;
@@ -497,7 +550,6 @@ void setup()
   FDreceiveRMP.len = 8; // Valid lengths are: 0, 1, ..., 8, 12, 16, 20, 24, 32, 48, 64
   FDreceiveRMP.type = CANFDMessage::CAN_DATA;
 }
-unsigned long lastRun = 0;
 
 //let's also create a variable where we can count how many times we've tried to obtain the position in case there are errors
 void loop()
@@ -511,28 +563,6 @@ void loop()
   //   PANIC();
   // }
 
-  Input = clutchSensor.getClutchPressure();
-  clutchPID.Compute();
-
-  lastRun = millis();
-  // double clutchCurrent = map(Output, -255, 255, -2000, 2000);
-  int multiplicate = (Output >= 0 ? -1 : 1);
-  int current = (2000 - abs(Output)) * multiplicate;
-  changeCurrent(current);
-  DEBUG_SERIAL.print(Input);
-  DEBUG_SERIAL.print(" - ");
-  int pressure = clutchSensor.getClutchPressure();
-  pressure = (pressure > 0 ? pressure : 0);
-  if (lastPressure != pressure)
-  {
-    lastPressure = pressure;
-  }
-
-  DEBUG_SERIAL.print(Output);
-  DEBUG_SERIAL.print(" - ");
-
-  DEBUG_SERIAL.println(current);
-  delay(100);
   /* -------------------------------------------------------------------------- */
   /*                               Gear code logic                              */
   /* -------------------------------------------------------------------------- */
