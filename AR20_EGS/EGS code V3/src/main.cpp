@@ -1,22 +1,27 @@
 /*
-|     Pin     |         Mode         |     Device     |
-| ----------- | -------------------- | -------------- |
-| PIN 0       | RX                   | Servo          |
-| PIN 1       | TX                   | Servo          |
-| PIN 2       | INT                  | CAN            |
-| PIN 3       | Enable(UART)         | Servo          |
-| PIN 4       | CS(SPI)              | GearSensor     |
-| PIN 5       | Referenced in Filter | CAN            |
-| PIN 6       |                      |                |
-| PIN 7       | CS(SPI)              | CAN            |
-| PIN 8       | S_RX                 | DEBUG          |
-| PIN 9       | S_TX                 | DEBUG          |
-| PIN 10      |                      |                |
-| PIN 11      | MOSI                 | CAN/GearSensor |
-| PIN 12      | MISO                 | CAN/GearSensor |
-| PIN 13      | SCLK                 | CAN/GearSensor |
-| PIN 14 (A0) | Analog Read          | ClutchSensor   |
-| PIN 15 (A1) |                      |                |
+|     Pin     |     Mode     |     Device     | Connector pin |
+| ----------- | ------------ | -------------- | ------------- |
+| PIN 0       | RX           | Servo          | 1             |
+| PIN 1       | TX           | Servo          | 2             |
+| PIN 2       | INT          | CAN            |               |
+| PIN 3       | Enable(UART) | Servo          |               |
+| PIN 4       | CS(SPI)      | GearSensor     | 3             |
+| PIN 5       | GREEN LED    | LED            |               |
+| PIN 6       |              |                |               |
+| PIN 7       | CS(SPI)      | CAN            |               |
+| PIN 8       | S_RX         | DEBUG          |               |
+| PIN 9       | S_TX/RED LED | DEBUG/LED      |               |
+| PIN 10      | BLUE LED     | LED            |               |
+| PIN 11      | MOSI         | CAN/GearSensor | 4             |
+| PIN 12      | MISO         | CAN/GearSensor | 5             |
+| PIN 13      | SCLK         | CAN/GearSensor | 6             |
+| PIN 14 (A0) | Analog Read  | ClutchSensor   | 7             |
+| PIN 15 (A1) |              |                |               |
+|             |              | +12V           | 8             |
+|             |              | GND            | 9             |
+|             |              | CAN_H          | 10            |
+|             |              | CAN_L          | 11            |
+|             |              | +5V            | 12            |
 
 */
 
@@ -85,6 +90,8 @@ enum GearState
 {
   GEAR_UP,
   GEAR_DOWN,
+  NEUTRAL_ENGAGE,
+  NEUTRAL_DISENGAGE,
   GEAR_NOTHING
 };
 GearState gearSignal = GEAR_NOTHING;
@@ -257,15 +264,12 @@ void gearUp()
   if (gearstage == START)
   {
     startMillis = millis();
-    //---------------------------------
 
     //Cut the throttle
-
-    //--------------------------------
+    //NOTE May be handled on hardware if connected right
 
     //Kliktronic PULL!
-    kliktronicPULL();
-    //-------------------------------
+    kliktronicPUSH();
     gearstage = GEARING;
   }
   if (GEARING)
@@ -275,6 +279,7 @@ void gearUp()
       gearstage = FINISHED;
 
       //TODO Re-engage the throttle
+      //NOTE May be handled on hardware
     }
     else if (currentGear != nextGear && millis() - startMillis >= maxTime)
     {
@@ -298,9 +303,9 @@ void gearUp()
 }
 
 //Definitions for gearing down
-int clutchPressureDesired = 14;   //Clutchpressure where clutch is fully engaged
-int clutchPressureMaxEngaged = 2; //Clutchpressure limit before reingaging throttle
-int clutchPressureMeasured = 0;
+uint8_t clutchPressureDesired = 14;   //Clutchpressure where clutch is fully engaged
+uint8_t clutchPressureMaxEngaged = 2; //Clutchpressure limit before reingaging throttle
+uint8_t clutchPressureMeasured = 0;
 
 void gearDown()
 {
@@ -326,7 +331,7 @@ void gearDown()
   if (gearstage == START)
   {
     startMillis = millis();
-    //TODO CUT THE THROTTLE!
+    //TODO BLIP
 
     //ENGAGE CLUTCH!
     engageClutch(2000);
@@ -340,18 +345,17 @@ void gearDown()
     {
       gearstage = CLUTCHING;
       //Kliktronic PUSH!
-      kliktronicPUSH();
+      kliktronicPULL();
     }
   }
   if (gearstage == CLUTCHING)
   {
-
     if (currentGear > nextGear)
     {
-
       if (millis() - startMillis >= maxTime)
       {
         // DEBUG_SERIAL.println("Error: Reached maxtime while actuating kliktronic");
+        gearstage = ERROR;
       }
 
       currentGear = gearSensor.getPosition();
@@ -382,11 +386,7 @@ void gearDown()
     //STOP CLUTCHING
     disengageClutch();
     //-------------------
-
-    //-------------------
-
-    //TODO RE-ENGAGE THROTTLE
-
+    //TODO BLIP stop
     //------------------
     gearSignal = GEAR_NOTHING;
   }
@@ -395,6 +395,77 @@ void gearDown()
   // DEBUG_SERIAL.println("bar, re-engaging throttle");
 }
 
+void neutralEngage()
+{
+  /*
+    1. Cutch
+    2. Gear up half a step
+    3. Stop clutching
+  */
+  if (gearstage == START)
+  {
+    startMillis = millis();
+    kliktronicPUSH();
+    gearstage = GEARING;
+  }
+  if (gearstage == GEARING)
+  {
+    if (currentGear == 1)
+    {
+      gearstage = FINISHED;
+    }
+    else if (millis() - startMillis >= maxTime)
+    {
+      gearstage = ERROR;
+    }
+    else if (currentGear > 1)
+    {
+      gearstage = ERROR;
+    }
+  }
+  if (gearstage == FINISHED || gearstage == ERROR)
+  {
+    kliktronicSTOP();
+  }
+}
+void neutralDisengage()
+{
+  /*
+    1. Cutch
+    2. Gear up half a step
+    3. Stop clutching
+  */
+  if (gearstage == START)
+  {
+    startMillis = millis();
+    engageClutch(2000);
+    gearstage = GEARING;
+  }
+  if (gearstage == GEARING)
+  {
+    if (clutchPressureMeasured >= clutchPressureDesired)
+    {
+      gearstage = CLUTCHING;
+      kliktronicPULL();
+    }
+  }
+  if (gearstage == CLUTCHING)
+  {
+    if (currentGear == 1)
+    {
+      gearstage = FINISHED;
+    }
+    else if (currentGear > 1)
+    {
+      gearstage = ERROR;
+    }
+  }
+  if (gearstage == FINISHED || gearstage == ERROR)
+  {
+    kliktronicSTOP();
+    disengageClutch();
+  }
+}
 /* -------------------------------------------------------------------------- */
 /*                        Main functions (LOOP, SETUP)                        */
 /* -------------------------------------------------------------------------- */
@@ -473,7 +544,6 @@ void setup()
     // DEBUG_SERIAL.print("Can filter error: ");
     // DEBUG_SERIAL.println(errorCode);
   }
-  /* ---------------------------- CANbus setup end ---------------------------- */
 
   /* -------------------------------------------------------------------------- */
   /*                               Sending frames                               */
@@ -530,9 +600,13 @@ void setup()
   FDreceiveRMP.type = CANFDMessage::CAN_DATA;
   DEBUG_SERIAL.print("Setup ended");
 }
+unsigned long lastCanSendTime = 0;
+uint8_t cansignalup, cansignaldown, cansingalengageneutral, cansignaldisengageneutral;
 
 void loop()
 {
+  //TODO Receive all can messages and add them to a flag/variable
+
   // DEBUG_SERIAL.print("Loop");
   // if(lastRun < millis() - 100){
   //! Blocking code
@@ -550,8 +624,7 @@ void loop()
   clutchPressureMeasured = clutchSensor.getClutchPressure();
 
   //TODO CAN SIGNAL receive(dummy values)
-  uint8_t cansignalopp, cansignaldown;
-  if (cansignalopp && gearstage != GEARING)
+  if (cansignalup && gearstage != GEARING && gearstage != CLUTCHING)
   {
     if (currentGear != 5)
     {
@@ -564,7 +637,7 @@ void loop()
       //Gear allready in 5th gear
     }
   }
-  if (cansignaldown && gearstage != GEARING)
+  if (cansignaldown && gearstage != GEARING && gearstage != CLUTCHING)
   {
     if (currentGear != 0)
     {
@@ -577,35 +650,73 @@ void loop()
       // Could not gear down, allready in neutral(lowest gear)
     }
   }
+  if (cansingalengageneutral && gearstage != GEARING && gearstage != CLUTCHING)
+  {
+    if (currentGear == 1)
+    {
+      gearSignal = NEUTRAL_ENGAGE;
+      gearstage = START;
+    }
+    else
+    {
+      // Could not gear down, allready in neutral(lowest gear)
+    }
+  }
+  if (cansignaldisengageneutral && gearstage != GEARING && gearstage != CLUTCHING)
+  {
+    if (currentGear == 0)
+    {
+      gearSignal = NEUTRAL_DISENGAGE;
+      gearstage = START;
+    }
+    else
+    {
+      // Could not gear down, allready in neutral(lowest gear)
+    }
+  }
 
   switch (gearSignal)
   {
-  case GEAR_NOTHING:
-    break;
-  case GEAR_UP:
+    case GEAR_NOTHING:
+      break;
+    case GEAR_UP:
 
-    /* --------------------------------- Gear up -------------------------------- */
-    gearUp();
+      gearUp();
 
-    break;
+      break;
 
-  case GEAR_DOWN:
+    case GEAR_DOWN:
 
-    /* ----------------------------- Gear down part ----------------------------- */
-    gearDown();
+      gearDown();
 
-    break;
+      break;
+    case NEUTRAL_ENGAGE:
+      neutralEngage();
+      break;
+    case NEUTRAL_DISENGAGE:
+      neutralDisengage();
+      break;
   }
   /* -------------------------------------------------------------------------- */
   /*                               End gear logic                               */
   /* -------------------------------------------------------------------------- */
+
+  /* -------------------------------------------------------------------------- */
+  /*                          Send regular can messages                         */
+  /* -------------------------------------------------------------------------- */
+
+  // sendFDData(FDsendBlip);
+  if (millis() - lastCanSendTime >= 30)
+  {
+    FDsendCurrentGear.data[0] = currentGear;
+    FDsendCurrentGear.data[1] = clutchPressureMeasured;
+    sendFDData(FDsendCurrentGear);
+
+    // sendFDData(FDsendCut);
+    // sendFDData(FDsendGearUPDOWN);
+    lastCanSendTime = millis();
+  }
   DEBUG_SERIAL.print("LOOP ended");
-  delay(300);
-  sendFDData(FDsendBlip);
-  delay(30);
-  sendFDData(FDsendCurrentGear);
-  delay(30);
-  sendFDData(FDsendCut);
-  delay(30);
-  sendFDData(FDsendGearUPDOWN);
+
+  delay(300); // ANCHOR DEBUG delay
 }
