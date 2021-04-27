@@ -1,7 +1,5 @@
 #include <Arduino.h>
 #include <clutchSensor.h>
-float pressureSensor1 = 0; 
-int ARpressure1 = 0;
 int _pressureSensor1Pin = 14; // Sensor on pin A0
 /**
  * @brief Construct a new Clutch Sensor:: Clutch Sensor object
