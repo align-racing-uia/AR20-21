@@ -66,7 +66,8 @@ CANFDMessage FDsendGearUPDOWN,
     FDsendCut,
     FDsendBlip,
     FDsendCurrentGear,
-    FDshutdown;
+    FDshutdown,
+    FDerror;
 
 // Meldinger vi skal motta
 CANFDMessage FDreceiveClutchpressure,
@@ -90,6 +91,13 @@ enum GearState : uint8_t
   NEUTRAL_ENGAGE,
   NEUTRAL_DISENGAGE,
   GEAR_NOTHING
+};
+enum ErrorCodes : uint8_t
+{
+  GEAR_UP_TIMEOUT = 0x01,
+  GEAR_DOWN_TIMEOUT = 0x02,
+  CLUTCHING_TIMEOUT = 0x03,
+  SERVO_OVERLOAD = 0x04
 };
 GearState gearSignal = GEAR_NOTHING;
 int currentGear = 0;
@@ -166,7 +174,12 @@ void disengageClutch()
 bool isOverloaded()
 {
   int32_t result = dxl.readControlTableItem(HARDWARE_ERROR_STATUS, DXL_ID);
-  return bitRead(result, 5);
+  if (bitRead(result, 5))
+  {
+    FDerror.data[0] = SERVO_OVERLOAD;
+    sendFDData(FDerror);
+  }
+    return bitRead(result, 5);
 
   // return false;
 }
@@ -285,7 +298,8 @@ void gearUp()
       //Checking sensor
       //Display error message: "Error: reached maxtime"
       // DEBUG_SERIAL.println("Error: Reached maxtime while actuating kliktronic");
-
+      FDerror.data[0] = GEAR_UP_TIMEOUT;
+      sendFDData(FDerror);
       DEBUG_SERIAL.println("An error occured");
       gearstage = ERROR;
     }
@@ -368,11 +382,17 @@ void gearDown()
   {
     //Display error message: "Error: Reached maxtime while clutching"
     // DEBUG_SERIAL.println("Error: Reached maxtime while actuating kliktronic");
+    if (gearstage == CLUTCHING)
+      FDerror.data[0] = CLUTCHING_TIMEOUT;
+    else
+      FDerror.data[0] = GEAR_DOWN_TIMEOUT;
+
+    sendFDData(FDerror);
     gearstage = ERROR;
   }
   if (gearstage == FINISHED || gearstage == ERROR)
   {
-    DEBUG_SERIAL.println("Down gearing finnished with code");
+    DEBUG_SERIAL.println("Down gearing finnished:");
     DEBUG_SERIAL.print(gearstage);
     // DEBUG_SERIAL.print("Reached ");
     // DEBUG_SERIAL.print(currentGear);
@@ -479,7 +499,7 @@ void setup()
 
   // Use UART port of DYNAMIXEL Shield to debug.
   DEBUG_SERIAL.begin(9600);
-  DEBUG_SERIAL.print("Booted");
+  // DEBUG_SERIAL.print("Booted");
   //This has to match with DYNAMIXEL baudrate.
   dxl.begin(57600);
 
@@ -576,6 +596,11 @@ void setup()
   FDshutdown.len = 1;
   FDshutdown.type = CANFDMessage::CANFD_WITH_BIT_RATE_SWITCH;
 
+  // Error codes
+  FDerror.id = 0x102;
+  FDerror.len = 1;
+  FDerror.type = CANFDMessage::CANFD_WITH_BIT_RATE_SWITCH;
+
   FDsendGearUPDOWN.data[0] = 1;
   FDsendCut.data[0] = 2;
   FDsendBlip.data[0] = 3;
@@ -600,7 +625,7 @@ void setup()
   FDreceiveRMP.id = 0x5E8;
   FDreceiveRMP.len = 8; // Valid lengths are: 0, 1, ..., 8, 12, 16, 20, 24, 32, 48, 64
   FDreceiveRMP.type = CANFDMessage::CAN_DATA;
-  DEBUG_SERIAL.print("Setup ended");
+  // DEBUG_SERIAL.print("Setup ended");
 }
 unsigned long lastCanSendTime = 0;
 uint8_t cansignalup, cansignaldown, cansingalengageneutral, cansignaldisengageneutral;
@@ -628,21 +653,21 @@ void loop()
   {
     command = DEBUG_SERIAL.readStringUntil('\n');
   }
-  if (command != "")
-    DEBUG_SERIAL.println(command);
-  //TODO CAN SIGNAL receive(dummy values)
-  if ((cansignalup || command == "UP") && gearstage != GEARING && gearstage != CLUTCHING)
-  {
-    if (currentGear != 5)
+    if (command != "")
+      DEBUG_SERIAL.println(command);
+    //TODO CAN SIGNAL receive(dummy values)
+    if ((cansignalup || command == "UP") && gearstage != GEARING && gearstage != CLUTCHING)
     {
-      nextGear = currentGear + 1;
-      gearSignal = GEAR_UP;
-      gearstage = START;
-    }
-    else
-    {
-      //Gear allready in 5th gear
-    }
+      if (currentGear != 5)
+      {
+        nextGear = currentGear + 1;
+        gearSignal = GEAR_UP;
+        gearstage = START;
+      }
+      else
+      {
+        //Gear allready in 5th gear
+      }
   }
   if ((cansignaldown || command == "DOWN") && gearstage != GEARING && gearstage != CLUTCHING)
   {
@@ -732,5 +757,6 @@ void loop()
   }
   // DEBUG_SERIAL.print("LOOP ended");
   command = "";
+  // DEBUG_SERIAL.print("Loop");
   delay(300); // ANCHOR DEBUG delay
 }
