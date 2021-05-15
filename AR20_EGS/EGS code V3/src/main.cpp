@@ -117,11 +117,11 @@ void sendFDData(CANFDMessage FDmessage)
   can.tryToSend(FDmessage);
 }
 
-void receiveFDData(CANFDMessage FDmessage)
+void receiveFDData(CANFDMessage *FDmessage)
 {
   if (can.available())
   {
-    if (can.receive(FDmessage))
+    if (can.receive(*FDmessage))
     {
       //! Ingen ting implementert
     }
@@ -147,9 +147,9 @@ void engageClutch(int mAh)
   // DEBUG_SERIAL.print("Engaged clutch");
 }
 /**
- * @brief Change the current target while the servo is running. 
- * 
- * @param mAh 
+ * @brief Change the current target while the servo is running.
+ *
+ * @param mAh
  */
 void changeCurrent(int mAh)
 {
@@ -536,13 +536,13 @@ void setup()
   settings.mDriverTransmitFIFOSize = 1;
   settings.mDriverReceiveFIFOSize = 1;
 
-  /* Meldinger vi skal motta på CANbus: 
+  /* Meldinger vi skal motta på CANbus:
   * Clutch trykk fra clutch-skruknott på ratt (CANID: 0x101)
   * Gir opp/ned fra ratt                      (CANID: 0x050)
   * RPM fra ECU (vanlig CAN)                  (CANID: 0x5e8)
   * */
 
-  /* Meldinger vi skal sende på CANbus: 
+  /* Meldinger vi skal sende på CANbus:
   * Gir opp/ned  (CANID: 0x051)
   * Tenningskutt (CANID: 0x052)
   * Blip         (CANID: 0x053)
@@ -628,11 +628,24 @@ void setup()
   // DEBUG_SERIAL.print("Setup ended");
 }
 unsigned long lastCanSendTime = 0;
-uint8_t cansignalup, cansignaldown, cansingalengageneutral, cansignaldisengageneutral;
+bool cansignalup, cansignaldown, cansingalengageneutral, cansignaldisengageneutral;
 String command = "";
 void loop()
 {
   //TODO Receive all can messages and add them to a flag/variable
+  receiveFDData(&FDreceiveGear);
+  receiveFDData(&FDreceiveClutchpressure);
+  receiveFDData(&FDreceiveRMP);
+  cansignaldown = (FDreceiveGear.data[0] == 0xF0 ? 1 : 0);
+  cansignalup = (FDreceiveGear.data[0] == 0x0F ? 1 : 0);
+  // if (FDreceiveGear.data[0] == 0xF0)
+  // {
+  //   cansignaldown = true;
+  // }
+  // if (FDreceiveGear.data[0] == 0xF0)
+  // {
+  //   cansignalup = true;
+  // }
 
   // DEBUG_SERIAL.print("Loop");
   // if(lastRun < millis() - 100){
@@ -682,7 +695,7 @@ void loop()
       // Could not gear down, allready in neutral(lowest gear)
     }
   }
-  if ((cansingalengageneutral || command == "NEUTRAL") && gearstage != GEARING && gearstage != CLUTCHING)
+  if ((cansignaldown || command == "NEUTRAL") && gearstage != GEARING && gearstage != CLUTCHING)
   {
     if (currentGear == 1)
     {
@@ -694,7 +707,7 @@ void loop()
       // Could not gear down, allready in neutral(lowest gear)
     }
   }
-  if ((cansignaldisengageneutral || command == "FIRST") && gearstage != GEARING && gearstage != CLUTCHING)
+  if ((cansignalup || command == "FIRST") && gearstage != GEARING && gearstage != CLUTCHING)
   {
     if (currentGear == 0)
     {
