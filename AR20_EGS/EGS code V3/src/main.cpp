@@ -26,7 +26,7 @@
 */
 
 #include <Dynamixel2Arduino.h>
-#include <SoftwareSerial.h>
+// #include <SoftwareSerial.h>
 
 #include "clutchSensor.h"
 #include "gearSensor.h"
@@ -36,9 +36,9 @@
 #include "PID_v1.h"
 
 // Please modify it to suit your hardware.
-SoftwareSerial soft_serial(8, 9); // DYNAMIXELShield UART RX/TX
+// SoftwareSerial soft_serial(8, 9); // DYNAMIXELShield UART RX/TX
 #define DXL_SERIAL Serial
-#define DEBUG_SERIAL soft_serial
+// #define DEBUG_SERIAL soft_serial
 
 const uint8_t DXL_DIR_PIN = 3; // DYNAMIXEL Shield DIR PIN
 
@@ -92,24 +92,39 @@ enum GearState : uint8_t
   NEUTRAL_DISENGAGE,
   GEAR_NOTHING
 };
+/**
+ * @brief 
+ * 0xA* series is TIMEOUT codes
+ * 0x0* series is general codes
+ * 
+ */
 enum ErrorCodes : uint8_t
 {
-  GEAR_UP_TIMEOUT = 0x01,
-  GEAR_DOWN_TIMEOUT = 0x02,
-  CLUTCHING_TIMEOUT = 0x03,
-  SERVO_OVERLOAD = 0x04
+  GEAR_UP_TIMEOUT = 0xA1,
+  GEAR_DOWN_TIMEOUT = 0xA2,
+  CLUTCHING_TIMEOUT = 0xA3,
+  NEUTRAL_TIMEOUT = 0xA6,
+  SERVO_OVERLOAD = 0x01,
+  NEUTRAL_WRONG_GEAR = 0x02,
+  CAN_START_ERROR = 0x03,
+  SERVO_OFFLINE = 0x04
 };
+enum GearStage : uint8_t
+{
+  START,
+  GEARING,
+  CLUTCHING,
+  ERROR,
+  FINISHED
+};
+
+GearStage gearstage = START;
 GearState gearSignal = GEAR_NOTHING;
 int currentGear = 0;
 
 void receiveFromFilter(const CANFDMessage &inMessage)
 {
-  //? Vet ikke hvilken hensikt denne koden har
-  //? Så tar den ut for å ungå problemer i koden
-  // pinMode(5, OUTPUT);
-  // digitalWrite(5, HIGH);
-  // delay(300);
-  // digitalWrite(5, LOW);
+  // Callback, not used. But required in code
 }
 
 void sendFDData(CANFDMessage FDmessage)
@@ -128,7 +143,11 @@ void receiveFDData(CANFDMessage *FDmessage)
   }
   can.dispatchReceivedMessage();
 }
-
+void errorLog(int8_t errorcode)
+{
+  FDerror.data[0] = errorcode;
+  sendFDData(FDerror);
+}
 //PID Variables
 double Setpoint, Input, Output;
 //Input, Output, Mål trykk, P, I, D
@@ -137,14 +156,11 @@ PID clutchPID(&Input, &Output, &Setpoint, 3, 5, 2, DIRECT);
 /*                                Clutch servo                                */
 /* -------------------------------------------------------------------------- */
 
-bool clutching = false;
-unsigned long gearSequenceStarted = 0;
-
 void engageClutch(int mAh)
 {
   dxl.torqueOn(DXL_ID);
   dxl.setGoalCurrent(DXL_ID, mAh, UNIT_MILLI_AMPERE);
-  // DEBUG_SERIAL.print("Engaged clutch");
+  // // DEBUG_SERIAL.print("Engaged clutch");
 }
 /**
  * @brief Change the current target while the servo is running.
@@ -153,14 +169,14 @@ void engageClutch(int mAh)
  */
 void changeCurrent(int mAh)
 {
-  if (clutching == true)
+  if (gearstage == CLUTCHING)
   {
     dxl.setGoalCurrent(DXL_ID, mAh, UNIT_MILLI_AMPERE);
-    // DEBUG_SERIAL.print("Updated clutch current");
+    // // DEBUG_SERIAL.print("Updated clutch current");
   }
   else
   {
-    // DEBUG_SERIAL.print("Clutch not engaged.");
+    // // DEBUG_SERIAL.print("Clutch not engaged.");
   }
 }
 void disengageClutch()
@@ -169,7 +185,7 @@ void disengageClutch()
   delay(100);
   dxl.setGoalCurrent(DXL_ID, 0, UNIT_MILLI_AMPERE);
   dxl.torqueOff(DXL_ID);
-  // DEBUG_SERIAL.print("Disengaged clutch");
+  // // DEBUG_SERIAL.print("Disengaged clutch");
 }
 bool isOverloaded()
 {
@@ -179,7 +195,7 @@ bool isOverloaded()
     FDerror.data[0] = SERVO_OVERLOAD;
     sendFDData(FDerror);
   }
-    return bitRead(result, 5);
+  return bitRead(result, 5);
 
   // return false;
 }
@@ -194,8 +210,8 @@ void updateClutchFromPID()
   int multiplicate = (Output >= 0 ? -1 : 1);
   int current = (2000 - abs(Output)) * multiplicate;
   changeCurrent(current);
-  // DEBUG_SERIAL.print(Input);
-  // DEBUG_SERIAL.print(" - ");
+  // // DEBUG_SERIAL.print(Input);
+  // // DEBUG_SERIAL.print(" - ");
   int pressure = clutchSensor.getClutchPressure();
   pressure = (pressure > 0 ? pressure : 0);
   if (lastPressure != pressure)
@@ -203,19 +219,25 @@ void updateClutchFromPID()
     lastPressure = pressure;
   }
 
-  // DEBUG_SERIAL.print(Output);
-  // DEBUG_SERIAL.print(" - ");
-  // DEBUG_SERIAL.println(current);
+  // // DEBUG_SERIAL.print(Output);
+  // // DEBUG_SERIAL.print(" - ");
+  // // DEBUG_SERIAL.println(current);
 }
 /* -------------------------------------------------------------------------- */
 /*                                  Shutdown                                  */
 /* -------------------------------------------------------------------------- */
-
+/**
+ * @brief Will send 100 shutdown packets to shutdown the car. 
+ * 
+ */
 void PANIC()
 {
   // Send can melding til å skru av bilen
-  // DEBUG_SERIAL.print("Car is to be shut down");
-  sendFDData(FDshutdown);
+  // // DEBUG_SERIAL.print("Car is to be shut down");
+  for (int i = 0; i <= 100; i++)
+  {
+    sendFDData(FDshutdown);
+  }
 }
 /* -------------------------------------------------------------------------- */
 /*                                 Kliktronic                                 */
@@ -243,16 +265,12 @@ void kliktronicSTOP()
 unsigned long startMillis;
 unsigned long maxTime = 3000;
 int nextGear = 0;
-enum GearStage : uint8_t
-{
-  START,
-  GEARING,
-  CLUTCHING,
-  ERROR,
-  FINISHED
-};
 
-GearStage gearstage = START;
+/**
+ * @brief Will change it's current state and beaviour based on gearstage, starts with
+ * the enum value START
+ * 
+ */
 void gearUp()
 {
   /*
@@ -266,11 +284,11 @@ void gearUp()
     7. Reingage throttle
   */
 
-  // DEBUG_SERIAL.print("Gearing Up to ");
-  // DEBUG_SERIAL.print(nextGearUp);
-  // DEBUG_SERIAL.println(" gear.");
+  // // DEBUG_SERIAL.print("Gearing Up to ");
+  // // DEBUG_SERIAL.print(nextGearUp);
+  // // DEBUG_SERIAL.println(" gear.");
 
-  // DEBUG_SERIAL.println("Cutting throttle and actuating kliktronic");
+  // // DEBUG_SERIAL.println("Cutting throttle and actuating kliktronic");
   if (gearstage == START)
   {
     startMillis = millis();
@@ -281,15 +299,15 @@ void gearUp()
     //Kliktronic PULL!
     kliktronicPUSH();
     gearstage = GEARING;
-    DEBUG_SERIAL.println("STARTED gearing up");
+    // DEBUG_SERIAL.println("STARTED gearing up");
   }
   if (gearstage == GEARING)
   {
-    DEBUG_SERIAL.println("Checking gearing");
+    // DEBUG_SERIAL.println("Checking gearing");
     if (currentGear == nextGear)
     {
       gearstage = FINISHED;
-      DEBUG_SERIAL.println("Successfully geared");
+      // DEBUG_SERIAL.println("Successfully geared");
       //TODO Re-engage the throttle
       //NOTE May be handled on hardware
     }
@@ -297,10 +315,9 @@ void gearUp()
     {
       //Checking sensor
       //Display error message: "Error: reached maxtime"
-      // DEBUG_SERIAL.println("Error: Reached maxtime while actuating kliktronic");
-      FDerror.data[0] = GEAR_UP_TIMEOUT;
-      sendFDData(FDerror);
-      DEBUG_SERIAL.println("An error occured");
+      // // DEBUG_SERIAL.println("Error: Reached maxtime while actuating kliktronic");
+      errorLog(GEAR_UP_TIMEOUT);
+      // DEBUG_SERIAL.println("An error occured");
       gearstage = ERROR;
     }
   }
@@ -309,9 +326,9 @@ void gearUp()
     kliktronicSTOP();
     gearSignal = GEAR_NOTHING;
   }
-  // DEBUG_SERIAL.print("Reached ");
-  // DEBUG_SERIAL.print(currentGear);
-  // DEBUG_SERIAL.println(" gear, Stopping kliktronic, re-engaging throttle");
+  // // DEBUG_SERIAL.print("Reached ");
+  // // DEBUG_SERIAL.print(currentGear);
+  // // DEBUG_SERIAL.println(" gear, Stopping kliktronic, re-engaging throttle");
 
   //currentGear = gearSensor.getPosition(); Commented out for simulation purposes
 }
@@ -336,17 +353,17 @@ void gearDown()
     7. Reingage throttle
   */
 
-  // DEBUG_SERIAL.print("Gearing Down to ");
-  // DEBUG_SERIAL.print(nextGear);
-  // DEBUG_SERIAL.println(" gear.");
+  // // DEBUG_SERIAL.print("Gearing Down to ");
+  // // DEBUG_SERIAL.print(nextGear);
+  // // DEBUG_SERIAL.println(" gear.");
 
-  // DEBUG_SERIAL.println("Cutting throttle and engaging clutch.");
+  // // DEBUG_SERIAL.println("Cutting throttle and engaging clutch.");
 
   if (gearstage == START)
   {
     startMillis = millis();
     //TODO BLIP
-    DEBUG_SERIAL.println("Started geardown sequence");
+    // DEBUG_SERIAL.println("Started geardown sequence");
     //ENGAGE CLUTCH!
     engageClutch(2000);
 
@@ -354,9 +371,9 @@ void gearDown()
   }
   if (gearstage == GEARING)
   {
-    DEBUG_SERIAL.println("Checking clutch");
-    DEBUG_SERIAL.println(clutchPressureMeasured);
-    DEBUG_SERIAL.println(clutchPressureDesired);
+    // DEBUG_SERIAL.println("Checking clutch");
+    // DEBUG_SERIAL.println(clutchPressureMeasured);
+    // DEBUG_SERIAL.println(clutchPressureDesired);
     if (clutchPressureMeasured >= clutchPressureDesired)
     {
       gearstage = CLUTCHING;
@@ -366,7 +383,7 @@ void gearDown()
   }
   if (gearstage == CLUTCHING)
   {
-    DEBUG_SERIAL.println("Checking gearing");
+    // DEBUG_SERIAL.println("Checking gearing");
     if (currentGear > nextGear)
     {
 
@@ -381,22 +398,21 @@ void gearDown()
   if (millis() - startMillis >= maxTime && gearstage != FINISHED)
   {
     //Display error message: "Error: Reached maxtime while clutching"
-    // DEBUG_SERIAL.println("Error: Reached maxtime while actuating kliktronic");
+    // // DEBUG_SERIAL.println("Error: Reached maxtime while actuating kliktronic");
     if (gearstage == CLUTCHING)
-      FDerror.data[0] = CLUTCHING_TIMEOUT;
+      errorLog(CLUTCHING_TIMEOUT);
     else
-      FDerror.data[0] = GEAR_DOWN_TIMEOUT;
+      errorLog(GEAR_DOWN_TIMEOUT);
 
-    sendFDData(FDerror);
     gearstage = ERROR;
   }
   if (gearstage == FINISHED || gearstage == ERROR)
   {
-    DEBUG_SERIAL.println("Down gearing finnished:");
-    DEBUG_SERIAL.print(gearstage);
-    // DEBUG_SERIAL.print("Reached ");
-    // DEBUG_SERIAL.print(currentGear);
-    // DEBUG_SERIAL.println(" gear, Stopping kliktronic, releasing clutch");
+    // DEBUG_SERIAL.println("Down gearing finnished:");
+    // DEBUG_SERIAL.print(gearstage);
+    // // DEBUG_SERIAL.print("Reached ");
+    // // DEBUG_SERIAL.print(currentGear);
+    // // DEBUG_SERIAL.println(" gear, Stopping kliktronic, releasing clutch");
 
     //--------------------
 
@@ -411,9 +427,9 @@ void gearDown()
     //------------------
     gearSignal = GEAR_NOTHING;
   }
-  // DEBUG_SERIAL.print("Clutchpressure is low enough: ");
-  // DEBUG_SERIAL.print(clutchPressureMeasured);
-  // DEBUG_SERIAL.println("bar, re-engaging throttle");
+  // // DEBUG_SERIAL.print("Clutchpressure is low enough: ");
+  // // DEBUG_SERIAL.print(clutchPressureMeasured);
+  // // DEBUG_SERIAL.println("bar, re-engaging throttle");
 }
 
 void neutralEngage()
@@ -438,10 +454,12 @@ void neutralEngage()
     else if (millis() - startMillis >= maxTime)
     {
       gearstage = ERROR;
+      errorLog(NEUTRAL_TIMEOUT);
     }
     else if (currentGear > 1)
     {
       gearstage = ERROR;
+      errorLog(NEUTRAL_WRONG_GEAR);
     }
   }
   if (gearstage == FINISHED || gearstage == ERROR)
@@ -462,6 +480,13 @@ void neutralDisengage()
     startMillis = millis();
     engageClutch(2000);
     gearstage = GEARING;
+    if(dxl.ping(DXL_ID)){
+      gearstage = GEARING;
+    }
+    else{
+      gearstage = ERROR;
+      errorLog(SERVO_OFFLINE);
+    }
   }
   if (gearstage == GEARING)
   {
@@ -477,9 +502,15 @@ void neutralDisengage()
     {
       gearstage = FINISHED;
     }
+    else if (millis() - startMillis >= maxTime)
+    {
+      gearstage = ERROR;
+      errorLog(NEUTRAL_TIMEOUT);
+    }
     else if (currentGear > 1)
     {
       gearstage = ERROR;
+      errorLog(NEUTRAL_WRONG_GEAR);
     }
   }
   if (gearstage == FINISHED || gearstage == ERROR)
@@ -498,15 +529,17 @@ void setup()
   /* ---------------------------------- Servo --------------------------------- */
 
   // Use UART port of DYNAMIXEL Shield to debug.
-  DEBUG_SERIAL.begin(9600);
-  // DEBUG_SERIAL.print("Booted");
+  // DEBUG_SERIAL.begin(9600);
+  // // DEBUG_SERIAL.print("Booted");
   //This has to match with DYNAMIXEL baudrate.
   dxl.begin(57600);
 
   // This has to match with DYNAMIXEL protocol version.
   dxl.setPortProtocolVersion(DXL_PROTOCOL_VERSION);
   // // Get DYNAMIXEL information
-  dxl.ping(DXL_ID);
+  if(!dxl.ping(DXL_ID)){
+    errorLog(SERVO_OFFLINE);
+  };
 
   // Turn off torque when configuring items in EEPROM area
   dxl.torqueOff(DXL_ID);
@@ -560,11 +593,14 @@ void setup()
   {
   }
   const uint32_t errorCode = can.begin(
-      settings, [] { can.isr(); }, filters);
+      settings, []
+      { can.isr(); },
+      filters);
   if (errorCode == 0)
   {
-    // DEBUG_SERIAL.print("Can filter error: ");
-    // DEBUG_SERIAL.println(errorCode);
+    errorLog(CAN_START_ERROR);
+    // // DEBUG_SERIAL.print("Can filter error: ");
+    // // DEBUG_SERIAL.println(errorCode);
   }
 
   /* -------------------------------------------------------------------------- */
@@ -625,10 +661,9 @@ void setup()
   FDreceiveRMP.id = 0x5E8;
   FDreceiveRMP.len = 8; // Valid lengths are: 0, 1, ..., 8, 12, 16, 20, 24, 32, 48, 64
   FDreceiveRMP.type = CANFDMessage::CAN_DATA;
-  // DEBUG_SERIAL.print("Setup ended");
+  // // DEBUG_SERIAL.print("Setup ended");
 }
 unsigned long lastCanSendTime = 0;
-bool cansignalup, cansignaldown, cansingalengageneutral, cansignaldisengageneutral;
 String command = "";
 void loop()
 {
@@ -636,8 +671,6 @@ void loop()
   receiveFDData(&FDreceiveGear);
   receiveFDData(&FDreceiveClutchpressure);
   receiveFDData(&FDreceiveRMP);
-  cansignaldown = (FDreceiveGear.data[0] == 0xF0 ? 1 : 0);
-  cansignalup = (FDreceiveGear.data[0] == 0x0F ? 1 : 0);
   // if (FDreceiveGear.data[0] == 0xF0)
   // {
   //   cansignaldown = true;
@@ -647,7 +680,7 @@ void loop()
   //   cansignalup = true;
   // }
 
-  // DEBUG_SERIAL.print("Loop");
+  // // DEBUG_SERIAL.print("Loop");
   // if(lastRun < millis() - 100){
   //! Blocking code
   //Failsafe, in cacse of the servo overloading. Shutdown the car
@@ -662,27 +695,27 @@ void loop()
   //TODO Make the checking of gear and pressure only when necesary
   currentGear = gearSensor.getPosition();
   clutchPressureMeasured = clutchSensor.getClutchPressure();
-  if (DEBUG_SERIAL.available())
+  // if (// DEBUG_SERIAL.available())
+  // {
+  //   command = // DEBUG_SERIAL.readStringUntil('\n');
+  // }
+  // if (command != "")
+  // DEBUG_SERIAL.println(command);
+  //TODO CAN SIGNAL receive(dummy values)
+  if ((FDreceiveGear.data[0] == 0x0F || command == "UP") && gearstage != GEARING && gearstage != CLUTCHING)
   {
-    command = DEBUG_SERIAL.readStringUntil('\n');
-  }
-    if (command != "")
-      DEBUG_SERIAL.println(command);
-    //TODO CAN SIGNAL receive(dummy values)
-    if ((cansignalup || command == "UP") && gearstage != GEARING && gearstage != CLUTCHING)
+    if (currentGear != 5)
     {
-      if (currentGear != 5)
-      {
-        nextGear = currentGear + 1;
-        gearSignal = GEAR_UP;
-        gearstage = START;
-      }
-      else
-      {
-        //Gear allready in 5th gear
-      }
+      nextGear = currentGear + 1;
+      gearSignal = GEAR_UP;
+      gearstage = START;
+    }
+    else
+    {
+      //Gear allready in 5th gear
+    }
   }
-  if ((cansignaldown || command == "DOWN") && gearstage != GEARING && gearstage != CLUTCHING)
+  if ((FDreceiveGear.data[0] == 0xF0 || command == "DOWN") && gearstage != GEARING && gearstage != CLUTCHING)
   {
     if (currentGear != 0)
     {
@@ -695,7 +728,7 @@ void loop()
       // Could not gear down, allready in neutral(lowest gear)
     }
   }
-  if ((cansignaldown || command == "NEUTRAL") && gearstage != GEARING && gearstage != CLUTCHING)
+  if ((FDreceiveGear.data[0] == 0xF0 || command == "NEUTRAL") && gearstage != GEARING && gearstage != CLUTCHING)
   {
     if (currentGear == 1)
     {
@@ -707,7 +740,7 @@ void loop()
       // Could not gear down, allready in neutral(lowest gear)
     }
   }
-  if ((cansignalup || command == "FIRST") && gearstage != GEARING && gearstage != CLUTCHING)
+  if ((FDreceiveGear.data[0] == 0x0F || command == "FIRST") && gearstage != GEARING && gearstage != CLUTCHING)
   {
     if (currentGear == 0)
     {
@@ -721,33 +754,36 @@ void loop()
   }
   if (command == "GEAR")
   {
-    DEBUG_SERIAL.println(currentGear);
+    // DEBUG_SERIAL.println(currentGear);
   }
   if (command == "PRESSURE")
   {
-    DEBUG_SERIAL.println(clutchPressureMeasured);
-    DEBUG_SERIAL.println(analogRead(14));
+    // DEBUG_SERIAL.println(clutchPressureMeasured);
+    // DEBUG_SERIAL.println(analogRead(14));
   }
   switch (gearSignal)
   {
-    case GEAR_NOTHING:
-      break;
-    case GEAR_UP:
-      gearUp();
+  case GEAR_NOTHING:
+    break;
+    
+  case GEAR_UP:
+    gearUp();
 
-      break;
+    break;
 
-    case GEAR_DOWN:
+  case GEAR_DOWN:
 
-      gearDown();
+    gearDown();
 
-      break;
-    case NEUTRAL_ENGAGE:
-      neutralEngage();
-      break;
-    case NEUTRAL_DISENGAGE:
-      neutralDisengage();
-      break;
+    break;
+
+  case NEUTRAL_ENGAGE:
+    neutralEngage();
+    break;
+
+  case NEUTRAL_DISENGAGE:
+    neutralDisengage();
+    break;
   }
   /* -------------------------------------------------------------------------- */
   /*                               End gear logic                               */
@@ -768,8 +804,9 @@ void loop()
     // sendFDData(FDsendGearUPDOWN);
     lastCanSendTime = millis();
   }
-  // DEBUG_SERIAL.print("LOOP ended");
+  // // DEBUG_SERIAL.print("LOOP ended");
   command = "";
-  // DEBUG_SERIAL.print("Loop");
+  FDreceiveGear.data[0] = 0x00;
+  // // DEBUG_SERIAL.print("Loop");
   delay(300); // ANCHOR DEBUG delay
 }
