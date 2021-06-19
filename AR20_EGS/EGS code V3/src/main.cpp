@@ -1,10 +1,10 @@
 /*
 |     Pin     |     Mode     |     Device     | Connector pin |
 | ----------- | ------------ | -------------- | ------------- |
-| PIN 0       | RX           | Servo          | 1             |
-| PIN 1       | TX           | Servo          | 2             |
+| PIN 0       | RX           | Servo          |               |
+| PIN 1       | TX           | Servo          |               |
 | PIN 2       | INT          | CAN            |               |
-| PIN 3       | Enable(UART) | Servo          |               |
+| PIN 3       | Enable(UART) | Servo [E]      |               |
 | PIN 4       | CS(SPI)      | GearSensor     | 3             |
 | PIN 5       | GREEN LED    | LED            |               |
 | PIN 6       |              |                |               |
@@ -22,6 +22,9 @@
 |             |              | CAN_H          | 10            |
 |             |              | CAN_L          | 11            |
 |             |              | +5V            | 12            |
+|             | A            | Servo          | 1             |
+|             | B            | Servo          | 2             |
+
 
 */
 
