@@ -9,6 +9,8 @@ unsigned long time;
 unsigned long elapsed_time;
 volatile int count = 0;
 
+unsigned long analogTime;
+
 
 
 void toggle();
@@ -38,6 +40,11 @@ void loop() {
 		led_state = !(led_state);
 		digitalWrite(led_pin, led_state);
 		count = 0;
+	}
+
+	// Når det har gått 500ms, gjør følgende:
+	if (millis() - analogTime > 500) {
+		analogReadU(17); // Leser fra A3 på breakoutboardet til ACMen
 	}
 
 }
