@@ -1,72 +1,53 @@
 #include <Arduino.h>
-// Incoming interrupt at pin 2
-const byte interruptPin = 2;
-volatile int count = 0;
-unsigned long time;
+const uint8_t btn_pin = 3;
+const uint8_t led_pin = 5;
+const uint8_t exled_pin = 5;
 
-void counter() {
-  count++;
-}
+uint8_t led_state = LOW;
+
+unsigned long time;
+unsigned long elapsed_time;
+volatile int count = 0;
+
+
+
+void toggle();
 
 void setup() {
-  // Configure pin 2 as input with pullup (not sure if pullup is right...)
-  pinMode(interruptPin, INPUT_PULLUP);
-  attachInterrupt(digitalPinToInterrupt(interruptPin), counter, FALLING);
+	pinMode(btn_pin, INPUT);
+	pinMode(led_pin, OUTPUT);
+	pinMode(exled_pin, OUTPUT);
 
-  time = millis();
+	attachInterrupt(digitalPinToInterrupt(btn_pin), toggle, RISING);
 
 
-  //RED
-	pinMode(9, OUTPUT);
-	digitalWrite(9, HIGH);
-	delay (300);
-	digitalWrite(9, LOW);
-	
-	//Blue
-	pinMode(10, OUTPUT);
-	digitalWrite(10, HIGH);
-	delay (300);
-	digitalWrite(10, LOW);
-	
-	//Green
-	pinMode(5, OUTPUT);
-	digitalWrite(5, HIGH);
-  delay (300);
-	digitalWrite(5, LOW);
+	time = millis();
 
-}
-
-void lys() {
-  //RED
-	pinMode(9, OUTPUT);
-	digitalWrite(9, HIGH);
-	delay (300);
-	digitalWrite(9, LOW);
-	
-	//Blue
-	pinMode(10, OUTPUT);
-	digitalWrite(10, HIGH);
-	delay (300);
-	digitalWrite(10, LOW);
-	
-	//Green
-	pinMode(5, OUTPUT);
-	digitalWrite(5, HIGH);
-  delay (300);
-	digitalWrite(5, LOW);
+	analogTime = millis();
 }
 
 void loop() {
-  if (count == 12) {
-    // Bruk time til å finne rpm
-    // Sende rpm over CANbus
+	//delay(500);
+	//toggle();
 
-    time = millis();
-  }
-  delay(300);
-  lys();
+	if(count == 12) {
+		elapsed_time = millis() - time;
 
+		time = millis();
 
+		led_state = !(led_state);
+		digitalWrite(led_pin, led_state);
+		count = 0;
+	}
 
-  // Analog read suspention displacement sensor
+}
+
+// Skrur LED av/på ved knappetrykk
+void toggle() {
+ // Koblet til ekstern LED
+	count++;
+	led_state = !(led_state);
+	digitalWrite(led_pin, led_state);
+	//led_state = !(led_state);
+	//digitalWrite(9, led_state);
 }
