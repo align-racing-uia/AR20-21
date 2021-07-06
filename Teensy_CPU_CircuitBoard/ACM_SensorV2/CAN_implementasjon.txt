@@ -1,0 +1,81 @@
+static const byte MCP2517_CS = 7;  // CS input of MCP2517
+static const byte MCP2517_INT = 2; // INT output of MCP2517
+
+ACAN2517FD can(MCP2517_CS, SPI, MCP2517_INT);
+
+
+CANFDMessage FDsendGearUPDOWN
+
+void sendFDData(CANFDMessage FDmessage);
+void receiveFDData(CANFDMessage FDmessage);
+
+void receiveFromFilter(const CANFDMessage &inMessage)
+{
+  // Callback, not used. But required in code
+}
+
+
+
+void sendFDData(CANFDMessage FDmessage)
+{
+  can.tryToSend(FDmessage);
+}
+
+void receiveFDData(CANFDMessage *FDmessage)
+{
+  if (can.available())
+  {
+    if (can.receive(*FDmessage))
+    {
+      //! Ingen ting implementert
+    }
+  }
+  can.dispatchReceivedMessage();
+}
+
+
+void kliktronicPULL()
+{
+  FDsendGearUPDOWN.data[0] = 0x0F;
+  sendFDData(FDsendGearUPDOWN);
+}
+
+
+
+  /* --------------------------- CANbus setup start --------------------------- */
+
+  SPI.begin();
+
+  ACAN2517FDSettings settings(ACAN2517FDSettings::OSC_20MHz, 500UL * 1000UL, DataBitRateFactor::x8);
+  settings.mRequestedMode = ACAN2517FDSettings::NormalFD;
+  settings.mDriverTransmitFIFOSize = 1;
+  settings.mDriverReceiveFIFOSize = 1;
+
+
+  ACAN2517FDFilters filters;
+  filters.appendFrameFilter(kStandard, 0x050, receiveFromFilter);
+  filters.appendFrameFilter(kStandard, 0x101, receiveFromFilter);
+  filters.appendFrameFilter(kStandard, 0x5e8, receiveFromFilter);
+  //filters.appendFilter (kStandard, 0x70F, 0x123, receiveFromFilter);
+  //----------------------------------- Filters ok ?
+  if (filters.filterStatus() != ACAN2517FDFilters::kFiltersOk)
+  {
+  }
+  const uint32_t errorCode = can.begin(
+      settings, []
+      { can.isr(); },
+      filters);
+
+
+
+  /* -------------------------------------------------------------------------- */
+  /*                               Sending frames                               */
+  /* -------------------------------------------------------------------------- */
+
+  // Gir opp/ned
+  FDsendGearUPDOWN.id = 0x051;
+  FDsendGearUPDOWN.len = 1; // Valid lengths are: 0, 1, ..., 8, 12, 16, 20, 24, 32, 48, 64
+  FDsendGearUPDOWN.type = CANFDMessage::CANFD_WITH_BIT_RATE_SWITCH;
+
+
+
